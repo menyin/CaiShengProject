@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* 地图 */
+.mapbox{clear:both;}
+.mapbox_t{ border:1px solid #e6e6e6;}
+#mapbar,.map{ float:left;width:735px;height:319px; background:#fdfdfd; border-right:1px solid #e6e6e6;}
+
+/* 新版地图 */
+#dtjt_wrap {width:740px; overflow:hidden; }
+#dtjt_info { height:319px; position:relative; width:738px; }
+#map {border-right:1px solid #E6E6E6; height:319px; position:absolute; width:475px; z-index:0 }
+.tableft, .tabright {background:#FCFCFC; border:1px solid #E6E6E6; border-right:none; border-top:none;border-bottom: none; font:12px/29px Arial; height:29px; margin:0; position:absolute; text-align:center; top:0; width:131px; }
+.tableft {border-left:none; right:132px;}
+.tabright {right:0px; }
+.tabsel {background:none; border-bottom-width:0; cursor:default; }
+.map_tab {border-left:1px solkid #E6E6E6; display:none; font-size:12px; height:290px; right:0; overflow-y:auto; position:absolute; top:30px; width:263px; }
+.map_tab_sel {display:block; }
+#map_route {background:#FCFCFC;  border-top:none; color:#666666; font:14px/34px Arial; height:34px; padding:10px; width:708px; }
+.route_type {vertical-align:middle; }
+.route_type input {height:12px; margin-top:-1px; overflow:hidden; vertical-align:middle; width:12px; }
+.route_type .label {color:#666666; font-size:12px; margin-right:10px;}
+.map_tab dt.dt  {margin:15px 5px 0 5px; position:relative; }
+.map_tab dt.dt div.dt {font-size:12px; height:19px; position:absolute; left:25px; line-height:19px; top:0; }
+.map_tab div.dt {background:#6788EF; border-radius:3px; color:#FFFFFF; font-size:12px; height:18px; padding:2px 8px 2px 8px; }
+.map_tab dl,.map_tab dd {margin:10px 5px; _margin:10px 0 10px 5px; }
+.map_tab dd {position:relative; }
+.map_tab dd .distance {position:absolute; right:0; _left:190px; _padding:0; _margin:0; top:4px; }
+#map_route_from, #map_route_to {background: url("http://cdn.597.com/images/pic/post_txt_bg.png?v=20120614") no-repeat scroll 0 0 #FFFFFF; border:1px solid #CCCCCC; color:#666; font-size:14px; padding:6px 8px; margin:0 10px;vertical-align:middle;}
+#map_route_search {background:url(http://cdn.597.com/images/pic/fang-detail-sprites_new.png?v=20120918) no-repeat -120px -393px; border: medium none !important;cursor: pointer; height:34px; vertical-align:middle; width:85px; }
+#map_search_result {width:733px; font-size:12px; clear:both; }
+.transit_list{border:1px solid #9cb5ff; background:#ebf1fb; cursor:pointer; line-height:38px; margin-top:10px; overflow:hidden; zoom:1;}
+.lefttop {background:#9cb5ff; color:#fff; font-weight:900; font-size:14px; width:38px; height:38px; text-align:center; float:left; display:inline; }
+.route {color:#2255DD; font-family:"times new roman" arial 宋体 sans-serif; font-size:14px; font-weight:900; padding:0 20px; float:left; display:inline;}
+.distance_time {padding:0 20px; float:right; display:inline;}
+.route_detail {border:1px solid #9cb5ff; border-top:none; background:#fff; padding:15px; line-height:28px;}
+.route_detail p{background:url(http://cdn.597.com/images/pic/icon_map.png?v=20120611) no-repeat 0 -998px; padding-left:25px;}
+.route_detail b{color:#25d}
+.route_start, .route_end {background:url(http://cdn.597.com/images/pic/icon_map.png?v=20120611) no-repeat; font:12px/24px Arial; height:24px; text-indent:25px; font-weight:900; }
+.route_start {background-position:0 3px; margin-bottom:5px; }
+.route_end {background-position:0 -70px; margin-top:5px; }
+#map_search_result td{border:0}
+#map_search_result h1{clear:both}
+#baidu_fullscreen{position:absolute;cursor:pointer; top:5px; left:440px; z-index:1; background: url(http://cdn.597.com/images/pic/dtspri.gif) no-repeat 0 -136px; width:19px; height:18px;}
+#baidu_exitfullscreen{position:absolute; cursor:pointer; right:5px;  z-index:99999; background: url(http://cdn.597.com/images/pic/dtspri.gif) no-repeat 0 -162px; width:19px; height:18px;}
+
+
+/* soso map 2013-08-22 */
+#dtjt_title {width:998px; height:30px;  background:#f8f8f8; font-family: 微软雅黑; }
+#dtjt_title li {float:left; width:96px; height:30px; border-right:1px solid #e6e6e6; border-left:1px solid #e6e6e6; line-height:30px; font-weight:bold; text-align:center; margin-right:-1px; cursor: pointer;background:#9da0a5; color:#fff;  border-top: 2px solid #9da0a5;}
+#dtjt_title li.active {color:#333333; border-top: 2px solid #3B94D7; background: #fff;  }
+#baidu_map { width:738px;  position:relative; height:375px;}
+#soso_map {width:100%; height:375px; border:1px solid #e6e6e6; position:relative;}
+
+.map {visibility:hidden; margin-top:-375px; z-index:0}
+.map.active { visibility:visible;  margin-top:0; z-index:1}
+#static_map_background { width:110px; height:110px; border:1px solid #999999; position:absolute; right: 10px; bottom: 10px; z-index:500; padding:4px; background:#f2f2f2; display:none;}
+#map_drag { position:absolute; width:20px; height:20px; background:url(http://cdn.597.com/images/pic/soso_map_drag.png) no-repeat; cursor:pointer; left:0px; top:0px;}
+#static_map {width:100%; height:100%; border:1px solid #cdcdcd;}

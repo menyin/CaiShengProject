@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; text-shadow:none; font-weight:normal !important; font-family:"微软雅黑";}
+div{ display:block;}
+a{ text-decoration:none; -webkit-tap-hightlight-color:rgba(0,0,0,0);}
+ul,li{ list-style:none;}
+.clear{ clear:both;}
+
+.right{ float:right;}
+.left{ float:left;}
+
+
+.zpwrap{ background-color:#ededed; overflow:hidden;}
+/**/
+.j_searchTop {height: 44px; background-color: #E8352E; border-bottom: 1px solid #E8352E; overflow: hidden;}
+.j_searchTop .logo{ width:120px; height:44px; background:url(../images/597logo.png) no-repeat; float:left; margin-left:10px; background-size:120px 44px;}
+.j_searchTop .position{ font-size:12px; color:#fff; line-height:44px; max-width:60px; float:left; margin-left:15px; overflow:hidden; white-space:nowrap;}
+.j_searchTop .position .icon{ margin-top:18px;}
+.j_searchTop .position .text{ padding-right:5px;}
+.j_searchTop .login_btn{ right:10px; font-size:16px; line-height:44px; color:#fff;}
+.j_searchTop .login_btn a{ color:#fff;padding:5px;}
+
+/*搜索*/
+.indexSearch{ height:50px; background:#fff; overflow:hidden;}
+.indexSearch .content{ margin:10px; height:38px; line-height:38px; color:#999; font-size:15px; border:1px solid #d2d2d2; border-radius:5px; position:relative;}
+.indexSearch .content span { display: block; margin: 0 14px;}
+.indexSearch .content b { width: 55px; height: 29px; line-height: 29px; color: #fff; font-size: 15px; text-align: center; border-radius: 3px; position: absolute; right: 5px; top: 4px; background-color: #E8352E;} 
+
+
+/**/
+.j_myOperating { background:#fff; width: auto; padding: 20px 10px 10px 10px; margin-bottom: 10px;}
+.j_boxe { float: left; width: 25%; text-align: center; position: relative;}
+.j_myOperating a img { width: 40px; height: 40px; margin: auto; clear: both; float: none;}
+.j_myOperating a span { width: 100%; display: block; height: 20px; color: #686868; font-size: 12px; margin-bottom: 10px; line-height:20px;}
+
+
+/*热门职位*/
+.j_hotJobsList{ line-height:44px; background:#fff; margin-bottom:10px;}
+.j_hotJobsList h3{ width:100%; height:35px; line-height:35px; background:url(../images/4.2_titleIcon.png) no-repeat; background-color:#fff; background-size:5px 16px; background-position: left center; border-bottom:1px dashed #d8d8d8;}
+.j_hotJobsList h3 span{ background:#fff; padding:0 10px; float:left; display:block; line-height:35px; margin:0 5px; font-size:18px; font-family:"微软雅黑"; color:#e8352e;}
+.j_hotJobsList .warp{ font-size:13px; text-align:left;}
+.j_hotJobsList .warp .list{ overflow:hidden; border-bottom: 1px dashed #e5e5e5;}
+.j_hotJobsList .warp .list dt{ background:#fff; overflow:hidden; position:relative;}
+.j_hotJobsList .warp .list dt .wrap{ width:100%; padding:0 40px 0 10px; box-sizing:border-box;-webkit-box-sizing:border-box; font-style:normal; display:block;  height:44px;}
+.j_hotJobsList .warp .list dt span { float: left; color: #93b1c9; width: 25%;
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.j_hotJobsList .warp .list dt a { float: left; color: #686868; width: 25%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.j_hotJobsList .warp .list dt a:link, .j_hotJobsList .warp .list dt a:visited { color: #686868;}
+.j_hotJobsList .warp .list dt b { float: right; width: 40px; height: 44px; background: url(../images/4-2_hotjobsarrow.png) no-repeat center center;
+background-size: 10px auto; position: absolute; right: 0; top: 0;}
+
+.j_hotJobsList .warp .list dd {
+background-color: #eaeaea;
+display: none;
+overflow: hidden;
+padding: 0 5px;
+}
+.j_hotJobsList .warp .list dd a {
+color: #686868;
+float: left;
+width: 25%;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+/*热门行业*/
+.j_HotJobsIndustryList { margin-bottom: 8px; overflow: hidden; clear: both;
+background-color: #fff;}
+.j_HotJobsIndustryList dt{  background:url(../images/4.2_titleIcon.png) no-repeat;  background-size:5px 16px; background-position:left center; border-bottom:1px dashed #d8d8d8; width:100%; height:35px; line-height:35px;}
+.j_HotJobsIndustryList dt span{ margin:0 5px; color:#e8352e; background:#fff; padding: 0 10px; float:left; display:block; line-height:35px; font-size:18px; font-family:"微软雅黑"; }
+.j_HotJobsIndustryList dd {
+width: 25%;
+border-bottom: 1px dotted #d6d6d6;
+border-right: 1px dotted #d6d6d6;
+font-size: 14px;
+color: #7a7a7a;
+float: left;
+height: 40px;
+line-height: 40px;
+text-align: center;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.j_HotJobsIndustryList dd a.colorC:link, .j_HotJobsIndustryList dd a.colorC:visited {
+color: #17a5ff;
+}
+.j_HotJobsIndustryList dd a {
+width: 100%;
+height: 40px;
+line-height: 40px;
+display: block;
+color: #7a7a7a;
+}
+
+/*求职宝典*/
+.j_HotInformation {
+width: auto;
+}
+.j_HotInformation {
+overflow: hidden;
+clear: both;
+background-color: #fff;
+margin-bottom: 8px;
+}
+.j_HotInformation h3 {
+ background:url(../images/4.2_titleIcon.png) no-repeat;
+background-color: #fff;
+background-size: 5px 16px;
+background-position: left center;
+width: 100%;
+height: 35px;
+line-height: 35px;
+}
+.j_HotInformation h3 span{ margin:0 5px; color:#e8352e; background:#fff; padding: 0 10px; float:left; display:block; line-height:35px; font-size:18px; font-family:"微软雅黑"; }
+.j_HotInformation h3 a {
+float: right;
+color: #686868;
+font-size: 16px;
+margin-right: 16px;
+}
+.j_HotInformation dl {
+padding: 0 5px;
+float: none; width:100%;
+}
+.j_HotInformation dl dd {
+height: 40px;
+line-height: 40px;
+border-top: 1px dashed #d8d8d8;
+}
+.j_HotInformation dl dd:first-child {
+border-top: 1px dashed #d8d8d8;
+}
+.j_HotInformation dl dd a {
+padding-right: 10px;
+display: inline-block;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+color: #333!important;
+font-size: 15px;
+width: 100%;
+}
+
+/**/
+.j_link {
+width: 100%;
+margin: 0 auto 8px auto;
+overflow: hidden;
+clear: both;
+background-color: #fff;
+}
+.j_link h3 {
+width: 100%;
+height: 35px;
+background-color: #1d8aff;
+line-height: 35px;
+background:url(../images/4.2_titleIcon.png) no-repeat;
+background-color: #fff;
+background-size: 5px 16px;
+background-position: left center;
+}
+.j_link h3 span {
+margin: 0 5px;
+color: #1499ff;
+}
+.j_link h3 span {
+background-color: #fff;
+padding: 0 10px;
+float: left;
+display: block;
+line-height: 35px;
+margin: 0 10px;
+font-size: 18px;
+font-family: 'Microsoft YaHei';
+color: #333;
+}
+.j_link h3 a {
+float: right;
+color: #686868;
+font-size: 16px;
+margin-right: 16px;
+}
+.j_link dl {
+width: auto;
+padding: 0 5px;
+}
+.j_link dl dd {
+height: 20px;
+padding: 10px 0;
+border-bottom: 1px solid #d8d8d8;
+}
+.j_link dl dd:first-child {
+border-top: 1px dashed #d8d8d8;
+}
+.j_link dl dd ul li {
+width: 25%;
+float: left;
+height: 20px;
+line-height: 20px;
+border-right: 1px solid #d6d6d6;
+text-align: center;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.j_link dl dd ul li {
+border-right: none;
+}
+.j_link dl dd a:link, .j_HotInformation dl dd a:visited {
+color: #333!important;
+}
+.j_link dl dd ul li a {
+font-size: 13px;
+color: #333;
+}
+/**/
+.home_box, .version {
+background-color: #ededed;
+}
+.bottom_nav {
+height: 45px;
+padding: 20px 10px 10px 10px;
+}
+.bottom_nav li {
+float: left;
+width: 20%;
+text-align: center;
+height: 45px;
+position: relative;
+}
+.bottom_nav a {
+height: 45px;
+display: block;
+margin: 0 auto;
+position: relative;
+color: #686868;
+font-size: 12px;
+}
+.bottom_nav i {
+display: block;
+margin: 0 auto 3px;
+width: 28px;
+height: 28px;
+background-size: 28px 28px;
+}
+.bottom_nav li:nth-of-type(1) i {
+background-image: url("http://img09.zhaopin.com/2012/other/mobile/m/4.2_bottomNav_1.png");
+}
+
+.bottom_nav li:nth-of-type(2) i {
+background-image: url("http://img09.zhaopin.com/2012/other/mobile/m/4.2_bottomNav_2.png");
+}
+.bottom_nav li:nth-of-type(3) i {
+background-image: url("http://img09.zhaopin.com/2012/other/mobile/m/4.2_bottomNav_3.png");
+}
+.bottom_nav li:nth-of-type(4) i {
+background-image: url("http://img09.zhaopin.com/2012/other/mobile/m/4.2_bottomNav_5.png");
+}
+.bottom_nav li:nth-of-type(5) i {
+background-image: url("http://img09.zhaopin.com/2012/other/mobile/m/4.2_bottomNav_4.png");
+}
+.home_box, .version {
+background-color: #ededed;
+}
+.version {
+text-align: center;
+font-size: 13px;
+color: gray;
+background-color: #d6d6d6;
+line-height: 36px;
+}
+
+
+/**/
+.go-top {
+opacity: 0;
+width: 45px;
+height: 45px;
+position: fixed;
+right: 15px;
+bottom: 95px;
+z-index: 89;
+}
+.go-top img {
+width: 45px;
+height: 45px;
+}

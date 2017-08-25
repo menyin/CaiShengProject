@@ -1,0 +1,40 @@
+/*
+page template
+*/
+body{background:#fff;}
+.position_main{padding-top:0;width:100%; margin:0 auto;background:#fff ;}
+#footer{text-align:center; margin:0 auto; background:transparent;  padding:10px 0 30px 0; color:#999; font-family:Arial, Helvetica, sans-serif;}
+
+/*style*/
+.position_main .main_top_bg{background:transparent;}
+.position_main .main_top{padding-bottom:0;width:980px; margin:0 auto;border:0; background:transparent; height:86px; padding-top:12px;}
+.position_main .main_top .company_wel {width:210px; margin:5px 0 0 0;text-align: center;}
+.position_main .main_top .company_text {width: 700px; margin-left:20px;}
+.position_main .main_top .company_text span,.position_main .main_top .company_text span a{}
+.position_main .main_top .company_text span.name,.position_main .main_top .company_text span.add,.position_main .main_top .company_text span.info{width:700px; margin-bottom:0}
+
+.position_main .main_banner{height:0px; display:none;}
+
+.position_main .main_body_bg{}
+.position_main .main_body_bg .topbg{background:#1f1c1a url("../bgImg/style62/banner.jpg") center top no-repeat; height:300px; margin:0 auto; }
+.position_main .main_body{width:976px;margin:0 auto; border:1px solid #dedede; background:#fff url("/commImage/ui/tree/tree_bg.gif") repeat-y -10px;}
+
+.position_main .left_menu {width:204px;}
+.position_main .left_menu .tab_btn_com.active{border-bottom:1px solid #f44117; border-left:2px solid #cf320d;background:#f44117 url("/commImage/ui/tree/to2.gif") no-repeat 0px center; color:#fff}
+
+.position_main .pos_list li a:hover{border-left:2px solid #ffe5df; background:#ffe5df; text-decoration:none}
+.position_main .pos_list li.active a,.position_main .pos_list li.active a:hover,
+.position_main .pos_list li.lastActive a{border-left:2px solid #cf320d;  background:#f44117 url("/commImage/ui/tree/to2.gif") no-repeat 0px center; color:#fff;}
+
+
+
+/*pager*/
+.detail_pager ul li.first {background-position:center -134px}
+.detail_pager ul li.pre {background-position:center -167px}
+.detail_pager ul li.next {background-position:center -199px}
+.detail_pager ul li.last {background-position:center -230px}
+
+.detail_pager ul li.first-empty {background-position:center -5px}
+.detail_pager ul li.pre-empty {background-position:center -38px}
+.detail_pager ul li.next-empty {background-position:-18px -70px}
+.detail_pager ul li.last-empty {background-position:-18px -101px}

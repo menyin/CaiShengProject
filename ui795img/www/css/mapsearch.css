@@ -1,0 +1,287 @@
+@charset utf-8;
+.headL{width:390px;}
+.headL b.jSearchLogo{background:url(../images/s/sLogo.gif) no-repeat 0 0;width:127px;height:30px;display:inline-block;margin:20px 0 0 10px;}
+.headL b.mSearchLogo{background:url(../images/s/sLogo.gif) no-repeat 0 -32px;width:168px;height:30px;display:inline-block;margin:20px 0 0 10px;}
+
+/*搜索公共*/
+.content{width:980px;margin:0 auto 20px; text-align:left;}
+.crumbs{height:30px;padding-left:10px;}
+.crumbs a:link,.crumbs a:visited{margin:0 5px;color:#2094D1;}
+.crumbs a:hover{color:#16a6f2;}
+.crumbs span{margin:0 0 0 5px;}
+
+/*搜索结果*/
+.searchResult{border:1px solid #e7a05d;zoom:1;padding:10px;}
+.searchResult .tableT{margin:0 0 10px 0;}
+.searchResult .tableTL{float:left;display:inline;width:235px}
+.searchResult .tableTC{float:left;display:inline;height:24px;line-height:24px;}
+.searchResult .tableTR{float:right;display:inline;}
+.searchResult .tableTL a:link,.searchResult .tableTL a:visited{height:22px;line-height:22px;display:inline-block;padding:0 5px 0 20px;background:url(../images/s/bg.gif) no-repeat -783px -217px #ededed;border:1px solid #c7c7c7;color:#444;margin:0 10px 0 0;}
+.searchResult .tableTL a:hover{ background-color:#f5f5f5;border:1px solid #bbb}
+.searchResult .tableTL a.up:link,.searchResult .tableT a.up:visited{color:#fff;background:url(../images/s/bg.gif) no-repeat -783px -287px #e88528;border:1px solid #d26906}
+.searchResult .tableTL a.down:link,.searchResult .tableTL a.down:visited{color:#fff;background:url(../images/s/bg.gif) no-repeat -783px -254px #e88528;border:1px solid #d26906}
+.searchResult .tableTL a.down:hover,.searchResult .tableTL a.up:hover{ background-color:#ff9129;border:1px solid #b85c05}
+.searchResult .tableTC .orange{margin:0 3px;font-size:16px;font-family:Arial, Helvetica, sans-serif}
+.searchResult .tableTC a:link,.searchResult .tableTC a:visited{color:#2094D1;}
+.searchResult .tableTC a:hover{color:#16a6f2;}
+.tableTR a:link,.tableTR a:visited{margin:0 0 0 10px;display:inline-block;border:1px solid #e88528;background:#fff;font-family:Arial, Helvetica, sans-serif;height:22px;line-height:22px; vertical-align:middle;padding:0 5px;color:#d96c06;}
+.tableTR a:hover{background:#fff5eb}
+.tableTR a.cu:link,.tableTR a.cu:visited{background:#e88528;color:#fff;}
+
+
+
+.searchResult .table .tHead .lst1{width:155px;padding-left:36px;}
+.searchResult .table .tHead .lst2{width:263px}
+.searchResult .table .tHead .lst3{width:166px}
+.searchResult .table .tHead .lst4{width:154px}
+.searchResult .table .tHead .lst5{width:91px}
+
+.searchResult .table .tBody ul li .tLst .lst1{width:22px;margin:0 2px 0 8px;}
+.searchResult .table .tBody ul li .tLst .lst2{width:155px;}
+.searchResult .table .tBody ul li .tLst .lst3{width:260px;}
+.searchResult .table .tBody ul li .tLst .lst4{width:165px;}
+.searchResult .table .tBody ul li .tLst .lst5{width:155px;}
+.searchResult .table .tBody ul li .tLst .lst6{width:90px;}
+.searchResult .table .tBody .lst1 input.checkBox{margin:12px 0 0 0;*margin:7px 0 0;_margin:6px 0 0;}
+
+.searchResult .table .tBody ul li .tLst .lst2 a:link,.searchResult .table .tBody ul li .tLst .lst2 a:visited,.searchResult .table .tBody ul li .tLst .lst3 a:link,.searchResult .table .tBody ul li .tLst .lst3 a:visited{color:#2094D1;}
+.searchResult .table .tBody ul li .tLst .lst2 a:hover,.searchResult .table .tBody ul li .tLst .lst3 a:hover{color:#16a6f2;}
+.searchResult .table .tBody ul li .tLst .lst2 a,.searchResult .table .tBody ul li .tLst .lst3 a{float:left;display:inline;}
+.searchResult .table .tBody ul li .tLst .lst2 b.ico,.searchResult .table .tBody ul li .tLst .lst3 b.ico{margin:10px 0 0 5px;float:left;display:inline;}
+
+.searchResult .tParameter{padding:0 20px 0 39px;}
+.searchResult .tParameter .lst{float:left;display:inline;height:25px;}
+.searchResult .tParameter .lst b{font-weight:normal;}
+.searchResult .tParameter .lst1{width:135px;}
+.searchResult .tParameter .lst2{width:162px;}
+.searchResult .tParameter .lst3{width:135px;}
+.searchResult .tParameter .lst4{width:174px;}
+.searchResult .tParameter .lst5{width:162px;}
+.searchResult .tParameter .lst6{width:128px; position:relative; z-index:3}
+.searchResult .tParameter .lst6 b.ico{margin:0 5px 0 0;}
+.searchResult .tParameter .lst6 b,.searchResult .tParameter .lsti{float:left;}
+.searchResult .tParameter .lst6 i{float:left;margin:0 3px 0 0;display:inline;}
+.searchResult .tParameter .lst6 .recordTxt{ position:absolute;background:#fff;border:1px solid #ccc;padding:5px;right:23px;top:13px;width:180px;line-height:20px;}
+.searchResult .tParameter .lst6 .recordTxt em{margin:0 8px 0 0;display:inline-block;color:#333;}
+.searchResult .tParameter .lst i{font-style:normal;}
+.searchResult .tParameter .lst i.no{color:#DB5800;}
+.searchResult .table .tBody ul li .tBot{padding:0 20px 5px 39px;padding-bottom:8px;}
+.searchResult .table .tBody ul li .tBot .tBotL{float:left;display:inline;width:65px;height:20px;line-height:20px;}
+.searchResult .table .tBody ul li .tBot .tBotR{float:left;display:inline;width:825px;line-height:20px;}
+
+
+/*地图搜索顶部搜索条*/
+.mSearchText{float:left;display:inline;width:282px;}
+.mSearchTxt{float:left;display:inline;margin:9px 0 0 5px;font-size:14px;}
+.mSearchText .textL{float:left;display:inline;width:30px;height:35px;line-height:0;font-size:0;overflow:hidden;background:url(../images/s/bg.gif) no-repeat 0 -70px;}
+.mSearchText input.text{height:31px;line-height:30px;border:0;border-top:2px solid #e24500;border-bottom:2px solid #e24500;float:left;display:inline;width:145px;padding:0 0 0 5px;font-size:14px;}
+.mSearchText .searchBtn:link,.mSearchText .searchBtn:visited{float:left;display:inline;width:93px;height:35px;background:url(../images/s/bg.gif) no-repeat -4px 0;}
+
+.landmark{float:left;display:inline;width:170px;}
+.landmark .text{background:url(../images/textBg.gif) repeat-x 0 top;height:33px;border:1px solid #cbcaca;border-right:0;line-height:30px;font-size:14px;width:70px;padding:0 0 0 5px;vertical-align:middle;}
+.landmark a.landmarkBtn:link,.landmark a.landmarkBtn:visited{height:33px;line-height:33px;display:inline-block;padding:0 5px 0 20px;background:url(../images/s/bg.gif) no-repeat -97px 0;border:1px solid #cbcaca;font-size:14px;border-left:0; vertical-align:middle;color:#444;}
+
+
+.mCondition{padding:10px;zoom:1;}
+.mCondition .slide-bar{margin:10px 0 5px 140px}
+
+
+/*地图搜索表格*/
+.mSearchResult{}
+
+
+.mSearchResult .table .tHead .lst1{width:155px;padding-left:66px;}
+.mSearchResult .table .tHead .lst2{width:260px}
+.mSearchResult .table .tHead .lst3{width:166px}
+.mSearchResult .table .tHead .lst4{width:154px}
+.mSearchResult .table .tHead .lst5{width:91px}
+
+.mSearchResult .table .tBody ul li .tLst .lst1{width:22px;margin:0 2px 0 8px;}
+.mSearchResult .table .tBody ul li .tLst .lst2{width:155px;}
+.mSearchResult .table .tBody ul li .tLst .lst3{width:260px;}
+.mSearchResult .table .tBody ul li .tLst .lst4{width:165px;}
+.mSearchResult .table .tBody ul li .tLst .lst5{width:155px;}
+.mSearchResult .table .tBody ul li .tLst .lst6{width:90px;}
+.mSearchResult .table .tBody ul li .tLst .lst7{width:20px;}
+
+.mSearchResult .table .tBody ul li .tLst .lst2 b.ico,.mSearchResult .table .tBody ul li .tLst .lst3 b.ico{float:left;display:inline;margin:10px 0 0 5px;}
+.mSearchResult .table .tBody ul li .tLst .lst2 a,.mSearchResult .table .tBody ul li .tLst .lst3 a{float:left;display:inline;}
+.mSearchResult .table .tBody ul li .tLst .lst7 b.ico{margin:10px 0 0 0;}
+
+
+/*职位搜索*/
+.jobSearch{border:1px solid #e7a05d;border-top:2px solid #e7a05d;zoom:1;background:url(../images/s/condition.gif) repeat-x 0 top;}
+.jSearch{margin-bottom:10px;}
+.jobSearchT{height:35px;line-height:35px;padding:10px 37px 0;zoom:1;}
+.jobSearchT h1{font-size:18px;font-family:"微软雅黑","SimHei";color:#e88528;float:left;display:inline;width:120px;}
+.jobSearchT p{float:right;display:inline;}
+.jobSearchT p a:link,.jobSearchT p a:visited{font-size:14px;color:#2094D1;}
+.jobSearchT p a:hover{color:#16a6f2;}
+.jobSearch .blank{height:30px;line-height:0;}
+.jobSearch .teamLst{padding:20px 10px 10px;zoom:1;}
+.jobSearch .teamLst .team{height:55px;float:left;display:inline;width:306px;}
+
+.jobSearch .teamLst .team .teamL{width:70px;}
+.jobSearch .teamLst .team .teamR{width:226px;}
+.jobSearch .teamLst .team .selBtn a:link b,.jobSearch .teamLst .team .selBtn a:visited b{width:160px}
+.jobSearch .teamLst .team .verCheckbox{float:left;display:inline;}
+.jobSearch .teamLst .team .verText input.inputText{width:208px;}
+
+.jobSearch .teamLst .team.oth{width:912px;height:40px;}
+.jobSearch .teamLst .team.oth .teamR{width:830px;}
+.jobSearch .teamLst .team.oth .teamR .verText input.inputText{width:346px}
+.jobSearch .teamLst .team.oth .teamR .verBtn{*margin:1px 0 0 20px;}
+.jobSearch .teamLst .team.oth .teamR .verTxt{margin-left:20px;}
+.jobSearch .teamLst .team.oth .teamR .verTxt a:link,.jobSearch .teamLst .team.oth .teamR .verTxt a:visited{color:#2094D1;margin:0 10px 0 0;}
+.jobSearch .teamLst .team.oth .teamR .verTxt a:hover{color:#16a6f2;}
+
+
+.jobSearch .teamLst .team.oth4 .verText input.inputText{width:127px;border-right:0;}
+.jobSearch .teamLst .team.oth4 .verBtn{margin:0;*margin:1px 0 0;}
+.jobSearch .teamLst .team.oth4 .verBtn a:link,.jobSearch .teamLst .team.oth4 .verBtn a:visited{height:33px;line-height:33px;display:inline-block;padding:0 5px 0 20px;background:url(../images/s/bg.gif) no-repeat -97px 0;border:1px solid #cbcaca;font-size:14px;border-left:0;color:#444;}
+.jobSearch .teamLst .team.oth4 .verBtn a:hover{}
+
+.jobSearch .teamLst .payTeam{width:630px;}
+.jobSearch .teamLst .payTeam .teamR{width:525px;}
+
+/*搜索历史*/
+
+
+/*当前条件*/
+.condition{overflow:hidden;padding: 0 16px;margin-bottom:20px;zoom:1;}
+.condition dt{float:left;display:inline;width:110px;margin:3px 0 0;}
+.condition dd{float:left;display:inline;width:835px;}
+.condition a:link,.condition a:visited{height:22px;line-height:22px;display:inline-block;margin:0 10px 0 0;border:1px solid #e88528;padding:0 20px 0 5px;background:url(../images/s/bg.gif) no-repeat right -91px;color:#444; vertical-align:middle;}
+.condition a:hover{ background-color:#fff8e9;border:1px solid #c24e00;}
+.condition a.unClick:link,.condition a.unClick:visited{border:1px solid #e3e3e3;color:#dbdbdb;background-color:#f7f7f7; background-position:right -347px;}
+.condition a.unClick:hover{background-color:#f7f7f7;}
+
+/*地图搜索*/
+.mapSearch{border:1px solid #e7a05d;border-top:2px solid #e7a05d;zoom:1;background:url(../images/s/condition.gif) repeat-x 0 top;padding:10px;margin:0 0 10px 0;}
+.mapSearchCon{background:url(../images/s/mapSearchCon.gif) no-repeat 700px 5px;zoom:1;}
+.mapSearchL{float:left;display:inline;width:690px;}
+.mapSearchR{float:right;display:inline;width:250px;}
+
+.mapSearchL .teamLst{padding:10px;zoom:1;}
+.mapSearchL .teamLst .team{float:left;display:inline;width:335px;height:50px;}
+.mapSearchL .teamLst .teamL{width:60px;}
+.mapSearchL .teamLst .teamR{width:265px;}
+.mapSearchL .teamLst .teamR .selBtn a:link b,.mapSearchL .teamLst .teamR .selBtn a:visited b{width:165px;}
+.mapSearchL .teamLst .teamR .verText input.inputText{width:282px;}
+.mapSearchL .teamLst .team.oth .verText input.inputText{width:132px;border-right:0;}
+.mapSearchL .teamLst .team.oth .verBtn{margin:0;*margin:1px 0 0;}
+.mapSearchL .teamLst .team.oth .verBtn a:link,.mapSearchL .teamLst .team.oth .verBtn a:visited{height:33px;line-height:33px;display:inline-block;padding:0 5px 0 20px;background:url(../images/s/bg.gif) no-repeat -97px 0;border:1px solid #cbcaca;font-size:14px;border-left:0;color:#444;}
+
+.mapSearchL .teamLst .payTeam{width:612px;}
+.mapSearchL .teamLst .payTeam .teamR{width:532px;}
+.mapSearchL .teamLst .payTeam .verText{margin:0 0 0 10px;}
+.mapSearchL .teamLst .payTeam .verText input.inputText{width:45px;}
+
+.mapSearchL .teamLst .team.oth3{width:635px;}
+.mapSearchL .teamLst .team.oth3 .teamR{width:560px;}
+.mapSearchL .teamLst .team.oth3 .teamR .verBtn{margin:0 0 0 20px;}
+.mapSearchL .teamLst .team.oth3 .teamR .verBtn a{margin:0 0 0 25px;color:#2094D1;}
+.mapSearchL .teamLst .team.oth3 .teamR .verBtn a:hover{color:#16a6f2;}
+.mapSearchL .teamLst .team.oth3 .teamR .verBtn a.btn11{margin:0 0 0 10px;color:#993F02;}
+/*热门商圈地标*/
+.hovCircle{padding:10px;zoom:1;}
+.hovCircle h3{font-size:14px;font-weight:bold;height:30px;}
+.hovCircle .lst{line-height:22px;}
+.hovCircle .lst a:link,.hovCircle .lst a:visited{font-size:14px;display:inline-block;margin:0 15px 0 0;}
+
+/*地图搜索下部*/
+.mapPart{}
+.mapPartL{float:left;display:inline;width:708px;}
+.mapPartR{float:right;display:inline;width:262px;}
+
+/*商圈*/
+.circle{border:1px solid #ccc;padding:10px;}
+.circle h2{height:30px;line-height:22px;font-size:14px;font-weight:bold;border-bottom:1px solid #ccc;padding:0 10px;}
+.circleLst{padding:5px 0;zoom:1;overflow:hidden;}
+.circleLst dl{overflow:hidden;border-bottom:1px dashed #ccc;padding:5px 0;float:left;width:668px;padding:5px 10px;}
+.circleLst dl.hov{background:#f4f4f4;}
+.circleLst dl dt{font-size:14px;float:left;display:inline;width:80px;height:20px;line-height:20px;}
+.circleLst dl dt a:link,.circleLst dl dt a:visited{color:#db5800;}
+.circleLst dl dt a:hover{color:#fb7b25}
+.circleLst dl dd{float:left;display:inline;width:587px;line-height:20px;}
+.circleLst dl dd a:link,.circleLst dl dd a:visited{margin:0 10px 0 0;display:inline-block;}
+.circleLst dl dd a:link em,.circleLst dl dd a:visited em{font-size:10px;font-family:Arial, Helvetica, sans-serif;color:#DB5800}
+
+/*地图搜索右侧广告*/
+.rightBanner{background:#f2f2f2;padding:8px 0 0;zoom:1;}
+.rightBanner .ad2{width:262px;margin:0 auto 0;}
+.rightBanner .ad2 ul li{width:113px;height:60px;margin:0 8px 8px;}
+.rightBanner .ad2 ul li img{width:113px;height:60px;}
+.rightBanner .ad2 ul li h6{font-size:12px;font-weight:bold;width:113px;height:18px;line-height:18px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;text-align:center;margin-top:1px;*padding-top:3px;}
+.rightBanner .ad2 ul li .adTxt{overflow:hidden}
+.rightBanner .ad2 ul li .adTxt p{height:18px;line-height:18px;margin:0 0 0 5px;width:72px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;padding-left:15px;background:url(/img/index/icos.gif) no-repeat -4px -599px;*background-position:-4px -599px}
+
+/*地图搜索结果*/
+.mSearch .slide-bar{margin-left:111px;}
+
+.mSearchResultTop .teamLst .team.oth2{width:612px;}
+.mSearchResultTop .teamLst .team.oth2 .teamR{width:532px;}
+.mSearchResultTop .teamLst .team.oth2 .verText{margin:0 0 0 10px;}
+.mSearchResultTop .teamLst .team.oth2 .verText input.inputText{width:45px;}
+
+.mSearchResultTop .teamLst .team.oth3{width:913px;}
+.mSearchResultTop .teamLst .team.oth3 .teamR{width:830px;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .verBtn{margin:0 0 0 20px;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .verBtn a{margin:0 0 0 25px;color:#2094D1;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .verBtn a:hover{color:#16a6f2;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .verBtn a.btn11{margin:0 0 0 10px;color:#993F02;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .verText input.inputText{width:275px;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .verTxt{margin-left:20px;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .verTxt a:link,.mSearchResultTop .teamLst .team.oth3 .teamR .verTxt a:visited{color:#2094d1;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .verTxt a:hover{color:#16a6f2;}
+
+
+.mSearchResultTop .teamLst .team.oth3 .teamR .record{float:left;display:inline; position:relative;zoom:1;margin:5px 0 0 20px; z-index:20;*margin:4px 0 0 20px;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .record a.recordLink:link,.mSearchResultTop .teamLst .team.oth3 .teamR .record a.recordLink:visited{display:inline-block;height:24px;line-height:24px;border:1px solid #fff;width:65px;padding:0 0 0 5px;color:#2094D1;background:url(../images/s/bg.gif) no-repeat right -134px #fff;background-position:right -136px \0\9;*background-position:right -136px; position:relative; z-index:4;border-bottom:0;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .record a.recordLink:hover{border:1px solid #ccc;border-bottom:0;color:#444;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .recordHov a.recordLink:link,.mSearchResultTop .teamLst .team.oth3 .teamR .recordHov a.recordLink:visited{border:1px solid #ccc;border-bottom:0;color:#444;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .record .recordCon{position:absolute;top:24px;right:0;border:1px solid #ccc;background:#fff;z-index:3;width:200px;*right:6px;display:none;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .recordHov .recordCon{display:block;}
+.mSearchResultTop .teamLst .team.oth3 .teamR .record .recordCon a:link,.mSearchResultTop .teamLst .team.oth3 .teamR .record .recordCon a:visited{display:inline-block;width:180px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;height:24px;line-height:24px;padding-left:20px;background:url(../images/s/bg.gif) no-repeat -788px 12px; background-position:-788px 10px \0\9;*background-position:-788px 10px}
+.mSearchResultTop .teamLst .team.oth3 .teamR .record .recordCon a:hover{ background-color:#f2f2f2;color:#333;}
+
+
+/*地图*/
+.map{margin:10px 0; position:relative;zoom:1;border:1px solid #ccc;}
+.map .ranging{ position:absolute;right:90px;top:10px; z-index:2}
+.map .ranging a:link,.map .ranging a:visited{display:inline-block;background:url(../images/s/bg.gif) no-repeat 0 -105px;width:73px;height:22px;}
+
+/*搜索范围*/
+.slide-bar,.slide-bar-act{background: url("/img/hb/public/slider.png?t=v1001") no-repeat scroll -30px top transparent;}
+.slide-bar{height: 50px;margin-left:20px;padding:7px 50px 0;position:relative;width:550px;}
+.slide-bar-act{display: block;height: 25px;margin:0;position: absolute;top:0;width:25px;}
+.slide-cut{background-position:0 0;left:0;}
+.slide-add{background-position: 100% 0;right: 0;}
+.ui-slider .ui-slider-range {border: 0 none;display: block;font-size: 0.7em;position: absolute;z-index: 1;}
+.ui-slider-horizontal .ui-slider-handle {margin: 0 0 0 -0.7em;top: -0.4em;}
+.ui-slider-horizontal .ui-slider-range {height: 100%;top: 0;}
+.ui-slider-horizontal .ui-slider-range-min {left: 0;}
+.ui-slider-horizontal .ui-slider-range-max {right: 0;}
+#js-slider {height: 0.8em;position: relative;text-align: left;text-decoration: none !important;width: 550px;z-index: 2;cursor:pointer;}
+.ui-slider .ui-slider-handle {background: url("/img/hb/public/slider-btn.png") no-repeat scroll left top transparent;cursor: pointer;height: 20px;overflow: visible !important;position: absolute;width: 20px;z-index: 5;}
+.ui-slider a {text-decoration: none;}
+ol.ui-slider-tool, .ui-slider-tool li {list-style: none outside none;margin: 0;padding: 0;cursor:pointer;}
+ol.ui-slider-tool {position: relative;top: 1.1em;width: 550px;z-index: 1;}
+.ui-slider-tool li {color: #999999;overflow: visible;position: absolute;}
+.ui-slider-tool span.ui-slider-label {font-size: 12px;position: absolute;color:#444}
+.ui-slider-tool li span.ui-slider-label {display: block;margin-left: -40px;text-align: center;width: 80px;}
+.ui-slider-tool span.ui-slider-tic {height: 15px;left: 0;overflow: hidden;position: absolute;top: -1.3em;}
+.ui-slider-tool li span.ui-widget-content {border-color: #feca51;border-left: 1px solid #feca51;border-right: 0 none #feca51;border-style: none none none solid;border-width: 0 0 0 2px; cursor:pointer;}
+
+
+/*地图内容列表*/
+.mapLst{}
+.mapLst .mapLstTxt{margin:0 0 5px 0;}
+.mapLst .mapLstTxt p{width:380px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;height:22px;line-height:22px;}
+.mapLst .mapLstTxt p a:link,.mapLst .mapLstTxt p a:visited{color:#2094D1}
+.mapLst .mapLstTxt p a:hover{color:#16a6f2;}
+.mapLstThead table tr td{padding:3px 2px;background:#f2f2f2;}
+.mapLstTbody{height:85px;overflow-y:scroll;margin:5px 0 0 0;width:407px;}
+.mapLstTbody table tr td{border-bottom:1px dashed #ddd;padding:3px 2px;}
+.mapLstTbody table tr td a:link,.mapLstTbody table tr td a:visited{color:#2094d1;}
+.mapLstTbody table tr td a:hover{color:#16a6f2;}

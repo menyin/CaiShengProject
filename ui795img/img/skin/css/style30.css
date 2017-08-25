@@ -1,0 +1,52 @@
+/*
+page template
+*/
+body{background:#4c515a url("../bgImg/style30/bg.jpg") center repeat;}
+.position_main{padding-top:0;width:100%; margin:0 auto;background:url("../bgImg/style30/main_bg.jpg") center repeat-y;}
+#footer{text-align:center; margin:0 auto; background:url("../bgImg/style30/main_bg.jpg") center repeat-y; padding:10px 0 30px 0; color:#999; font-family:Arial, Helvetica, sans-serif;}
+
+/*style*/
+.position_main .main_top_bg{background:url("../bgImg/style30/top_bg.jpg") bottom no-repeat;}
+.position_main .main_top{padding-bottom:0;width:980px; margin:0 auto; background:transparent;border:0; height:90px; padding-top:10px}
+.position_main .main_top .company_wel {width: 200px; margin:5px 0 0 0;text-align: center;}
+.position_main .main_top .company_text {width: 700px; margin-left:20px; color:#fff}
+.position_main .main_top .company_text span,.position_main .main_top .company_text span a{ color:#fff}
+.position_main .main_top .company_text span.name,.position_main .main_top .company_text span.add,.position_main .main_top .company_text span.info{width:700px; color:#fff}
+
+.position_main .main_banner{background:url("../bgImg/style30/banner.jpg") top no-repeat; height:255px;}
+
+.position_main .main_body_bg{background:url("../bgImg/style30/body_topbg.jpg") top center no-repeat;}
+.position_main .main_body_bg .topbg{height:0px; display:none; margin:0 auto; }
+.position_main .main_body{width:948px;margin:0 auto; border:none; background:#fff url("/commImage/ui/tree/tree_bg.gif") repeat-y -10px;}
+
+.position_main .left_menu {width:204px;}
+.position_main .left_menu .tab_btn_com.active{border-bottom:1px solid #904c1f; border-left:2px solid #904c1f;background:#904c1f url("/commImage/ui/tree/to2.gif") no-repeat 0px center; color:#fff}
+
+.position_main .pos_list li a:hover{border-left:2px solid #fbf2ec; background:#fbf2ec; text-decoration:none}
+.position_main .pos_list li.active a,.position_main .pos_list li.active a:hover,
+.position_main .pos_list li.lastActive a{border-left:2px solid #904c1f;  background:#904c1f url("/commImage/ui/tree/to2.gif") no-repeat 0px center; color:#fff;}
+
+.position_main .right_detail {width: 710px;}
+
+/*
+company photos
+*/
+.position_main .company_photos{width:710px; }
+.position_main .company_photos .s_c{width:650px;}
+
+/*pager*/
+.detail_pager ul li.first {background-position:center -134px}
+.detail_pager ul li.pre {background-position:center -167px}
+.detail_pager ul li.next {background-position:center -199px}
+.detail_pager ul li.last {background-position:center -230px}
+
+.detail_pager ul li.first-empty {background-position:center -5px}
+.detail_pager ul li.pre-empty {background-position:center -38px}
+.detail_pager ul li.next-empty {background-position:-18px -70px}
+.detail_pager ul li.last-empty {background-position:-18px -101px}
+
+/*
+调整联系方式里的内容显示宽度和地图显示宽度
+*/
+.posContact .r_txt{width:625px}
+.pos_detail_item .posMap .map_wallpaper{width:700px}

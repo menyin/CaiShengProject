@@ -1,0 +1,57 @@
+body,div,p,table,tr,th,td,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,select,button,textarea,blockquote { margin:0; padding:0;}
+body { font-size:12px; color:#333; line-height:150%; }
+em,b { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none;outline:none;}
+a:hover { text-decoration:underline;}
+li { list-style:none;}
+img,input { border:none;vertical-align:middle}
+input {outline: none;}
+.clear{clear:both; height:1px;}
+.ellipsis{text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.bg_circle {background: url(../images/bg_circle.jpg) center top; width:100%; min-width: 1200px; padding-top: 20px;}
+.jwrap { width:1200px; margin:0 auto; position:relative;}
+.top { background:url(../images/top.jpg) no-repeat center top; height:612px; width:100%; min-width:1200px;}
+.login { position:absolute; right:40px; top:19px; font-size:14px; font-weight:bold; }
+.login a { color:#073342; margin:0px 5px}
+.logo a{ position:absolute; top:92px; left:7px; width:196px; height:79px;}
+.qiaomen a {position:absolute; top:380px; left:433px; width:210px; height:79px;}
+.bg2 { background:url(../images/bg2.jpg) no-repeat center top; height:220px;width:100%; min-width:1200px;}
+.bgbot {background:url(../images/bg2.jpg) no-repeat bottom center; height: 300px; width:100%; min-width: 1200px}
+.top20tit { text-align:center; padding-top:40px;}
+.corp {  width:1200px; zoom: 1; margin:0 auto; }
+.corp:after {content:"."; display: block; height: 0; clear: both; visibility: hidden;}
+.corp a { float:left; margin:3px 13px 23px 8px; border-radius:50%; width:219px; height:219px; }
+.bg3 { background:url(../images/bg3.jpg) no-repeat center top; height:802px;width:100%; min-width:1200px;}
+.qiaomenbtn { font-size:18px; text-align:center; color:#c4dac4; border-radius:5px; width:253px; height:55px; line-height:55px; font-family:Microsoft Yahei; background:#068403; position:absolute;left:50%; margin-left:-126px; top:370px; cursor:pointer;}
+/*弹层*/
+.tc {position:absolute; display:none; right:10px; top:10px; width:438px; height:390px; background:#fff; border-radius:5px; overflow:hidden}
+.tc .tit {background:#068403;height:65px; line-height:65px; padding:0px 27px; color:#fff; }
+.tc .tit h4 { float:left; font-weight:normal; font-size:14px;}
+.tc .close { float:right; font-size:24px; cursor:pointer;}
+.tc .con { padding:33px 0px 0px 50px; font-size:14px; font-weight:bold; color:#1b2b04}
+.tc .con p { margin:8px 0px;}
+.tc .bor { border:1px solid #cdcdcd; height:28px; line-height:28px; width:243px; text-indent: 5px;}
+.tc .tj { cursor:pointer;background:#068403;color:#eef0f1; font-size:14px; width:319px; height:50px; line-height:50px; border-radius:5px; font-weight:bold; margin:20px 0px 0px 10px;}
+.tc .info { font-size:12px; color:#999; padding:20px; line-height:22px;}
+
+.bg4 { background:url(../images/bg4.jpg) center top;width:100%; min-width:1200px; padding-bottom:20px; overflow:hidden}
+.zhidetit { text-align:center}
+.corplist { padding-top:30px;}
+.corplist li {width:200px; height:175px; margin:7px; display:inline; float:left; background:#fff; padding-left:25px;padding-top:16px; line-height:28px; position: relative;}
+.corplist li p {position: relative;}
+.corplist li .hxz {display: block; width: 42px; height: 46px; background: url(../images/hxz.png) no-repeat; left:-7px; top:-7px; z-index: 999; position: absolute;}
+.corplist .toudibtn {margin-top:10px; cursor:pointer; background:#068403; border-radius:5px; text-align:center; height:30px; line-height:30px; width:90px; color:#fff; font-size:12px; text-align:center; margin-left: 42px;}
+ .corplist .toudibtn:hover{background: #057102;}
+.corplist .toudibtn a {color: #fff;}
+.corplist .job { color:#0c114c; font-size:14px; width: 130px; display: block;  font-weight:bold; display: block;  overflow:hidden; text-overflow:ellipsis; white-space:nowrap; height: 28px\9;}
+#yzm { width:110px;}
+.yzmBtn { height: 30px; line-height: 30px; padding: 0 15px; background: #09A404; color: #fff; cursor: pointer; border-radius: 4px;}
+.yzmBtn.disable { background: #ccc;}
+.corplist .gs { display:block; width:180px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.corplist .salary { color:#fb7c00; font-size:14px; font-weight:bold; position: absolute; right:10px; top:0;}
+.corpmore { text-align:center; font-size:16px; font-family:Microsoft Yahei; margin-top:30px;}
+.nomore { background:url(../images/nomore.png) no-repeat; width:125px; height:41px; margin:30px auto 0px}
+.footer { text-align:center; font-size:14px; margin-top:50px}
+.gotop {background:url(../images/gotop.png) no-repeat;position:fixed; background-size:80%;opacity:0.8;filter:alpha(opacity=80); cursor:pointer; bottom:10px; right:5px; width:86px; height:86px}
+.weixin {background:url(../images/weixin.jpg) no-repeat;position:fixed; bottom:106px; right:0px; width:127px; height:166px}
+.tc .con p #spanValiMobile{font-weight: normal; font-size: 12px;}

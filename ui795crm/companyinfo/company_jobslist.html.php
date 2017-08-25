@@ -1,0 +1,117 @@
+<?exit?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--{template header}-->
+<!--<script type="text/javascript" language="javascript" src="//cdn.{ROOT_DOMAIN}/js/jquery.cookie.js?v=20140312"></script>-->
+	<style>
+		.mainContent .cell_tb_list .tb_title {
+		    width: 30%;
+		}
+	</style>
+<body>
+<div id="content">
+	<!--{template nav}-->
+	<div id="contentBody" style="visibility: visible;">
+		<!--  小贴士 start  -->
+		<div id="tips" class="hide" style="width: 256px;display:none">
+		<div class="tips" style="">
+			<div class="tips-title" style="">小贴士
+				<div class="btn_close"></div>
+			</div>
+			<div class="list list-3 blockTextLink" data-bind="foreach: help_cats" style="">
+				<div class="title">
+					<div data-bind="text: cat">常见问题</div>
+				</div>
+				<div data-bind="foreach: links">
+					<div class="items">
+						<a target="_blank" data-bind="attr: {href: url}, text: title" href="#">你好，还没想到哦！</a>
+					</div>
+
+					<div class="items">
+						<a target="_blank" data-bind="attr: {href: url}, text: title" href="#">后期更新</a>
+					</div>
+				</div>
+				<div data-bind="&#39;if&#39;: $index() == $parent.help_cats().length -1">
+					<div class="more">
+						<div>
+							更多：
+							<a href="#" target="_blank">帮助中心</a> &nbsp;
+							<a href="#" target="_blank">售后支持</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="draggle">
+		</div>
+		</div>
+		<!--  小贴士 end  -->
+		<div class="content" style="">
+			<div id="main" class="security-groups" style="">
+				<div class="title">
+					<div class="m_bg">查看企业： [<a href="http://www.{ROOT_DOMAIN}/com-{$com[_cid]}/" target="_blank">{$com['cname']}]</a> >招聘的职位</div>
+				</div>
+				<div class="quickbar">
+					<div class="note">小贴士</div>
+					<!--{template companyinfo/daohang}-->
+
+				</div>
+				<div class="mainContent" style="">
+					<div class="main_content">
+						<div class="layout_main">
+							<div class="mod_pool">
+								<div class="summary">
+									<div class="apply_main">
+										<div class="apply">
+											<div class="apply_1">
+												<div class="">
+												<form id="postForm" name="postForm" method="post">
+													<input type="hidden" name="act" id="act" value="save" />
+													<input type="hidden" name="c_id" id="c_id" value="{$com['_cid']}" />
+													<input type="hidden" name="formhash" id="formhash" value="{$formhash}" />
+													<input type="hidden" name="form" id="form" value="{$form}" />
+													<div class="cell_tb_list">
+													<!--{if $jobListAll}-->
+														<table style="margin-top: 0px;">
+															<tr>
+																<td width="103" class="tb_title" >
+																	<ul>
+																		<li><a href="/companyinfo/companyinfo.html?act=jobs&c_id={$com['_cid']}" class="cu">招聘职位({$count})</a></li>
+																		<!--{loop $jobListAll $l}-->
+																			<!--{loop $l['list'] $ll}-->
+																				<li><a href="/companyinfo/companyinfo.html?act=jobinfo&c_id={$com['_cid']}&id={$ll['jid']}">{$ll['jname']} 关键词:{$ll['jobKeyword']}</a></li>
+																			<!--{/loop}-->
+																		<!--{/loop}-->
+																	</ul>
+																</td>
+																<td width="1041" style="vertical-align:top;">{$com[comInfo]}</td>
+															</tr>
+														</table>
+													<!--{else}-->
+														<table>
+															<tr class="hoverout">
+																<td class="tb_title">暂无招聘职位相关信息</td>
+															</tr>
+														</table>
+													<!--{/if}-->
+													</div>
+													</form>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--{template service/sidebar}-->
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,356 @@
+@charset utf-8;
+
+/*Content begin*/
+.Line{ width:100%; height:2px; clear:both; line-height:0px; font-size:0px; background:#e24500;}
+.Content{ width:100%; background:url(../images/jobs/contentBg.gif) repeat;}
+.Content .Con{ width:980px; margin:0 auto; text-align:left;}
+.Content .cTitle{ min-height:101px; _height:101px; padding:15px 0 0 0;}
+.Content .cTitle .ctL{ float:left; margin-bottom:15px; display:inline;}
+.Content .ctL .Cname{ width:710px; margin-bottom:15px;}
+.Content .ctL .Cname h1{ font-size:24px; font-family:"微软雅黑","SimHei"; font-weight:normal; color:#444; display:inline;}
+
+.Content .ctL .Cname b.ico{ vertical-align:middle; margin-left:5px;}
+.Content .ctL .Cname .location{ display:none; z-index:4}
+.Content .ctL .Cname .location .locationCon{ width:300px;}
+.Content .ctL .Cname .location.hov{ display:block;}
+.Content .ctL .Cico span{ display:inline-block; font-size:14px; margin-right:10px;}
+.Content .ctL .Cico { clear:both;}
+.Content .ctL .Cico .ico{ margin:0 5px 0 0;}
+.Content .cTitle .ctR{ float:right; position:relative; z-index:2;}
+.Content .cTitle .ctR .Ci{ width:250px; height:115px; background:#fff; border:1px solid #ddd; position:absolute; right:0px; top:0px; z-index:4; padding:10px 0 0 0;}
+.Content .cTitle .ctR .Ci .Cilogo{ width:185px; height:70px; margin:0 auto 10px auto; background:url(../images/noPicLogo2.jpg) no-repeat #e6e6e6 center center; border:1px solid #ddd;}
+.Content .cTitle .ctR .Ci .Cilogo img{width:185px;height:70px;display:block;line-height:70px; text-align:center;}
+.Content .cTitle .ctR .Ci .Cibtn{ width:185px; height:26px; line-height:26px; margin:0 auto; text-align:left;}
+.Content .cTitle .ctR .Ci .Cibtn .CibtnL{ float:left; width:75px;}
+.Content .cTitle .ctR .Ci .Cibtn .CibtnR{ float:right; text-align:left; width:110px; overflow:hidden;}
+
+.Content .Cibtn a.cb:link,.Content .Cibtn a.cb:visited{ height:26px; line-height:26px; display:inline-block; background:url(../images/jobs/photo1.jpg) repeat-x center -157px; position:relative; padding:0 5px; margin:0 10px 0 15px;}
+a.cb:link b,a.cb:visited b{display:inline-block;width:15px;height:26px; position:absolute;background:url(../images/jobs/photo1.jpg) no-repeat;}
+.Content .Cibtn a.cb:link b.L,.Content .Cibtn a.cb:visited b.L{ top:0;left:-15px; background-position:left -157px; }
+.Content .Cibtn a.cb:link b.R,.Content .Cibtn a.cb:visited b.R{ top:0;right:-5px; width:5px; background-position:right -157px;}
+.Content .Cibtn a.cb:hover{ height:26px; line-height:26px; background-position:center -183px; color:#FFF;}
+.Content .Cibtn a.cb:hover b.L{ background-position:left -183px;}
+.Content .Cibtn a.cb:hover b.R{ background-position:right -183px;}
+
+.Content .Con .mainCon{}
+.Content .Con .mainCon .mcT{ height:35px; line-height:35px;position:relative;}
+.Content .Con .mainCon .mcT a:hover{ color:#e24500;}
+.Content .Con .mainCon .mcT ul li{ float:left; margin-right:5px; position:relative; top:1px; zoom:1; background:url(../images/jobs/photo1.jpg) repeat-x center -35px; padding:0 15px; border-left:1px solid #ddd;border-right:1px solid #ddd;}
+.Content .Con .mainCon .mcT ul li.cu{ color:#e24500; font-weight:bold; background-position:center 0px; padding:0 15px; border-left:1px solid #ddd;border-right:1px solid #ddd;}
+
+
+.Content .Con .mainCon .mcC{ width:718px;clear:both; background:#FFF;margin:0 auto; border:1px solid #ddd; float:left; margin-bottom:20px;overflow:hidden; position:relative;zoom:1; z-index:1}
+.Content .mcCcon .leftcon{ padding:15px;zoom:1;}
+.Content .mcCcon .leftcon .lcTitle{ height:40px; line-height:35px; border-bottom:1px solid #ddd; margin-bottom:15px;}
+.Content .mcCcon .leftcon .lcTitle .tL{ width:300px; float:left; text-align:left;}
+.Content .mcCcon .leftcon .lcTitle .tL h3{ font-weight:bold; color:#444; font-size:14px; float:left; margin-right:5px;}
+.Content .mcCcon .leftcon .lcTitle .tR{ float:right; text-align:right; width:100px;}
+.Content .mcCcon .leftcon .lcTitle .tL a:link,.Content .mcCcon .leftcon .lcTitle .tL a:visited{font-weight:bold;color:#2094D1;}
+.Content .mcCcon .leftcon .lcTitle .tL a:hover{color:#16a6f2;}
+
+.Content .lcTitle a.jb:link,.Content .lcTitle a.jb:visited{ height:26px; line-height:26px; display:inline-block; background:url(../images/jobs/photo1.jpg) repeat-x center -105px; position:relative; padding:0 5px; margin:0 10px 0 15px;}
+a.jb:link b,a.jb:visited b{display:inline-block;width:15px;height:26px; position:absolute;background:url(../images/jobs/photo1.jpg) no-repeat;}
+.Content .lcTitle a.jb:link b.L,.Content .lcTitle a.jb:visited b.L{ top:0;left:-15px; background-position:left -105px; }
+.Content .lcTitle a.jb:link b.R,.Content .lcTitle a.jb:visited b.R{ top:0;right:-5px; width:5px; background-position:right -105px;}
+.Content .lcTitle a.jb:hover{ height:26px; line-height:26px; background-position:center -131px; color:#FFF;}
+.Content .lcTitle a.jb:hover b.L{ background-position:left -131px;}
+.Content .lcTitle a.jb:hover b.R{ background-position:right -131px;}
+
+.Content .mcCcon .leftcon .lcCon{ text-align:left; margin-bottom:20px;line-height:22px;}
+.Content .mcCcon .leftcon .lcCon p{ line-height:25px; text-indent:2em;}
+.Content .mcCcon .leftcon .lcPinlun{}
+.Content .mcCcon .leftcon .lcPinlun .plT{ height:30px; border-bottom:1px dashed #ddd; margin-bottom:15px;}
+.Content .mcCcon .leftcon .lcPinlun .plT .plTleft{ float:left;}
+.Content .mcCcon .leftcon .lcPinlun .plT .plTleft h3{ color:#e24500; font-weight:bold; font-size:14px;}
+.Content .mcCcon .leftcon .lcPinlun .plT .plTright{ float:right;}
+.Content .mcCcon .leftcon .lcPinlun .plT .plTright span{ color:#e24500; margin-right:10px;}
+.Content .plTright a:link,.Content .plTright a:visited{ color:#2094D1;}
+.Content .plTright a:hover{ color:#16a6f2;}
+.Content .mcCcon .leftcon .lcPinlun .plC{}
+.Content .plC .team .teamL{ width:60px;}
+.Content .plC .team .verTextareaTxt { text-align:left; width:600px;}
+.Content .plC .team .textarea{ width:590px;}
+.Content .plC .team .teamR .verText { float:left;}
+.Content .plC .team .teamR .yzm{ float:left; width:80px; height:32px; line-height:32px; border:1px dashed #ddd; margin-right:10px;}
+.Content .plC .team .lj{ float:left;}
+.Content .plC .team .lj a{ line-height:32px; display:inline-block; font-weight:bold;}
+.Content .plC .team .lj img{ vertical-align:middle; margin-right:5px;}
+.Content .plC .team .btn{ float:right;}
+.Content .Con .mcR{ width:249px; background:#FFF; float:right; border:1px solid #ddd; margin-bottom:20px;}
+.Content .Con .mcR .mcRcon{ padding:5px 10px 10px 15px;}
+.Content .Con .mcR .mcRcon .cll{ text-align:left; margin-bottom:15px;}
+.Content .Con .mcR .mcRcon .cll .ck{ height:40px; line-height:40px; display:inline-block;}
+.Content .Con .mcR .mcRcon .cll .ck h3{ font-size:16px; font-family:"微软雅黑","SimHei"; float:left; font-weight:normal; margin-right:10px; width:130px; text-align:right;}
+.Content .Con .mcR .mcRcon .cll .ck i{ font-size:22px; color:#e24500;}
+
+.Content .Con .mcR .mcRcon .Cxinxi{}
+.Content .Con .mcR .mcRcon .Cxinxi .Ct{ height:30px; line-height:30px; border-bottom:1px dashed #ddd; text-align:left; margin-bottom:10px;}
+.Content .Con .mcR .mcRcon .Cxinxi .Ct h3{ font-size:14px; font-weight:bold;}
+.Content .Con .mcR .mcRcon .Cxinxi .Cc{ text-align:left;}
+.Content .Con .mcR .mcRcon .Cxinxi .Cc p{ line-height:25px;}
+.Content .Con .mcR .mcRcon .Cxinxi .Cc p img{ vertical-align:middle;}
+.Content .Con .mcR .mcRcon .Cxinxi .Cc .oth{ margin-right:30px; display:inline-block;}
+.Content .Con .mcR .Cxinxi a:link,.Content .Con .mcR .Cxinxi a:visited{ color:#2094D1;}
+.Content .Con .mcR .Cxinxi a:hover{ color:#16a6f2;}
+
+/*联系我们样式开始*/
+.leftcon .contactCon{}
+.leftcon .contactCon .yellowBox{ background:#fff7e3;border:1px solid #eca180;margin-bottom:10px;padding:10px;zoom:1;overflow:hidden;line-height:20px;}
+.leftcon .contactCon .yellowBoxL{float:left;display:inline;width:800px;}
+.leftcon .contactCon .yellowBoxR{float:right;display:inline;width:100px; text-align:right;}
+.leftcon .contactCon .yellowBox a:link,.leftcon .contactCon .yellowBox a:visited{font-weight:bold;color:#D24500;}
+.leftcon .contactCon .yellowBox a:hover{color:#ff6418}
+.leftcon .contactCon .yellowBoxL p img{ vertical-align:middle;margin:0 0 0 5px;}
+
+.leftcon .contactCon .yellowBox h3{ font-weight:bold; text-align:left; color:#f25d14; margin-bottom:5px;}
+.leftcon .contactCon .yellowBox a.jianyi:link,.leftcon  .contactCon .yellowBox a.jianyi:visited{ color:#2094D1;}
+.leftcon .contactCon .yellowBox a.jianyi:hover{ color:#16a6f2;}
+.leftcon .contactCon .text{ margin-bottom:10px;}
+.leftcon .contactCon .text ul li{ height:30px; line-height:30px; clear:both; text-align:left;}
+.leftcon .contactCon .text ul li h3{ font-size:14px; font-weight:bold; color:#444; float:left;}
+.leftcon .contactCon .text ul li a:link,.leftcon  .contactCon .text ul li a:visited{ color:#2094D1;}
+.leftcon .contactCon .text ul li a:hover{ color:#16a6f2;}
+
+.map{border:1px solid #b2d8f8;padding:10px; position:relative;zoom:1;z-index:1;}
+.map .ranging{ position:absolute;top:20px;left:495px; z-index:2}
+.map .ranging a:link,.map .ranging a:visited{background:url(../images/s/bg.gif) no-repeat 0 -105px;width:73px;height:22px;display:inline-block;}
+
+.mapConL{float:left;width:650px;height:597px; background:#ddd;}
+.mapConR{float:right;width:268px;}
+.leftcon .contactCon .map{ border:1px #b2d8f8 solid; padding:10px;}
+.leftcon .contactCon .map .mapTitle{ height:25px; line-height:25px; text-align:left; margin-bottom:10px;}
+.leftcon .contactCon .map .mapTitle a.ceju:link,.leftcon  .contactCon .map .mapTitle a.ceju:visited{ height:24px; width:50px; display:inline-block; background:url(../images/jobs/map.gif) no-repeat left -4px; padding-left:15px; color:#03609b;}
+.leftcon .contactCon .map .mapTitle a.ceju:hover{ color:#fe6102; background-position:left -28px;}
+.leftcon .contactCon .map .mapTitle a.dayin:link,.leftcon  .contactCon .map .mapTitle a.dayin:visited{ height:24px; width:50px; display:inline-block; background:url(../images/jobs/map.gif) no-repeat left -52px; padding-left:15px; color:#03609b;}
+.leftcon .contactCon .map .mapTitle a.dayin:hover{ color:#fe6102; background-position:left -74px;}
+
+
+.leftcon .mapConL .CLcon{ margin-bottom:25px;}
+.leftcon .mapConL .CLcon .CLconT{ height:25px; line-height:25px; border-bottom:2px #03609b solid; text-align:left; margin-bottom:15px;}
+.leftcon .mapConL .CLcon .CLconT h3{ padding:0 0 0 20px; background:url(../images/jobs/map.gif) no-repeat left -99px; font-weight:bold; color:#03609b;}
+.leftcon .mapConL .CLcon .CLconC{ text-align:left;}
+.leftcon .mapConL .CLcon .CLconC .team{ height:45px;}
+.leftcon .mapConL .CLcon .CLconC .teamL{ width:45px; text-align:left;}
+.leftcon .mapConL .CLcon .CLconC .teamR{ width:190px; text-align:left; margin-left:0px;}
+.leftcon .mapConL .CLcon .CLconC .teamR .trT{ height:30px; line-height:30px; width:200px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; display:inline-block;}
+.leftcon .mapConL .CLcon .CLconC .teamR .trT h3{ font-weight:bold; color:#03609b;}
+.leftcon .mapConL .CLcon .CLconC .teamR .trC{ display:inline-block; width:200px; line-height:24px; color:#444; font-size:14px; margin-bottom:10px;}
+.leftcon .mapConL .CLcon .CLconC .teamR .trBtn{ width:200px; clear:both;} 
+.leftcon .mapConL .CLcon .CLconC .teamR .trBtn a.btn3:link,.leftcon  .mapConL .CLcon .CLconC .teamR .trBtn a.btn3:visited{ font-weight:bold;}
+.leftcon .mapConL .CLcon .CLconC ul li{ width:60px; height:25px; float:left; display:block; margin-right:2px;}
+.leftcon .mapConL .CLcon .CLconC ul a:link,.leftcon  .mapConL .CLcon .CLconC ul a:visited{ color:#2094D1; font-size:14px;}
+.leftcon .mapConL .CLcon .CLconC ul a:hover{ color:#16a6f2;}
+/*联系我们样式结束*/
+
+/*咨询评论样式开始*/
+.leftcon .plCon{ clear:both; text-align:left;}
+.leftcon .plCon .plConT{ height:30px; line-height:30px; border-bottom:1px #ccc solid; text-align:left;}
+.leftcon .plCon .plConT h3{ font-size:14px; font-weight:bold; color:#f1723b; float:left; margin-right:5px;}
+.leftcon .plCon ul li{ clear:both; border-bottom:1px #ccc dashed; padding:10px 0; display:block; text-align:left; margin-bottom:10px;}
+.leftcon .plCon ul li .plTitle{ height:25px; line-height:25px;}
+.leftcon .plCon ul li .plTitle .name{ float:left;}
+.leftcon .plCon ul li .plTitle .time{ float:right;}
+.leftcon .plCon ul li .plcontent{ clear:both; line-height:25px; color:#999; margin-bottom:5px;}
+.leftcon .plCon ul li .hfCon.show{ display:block;}
+.leftcon .plCon ul li .hfCon{ width:665px; line-height:25px; border:1px solid #ccc; background:#fcfcfc; position:relative; padding:5px 10px; margin-bottom:10px; display:none;}
+.leftcon .plCon ul li .hfCon .jiantou{ width:9px; height:6px; line-height:0px; font-size:0px; background:url(../images/jobs/map.gif) no-repeat left -135px; position:absolute; top:-5px; left:15px;}
+.leftcon .plCon ul li .hfCon .hfConL{ width:70px; float:left; font-weight:bold;}
+.leftcon .plCon ul li .hfCon .hfConR{ width:590px; float:left; color:#f1723b;}
+.leftcon .plCon ul li .hudong{ height:20px; line-height:20px; text-align:right; font-size:12px;}
+.leftcon .plCon ul li .hudong a:link,.leftcon .plCon ul li .hudong a:visited{ display:inline-block; width:50px; margin-left:10px;}
+/*咨询评论样式结束*/
+
+/*招聘职位样式开始*/
+.leftcon .table{ text-align:left;}
+.leftcon .table .tHead .lst1{width:200px; padding:0 0 0 10px;}
+.leftcon .table .tHead .lst2{width:160px}
+.leftcon .table .tHead .lst3{width:70px;}
+.leftcon .table .tHead .lst4{width:70px}
+.leftcon .table .tHead .lst5{width:70px;}
+.leftcon .table .tHead .lst6{width:60px;}
+
+.leftcon .table .tHead .lst1 input.checkBox{ vertical-align:middle;}
+.leftcon .table .tHead .lst1 label{ vertical-align:middle;margin:0 0 0 5px;font-weight:normal;}
+
+.leftcon .table .tBody ul li .tLst .lst1{width:200px;margin:0 0 0 10px}
+.leftcon .table .tBody ul li .tLst .lst2{width:160px;}
+.leftcon .table .tBody ul li .tLst .lst3{width:70px;}
+.leftcon .table .tBody ul li .tLst .lst4{width:70px;}
+.leftcon .table .tBody ul li .tLst .lst5{width:70px;}
+.leftcon .table .tBody ul li .tLst .lst6{width:60px;}
+.leftcon .table .tBody ul li .tLst .lst7{}
+
+.leftcon .table .tBody ul .tLst .lst1 a:link,.leftcon .table .tBody ul .lst1 a:visited{ color:#2094D1;}
+.leftcon .table .tBody ul .tLst .lst1 a:hover{ color:#16a6f2;}
+.leftcon .table .tBody ul .tLst .lst7 a:link,.leftcon .table .tBody ul .lst7 a:visited{ color:#2094D1;}
+.leftcon .table .tBody ul .tLst .lst7 a:hover{ color:#16a6f2;}
+
+.leftcon .table .tBody ul li .tBot{}
+.leftcon .table .tBody ul li .tBot .tBotL{width:70px;margin:0 0 0 65px;color:#585858;height:26px;line-height:26px; font-weight:bold;}
+.leftcon .table .tBody ul li .tBot .tBotR{width:600px;overflow:hidden;line-height:25px;}
+.leftcon .table .tBody ul li.show .tBot .tBotR{height:auto;}
+.leftcon .table .tBody ul li .tBot .feedbackBtn a.btn8{margin:0 35px 0 10px;}
+
+.leftcon .table .page{ height:30px; line-height:30px; margin:10px 0 0 0;}
+/*招聘职位样式结束*/
+
+/*招聘职位内页样式开始*/
+.leftcon .con1{ clear:both; border-bottom:1px #ccc dashed; margin-bottom:15px; text-align:left;}
+.leftcon .con1 h2{  font-size:18px; font-family:"微软雅黑","SimHei"; margin-bottom:20px;}
+.leftcon .con1 ul li{ float:left; display:inline-block; width:220px; height:25px; line-height:25px; margin:0 5px 10px 0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.leftcon .con1 ul li label{margin:0 5px 0 0;}
+.leftcon .con1 ul li.oth1{width:450px;}
+.leftcon .con1 ul .oth{ width:450px;}
+.leftcon .con1 ul li .Welfare{ display:inline-block; margin-left:15px; font-size:16px; font-family:"微软雅黑","SimHei"; color:#09f;}
+.leftcon .con1 ul li .Welfare i{ font-family:Arial,Helvetica,sans-serif; font-size:18px;}
+.leftcon .con1 ul li h4{ float:left;}
+.leftcon .con1 .oth2{ width:690px; height:auto; display:inline-block; margin-bottom:10px;}
+.leftcon .con1 .oth2 b{ display:inline-block; margin:0 15px 5px 0; font-weight:normal;}
+.leftcon .Duty{ text-align:left; margin-bottom:15px;}
+.leftcon .Duty .dutyT{ height:35px; line-height:35px; text-align:left;}
+/*.leftcon .Duty .dutyT{ height:35px; line-height:35px; text-align:left; border-bottom:1px #ccc dashed; margin-bottom:10px;}*/
+.leftcon .Duty .dutyT h3{color:#e24500; font-weight:bold; font-size:14px;}
+.leftcon .Duty .dutyC p{ line-height:25px;}
+.leftcon .Duty .dutyC p i{ margin-right:5px;}
+
+.leftcon .cBtn{ height:80px;}
+.leftcon .cBtn .cBtnL{ float:left; width:500px; display:inline;}
+.leftcon .cBtn .cBtnL ul li{ float:left;display:inline; margin-right:5px; _margin:0 -5px 0 0;  position:relative; z-index:1; _padding-left:10px; zoom:1;}
+/*.leftcon .cBtn .cBtnL ul li a.btn11:link,.leftcon .cBtn .cBtnL ul li a.btn11:visited,.leftcon .cBtn .cBtnL ul li a.btn12:link,.leftcon .cBtn .cBtnL ul li a.btn12:visited{_margin-left:20px;}*/
+
+.leftcon .cBtn .cBtnL ul .oth .othBtn{ width:290px; padding:10px; background:#FFF; border:3px solid #ef6a04; position:absolute; left:0px; top:35px; z-index:4; display:none;*left:-10px;_left:0;}
+.leftcon .cBtn .cBtnL ul .oth .othBtn h3{ display:inline-block; margin-bottom:10px; width:200px; font-weight:bold;}
+.leftcon .cBtn .cBtnL ul .oth .othBtn a:link,.leftcon .cBtn .othBtn a:visited{ display:inline-block; margin-right:10px;}
+.leftcon .cBtn .cBtnL ul .oth .hov{ display:block;}
+.leftcon .cBtn .cBtnL ul .oth1 .Share{ border:3px solid #dadada; background:#f7f7f7; padding:10px 0 10px 10px; position:absolute; z-index:5; top:35px; left:0px; display:none; zoom:1; width:280px;*left:-10px;_left:0;}
+.leftcon .cBtn .cBtnL ul .oth1 .hov{ display:block;}
+
+.leftcon .cBtn .cBtnR{ float:right; height:30px; line-height:30px;}
+
+.leftcon .cBtn a.oth1:link,.leftcon .cBtn a.oth1:visited{ color:#2094D1;}
+.leftcon .cBtn a.oth1:hover{ color:#16a6f2;}
+.leftcon .cShare{ text-align:left; height:35px; line-height:35px; margin-bottom:20px;}
+.leftcon .cShare .cShareL{ width:340px; height:35px; float:left;}
+.leftcon .cShare .cShareR{ width:340px; height:35px; float:right; text-align:right;}
+.leftcon .cShare .cShareR a:link,.leftcon .cShare .cShareR a:visited{ color:#2094D1;}
+.leftcon .cShare .cShareR a:hover{ color:#16a6f2;}
+/*招聘职位内页样式结束*/
+
+/*企业相册样式开始*/
+.leftcon .photoCon{ border-bottom:1px solid #ddd;}
+.leftcon .photoCon.oth{ padding-bottom:15px;}
+.leftcon .photoCon .pcL{ float:left; width:597px; border-right:1px solid #ddd;}
+.leftcon .photoCon .pcL .img{ width:577px; text-align:center; border:1px solid #dadada; height:326px; background:#fff; margin-bottom:10px; overflow:hidden;}
+.leftcon .photoCon .pcL .txt{ width:577px; height:30px; line-height:30px; text-align:left;}
+.leftcon .photoCon .pcL .txt .sL{ float:left;}
+
+
+.leftcon .photoCon .pcL .txt .sR{ float:right;}
+.leftcon .photoCon .pcL .txt .sR a{ margin-left:10px; display:inline-block;}
+.leftcon .photoCon .pcL .txt .sR span{ color:#999;}
+.leftcon .photoCon .pcR{ float:right; width:340px; margin-left:10px; _margin-left:0px; zoom:1;}
+
+.leftcon .photoCon .pcR ul li{width:73px; _width:66px; height:61px; float:left; margin:0 0 10px 10px; display:block;}
+.leftcon .photoCon .pcR ul li img{width:68px; _width:66px; height:56px; overflow:hidden;}
+.leftcon .photoCon .pcR ul li a:link,.leftcon .photoCon .pcR ul li a:visited{ border:1px solid #CCC; padding:2px; zoom:1; display:inline-block;}
+.leftcon .photoCon .pcR ul li a:hover{ border-color:#F00;}
+
+.leftcon .photoCon .pcR .pcrBtn{ clear:both; padding-left:20px;}
+.leftcon .photoCon .pcR .pcrBtn a.btn1:link,.leftcon .photoCon .pcR .pcrBtn a.btn1:visited{ margin-left:5px;}
+/*企业视频样式*/
+.leftcon .photoCon .pcR .pcrT{ width:340px; height:35px; line-height:35px; float:right; text-align:left; border-bottom:1px dashed #ddd;}
+.leftcon .photoCon .pcR .pcrT h4{ font-weight:bold;}
+.leftcon .photoCon .pcR .pcrC{ height:290px; width:340px; float:right;overflow:auto; text-align:left;}
+.leftcon .photoCon .pcR .pcrC p{ line-height:25px; text-indent:2em;}
+/*企业相册样式结束*/
+
+
+/*地图中的气泡*/
+.mapWindow .companyName{margin:0;height:28px;line-height:28px;text-align:left;font-size:14px;fon-weight:bold;color:#FF0000;}
+.mapWindow .companyAdd{margin:0;line-height:22px;text-align:left;font-size:12px;color:#000;display:inline-block;}
+.mapNavTag{height:24px;line-height:24px;text-align:left;}
+.mapNavTag a:link,.navTag a:visited{font-size:12px;color:#000;text-decoration:none;}
+.mapNavTag a.cu:link,.mapNavTag a.cu:visited{font-size:12px;color:#03609B;text-decoration:underline;}
+
+.mapNavTagC{margin-top:10px;}
+.mapNavTagC a:link,.mapNavTagC a:visited{margin:0 2px;color:#2094D1}
+.mapNavTagC a:hover{color:#16a6f2;}
+.contactCon .mapNavTagC input.inputText{width:131px;text-align:left;border:1px solid #ccc;height:24px;line-height:22px; vertical-align:middle;margin:0 5px 0 0;}
+.mapNavTagC a.btn2:link,.mapNavTagC a.btn2:visited{ vertical-align:middle;}
+
+
+.lineCheck{font-size:14px;}
+.lineCheck p.tit{margin:3px 0 8px;height:30px;line-height:30px;font-size:14px;font-weight:bold;border-bottom:2px solid #03609B;text-indent:20px;color:#03609B;background:url(../images/jobs/map_show.gif) no-repeat 0 -172px;}
+.lineCheck .inputText{width:170px;border:1px solid #ccc;height:24px;line-height:22px; vertical-align:middle;}
+.lineCheck .stratEnd{margin:5px 0 10px 5px;width:240px;line-height:35px;display:inline;float:left;}
+.lineCheck .companyName,.lineCheck .companyAdd{font-size:14px;width:190px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;display:inline-block; vertical-align:middle;}
+.lineCheck .companyName{font-weight:bold;color:#d10000;}
+.lineCheck .companyAdd{padding-left:42px;}
+
+.lineCheck .switch{margin-top:35px;width:20px;height:24px;text-indent:-99999px;display:block;float:right;background:url(../images/jobs/map_show.gif) 0 -146px;}
+.lineCheckBtn{margin-bottom:30px;padding-left:47px;text-align:left;clear:both;}
+
+
+.areaCheck{padding-left:5px;line-height:24px;}
+.areaCheck a{margin:0 2px;width:56px;text-align:left;font-size:12px;display:inline-block}
+
+.lineCheck .tip{margin-top:20px;padding:10px;font-size:12px;line-height:22px;border:1px dashed #BBE0FF;}
+.lineCheck .tip span{color:#F25C13;}
+.lineCheck .tip a:link,.lineCheck .tip a:visited{color:#2094D1;}
+.lineCheck .tip a:hover{color:#16a6f2;}
+
+.linkCheckResult{}
+.linkCheckResult b{font-size:12px;color:#F25C13;}
+.linkCheckResult p.startTit,.linkCheckResult p.endTit{padding:0 0 0 23px;height:28px;line-height:28px;text-align:left;font-size:14px;color:#F25C13;}
+.linkCheckResult p.startTit{margin-bottom:0;background:url(../images/jobs/map_show.gif) no-repeat 0 -57px;}
+.linkCheckResult p.endTit{margin:0;background:url(../images/jobs/map_show.gif) no-repeat 0 -80px;}
+.linkCheckResultLst{max-height:485px;*max-height:490px;overflow:auto}
+.linkCheckResult ul li{padding-top:2px;*padding-top:3px;height:80px;line-height:20px;border-bottom:1px dashed #999;text-align:left;cursor:pointer;overflow:hidden;}
+.linkCheckResult ul li p{width:265px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;height:24px;line-height:24px;}
+.page span{margin:0 3px;}
+.linkCheckResult .returnBtn{margin-top:28px;*margin-top:26px;_margin-top:24px;text-align:center;}
+
+.resultTopBtn{margin:10px 0;text-align:center;}
+.busLineLst{width:269px;_height:515px;max-height:515px;font-size:12px;overflow:auto;}
+.busLineLst p.startStation{height:20px;display:inline-block;background:url(../images/jobs/map_show.gif) no-repeat 0 -106px;*background-position:0 -108px;text-indent:18px;}
+.busLineLst p.endStation{height:20px;display:inline-block;background:url(../images/jobs/map_show.gif) no-repeat 0 -125px;*background-position:0 -127px;text-indent:18px;}
+.busLine{margin-bottom:5px;border:1px solid #bbe0ff;}
+.busLineName{height:32px;line-height:32px;text-align:left;text-indent:5px;font-size:14px;font-weight:bold;color:#03609B;cursor:pointer;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.busLinePro{padding:3px 5px 5px;width:240px;line-height:23px;font-size:12px;text-align:left;display:none;}
+.busLinePro .busLineLength{font-weight:bold;color:#03609B}
+.againCheck{margin-top:10px;text-align:center;}
+
+.driver{}
+.driverLst{font-size:12px;_height:430px;max-height:430px;overflow:auto}
+.driver ul.driverLst li{margin-bottom:5px;text-align:left;line-height:22px;border-bottom:1px dashed #CCC;}
+.driver b{font-size:12px;color:#F25C13;}
+.driver p{height:28px;line-height:28px;text-align:left;font-size:14px;}
+.driver p.endStation{background:url(../images/jobs/map_show.gif) no-repeat 0 -80px;text-indent:24px;}
+.driver p.startStation{background:url(../images/jobs/map_show.gif) no-repeat 0 -57px;text-indent:24px;}
+.driver p.distance{text-align:center;}
+
+.mapError{padding:0 10px;}
+.mapError .mapErrorCon{margin:10px 0 0 0;padding:0 0 15px 0;line-height:20px;border-bottom:1px solid #bbe0ff;} 
+.mapError .mapErrorCon span{color:#F25C13}
+.mapError .returnBtn{margin-top:20px;text-align:center;}
+.dataLoad{ position:absolute; z-index:102;left:50%;margin-left:-112px;width:224px;top:600px;margin-top:-14px;}
+.dialogMask{ z-index:101;}
+
+.lstBot{ text-align:center;border-top:1px solid #dadada;padding:10px 0 0;zoom:1;margin-top:5px;}
+
+
+.jobApplyOk{width:500px;padding:10px 0 20px;}
+.jobApplyOk h3{font-size:14px;font-weight:bold;margin:0 0 5px 10px;height:27px;line-height:26px;}
+.jobApplyOkCon{line-height:22px;padding:0 10px 0;zoom:1;}
+.jobApplyOk a:link,.jobApplyOk a:visited{color:#2094D1;}
+.jobApplyOk a:hover{color:#16a6f2;}
+.jobApplyOkTxt{margin-top:10px;padding-top:5px;border-top:1px dashed #ccc;padding:5px 10px 0;zoom:1;}
+.jobApplyOkTxt p{line-height:22px;}
+.jobApplyOkTxt p.tit{color:#E24500;}
+.jobApplyOkBtn{margin:10px 0 0 10px;}
+.jobApplyOkBtn a.btn1:link,.jobApplyOkBtn a.btn1:visited{margin-left:10px;color:#444;}
+.jobApplyOkBtn a.btn1:hover{color:#333}
+
+
+.jobNotExistsIco{ position:absolute;left:130px;top:80px;background:url(../images/jobs/jobNotExistsIco.png) no-repeat; z-index:4;width:455px;height:156px;}
+.jobNotExistsMask{ position:absolute;top:0;left:0;width:100%;height:300px;background:#fff; opacity:0; z-index:3}

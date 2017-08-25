@@ -1,0 +1,113 @@
+@charset "utf-8";
+/*----------知名企业----------*/
+.famNav{background:#f2f2f2;width:100%;}
+.famNavLst{width:988px;margin:0 auto;padding:10px 0 10px;zoom:1;overflow:hidden;}
+.famNavLst ul li{float:left;display:inline;overflow:hidden;margin:0 3px 5px; vertical-align:bottom;}
+.famNavLst ul li a{display:block;border:1px solid #ddd; background:#f8f8f8; width: 155px; color: #666; height: 30px; line-height: 30px; font-size: 12px;}
+.famNavLst ul li a i{display:block;width:88px;height:30px;font-size:30px; text-align:center;padding:5px 0 0;cursor:pointer;color:#b4b4b4; display: none;}
+/*.famNavLst ul li a p{font-size:14px;padding:0 5px; text-align:center;cursor:pointer;color:#999;overflow:hidden; font-family: 微软雅黑; }*/
+.famNavLst ul li a:hover{border:1px solid #ccc;}
+.famNavLst ul li a:hover i,.famNav ul li a:hover p{color:#444;}
+.famNavLst ul li.cu a i,.famNav ul li.cu a p,.famNav ul li.cu a:hover i,.famNav ul li.cu a:hover p{color:#3d84b8;}
+
+.famLst{}
+.famLst dl dt{border-bottom:1px solid #d7d7d7;height:35px;}
+.famLst dl dt h3{height:35px;line-height:35px; position:relative; z-index:1;color:#999;padding:0 10px;font-size:18px;display:inline-block;*display:inline;zoom:1;}
+.famLst dl dt h3 b{width:100%;height:2px;background:#999;font-size:0;line-height:0; position:absolute;top:34px;left:0;}
+.famLst dl.oth dt h3{color:#e73131;}
+.famLst dl.oth dt h3 b{background:#e73131;}
+.famLst dl dd{padding:10px 0 0;}
+.famLst dl dd ul li{float:left;display:inline;width:187px;height:72px;margin:0 6px 10px;}
+.famLst dl dd ul li img{width:185px;height:70px;border:1px solid #ddd;}
+/*----------职位分类----------*/
+.add{padding:20px 0 0;zoom:1;}
+.add .tabT{height:32px;overflow:hidden;}
+.add .tabT ul li{float:left;display:inline; text-align:center;width:333px;font-size:18px;font-family:"微软雅黑","SimHei";border-bottom:2px solid #d7d7d7;height:30px;line-height:20px;color:#666;}
+.add .tabT ul li b{cursor:pointer;font-weight:normal;}
+.add .tabT ul li.cu{border-bottom:2px solid #e73131;color:#e73131;font-weight:bold;background:url(/img/index/addtabCu.jpg) no-repeat center bottom;}
+.add .tabT ul li.cu b{font-weight:bold;}
+.add .tabC{padding:20px 0 0;zoom:1;}
+
+/*全部职位类别*/
+.jobNav{background:#f2f2f2;width:100%;}
+.jobNavLst{width:988px;margin:0 auto;padding:10px 0 10px;zoom:1;overflow:hidden;}
+.jobNavLst ul li{float:left;display:inline;width:70px;overflow:hidden;height:80px;background:#f4f4f4;margin:0 3px; vertical-align:bottom;}
+.jobNavLst ul li a{display:block;border:1px solid #f6f6f6; border-radius:5px;background:#eaeaea;height:78px;}
+.jobNavLst ul li a i{display:block;width:68px;height:30px;font-size:30px; text-align:center;padding:5px 0 0;cursor:pointer;color:#b4b4b4;}
+.jobNavLst ul li a p{font-size:12px;padding:0 5px; text-align:center;cursor:pointer;color:#b4b4b4;height:40px;overflow:hidden;}
+.jobNavLst ul li a:hover{border:1px solid #fff;}
+.jobNavLst ul li a:hover i,.jobNavLst ul li a:hover p{color:#5a5a5a;}
+.jobNavLst ul li.cu a i,.jobNavLst ul li.cu a p,.jobNavLst ul li.cu a:hover i,.jobNavLst ul li.cu a:hover p{color:#3d84b8;}
+
+.jobcateLst{background:#fff;border:1px solid #ddd;padding:10px;zoom:1;}
+.jobcateLst dl dt{height:40px;line-height:40px;font-size:18px;border-bottom:1px solid #ddd;padding:0 0 5px 15px;}
+.jobcateLst dl dd{padding:15px 0 0 0;}
+.jobcateLst dl dd .lst{padding-bottom:15px;}
+.jobcateLst dl dd .lst a{color:#424242;}
+.jobcateLst dl dd .lst a:hover{color:#09f;}
+.jobcateLst dl dd .lst .l{float:left;display:inline;width:175px; text-align:right;font-size:14px;line-height:30px;}
+.jobcateLst dl dd .lst .r{float:left;display:inline;width:775px;margin:0 0 0 15px;}
+.jobcateLst dl dd .lst .l a{color:#999;}
+.jobcateLst dl dd .lst .l a:hover{color:#39f;}
+.jobcateLst dl dd .lst .r a{line-height:30px;margin:0 15px 0 0;color:#666;font-size:12px;}
+.jobcateLst dl dd .lst .r a:hover{color:#39f;}
+
+/*行业类别*/
+.indeCate{}
+.indeCate ul li{height:30px;line-height:30px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;float:left;display:inline;width:313px;margin:0 10px;}
+.indeCate ul li a{color:#424242;}
+.indeCate ul li a:hover{color:#39f;}
+
+/*热门职位*/
+.hotJob{}
+.hotJob ul li{height:30px;line-height:30px;float:left;display:inline;width:180px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;margin:0 10px;}
+.hotJob ul li a{color:#424242;}
+.hotJob ul li a:hover{color:#39f;}
+
+
+/*----------行业类别----------*/
+.indGuid{padding:15px 0 15px 10px;zoom:1;border-bottom:1px solid #ddd;margin-bottom:15px;}
+.indGuid h1{float:left;display:inline;font-size:20px;font-family:"微软雅黑","SimHei";margin:0 15px 0 0;height:30px;line-height:30px;}
+.indGuid .changInd{float:left;display:inline; position:relative; z-index:1;height:30px;line-height:30px;}
+.indGuid .changInd a.changLnk{font-size:12px;}
+.indGuid .changInd a.changLnk i.jpFntWes{font-size:14px;margin:0 0 0 5px;}
+
+.changBox{ position:absolute;z-index:2;left:-10px;top:30px;}
+
+.changBoxC{position:relative; z-index:1;width:360px;border:1px solid #dadada;box-shadow:0 0 3px #aaa;background:#fff;line-height:30px;font-size:12px;}
+.changBoxC b.arr{width:17px;height:9px;line-height:0;font-size:0;position:absolute;top:-9px;left:40px;background:url(/img/common/common.gif) no-repeat -89px 0;}
+.changBoxLst{padding:5px 10px;zoom:1;}
+.changBoxLst ul li{float:left;display:inline;width:170px;height:26px;line-height:26px;}
+.changBoxLst ul li a{display:block;padding-left:10px;height:26px;line-height:26px;color:#666;}
+.changBoxLst ul li a:hover{color:#333;background:#f1f1f1;}
+/*行业logo*/
+.indLogo{}
+.indLogo ul li{float:left;display:inline;margin:0 3px 5px; padding: 8px 8px 5px; background: #fff;border:1px solid #ddd; text-align: center; width: 176px; height: 63px;}
+.indLogo ul li img{width:139px;height:35px;}
+.indLogo a {display: block; color:#666; }
+.indLogo a:hover {color:#0af; text-decoration: underline;}
+.indLogo p {font-size: 12px; margin:5px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; height:20px;  line-height: 20px;}
+/*.indLogo ul li img{width:158px;height:60px;}*/
+
+/*行业推荐企业*/
+.indRec{margin-bottom:10px;}
+.indRec h2{height:35px;line-height:35px;font-size:18px;font-family:"微软雅黑","SimHei";border-bottom:2px solid #ddd;padding-bottom:5px;padding-left:15px;}
+.indRec .lst{padding:5px 5px 10px;zoom:1;border:1px solid #ddd;background:#fff;}
+.indRec .lst ul li{float:left;display:inline;width:227px;margin:0 10px 0;height:26px;line-height:26px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.indRec .lst ul li a{font-size:12px;color:#424242;}
+.indRec .lst ul li a:hover{color:#09f;}
+
+/*行业最新招聘*/
+.indNew{}
+.indNew h2{height:35px;line-height:35px;font-size:18px;font-family:"微软雅黑","SimHei";border-bottom:2px solid #ddd;padding-bottom:5px;padding-left:15px;}
+.indNew .lst{padding:5px 5px 10px;zoom:1;border:1px solid #ddd;background:#fff;}
+.indNew .lst ul li{float:left;display:inline;width:300px;height:50px;margin:0 10px;font-size:12px;padding:5px 0;}
+.indNew .lst ul li p{width:300px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;height:24px;line-height:24px;}
+.indNew .lst ul li p a{margin:0 10px 0 0;font-size:14px;}
+.indNew .lst ul li .txt{height:24px;}
+.indNew .lst ul li .txt .l{float:left;display:inline;width:200px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;height:24px;line-height:24px;}
+.indNew .lst ul li .txt .r{float:right;display:inline;width:90px; text-align:right;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;height:24px;line-height:24px;}
+.indNew .lst ul li .txt .r span{margin:0 5px;font-size:16px;}
+.indNew .lst ul li .txt .l a{color:#999;}
+.indNew .lst ul li .txt .l a:hover{color:#09f;}
+

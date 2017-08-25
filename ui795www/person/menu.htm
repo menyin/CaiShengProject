@@ -1,0 +1,93 @@
+<ul class="left-menu">
+	<li><a href="/person/"><em class="i1"></em><span>我的597</span></a></li>
+	<li><a href="/person/resume/"><em class="i2"></em><span>我的简历</span></a></li>
+	<li><a href="/person/mobileOfJob.html"><em class="i7"></em><span style="color:#f00;">手机求职</span></a></li>
+	<li><a href="/person/apply/"><em class="i3"></em><span>申请的职位</span></a></li>
+	<li><a href="/person/invite/"><em class="i4"></em><span>面试邀请</span></a></li>
+	<li><a href="/person/favourite/"><em class="i5"></em><span>收藏&关注</span></a></li>
+	<li><a href="/person/account/"><em class="i6"></em><span>账号设置</span></a></li>
+</ul>
+<script type="text/javascript" language="javascript">
+	//通过JS设置导航的样式
+	jpjs.use(function($){
+		function getUrlParam(url,name){
+			var reg = new RegExp("(\\\?|&)"+ name +"=([^&]*)(&|$)");
+			var r = url.match(reg);
+			if (r!=null) return unescape(r[2]); return null;
+		} 
+		var pageUrl = document.URL;
+		var pageName = window.location.pathname.toLowerCase();
+
+		var pageAtc = getUrlParam(pageUrl,'act');
+		if (pageName=='/person/' || pageName=='/person/index.html') {
+			$('.left-menu .i1').parents('li').addClass('cur').append('<i class="arr"></i>');
+		}
+
+		//收藏与关注
+		if (pageName=='/person/favourite/' || pageName=='/person/favourite/index.html' ){
+			$('.left-menu .i5').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssIndex').addClass('cur');
+		}
+		if (pageName=='/person/favourite/job.html'){
+			$('.left-menu .i5').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssJob').addClass('cur');
+		}
+		if (pageName=='/person/favourite/company.html'){
+			$('.left-menu .i5').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssCompany').addClass('cur');
+		}
+
+		//账户信息
+		if (pageName=='/person/account/' || pageName=='/person/account/index.html' ){
+			$('.left-menu .i6').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssIndex').addClass('cur');
+		}
+		if (pageName=='/person/account/info.html'){
+			$('.left-menu .i6').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssInfo').addClass('cur');
+		}
+		if (pageName=='/person/account/photo.html'){
+			$('.left-menu .i6').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssPhoto').addClass('cur');
+		}
+		if (pageName=='/person/account/password.html'){
+			$('.left-menu .i6').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssPassword').addClass('cur');
+		}
+
+		//简历管理
+		if (pageName=='/person/resume/' || pageName=='/person/resume/index.html' ){
+			$('.left-menu .i2').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssIndex').addClass('cur');
+		}	
+		if (pageName=='/person/resume/visit.html' ){
+			$('.left-menu .i2').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssVisit').addClass('cur');
+		}
+		if (pageName=='/person/resume/down.html' ){
+			$('.left-menu .i2').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssDown').addClass('cur');
+		}
+		if (pageName=='/person/resume/privacy.html' ){
+			$('.left-menu .i2').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssPrivacy').addClass('cur');
+		}
+
+		//
+		if (pageName=='/person/apply/' || pageName=='/person/apply/index.html' ){
+			$('.left-menu .i3').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssIndex').addClass('cur');
+		}
+		if (pageName=='/person/invite/' || pageName=='/person/invite/index.html' ){
+			$('.left-menu .i4').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssIndex').addClass('cur');
+		}
+
+
+		if(pageName=='/person/mobileofjob.html'){
+			$('.left-menu .i7').parents('li').addClass('cur').append('<i class="arr"></i>');
+			$('#cssIndex').addClass('cur');
+		}
+
+	});
+</script>

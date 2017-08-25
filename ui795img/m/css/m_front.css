@@ -1,0 +1,243 @@
+@charset utf-8;
+/*---------------列表公共-----------------*/
+.modLst{text-align:left;}
+.modLst ul li{border-bottom:1px solid #ddd;background:#fff;padding:10px 30px 10px 10px; position:relative; z-index:1; text-align:left;}
+.modLst ul li:last-child{border-bottom:0;}
+.modLst ul li input.chb{display:none;}
+.modLst ul li label.lbl{left:0;top:0;z-index:2; position:absolute;width:40px;height:86px;color:#666;line-height:86px;color:#999; text-align:center; cursor:pointer;}
+.modLst ul li.check label.lbl{color:#72a257;}
+.modLst ul li a{display:block;width:100%;}
+.modLst ul li a i.jpFntWes{font-size:0.8rem;position:absolute;right:15px;top:50%;height:20px;margin-top:-10px;line-height:20px;color:#999;}
+.modLst ul li a p{line-height:25px;color:#999;width:100%;height:25px;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.modLst ul li a p.tit{font-weight:bold;color:#424242;}
+.modLst ul li a p em{margin:0 5px;}
+
+/*---------------投递/收藏按钮公共-----------------*/
+.jobPos{position:fixed;bottom:0;left:0;width:100%;background:#333;filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity:0.9;opacity:0.9;padding:10px 0; z-index:10;}
+.jobPos a.btnsF14{width:43%;margin:0 5px;display:inline-block;padding:0;}
+.jobPos a.btnsF14 img{display:inline-block;padding:0;}
+.jobPos a.btnsF14 em{font-size:0.8rem;}
+a.btnsF15{height:33px;line-height:33px;font-size:1rem;border-radius:3px;display:block;width:100%;}
+.jobPos a.btnsF15{width:25%;margin:0 5px;display:inline-block;padding:0;}
+.jobPos a.btnsF15 img{display:inline-block;padding:0;}
+.jobPos a.btnsF15 em{font-size:0.8rem;}
+
+/*---------------联系我们公共-----------------*/
+.contacUs .partC{padding:10px 70px 10px 10px; position:relative; z-index:1;}
+.contacUs .partC a.tel{ position:absolute; z-index:1;right:10px;top:50%;border-radius:50px;text-align:center;line-height:50px;background:#f2f2f2;padding:5px;margin-top:-30px;}
+.contacUs .partC a.tel i.jpFntWes{font-size:1.9rem;width:40px;height:40px;text-align:center;line-height:40px;border:1px solid #ddd; border-radius:40px;display:block;background:#fff;color:#27ae60;}
+
+/*---------------更多按钮公共-----------------*/
+.moreBtn{ text-align:center;}
+.moreBtn a{width:100%;height:30px;line-height:30px;display:block;color:#39f;
+background-image: -moz-linear-gradient(top, #fff, #e9edf0);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #e9edf0));}
+
+/*---------------搜索结果-----------------*/
+/*搜索结果顶部*/
+header.schtop{margin:0;}
+header.schtop .cent p a{display:block;background:#fff;width:100%;height:30px;line-height:30px;border:1px solid #d92b17; position:relative; z-index:1;}
+header.schtop .cent p a b{color:#999; position:absolute;height:30px;line-height:30px;top:0;left:5px;}
+header.schtop .cent p a i.jpFntWes{ position:absolute;right:10px;height:30px;line-height:30px;top:0;color:#c9c9c9;}
+
+/*搜索结果筛选*/
+.schcond{height:40px;margin:0 auto 7px;border-bottom:1px solid #ddd;}
+.schcond li {position: relative;width:25%;display:block;float:left; text-align: center;}
+.schcond a{ margin-left:-1px;height:40px;line-height:40px; display: block;}
+.schcond em.xl {width: 8px; height: 8px; display: inline-block; margin-left: 5px;}
+.schcond a span{border-right:1px solid #ddd;display:block;}
+.schcond a:last-child span{border:0;}
+.schcond a span i.jpFntWes{font-size:0.8rem;margin:0 0 0 3px;color:#424242;}
+.schcond a.cu,.schcond a.cu span i.jpFntWes{color:#e74c3c;}
+
+/*搜索结果列表*/
+.schrst ul li label.lbl{height:95px;line-height:95px;}
+
+
+/*---------------招聘会-----------------*/
+.fairTxt{margin-top:10px;text-align:center;}
+.fairTxt h1{font-size:1.2rem;color:#27AE60;line-height:22px;margin-bottom:8px;padding:20px 0 0 0;}
+.fairTxt h2{font-size:1rem;color:#666;margin-bottom:10px;}
+.fairTxt p{ text-align:left;padding:0 15px 20px;}
+
+.fairLst .partT{}
+.fairLst ul li{height:80px;border-bottom:1px solid #ddd; position:relative; z-index:1;}
+.fairLst ul li:last-child{border:0;}
+.fairLst ul li a{display:block;padding:0 50px 0 103px;height:80px;}
+.fairLst ul li i.jpFntWes{position:absolute; right:0; top:50%; margin-top:-10px; width:20px; color:#666;}
+.fairLst ul li .date{ position:absolute;left:15px;top:50%;margin-top:-31px;}
+.fairLst ul li .date .dateBox{ position:relative; z-index:1;}
+.fairLst ul li .date .dateBox .dateTxt{ position:absolute;width:75px;height:55px;background:#fffcee;border:1px solid #eee;left:0;top:0; z-index:5;}
+.fairLst ul li .date .dateBox .dateTxt p{height:25px;line-height:25px;color:#666; text-align:center;}
+.fairLst ul li .date .dateBox .dateTxt p.tit{font-size:1.1rem;color:#27AE60;height:30px;line-height:30px;}
+.fairLst ul li .date .dateBox .dateBg{width:75px;height:55px;border:1px solid #eee;background:#fff; position:absolute;top:0;left:0;}
+.fairLst ul li .date .dateBox .bg1{top:2px; z-index:4;}
+.fairLst ul li .date .dateBox .bg2{top:4px; z-index:3;}
+.fairLst ul li .date .dateBox .bg3{top:6px; z-index:2;}
+.fairLst ul li .txt{padding:10px 10px 10px 0;font-size:0.9rem;}
+
+/*---------------招聘会小于40家企业-----------------*/
+.noCom{padding:40px 20px;}
+.noCom p{font-size:1.2rem; color:#666;}
+.noCom p i.jpFntWes{font-size:5rem; color:#fff;}
+
+.fairSea{margin:10px 0;}
+.fairSea span.seaBox{position:relative;border:1px solid #ddd; display:block; padding-right:50px; background:#fff;}
+.fairSea span.seaBox input{height:34px; border:0;display:block;height:34px;line-height:30px;width:100%; padding-left:10px;}
+.fairSea span.seaBox a.jpFntWes{position:absolute; right:0; top:9px; font-size:1.3rem; width:40px; color:#666;}
+.fairSea span.seaBox .txtLabel{position:absolute; left:10px; top:0; line-height:34px; color:#999;}
+
+/*---------------招聘会大于等于40家企业-----------------*/
+.fairCom ul li{border-bottom:1px solid #ddd; position:relative; z-index:1; padding:12px 30px 12px 15px;}
+.fairCom ul li:last-child{border:0;}
+.fairCom ul li h3{color:#424242; font-size:0.9rem; font-weight:bold;}
+.fairCom ul li p{height:20px; line-height:20px; color:#999; width:100%;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;white-space:nowrap;}
+.fairCom ul li i.jpFntWes{position:absolute; right:0; top:50%; margin-top:-11px; width:20px; color:#999;}
+
+/*---------------招聘会搜索结果-----------------*/
+.fairRes ul li{border-bottom:1px solid #ddd; padding:12px;}
+.fairRes ul li:last-child{border:0;}
+.fairRes ul li p{line-height:18px; color:#999;}
+.fairRes ul li h3{color:#424242;}
+.fairRes ul li h2{font-weight:bold; color:#3498db; font-size:1rem;}
+
+/*---------------招聘会单个企业职位列表-----------------*/
+.fairJob{margin:10px 0;}
+.fairJob ul li{border-bottom:1px solid #ddd; padding:12px;}
+.fairJob ul li:last-child{border:0;}
+.fairJob ul li p{line-height:18px; color:#999;}
+.fairJob ul li h2{font-weight:bold; color:#3498db; font-size:1rem;}
+
+/*---------------职位详情-----------------*/
+.comNmNav{margin-top:10px;}
+.comNmNav p{ position:relative; z-index:1;padding:10px 25px 10px 10px;}
+.comNmNav p a{width:100%;display:block;}
+.comNmNav p a span{font-size:0.9rem;}
+.comNmNav p a i.jpFntWes{ position:absolute;right:10px;top:50%;margin-top:-6px;font-size:0.8rem;color:#999;}
+
+.jobInfo{padding:10px; position:relative; z-index:1;}
+.jobInfo .cash{}
+.jobInfo .cash p{color:#999;}
+.jobInfo .cash p.tit{font-size:0.8rem;color:#27b6a6;}
+.jobInfo b{ position:absolute;width:0.8rem;right:10px;top:-5px;background:#27b6a6;color:#fff;padding:0 3px;}
+.jobReq .partC{padding:10px;}
+
+
+/*---------------投递简历-----------------*/
+.tip{margin:10px 10px 15px;font-size:0.9rem;}
+.hasResume .resLst ul li{background:#fff;border:1px solid #ddd;margin-bottom:15px;padding:5px 5px 5px 40px; position:relative; z-index:1; text-align:left;}
+.hasResume .resLst ul li input.rad{display:none;}
+.hasResume .resLst ul li label.lbl{ cursor:pointer;}
+.hasResume .resLst ul li label.lbl i.jpFntWes{left:0;top:50%;z-index:2; position:absolute;width:40px;height:58px;color:#666;margin-top:-29px;line-height:58px;color:#999; text-align:center; cursor:pointer;}
+.hasResume .resLst ul li.check label.lbl i.jpFntWes{color:#72a257;}
+.hasResume .resLst ul li p{line-height:24px;color:#999;}
+.hasResume .resLst ul li p.tit{font-size:1rem;color:#424242;}
+
+.userResPos{position:fixed;bottom:0;left:0;width:100%;background:#333;filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity:0.9;opacity:0.9;padding:10px 0; z-index:10;}
+.userResPos a.btnsF14{width:70%;display:inline-block;}
+
+.noResume .txt{padding:20px 0;}
+.noResume p{line-height:22px;}
+.noResume p.jpFntWes{font-size:5rem;color:#fff;line-height:80px;}
+.noResume p.tit{font-size:1rem;}
+.noResume p a{color:#39f;}
+
+.noResume .resLst ul li{background:#fff;border:1px solid #ddd;margin-bottom:15px;padding:5px 30px 5px 10px;position:relative; z-index:1; text-align:left;}
+.noResume .resLst ul lia  input.rad{display:none;}
+.noResume .resLst ul lia  label.lbl{ cursor:pointer;}
+.noResume .resLst ul li a i.jpFntWes{font-size:0.8rem;position:absolute;right:15px;top:50%;height:20px;margin-top:-10px;line-height:20px;color:#999;}
+.noResume .resLst ul li a{display:block;}
+.noResume .resLst ul li a p{line-height:24px;color:#999;}
+.noResume .resLst ul li a p.tit{font-size:1rem;color:#424242;}
+.noResume .resLst ul li a p.tit em{font-size:0.8rem;color:#e74c3c;margin:0 0 0 5px;}
+
+/*---------------职位列表-----------------*/
+.jobsLst{margin-top:10px;}
+.jobsLst ul li{padding:10px 30px 10px 10px;}
+
+
+/*---------------企业详情-----------------*/
+.comPhotoNav{margin-top:10px;}
+.comPhotoNav p{ position:relative; z-index:1;padding:10px 25px 10px 10px;}
+.comPhotoNav p a{width:100%;display:block;}
+.comPhotoNav p a span{font-size:0.9rem;}
+.comPhotoNav p a span em{margin:0 0 0 5px;}
+.comPhotoNav p a i.jpFntWes{ position:absolute;right:10px;top:50%;margin-top:-6px;font-size:0.8rem;color:#999;}
+
+.comInfo .partC{}
+.comInfo .basInfo{padding:10px;}
+.comInfo .basInfo p{line-height:22px;}
+.comInfo .basInfo p a{color:#39f;}
+.comInfo .basTxt{position:relative; z-index:1;overflow:hidden;padding:10px;height:47px;text-indent:2em;}
+.comInfo .basTxt p{ }
+
+.nowJobs ul li{padding:10px 30px 10px 10px;}
+
+/*---------------企业相册-----------------*/
+.picLst{margin-top:10px;}
+.picLst ul li{float:left;width:50%;margin-bottom:10px;}
+.picLst ul li .smallPic{margin:0 5px;}
+.picLst ul li .smallPic img{width:100%;height:100px;}
+
+
+#galleryOverlay{width:100%;height:100%;position:fixed;top:0;left:0;opacity:0;z-index:100000;background-color:#222;background-color:rgba(0,0,0,0.8);overflow:hidden;display:none;-moz-transition:opacity 1s ease;-webkit-transition:opacity 1s ease;transition:opacity 1s ease;}
+
+/* This class will trigger the animation */
+
+#galleryOverlay.visible{opacity:1;}
+
+#gallerySlider{height:100%;left:0;top:0;width:100%;white-space: nowrap;position:absolute;-moz-transition:left 0.4s ease;-webkit-transition:left 0.4s ease;transition:left 0.4s ease;}
+#gallerySlider .placeholder{background: url(/m/images/preloader.gif) no-repeat center center;height: 100%;line-height: 1px;text-align: center;width:100%;display:inline-block;}
+
+/* The before element moves the
+ * image halfway from the top */
+
+#gallerySlider .placeholder:before{content: "";display: inline-block;height: 50%;width: 1px;margin-right:-1px;}
+
+#gallerySlider .placeholder img{display: inline-block;max-height: 100%;max-width: 100%;vertical-align: middle;}
+#gallerySlider.rightSpring{-moz-animation: rightSpring 0.3s;-webkit-animation: rightSpring 0.3s;}
+#gallerySlider.leftSpring{-moz-animation: leftSpring 0.3s;-webkit-animation: leftSpring 0.3s;}
+
+/* Firefox Keyframe Animations */
+
+@-moz-keyframes rightSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:-30px;}
+	100%{	margin-left:0px;}
+}
+
+@-moz-keyframes leftSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:30px;}
+	100%{	margin-left:0px;}
+}
+
+/* Safari and Chrome Keyframe Animations */
+
+@-webkit-keyframes rightSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:-30px;}
+	100%{	margin-left:0px;}
+}
+
+@-webkit-keyframes leftSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:30px;}
+	100%{	margin-left:0px;}
+}
+
+/* Arrows */
+#prevArrow,#nextArrow{border:none;text-decoration:none;background:url(/m/images/arrows.png) no-repeat;opacity:0.5;cursor:pointer;position:absolute;width:43px;height:58px;top:50%;margin-top:-29px;-moz-transition:opacity 0.2s ease;-webkit-transition:opacity 0.2s ease;transition:opacity 0.2s ease;}
+#prevArrow:hover, #nextArrow:hover{opacity:1;}
+#prevArrow{background-position:left top;left:40px;}
+#nextArrow{background-position:right top;right:40px;}
+
+/*新闻*/
+.newsTxt h1 {
+font-size: 1.2rem;
+color: #27AE60;
+line-height: 22px;
+margin-bottom: 8px;
+padding: 20px 0 0 0;
+text-align:center;
+}

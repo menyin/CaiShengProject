@@ -1,0 +1,157 @@
+body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;} @media (max-device-width: 780px){#golist{display: block!important;}}#golist {display: none;}
+
+.jobPos {
+    background: none repeat scroll 0 0 #FFF;
+    bottom: 0;
+    left: 0;
+    /*opacity: 0.9;*/
+    padding: 8px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    text-align:center;
+    border-top:1px #D4D4D4 solid;
+}
+
+.jobPos a.btnsF14 {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    width: 43%;
+}
+a{text-decoration:none;}
+a.btnsF14 {
+    border-radius: 3px;
+    display: block;
+    font-size: 1rem;
+    height: 33px;
+    line-height: 33px;
+    width: 43%;
+}
+
+a.btn1:link,a.btn1:visited{color:#fff;background:#3d86bc;box-shadow:0 1px 0 #59a0d5 inset;border:1px solid #397eb2;
+    background-image: -moz-linear-gradient(top, #5496c7, #3d86bc);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5496c7), color-stop(1, #3d86bc));
+}
+
+a.btn3:link, a.btn3:visited {
+    background-color: #f7f7f7;
+    background-image: -moz-linear-gradient(center top , #fff, #ececec);
+    border: 1px solid #dadada;
+    box-shadow: 0 1px 0 #fff inset;
+    color: #666;
+}
+a.btn4:link, a.btn4:visited {
+    background-color: #7ee77c;
+    background: -moz-linear-gradient(center top , #65be63, #43a341) repeat scroll 0 0 #65be63;
+    border: 1px solid #51b94f;
+    box-shadow: 0 1px 0 #7ee77c inset;
+    color: #fff;
+}
+
+a.btn5:link, a.btn5:visited {
+    background-color: #E85D4E;
+    background: -moz-linear-gradient(center top , #65be63, #43a341) repeat scroll 0 0 #65be63;
+    border: 1px solid #D62E1B;
+    box-shadow: 0 1px 0 #E85D4E inset;
+    color: #fff;
+}
+
+
+.loadingbtn {
+    background: url("data:image/png;base64,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") no-repeat scroll 0 100% / 30px auto rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-indent: 999em;
+    vertical-align: middle;
+    width: 30px;
+    margin-right:5px;
+    -webkit-animation-name: ui-loading-anim;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: step-start;
+}
+
+@-webkit-keyframes ui-loading-anim {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    8.32% {
+        -webkit-transform: rotate(0deg);
+    }
+    8.33% {
+        -webkit-transform: rotate(30deg);
+    }
+    16.65% {
+        -webkit-transform: rotate(30deg);
+    }
+    16.66% {
+        -webkit-transform: rotate(60deg);
+    }
+    24.99% {
+        -webkit-transform: rotate(60deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+    33.32% {
+        -webkit-transform: rotate(90deg);
+    }
+    33.33% {
+        -webkit-transform: rotate(120deg);
+    }
+    41.65% {
+        -webkit-transform: rotate(120deg);
+    }
+    41.66% {
+        -webkit-transform: rotate(150deg);
+    }
+    49.99% {
+        -webkit-transform: rotate(150deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    58.32% {
+        -webkit-transform: rotate(180deg);
+    }
+    58.33% {
+        -webkit-transform: rotate(210deg);
+    }
+    66.65% {
+        -webkit-transform: rotate(210deg);
+    }
+    66.66% {
+        -webkit-transform: rotate(240deg);
+    }
+    74.99% {
+        -webkit-transform: rotate(240deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+    }
+    83.32% {
+        -webkit-transform: rotate(270deg);
+    }
+    83.33% {
+        -webkit-transform: rotate(300deg);
+    }
+    91.65% {
+        -webkit-transform: rotate(300deg);
+    }
+    91.66% {
+        -webkit-transform: rotate(330deg);
+    }
+    99.99% {
+        -webkit-transform: rotate(330deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#ditu{margin:0 auto;text-align:center;position:absolute;top:0;left:0; width: 100%; height: 100%; background-color: #fff; z-index:1000001;}
+#ditu .box{padding-top: 40%; margin-top: 25px;}
+#ditu .txt{ margin-top: 25px;}

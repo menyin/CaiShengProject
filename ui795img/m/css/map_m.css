@@ -1,0 +1,129 @@
+html,body{margin:0;padding:0;height:100%}
+img{border:none}
+body{position:relative;background-color:#FFF;font-size:14px}
+
+input[type="text"]{font-size:14px;color:#707070;outline:none;padding:0;background:#FFF;border-radius:0;
+	-webkit-appearance:none;
+	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+#tBut,#locate:after,.i_company,.i_mark,#info i,#info p span:after,#traffic p:after,#traffic .ipt span:after,
+#roud .lpt:after,#roud .lpt em,#routs i,#routs li:after,
+#routs .st:after,#routs .ed:after{background:url(../images/map_icon.png) no-repeat;
+	-webkit-background-size:110px auto;-moz-background-size:110px auto;background-size:110px auto}
+
+#top{position:relative;height:36px;line-height:36px;text-align:center;}
+#top img{margin-top:5px}
+#top a:first-child,#top a:last-child{position:absolute;font-size:16px;color:#000;padding:0 20px}
+#top a:first-child{left:0}
+#top a:last-child{right:0;padding-right:35px}
+#top a:last-child:after{position:absolute;width:25px;height:25px;top:5px;right:8px;content:"\00a0"}
+.line{height:3px;background-color:#11A8AB}
+.line em{float:left;width:25%;height:3px;background-color:#E64C65}
+.line:after{float:right;display:block;width:25%;height:0;content:'\00a0';border-top:3px solid #FFC600}
+
+nav{font-size:16px;min-height:37px;background-color:#F0EFEE;
+	-webkit-box-shadow:0px 2px 5px #CCC;-moz-box-shadow:0px 2px 5px #CCC;box-shadow:0px 2px 5px #CCC}
+nav span,#bar em{float:left;width:33%;height:37px;line-height:37px;text-align:center;cursor:pointer;border-bottom:1px solid #98989B}
+nav span:nth-of-type(2),#bar em:nth-of-type(2){width:34%;border-left:1px solid #98989B;border-right:1px solid #98989B}
+nav .on,#bar .on{color:#3A8ACC}
+nav span:nth-of-type(3).on{border-bottom-color:#DAD9D9}
+
+#bar{display:none;height:37px;clear:both}
+#bar em{border:none !important}
+
+
+#top,.line,nav{position:absolute;width:100%;top:0;left:0;z-index:2}
+.line{top:36px}
+nav{top:39px}
+
+#result{height:0;overflow:hidden}
+
+#con{position:relative;width:100%;height:100%;top:0;left:0;padding-top:76px;z-index:1}
+
+.mapwap,#traffic,#roud,#routs,#tBut{position:absolute;width:100%;height:100%;top:0;left:0;padding-top:76px;z-index:1}
+#map{position:relative;width:100%;height:100%}
+#traffic,#roud,#routs{display:none;min-height:100%;padding:86px 10px 10px;background-color:#E6E6E6;z-index:2}
+#tBut{display:none;position:absolute;width:70px;height:35px;top:100px;left:0;padding:0;background-position:-10px -240px;z-index:2}
+
+#traffic .ipt{position:relative;padding:10px 52px 10px 10px;background-color:#FFF;border:1px solid #CCC}
+#traffic p{position:relative;height:35px;overflow:hidden;padding-left:37px;background-color:#F4F4F4;border:1px solid #999}
+#traffic p:after,#routs .st:after,#routs .ed:after{position:absolute;width:19px;height:25px;content:'\00a0';top:6px;left:6px;background-position:0 -40px}
+#traffic p:first-child{margin-bottom:10px}
+#traffic p:first-child:after,#routs .st:after{background-position:-30px -40px}
+#traffic .txt{width:100%;height:33px;line-height:33px;background-color:#F4F4F4;border:none}
+#traffic .txt[disabled='disabled']{color:#3A8ACC}
+#traffic .ipt span{position:absolute;width:30px;height:53px;right:10px;top:25px;background-color:#F4F4F4;border:1px solid #999}
+#traffic .ipt span:after{float:left;width:28px;height:28px;content:'\00a0';margin:12px 0 0 1px;background-position:0 -165px}
+
+#roud .title,#routs .title{font-size:16px;color:#394264;margin-bottom:10px}
+#roud .bx{background-color:#FFF;border:1px solid #CCC;border-bottom:none}
+#roud .lpt{position:relative;height:38px;line-height:38px;padding:0 30px;border-bottom:1px solid #CCC}
+#roud .lpt:after{position:absolute;width:19px;height:19px;content:'\00a0';top:10px;right:6px;background-position:-38px -100px}
+#roud .ck:after{background-position:-19px -100px}
+#roud .lpt em{position:absolute;width:19px;height:25px;left:6px;top:6px}
+#roud .rs em{background-position:-30px -40px}
+#roud .re em{background-position:0 -40px}
+#roud .lys{display:none;border-bottom:1px solid #CCC}
+.lys section{position:relative;padding:10px 85px 10px 10px;background-color:#F4F4F4;border-bottom:1px solid #CCC}
+.lys h2{font-size:16px}
+.lys h3{font-size:14px;color:#8A8A8A}
+.lys span{position:absolute;width:65px;height:26px;line-height:26px;font-size:12px;text-align:center;right:10px;top:18px;background-color:#F2F2F2;border:1px solid #999}
+
+.page{height:30px !important;line-height:30px !important;padding:0 !important}
+.page font{float:left;padding:0 10px}
+.page font:last-child{float:right}
+.page .on{color:#316AC5;cursor:pointer}
+
+#routs .st,#routs .ed{position:relative;height:37px;line-height:37px;font-size:16px;color:#000;padding-left:35px;background-color:#FFF;border:1px solid #CCC}
+#routs .ed{margin-bottom:10px;border-top:none}
+#routs div{position:relative;padding:10px 35px;background-color:#FFF;border:1px solid #CCC}
+#routs em{position:absolute;width:22px;height:22px;line-height:22px;text-align:center;font-style:normal;color:#FFF;left:5px;top:17px;background-color:#4D5A8A;
+	-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px}
+#routs h2{display:block;font-size:16px;color:#4D5A8A}
+#routs h3{font-size:14px;color:#8A8A8A}
+#routs i{position:absolute;width:28px;height:28px;right:10px;top:18px;background-position:-28px -165px}
+#routs ul{height:0;overflow:hidden;margin-bottom:5px;background-color:#F4F4F4;border-left:1px solid #CCC;border-right:1px solid #CCC}
+#routs li{position:relative;line-height:20px;padding:5px 0 5px 30px;border-bottom:1px solid #CCC}
+#routs li:after{position:absolute;width:23px;height:23px;content:'\00a0';left:3px;top:6px}
+#routs .i_bus:after{background-position:0 -130px}
+#routs .i_subway:after{background-position:-23px -130px}
+#routs .i_walk:after{background-position:-46px -130px}
+#routs strong{font-weight:normal;color:#3A8ACC}
+
+#locate,#zoom{background-color:#FFF;border:1px solid #CCC;
+	-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+
+#locate{width:38px;height:38px}
+#locate:after{float:left;width:18px;height:24px;content:"\00a0";margin:7px 0 0 10px;background-position:-60px 0}
+#locate .icon{float:left;margin:8px 0 0 10px}
+
+#zoom{width:32px;line-height:32px;font-weight:bold;font-size:20px;text-align:center}
+#zoom div:first-child{border-bottom:1px solid #CCC}
+
+.i_company,.i_mark{position:absolute;width:24px;height:30px;cursor:pointer}
+.i_company{background-position:0 0;z-index:3}
+.i_mark{background-position:-30px 0;z-index:2}
+
+#info{position:absolute;width:280px;opacity:0;background-color:#FFF;border:1px solid #CCC;z-index:4}	
+#info,#info font{
+	-webkit-box-shadow:0px 2px 5px #CCC;-moz-box-shadow:0px 2px 5px #CCC;box-shadow:0px 2px 5px #CCC}
+#info h1{font-size:16px;color:#3A8ACC;padding:10px 20px 5px 10px}
+#info h2{position:relative;font-size:13px;background-color:#FFF;padding:0 10px 10px;z-index:2}
+#info p{position:relative;height:32px;background-color:#FFF;z-index:2;border-top:1px solid #CCC}
+#info p span{position:relative;float:left;width:33%;height:32px;line-height:32px;font-size:13px;padding-left:23px}
+#info p span:nth-of-type(2){width:34%;border-left:1px solid #CCC;border-right:1px solid #CCC}
+#info p span:after{position:absolute;width:15px;height:15px;content:"\00a0";left:5px;top:8px}
+#info p span:nth-of-type(1):after{background-position:0 -75px}
+#info p span:nth-of-type(2):after{background-position:-15px -75px}
+#info p span:nth-of-type(3):after{background-position:-30px -75px}
+#info i{position:absolute;width:20px;height:20px;right:0;top:0;padding:3px 1px 0 0;background-position:0 -97px}
+#info font{position:absolute;width:20px;height:20px;background-color:#FFF;left:50%;bottom:-11px;margin-left:-13px;border-right:1px solid #CCC;border-bottom:1px solid #CCC;z-index:1;
+	-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg)}
+
+.at,
+nav span,#bar em,#roud .lpt,#routs li
+{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.bb,
+nav span,#bar em,#info p span,#traffic,.mapwap,#map,#roud,#roud .lpt,#roud .lys section,#routs,#routs li{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+header,nav{display:block}

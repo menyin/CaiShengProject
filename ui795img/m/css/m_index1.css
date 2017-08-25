@@ -1,0 +1,126 @@
+@charset utf-8;
+header{height:45px;background:#fff;margin-bottom:0;box-shadow:none; position:relative;z-index:2}
+header a.logo{width:163px;height:50px;display:block;float:left;background:url(/m/images/bg.png) no-repeat;}
+header a.lgLnk{float:right;padding:0 15px;line-height:45px; color:#8e8e8e; background:url(/m/images/m_icon37.png) 87px 22px no-repeat;}
+header a.lgLnk i,header a.lgLnk span{ display:inline-block; vertical-align:middle; padding-right:8px;}
+header a.lgLnkwin{ background:none;}
+header a.lgLnkwin{ padding-right:0;}
+header a.lgLnk i{ font-size:1.3rem;}
+header a.lgLnk span{ font-size:1.2rem;}
+header a.lgLnk i.jpFntWes{font-size:0.9rem;margin:0 3px 0 0;}
+.lgHListBg{width:100px; overflow:hidden; position:absolute; top:45px; right:10px; display:none;}
+.lgHListBg img{ display:block; margin:0 auto;}
+.lgHlist{width:100px; overflow:hidden; border-radius:8px; background:url(/m/images/m_icon36.png); text-align:center;}
+.lgHlist a{ display:block; padding:8px; border-bottom:1px solid #364345; color:#fff; font-size:1rem;}
+
+.sch{background:#e74c3c;padding:10px 15px; position:relative; z-index:1;margin-bottom:10px;}
+.sch a{width:100%;background:#fff;height:30px; border-radius:0;border:1px solid #e74c3c;outline:1px solid #e74c3c; position:relative; z-index:1;display:block;}
+.sch i.jpFntWes{ position:absolute;top:50%;margin-top:-15px;right:5px;color:#c9c9c9;height:30px;line-height:30px;width:30px; text-align:center;}
+.sch a span{display:block;height:30px;line-height:30px;width:90%; text-align:left;color:#999;padding-left:10px;}
+
+nav{margin-bottom:15px;padding:0 7px;overflow:hidden;}
+nav a{width:25%;display:block;float:left;}
+nav a span{margin:0 3px;border:1px solid #ddd;display:block;box-shadow:0 0 3px #eee;background:#fff;padding:5px 0 10px 0; position:relative; z-index:1;}
+nav a span i.jpFntWes{width:100%;height:35px;display:block;line-height:40px;font-size:1.8rem;}
+nav a span b{font-weight:normal;display:block;width:100%;height:20px;line-height:20px;}
+nav a span.new{ z-index:2;}
+nav a span.new em{font-size:0.5rem;color:#fff;padding:0 3px;background:#ed2020; border-radius:4px; position:absolute; z-index:2;right:5px;top:5px;box-shadow:0 0 3px #fff;border:2px solid #fff;}
+
+/*热门*/
+.hot{overflow:hidden;margin-bottom:15px;padding:0 7px;}
+.hot .hd{position:relative; z-index:1;margin:0 5px 15px;}
+.hot .hd h4{color:#bababa;height:20px;line-height:20px;display:inline-block;background:#e8ecef; position:relative; z-index:2;padding:0 10px;}
+.hot .hd b{font-size:0;line-height:0;position:absolute;height:2px;border-bottom:1px dashed #cecece;top:50%;margin-top:-1px;width:100%;left:0; z-index:1;}
+
+.hot .bd{overflow:hidden;}
+.hot .bd a{float:left;display:block;width:25%;margin-bottom:5px;}
+.hot .bd a span{display:block;margin:0 3px;border:1px solid #ddd;background:#fff;height:35px;line-height:35px;overflow:hidden;color:#999;}
+.hot .bd a.half{width:50%;}
+.hot .bd a.half span{height:60px;background:#4a81d2;text-align:left;}
+.hot .bd a.half span b{color:#fff;margin:10px 0 0 5px;height:20px;line-height:20px;display:block;}
+.hot .bd a.half span p{color:#143c78;margin:0 0 0 5px;height:20px;line-height:20px;display:block;}
+.hot .bd a.oth span{height:60px;}
+.hot .bd a.oth span i.jpFntWes,.hot .bd a.oth span i.jpIconMoon{height:20px;line-height:20px;margin:5px 0 0 0;display:block;width:100%;}
+.hot .bd a.oth span i.jpIconMoon{color:#eec75e}
+.hot .bd a.green span{background:#72a257;color:#fff;}
+.hot .bd a.yellow span{background:#e1a811;color:#fff;}
+.hot .bd a.green span i.jpFntWes{color:#c6daba;}
+.hot .bd a.yellow span i.jpFntWes{color:#f8df9e;}
+.hot .bd a.more{width:100%;}
+.hot .bd a.more span{background:#dfe4e8;border:0;}
+.hot .bd .hotLst{overflow:hidden;height:126px;width:100%;float:left;}
+/*推荐*/
+.rec{margin-bottom:10px;overflow:hidden;}
+.rec .hd{position:relative; z-index:1;margin:0 5px 15px;}
+.rec .hd h4{height:20px;line-height:20px;display:inline-block;background:#e8ecef; position:relative; z-index:2;padding:0 10px;color:#bababa;}
+.rec .hd b{font-size:0;line-height:0;position:absolute;height:2px;border-bottom:1px dashed #cecece;top:50%;margin-top:-1px;width:100%;left:0; z-index:1;}
+
+.rec .bd{}
+.rec .bd ul{padding:0 10px;}
+.rec .bd ul li{border:1px solid #ddd;background:#fff;border-bottom:0;padding:15px 5px 15px 15px; position:relative; z-index:1; text-align:left;}
+.rec .bd ul li:last-child{border-bottom:1px solid #ddd;}
+.rec .bd ul li a{display:block;}
+.rec .bd ul li a p{line-height:25px;color:#999;width:96%;}
+.rec .bd ul li a p.tit{font-weight:bold;color:#424242;}
+.rec .bd ul li a i.jpFntWes{ position:absolute;right:5px;width:20px;height:20px;top:50%;margin-top:-10px;color:#666;}
+.rec .bd ul li a p em{margin:0 3px;}
+
+.news{border:1px solid #ddd;background:#fff; text-align:left;}
+.top {
+    clear: both;
+    display: block;
+    padding: 15px;
+}
+.top img {
+    border: 1px solid #ccc;
+    float: left;
+    position: relative;
+}
+.top .con {
+    padding-left: 70px;
+}
+.top .con h4 {
+    color: #404040;
+    font-size: 14px;
+    line-height: 63px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.news dl dd:first-child {
+    border-top: 1px solid #d8d8d8;
+}
+.news dl dd {
+    border-bottom: 1px solid #d8d8d8;
+    height: 35px;
+    line-height: 35px;
+}
+.news dl dd a {
+    color: #333 !important;
+    display: inline-block;
+    font-size: 14px;
+    overflow: hidden;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+	padding:0 17px;
+}
+.news dl dt {
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+.news dl dt a {
+   
+    color: #333 !important;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 40px;
+    padding-right: 40px;
+}
+
+.change-city { position: absolute; top: 10px; left: 170px; color: #777;  height: 20px;  }
+.change-city a { position: relative; padding-right: 15px;}
+.change-city .caret { display: block;width: 0;height: 0;border-style: solid;border-width: 4px;border-color: #aaa transparent transparent transparent; position: absolute; right: 0; top: 7px;}
+

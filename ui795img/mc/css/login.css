@@ -1,0 +1,132 @@
+.container{padding-bottom:15px;}
+.tab_menu ul{overflow:hidden;background:#f3f3f3;}
+.tab_menu li{float:left;width:50%;height:44px;line-height: 44px;text-align: center;border-bottom:1px solid #eee;}
+.tab_menu li a{display:block;color:#555;font-size:16px;}
+.tab_menu li.active{height:43px;border-bottom:2px solid #f26b01;}
+.tab_menu li.active a{color:#f26b01;font-weight:bold;}
+#login_name::-webkit-input-placeholder,#login_pwd::-webkit-input-placeholder{color:#888;}
+.per_login .inner_content{padding:15px 15px 0 15px;font-size:14px;}
+.per_login .inner_content li{border:1px solid #DDD;padding:3px 8px 3px 44px;position:relative;border-top-right-radius:2px;border-top-left-radius:2px;}
+.per_login .inner_content li:last-child{border-top:0;padding-right:40px;border-bottom-right-radius:2px;border-bottom-left-radius:2px;border-top-right-radius:0;border-top-left-radius:0;}
+.per_login .inner_content li:before{position:absolute;top:50%;margin-top:-12px;left:10px;width:24px;height:24px;overflow:hidden;background:url("../images/V3/01.png") no-repeat 0 -150px;background-size:50px;display:block;content:"";}
+.per_login .inner_content li.pwd:before{background-position:0 -200px;}
+.per_login .inner_content li.pwd i{position:absolute;top:50%;margin-top:-12px;right:8px;width:25px;height:25px;overflow:hidden;background-image:url("../images/V3/01.png");background-repeat:no-repeat;background-size:50px;display:block;content:"";}
+.per_login .inner_content li.pwd i.pwd_visiable{background-position:-25px -200px;}
+.per_login .inner_content li.pwd i.pwd_invisiable{background-position:-25px -150px;}
+.per_login .inner_content li.captcha:before{background-position:0 -250px;}
+.per_login .inner_content .img-captcha{position:absolute;top:8px;right:8px;}
+
+.per_login .inner_content input[type="text"],
+.per_login .inner_content input[type="password"]{-webkit-appearance:none;height:22px;line-height:22px;display:block;outline:none;width:100%;padding:8px 0;font-size:16px;}
+.login_findPwd{padding:10px 15px 0 15px;overflow:hidden;}
+.login_findPwd .login_auto{float:left;font-size:14px;}
+.login_findPwd .login_auto label{vertical-align: top;}
+.login_findPwd .login_auto input[type="checkbox"]{-webkit-appearance:none;width:18px;height:18px;background:url("../images/icon1.png?_T=2016") no-repeat 0 -74px;background-size:150px 150px;margin-right:5px;}
+.login_findPwd .login_auto input:checked{background-position:0px -99px;}
+
+.login_findPwd .findPwd{float:right;font-size:14px;}
+.submit_btn{padding:15px 15px 0 15px;}
+.submit_btn button{width:100%;background:#F26B01;border:0;height:45px;line-height:45px;font-size:16px;color:#FFF;border-radius:2px;}
+/*.submit_btn button:hover{box-shadow:inset 0 0 0 10rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.15),0 0 1px rgba(0,0,0,.125);}*/
+.submit_btn button.disabled{background:#e6e6e6;color:#878787;}
+.per_login .reg_findPwd{padding-top:20px;text-align:right;}
+.per_login .reg_findPwd a:visited{color:#1155CD;}
+.per_login .reg_findPwd a:last-child{margin-left:20px;}
+
+/* third_login */
+.third_login{ padding:30px 15px 0 15px; text-align:center; margin:0px auto;}
+.third_login .qq,.third_login .sina,.third_login .weixin{width:50px; height:50px;border: 1px solid #c9c9c9;border-radius:100%;display:inline-block;box-shadow: 0 1px 1px #E5E5E5;background:#fafafa;}
+.third_login .qq a,.third_login .sina a,.third_login .weixin a{height:50px;background:url("../images/V3/01.png") no-repeat 0 0;background-size:50px;overflow:hidden; text-indent:-300px; display:block;}
+.third_login .sina a{ background-position:0 -100px;}
+.third_login .weixin a{ background-position:0 -50px;}
+.third_login_body{padding:15px 0 20px;}
+.third_login_body li{width:33.333%;float:left;line-height:0;}
+.third_login .cut_off{background:url("../images/icon4.png") repeat-x center;line-height:20px;}
+.third_login .cut_off span{padding:5px 10px;background:#fff;font-size:14px;color:#333333;display:inline-block;}
+/* third_login */
+
+/* bind_login */
+.account_bind .bind_box{padding:25px 20px;text-align:center;}
+.account_bind .bind_box .base{padding-bottom:20px;}
+.account_bind .bind_box .avatar{width:55px;height:55px;padding:5px;box-shadow:0 0 3px #DDD;display:inline-block;border-radius:50%;}
+.account_bind .bind_box .name{font-size:14px;font-weight:bold;}
+.account_bind .bind_box .state{font-size:12px;color:#B9B9B9;}
+.account_bind .bind_box .avatar img{border-radius:50%;}
+.account_bind .login{text-align:left;}
+.account_bind .login .title{font-size:16px;font-weight:bold;height:22px;line-height:22px;}
+.account_bind .bind_form li{padding:5px 10px;}
+.account_bind .QQ .bind_form li:first-child{padding:5px 0;font-size:14px;height:22px;line-height:22px;color:#7A7A7A;}
+.account_bind .QQ .bind_form li:nth-child(4){position:relative;}
+.account_bind .QQ .bind_form li:nth-child(4) label{ position: absolute;top: 50%; margin-top: -12px; left: 5px;width: 24px;height: 24px;overflow: hidden;background: url("../images/V3/01.png") no-repeat 0 -150px;background-size: 50px;display: block;content: "";    background-position: 0 -200px;}
+.account_bind .QQ .bind_form li:nth-child(3){position:relative;}
+.account_bind .QQ .bind_form li:nth-child(3) label{content: "";display: block;position: absolute;width: 24px; height: 24px;overflow: hidden;left: 5px;top: 50%;margin-top: -12px;background: url("../images/V3/01.png") no-repeat 0 -225px;background-size: 50px; background-position: 0 -250px;}
+.account_bind .QQ .bind_form li:nth-child(2){position:relative;}
+.account_bind .QQ .bind_form li:nth-child(2) label{ content: "";display: block;position: absolute;width: 24px; height: 24px; overflow: hidden; left: 5px;top: 50%; margin-top: -12px; background: url("../images/V3/01.png") no-repeat 0 -225px;background-size: 50px;background-position: -25px -225px;}
+.account_bind .bind_form li input{height:18px;line-height:18px;padding:7px 10px;border:1px solid #C9C9C9;width:100%;box-shadow:2px 2px 2px #F1F1F1 inset;outline:none;border-radius:3px;margin-left:-10px;font-size:14px;}
+.account_bind .QQ .bind_form li input{text-indent:28px;}
+.account_bind .bind_form li.btn{padding-left:0;padding-right:0;}
+.account_bind .bind_form li button{padding:7px 10px;width:100%;background:#F26B01;border-radius:3px;color:#FFF;font-size:14px;cursor:pointer;}
+.account_bind .login .state a{color:#44659E;font-size:12px;}
+.account_bind .success{padding-top:50px;}
+.account_bind .success .state .icon{width:125px;height:80px;margin:0 auto;}
+.account_bind .success .state .icon i{width:110px;height:60px;border-left:3px solid #60C060;border-bottom:3px solid #60C060;display:block;-webkit-transform:rotate(-45deg) translate(15px,-5px);-moz-transform:rotate(-45deg) translate(15px,-5px);}
+.account_bind .success .state .text{font-size:20px;color:#42B042;padding:15px 0 10px 0;}
+.account_bind .success .goto{font-size:14px;line-height:26px;}
+.account_bind .success .goto a{color:#000;}
+.account_bind .success .goto b{font-weight:bold;}
+.btn { text-align: center;padding: 10px 15px 30px 15px;}
+.mobileZym{width:50% !important;}
+.btnSendValidate{background: #31b859; color: #fff; width: 40%; border: 0; height: 36px; line-height: 36px; font-size: 12px;display: inline-block;cursor: pointer; border-radius: 2px; text-align:center;}
+
+/* app download modal */
+.download-modal {padding: 20px 15px;border-radius: 0;}
+.download-modal a.box-close {display: none;}
+.download-modal .box-title {display: block;font-size: 20px;font-weight: 700;color: #333;}
+.download-modal .box-content {margin-top: 10px;}
+.download-modal .box-content p {font-size: 14px;line-height: 1.6;color: #666;}
+.download-modal .box-content .highlight {color: #f80;}
+.download-modal .btn-group {margin-top: 10px;text-align: right;}
+.download-modal .btn-group .btn {position: static;display: inline-block;margin: 0;width: auto;padding: 15px;height: 46px;font-size: 16px;line-height: 1;background-color: #fff;color: #555;border: none;border-radius: 0;}
+.download-modal .btn-group .btn:active {background-color: #eee;}
+.download-modal .btn-group .box-ok {color: #08f;}
+/* app download modal */
+
+
+/**
+*reg
+*/
+.reg_wrapper .header{display:block;}
+.reg_wrapper .reg{padding:0 15px 5px 15px;}
+.reg_wrapper .reg dl{border-bottom:1px solid #c4c4c4;}
+.reg_wrapper .reg dt{display:none;}
+.reg_wrapper .reg dd{padding:2px 10px 2px 45px;position:relative;}
+.reg_wrapper .reg dd input{line-height:24px;height:24px;padding:8px 0;outline:none;width:100%;font-size:14px;color:#333;}
+.reg_wrapper .reg dd:before{content:"";display:block;position:absolute;width:24px;height:24px;overflow:hidden;left:5px;top:50%;margin-top:-12px;background:url("../images/V3/01.png") no-repeat 0 -225px;background-size:50px;}
+
+
+
+.reg_wrapper .reg .pwd dd:before{background-position:0 -200px;}
+.reg_wrapper .reg .pwd i{position:absolute;top:50%;margin-top:-12px;right:8px;width:25px;height:25px;overflow:hidden;background-image:url("../images/V3/01.png");background-repeat:no-repeat;background-size:50px;display:block;content:"";}
+.reg_wrapper .reg .pwd i.pwd_visiable{background-position:-25px -200px;}
+.reg_wrapper .reg .pwd i.pwd_invisiable{background-position:-25px -150px;}
+.reg_wrapper .reg .iphone dd:before{background-position:-25px -225px;}
+.reg_wrapper .reg .verification_code dd:before{background-position:0 -250px;}
+.reg_wrapper .verification_code{position:relative;}
+.reg_wrapper .verification_code dd{padding-right:100px;}
+.reg_wrapper .verification_code img{position:absolute;top:50%;margin-top:-15px;right:0;width:80px;height:30px;}
+.reg_wrapper .agreement{font-size:12px;color:#666;line-height:20px;height:20px;padding:5px 15px 0 15px;}
+
+/**
+*reg finish
+*/
+.finish{text-align:center;}
+.finish .reg_success{padding:30px 0 15px;}
+.finish .reg_success i{display:inline-block;height:150px;width:150px;background:#31b859;border-radius:100%;position:relative;}
+.finish .reg_success i:before{display:block;content:"";width:66px;height:30px;border-left:8px solid #fff;border-bottom:8px solid #fff;transform:rotate(-45deg);position:absolute;top:50%;left:50%;margin-top:-30px;margin-left:-33px;}
+.finish .reg_success span{display:block;color:#31b859;font-size:18px;padding:10px 0 20px;}
+
+.finish .finish_btn button{height:45px;border:1px solid #dedede;width:100%;background:#f2f2f2;border-radius:2px;}
+.finish .reg_name{padding-bottom:30px;font-size:14px;color:#333;}
+.finish .finish_btn{padding-bottom:30px;}
+.finish .finish_btn li{padding:5px 0;}
+.finish .finish_btn li:first-child button{background:#ffefe5;border-color:#fecea8;color:#f26b01;}

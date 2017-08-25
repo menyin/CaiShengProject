@@ -1,0 +1,1983 @@
+﻿a {
+    text-decoration: none;
+    color: #333;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #09f;
+    }
+
+.OriginalPrice {
+    text-decoration: line-through;
+    font-size: 20px;
+    color: #999;
+    margin-left: 10px;
+    height: 50px;
+    line-height: 76px;
+}
+
+.CurrentPrice {
+    font-size: 48px;
+    color: #d70b17;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+
+.Score {
+    color: #999;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+    .Score .StarBg {
+        background: url('http://cdn.597.com/www/images/ke/Star.png') repeat-x;
+        height: 21px;
+        width: 105px;
+        margin: -6px 10px 0 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+        .Score .StarBg .Star {
+            background: url('http://cdn.597.com/www/images/ke/Star1.png') repeat-x;
+            height: 21px;
+            display: inline-block;
+        }
+
+.headerbox {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.topmenudiv {
+    width: 1100px;
+    padding-top: 30px;
+    height: 70px;
+    margin: auto;
+}
+
+    .topmenudiv .BingTitle {
+        color: #377ebc;
+        float: left;
+        font-family: Microsoft Yahei,"微软雅黑";
+        font-size: 34px;
+        line-height: 40px;
+        margin: -8px 0 0 20px;
+        border-left: 1px solid #ccc;
+        padding-left: 20px;
+        width: 250px;
+        text-decoration: none;
+    }
+
+    .topmenudiv .SmallTitle {
+        font-family: Microsoft Yahei,"微软雅黑";
+        color: #aaa;
+        height: 20px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    .topmenudiv .keywordinput {
+        width: 425px;
+        height: 40px;
+        border: 1px solid #eeeeee;
+        background-color: #f0f0f0;
+        text-indent: 20px;
+        font-size: 14px;
+    }
+
+    .topmenudiv .keywordbutton {
+        position: absolute;
+        right: 93px;
+        top: 0;
+        background-color: #d70b17;
+        height: 42px;
+        width: 80px;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        border: 0;
+        letter-spacing: 5px;
+        line-height: 42px;
+        cursor: pointer;
+    }
+
+    .topmenudiv .like {
+        display: inline-block;
+        margin-left: 30px;
+        *margin: -26px 0 0 30px;
+        text-decoration: underline;
+        color: #666;
+        cursor: pointer;
+    }
+
+.Cooperation {
+    width: 1020px;
+    background-color: #d51818;
+    height: 125px;
+    padding: 25px 40px 0 40px;
+    margin: 0 auto 20px auto;
+    position: relative;
+}
+
+    .Cooperation .title {
+        color: #FFCC00;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .Cooperation .line {
+        position: absolute;
+        top: 0px;
+        left: 426px;
+        background-color: #449EE1;
+        width: 1px;
+        height: 150px;
+    }
+
+    .Cooperation .title1 {
+        color: #ffffff;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .Cooperation .fb {
+        margin-top: 10px;
+        position: relative;
+    }
+
+        .Cooperation .fb .fbinput {
+            width: 550px;
+            height: 45px;
+            background-color: #ffffff;
+            border: none;
+            font-size: 14px;
+            text-indent: 10px;
+        }
+
+    .Cooperation .fbbutton {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #d70b17;
+        height: 45px;
+        width: 80px;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        border: 0;
+        letter-spacing: 2px;
+    }
+
+    .Cooperation .Logo {
+        width: 160px;
+        float: left;
+        margin: 10px 10px 0 0;
+    }
+
+        .Cooperation .Logo img {
+            width: 100%;
+        }
+
+/*index*/
+.advbox {
+    margin: 20px auto 0 auto;
+    width: 1100px;
+    height: 405px;
+    background: url(/ke/test.gif);
+    position: relative;
+}
+
+/*分类导航*/
+.bcclass {
+    position: relative;
+    width: 300px;
+    background-color: #ffffff;
+}
+
+    .bcclass .kctitle {
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .bcclass .kccontent {
+        table-layout: fixed;
+    }
+
+        .bcclass .kccontent a {
+            white-space: nowrap;
+            font-size: 12px;
+            color: #fff;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+            .bcclass .kccontent a:hover {
+                text-decoration: underline;
+            }
+
+.bcclassbg {
+    height: 405px;
+    width: 24px;
+    position: absolute;
+    right: -24px;
+    top: 0px;
+    background: url('http://cdn.597.com/www/images/ke/classbg.png');
+}
+
+.bcclass .title {
+    padding-left: 20px;
+    height: 41px;
+    line-height: 41px;
+    background-color: #2182CF;
+    position: relative;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+    .bcclass .title img {
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+.bcclass .menu1 {
+    padding: 16px 0 0 45px;
+    height: 75px;
+    background-color: #6666CC;
+    position: relative;
+}
+
+
+.bcclass .menu2 {
+    padding: 16px 0 0 45px;
+    height: 75px;
+    background-color: #99CC00;
+    position: relative;
+}
+
+.bcclass .menu3 {
+    padding: 16px 0 0 45px;
+    height: 75px;
+    background-color: #d70b17;
+    position: relative;
+}
+
+.bcclass .menu4 {
+    padding: 16px 0 0 45px;
+    height: 75px;
+    background-color: #FFCC00;
+    position: relative;
+}
+
+.classroom {
+    width: 1100px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+    .classroom .title {
+        padding: 20px 0 0 20px;
+        color: #2182CF;
+        font-size: 14px;
+    }
+
+        .classroom .title img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+    .classroom .content {
+        display: block;
+        padding-left: 20px;
+    }
+
+        .classroom .content li {
+            margin: 15px 24px 0 0;
+            width: 244px;
+            overflow: hidden;
+            float: left;
+            height: 241px;
+            *height: 241px;
+        }
+
+            .classroom .content li a {
+                display: block;
+                text-decoration: none;
+            }
+
+            .classroom .content li img {
+                border: none;
+                width: 244px;
+                height: 193px;
+                display: block;
+            }
+
+        .classroom .content dd {
+            font-size: 14px;
+            margin: 5px 0 0 0;
+            padding: 0 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            *margin: 5px 0 0 -40px;
+            line-height: 20px;
+        }
+
+        .classroom .content dt {
+            margin: 5px 0 0 20px;
+        }
+
+            .classroom .content dt .OriginalPrice {
+                font-size: 12px;
+                font-weight: normal;
+                height: auto;
+                line-height: 22px;
+                height: 18px;
+            }
+
+            .classroom .content dt .CurrentPrice {
+                font-size: 14px;
+                font-weight: normal;
+                height: auto;
+                line-height: normal;
+            }
+
+.contentclass {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+    .contentclass .icon {
+        padding-top: 90px;
+        text-align: center;
+        height: 210px;
+        width: 150px;
+        background-color: #F4F4F4;
+        float: left;
+        margin-right: 25px;
+    }
+
+    .contentclass .hot {
+        width: 310px;
+        height: 300px;
+        background-color: #F4F4F4;
+        float: left;
+        margin-right: 25px;
+    }
+
+        .contentclass .hot a {
+            display: block;
+            cursor: pointer;
+        }
+
+        .contentclass .hot img {
+            width: 310px;
+            height: 246px;
+        }
+
+        .contentclass .hot dd {
+            font-size: 14px;
+            margin: 3px 0 0 0;
+            padding: 0 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            *margin: 3px 0 0 -40px;
+        }
+
+        .contentclass .hot dt {
+            margin: 3px 0 0 10px;
+            padding: 0 10px;
+        }
+
+            .contentclass .hot dt .OriginalPrice {
+                font-size: 12px;
+                font-weight: normal;
+                height: auto;
+                line-height: 22px;
+                height: 18px;
+            }
+
+            .contentclass .hot dt .CurrentPrice {
+                font-size: 14px;
+                font-weight: normal;
+                height: auto;
+                line-height: normal;
+            }
+
+    .contentclass ul {
+        float: left;
+        width: 564px;
+        height: 300px;
+    }
+
+        .contentclass ul li {
+            width: 168px;
+            height: 150px;
+            float: left;
+            margin-right: 20px;
+        }
+
+            .contentclass ul li a {
+                display: block;
+                text-decoration: none;
+            }
+
+                .contentclass ul li a img {
+                    width: 168px;
+                    height: 100px;
+                }
+
+            .contentclass ul li dd {
+                font-size: 12px;
+                margin: 3px 0 0 0;
+                padding: 0 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                *margin: 3px 0 0 -40px;
+            }
+
+            .contentclass ul li dt {
+                margin: 3px 0 0 10px;
+            }
+
+                .contentclass ul li dt .OriginalPrice {
+                    font-size: 10px;
+                    font-weight: normal;
+                    height: auto;
+                    line-height: 20px;
+                    height: 18px;
+                }
+
+                .contentclass ul li dt .CurrentPrice {
+                    font-size: 12px;
+                    font-weight: normal;
+                    height: auto;
+                    line-height: normal;
+                }
+
+.PreviewVideo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: none;
+}
+
+.PreviewVideoContent {
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -200px;
+    z-index: 10000;
+    display: none;
+}
+
+/*detail*/
+.detailbox {
+    padding-top: 25px;
+    width: 1098px;
+    border: 1px solid #EFEFEF;
+    background-color: #ffffff;
+    margin: 20px auto 0 auto;
+}
+
+.DetailTop {
+    padding: 10px 25px 30px 25px;
+    width: 1048px;
+    position: relative;
+}
+
+    .DetailTop .Left {
+        width: 280px;
+        overflow: hidden;
+        margin-right: 30px;
+        float: left;
+    }
+
+        .DetailTop .Left .Video {
+            height: 221px;
+            width: 280px;
+            position: relative;
+        }
+
+            .DetailTop .Left .Video img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .DetailTop .Left .Video .PlayDiv {
+                background: rgba(0, 0, 0, 0.6);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                cursor: pointer;
+            }
+
+                .DetailTop .Left .Video .PlayDiv img {
+                    width: 80px;
+                    height: 80px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -40px 0 0 -40px;
+                    cursor: pointer;
+                }
+
+        .DetailTop .Left .VideoOper {
+            list-style: none;
+            margin-top: 40px;
+        }
+
+            .DetailTop .Left .VideoOper li {
+                width: 30%;
+                margin-left: 2.5%;
+                float: left;
+            }
+
+                .DetailTop .Left .VideoOper li:hover {
+                    color: #d51818;
+                }
+
+                .DetailTop .Left .VideoOper li a {
+                    display: block;
+                    line-height: 20px;
+                    cursor: pointer;
+                }
+
+                .DetailTop .Left .VideoOper li img {
+                    border: 1px solid #333;
+                    border-radius: 50%;
+                    padding: 5px;
+                    vertical-align: middle;
+                    margin: -4px 5px 0 0;
+                }
+
+                .DetailTop .Left .VideoOper li a.On {
+                    color: #ff9900;
+                }
+
+                    .DetailTop .Left .VideoOper li a.On img {
+                        border: 1px solid #ff9900;
+                        width: 20px;
+                    }
+
+    .DetailTop .Right {
+        float: left;
+        width: 738px;
+    }
+
+        .DetailTop .Right .Title {
+            font-size: 22px;
+            height: 50px;
+            line-height: 50px;
+            padding-right: 270px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+            .DetailTop .Right .Title .Info {
+                position: absolute;
+                right: 25px;
+                top: 15px;
+                list-style: none;
+                height: 40px;
+                overflow: hidden;
+                width: 270px;
+            }
+
+                .DetailTop .Right .Title .Info li {
+                    float: left;
+                    text-align: right;
+                    padding: 0 20px;
+                    line-height: 20px;
+                    color: #999;
+                }
+
+                    .DetailTop .Right .Title .Info li.Line {
+                        padding: 0;
+                        width: 1px;
+                        background: #ddd;
+                        height: 30px;
+                        margin-top: 5px;
+                    }
+
+                    .DetailTop .Right .Title .Info li a {
+                        color: #999;
+                    }
+
+                        .DetailTop .Right .Title .Info li a:hover {
+                            color: #09f;
+                        }
+
+        .DetailTop .Right .Cate {
+            color: #999;
+            font-size: 14px;
+        }
+
+            .DetailTop .Right .Cate:hover {
+                color: #09f;
+            }
+
+        .DetailTop .Right .Summary {
+            margin-top: 15px;
+            line-height: 24px;
+            height: 104px;
+            font-size: 14px;
+        }
+
+        .DetailTop .Right .Price {
+            margin-top: 26px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+            .DetailTop .Right .Price .OriginalPrice {
+                font-size: 16px;
+                height: auto;
+                line-height: 54px;
+            }
+
+            .DetailTop .Right .Price .CurrentPrice {
+                font-size: 32px;
+                line-height: normal;
+                height: auto;
+            }
+
+            .DetailTop .Right .Price .Buy {
+                height: 40px;
+                line-height: 40px;
+                background: #d70b17;
+                width: 120px;
+                text-align: center;
+                color: #fff;
+                display: block;
+                font-size: 14px;
+                margin: 2px 0 0 20px;
+                cursor: pointer;
+                border: none;
+            }
+
+                .DetailTop .Right .Price .Buy .Cart {
+                    margin: -5px 5px 0 0;
+                    vertical-align: middle;
+                }
+
+                .DetailTop .Right .Price .Buy .Play {
+                    width: 18px;
+                    margin: -4px 5px 0 0;
+                    vertical-align: middle;
+                }
+
+            .DetailTop .Right .Price .BuyNow {
+                height: 40px;
+                line-height: 40px;
+                background: #fff;
+                border: 1px solid #d70b17;
+                color: #d70b17;
+                width: 120px;
+                text-align: center;
+                display: block;
+                font-size: 14px;
+                margin: 2px 0 0 20px;
+                cursor: pointer;
+            }
+
+            .DetailTop .Right .Price .Text {
+                color: #999;
+                font-size: 16px;
+                margin-left: 20px;
+            }
+
+.VideoBox {
+    padding: 0 25px 20px 25px;
+    width: 1048px;
+    position: relative;
+    height: 458px;
+    display: none;
+}
+
+    .VideoBox .Main {
+        width: 100%;
+        height: 100%;
+    }
+
+        .VideoBox .Main iframe {
+            width: 798px;
+            height: 458px;
+        }
+
+    .VideoBox .List {
+        position: absolute;
+        width: 250px;
+        height: 458px;
+        top: 0;
+        right: 25px;
+        background: #333;
+        font-size: 12px;
+    }
+
+        .VideoBox .List .Top {
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            color: #fff;
+            text-indent: 20px;
+            border-bottom: 1px solid #bbb;
+        }
+
+        .VideoBox .List .Content {
+            height: 417px;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .VideoBox .List ul {
+            list-style: none;
+            height: 397px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .VideoBox .List li {
+            height: 28px;
+            line-height: 28px;
+            padding: 0 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+            .VideoBox .List li a {
+                display: block;
+                cursor: pointer;
+                color: #999;
+            }
+
+            .VideoBox .List li.Selected a, .VideoBox .List li:hover a {
+                color: #fff;
+            }
+
+    .VideoBox.Open .Main {
+        width: 798px;
+    }
+
+.personality {
+    padding: 0 25px 0 25px;
+}
+
+    .personality span {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 20px 5px 20px;
+        background-color: #F4F4F4;
+        color: #6F6F6F;
+    }
+
+.detailmenu {
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+    .detailmenu li {
+        cursor: pointer;
+        font-size: 14px;
+        float: left;
+        padding: 0 30px 0 30px;
+        height: 50px;
+        line-height: 50px;
+        border-right: 1px solid #EFEFEF;
+    }
+
+        .detailmenu li.selected {
+            color: #d70b17;
+        }
+
+.guestbook {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #fff;
+}
+
+    .guestbook img {
+        vertical-align: middle;
+        margin-left: 10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .guestbook .Score {
+        display: inline-block;
+        margin: 0 0 0 10px;
+    }
+
+.CenterContent {
+    width: 1100px;
+    margin: auto;
+    color: #999;
+}
+
+.AdvContent .Title {
+    background: #d51818;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+    .AdvContent .Title img {
+        margin: 0 10px -3px 0;
+    }
+
+.AdvContent .swiper-pagination .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+}
+
+.AdvContent .swiper-pagination .swiper-pagination-bullet-active {
+    background: #d70b17;
+}
+
+.Category {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+    .Category li {
+        height: 50px;
+        line-height: 50px;
+        float: left;
+        width: auto;
+    }
+
+        .Category li a {
+            padding: 0 40px;
+            color: #999;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .Category li.Selected a, .Category li:hover a {
+            color: #d51818;
+        }
+
+            .Category li.Selected a:before {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #d51818;
+                content: "";
+                display: inline-block;
+                margin: 0 8px 2px 0;
+            }
+
+.CourseList {
+    padding: 15px 0;
+    color: #666;
+    font-size: 14px;
+    background: #fff;
+}
+
+    .CourseList .Item {
+        width: 245px;
+        margin: 0 15px 10px;
+    }
+
+.SearchBox {
+    padding-right: 60px;
+    position: relative;
+}
+
+    .SearchBox input[type=text] {
+        border: 1px solid #ccc;
+        height: 30px;
+        line-height: 30px;
+        width: 480px;
+        padding: 0 10px;
+    }
+
+    .SearchBox input[type=submit] {
+        background: #d70b17;
+        border: none;
+        height: 33px;
+        position: absolute;
+        right: 1px;
+        top: -1px;
+        width: 60px;
+        z-index: 1;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+
+.CourseFeedback {
+    background: #fff;
+    height: 260px;
+    width: 530px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin: -160px 0 0 -325px;
+    padding: 30px 60px;
+    font-size: 14px;
+}
+
+    .CourseFeedback .Close {
+        cursor: pointer;
+        height: 12px;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+
+    .CourseFeedback .Title {
+        color: #d51818;
+        font-size: 24px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .CourseFeedback .SearchBox {
+        margin: 20px 0;
+        padding: 0;
+    }
+
+        .CourseFeedback .SearchBox input[type=text] {
+            height: 40px;
+            line-height: 40px;
+            width: 410px;
+        }
+
+        .CourseFeedback .SearchBox input[type=submit] {
+            height: 42px;
+            right: 1px;
+            top: 0;
+            width: 100px;
+            font-size: 14px;
+        }
+
+    .CourseFeedback .Cancel {
+        border: 1px solid #ccc;
+        color: #999;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        width: 100px;
+        border-radius: 30px;
+        text-align: center;
+        margin: auto;
+        cursor: pointer;
+    }
+
+.buy_box {
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0 25px;
+    padding-bottom: 85px;
+    border-top: 5px solid #d2d2d2;
+    background: #fff;
+}
+
+    .buy_box .list_title {
+        margin-top: 25px;
+        margin-left: 35px;
+        font-size: 16px;
+        color: #333333;
+    }
+
+        .buy_box .list_title span {
+            display: inline-block;
+            border-radius: 5px;
+            width: 5px;
+            height: 20px;
+            vertical-align: middle;
+            background: #d51818;
+            margin-right: 10px;
+            margin-top: -2px;
+        }
+
+    .buy_box .list_title {
+        margin-left: 20px;
+    }
+
+    .buy_box .cart_list {
+        width: 1050px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .buy_box .cart_list a {
+            cursor: pointer;
+        }
+
+        .buy_box .cart_list th {
+            padding: 10px 0;
+            font-weight: normal;
+            border-bottom: 12px solid #f2f2f2;
+        }
+
+        .buy_box .cart_list td {
+            padding: 31px 0 29px 0;
+            font-size: 14px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+            .buy_box .cart_list th input, .buy_box .cart_list td input {
+                vertical-align: middle;
+                margin-top: -2px;
+                margin-right: 5px;
+            }
+
+        .buy_box .cart_list th.t1 {
+            color: #aaaaaa;
+            text-align: left;
+        }
+
+        .buy_box .cart_list td.t1 {
+            text-align: left;
+            width: 45px;
+        }
+
+        .buy_box .cart_list .w_1, .buy_box .cart_list .w_2 {
+            width: 20px;
+        }
+
+        .buy_box .cart_list td.w_1, .buy_box .cart_list td.w_2 {
+            border-bottom: none;
+        }
+
+        .buy_box .cart_list td.t2 {
+            text-align: left;
+            width: 440px;
+        }
+
+            .buy_box .cart_list td.t2 img {
+                width: 166px;
+                height: 131px;
+                float: left;
+            }
+
+            .buy_box .cart_list td.t2 div {
+                float: left;
+                font-size: 14px;
+                margin: 40px 0 0 19px;
+                line-height: 14px;
+                width: 300px;
+            }
+
+            .buy_box .cart_list td.t2 .name {
+                float: left;
+                width: 300px;
+                line-height: 20px;
+            }
+
+            .buy_box .cart_list td.t2 .s1, .buy_box .cart_list td.t2 .s2, .buy_box .cart_list td.t2 .s3, .buy_box .cart_list td.t2 .s4 {
+                float: left;
+                padding: 5px 8px 4px 8px;
+                background: #ccc;
+                color: #fff;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+
+            .buy_box .cart_list td.t2 .s2 {
+                background: #f2f2f2;
+            }
+
+            .buy_box .cart_list td.t2 .s3 {
+                background: #f2f2f2;
+            }
+
+            .buy_box .cart_list td.t2 .s4 {
+                background: #f2f2f2;
+            }
+
+        .buy_box .cart_list td.t3 {
+            color: #aaaaaa;
+        }
+
+        .buy_box .cart_list td.t4 {
+            color: #c40000;
+        }
+
+        .buy_box .cart_list td.t5 {
+            line-height: 24px;
+        }
+
+        .buy_box .cart_list .bottom {
+            background: #eeeeee;
+            padding: 14px 0;
+            text-align: left;
+            padding-left: 13px;
+        }
+
+            .buy_box .cart_list .bottom a {
+                margin-right: 45px;
+            }
+
+    .buy_box .Price {
+        display: inline-block;
+        height: 22px;
+        line-height: 22px;
+    }
+
+    .buy_box .OriginalPrice {
+        font-size: 12px;
+        height: auto;
+        line-height: 26px;
+    }
+
+    .buy_box .CurrentPrice {
+        font-size: 16px;
+        height: auto;
+        line-height: normal;
+    }
+
+.cart_fix_nav {
+    background: #f2f2f2;
+    line-height: 60px;
+    padding: 0 10px;
+    margin-top: -1px;
+    position: relative;
+    width: 1030px;
+}
+
+    .cart_fix_nav strong {
+        font-weight: normal;
+    }
+
+    .cart_fix_nav:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .cart_fix_nav .left_btn {
+        float: left;
+        padding-left: 12px;
+    }
+
+        .cart_fix_nav .left_btn a {
+            font-size: 14px;
+            margin-right: 27px;
+            cursor: pointer;
+        }
+
+    .cart_fix_nav .right_btn {
+        float: right;
+    }
+
+    .cart_fix_nav .sub_btn, .cart_fix_nav .end_price, .cart_fix_nav .offers {
+        float: right;
+    }
+
+    .cart_fix_nav .offers {
+        line-height: 16px;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+        .cart_fix_nav .offers .s6 {
+            line-height: 34px;
+        }
+
+        .cart_fix_nav .offers strong {
+            display: block;
+            color: #aaa;
+        }
+
+        .cart_fix_nav .offers span {
+            margin-left: 5px;
+        }
+
+            .cart_fix_nav .offers span.s5 {
+                margin-left: 9px;
+            }
+
+    .cart_fix_nav .sub_btn {
+        padding: 0 20px;
+        height: 42px;
+        line-height: 42px;
+        background: #d70b17;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .cart_fix_nav .end_price {
+        font-size: 14px;
+        color: #aaa;
+        margin-right: 26px;
+    }
+
+        .cart_fix_nav .end_price span {
+            color: #d70b17;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+.can_fix {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -475px;
+}
+
+.sub_price {
+    padding: 0 20px;
+}
+
+    .sub_price ul {
+        display: inline-block;
+        width: 100%;
+    }
+
+.buy_box .sub_price li {
+    float: right;
+    margin-top: 25px;
+    line-height: 30px;
+    color: #aaaaaa;
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.buy_box .sub_price .s1 {
+    font-size: 30px;
+    color: #d70b17;
+    margin-left: 10px;
+}
+
+.buy_box .sub_price .s6 {
+    margin-right: 25px;
+}
+
+    .buy_box .sub_price .s6 del {
+        margin-left: 5px;
+    }
+
+.buy_box .sub_price dl {
+    float: right;
+    margin-top: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+    .buy_box .sub_price dl a {
+        display: inline-block;
+        height: 12px;
+        line-height: 12px;
+        vertical-align: middle;
+        overflow: hidden;
+    }
+
+.buy_box .sub_price .settlement {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    background: #d70b17;
+    margin-left: 25px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.PayType {
+    width: 1010px;
+    padding: 20px 0 0 0;
+    border: 1px solid #ddd;
+}
+
+    .PayType .Title {
+        width: 80px;
+        text-align: left;
+        float: left;
+        font-size: 14px;
+        text-indent: 20px;
+    }
+
+    .PayType ul {
+        width: 910px;
+        float: left;
+        border: none;
+    }
+
+        .PayType ul li {
+            width: 80px;
+            margin: 0 20px 20px 20px !important;
+            float: left !important;
+            text-align: center !important;
+            color: #666 !important;
+            font-size: 14px !important;
+            line-height: 20px !important;
+            cursor: pointer;
+            position: relative;
+        }
+
+            .PayType ul li img {
+                width: 100%;
+            }
+
+            .PayType ul li .Checked {
+                background: #d70b17;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                display: none;
+            }
+
+                .PayType ul li .Checked:after {
+                    border: solid #fff;
+                    border-width: 0 2px 2px 0;
+                    width: 6px;
+                    height: 12px;
+                    content: '';
+                    position: absolute;
+                    left: 7px;
+                    top: 2px;
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+
+            .PayType ul li.Selected .Checked, .PayType ul li.Selected .WeChatPayQr {
+                display: block;
+            }
+
+    .PayType .WeChatPayQr {
+        display: none;
+        height: 140px;
+        width: 120px;
+        padding: 20px;
+        border: 1px solid #d0d0d0;
+        position: absolute;
+        left: 105px;
+        top: 0;
+        background: #fff;
+        line-height: 20px;
+    }
+
+    .PayType .Arrow {
+        width: 0;
+        height: 0;
+        border-top: 17px solid transparent;
+        border-bottom: 17px solid transparent;
+        border-right: 21px solid #d0d0d0;
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        position: absolute;
+        left: -21px;
+        top: 50%;
+        margin-top: -60px;
+    }
+
+    .PayType .Arrow1 {
+        width: 0;
+        height: 0;
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-right: 20px solid #fff;
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        margin-top: -59px;
+    }
+
+/* 分享按钮 */
+li.bdsharebuttonbox {
+    position: relative;
+}
+
+    li.bdsharebuttonbox a.bds_more {
+        background: url('http://cdn.597.com/www/images/ke/Share.png') 5px 5px no-repeat !important;
+        width: 20px;
+        height: 20px;
+        display: block;
+        content: ' ';
+        cursor: pointer;
+        border: 1px solid #333;
+        border-radius: 50%;
+        padding: 5px;
+        vertical-align: middle;
+        margin: -4px 5px 0 0;
+    }
+
+    li.bdsharebuttonbox i {
+        position: absolute;
+        left: 40px;
+        top: 5px;
+        font-style: normal;
+    }
+
+/*li.bdsharebuttonbox a.bds_more:hover {
+        background: url(/images/right_icon.png) -50px -50px no-repeat !important;
+        width: 40px;
+        height: 40px;
+        display: block;
+        content: ' ';
+        margin: 10px 0 0 0;
+        cursor: pointer;
+        padding: 0;
+    }*/
+
+div.bdshare_popup_bottom a.popup_more {
+    display: none !important;
+}
+
+.ParamList {
+    line-height: 30px;
+    padding-left: 80px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+    .ParamList .Title {
+        position: absolute;
+        width: 80px;
+        text-align: right;
+        left: 0;
+        top: 0;
+        color: #2182CF;
+        font-size: 14px;
+    }
+
+    .ParamList .Input {
+        height: 30px;
+        border: 1px solid #ccc;
+        line-height: 30px;
+        padding: 0 10px;
+        width: 120px;
+        margin-left: 15px;
+    }
+
+    .ParamList .SearchBtn {
+        background: #d70b17;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: #fff;
+        width: 100px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .ParamList ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .ParamList ul li {
+            float: left;
+            margin: 0 0 10px 15px;
+            padding: 0 10px;
+            min-width: 50px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 3px;
+            cursor: pointer;
+            height: 30px;
+            line-height: 30px;
+        }
+
+            .ParamList ul li:hover, .ParamList ul li.Selected {
+                background: #d70b17;
+                color: #fff;
+            }
+
+.CourseButton {
+    position: fixed;
+    right: 0;
+    width: 50px;
+    height: 200px;
+    margin: -100px 0 0 0;
+    top: 50%;
+    border: 1px solid #d0d0d0;
+    z-index: 2;
+}
+
+    .CourseButton .Item {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .CourseButton .Cart {
+        background: url('http://cdn.597.com/www/images/ke/Cart1.png') #fff no-repeat;
+        background-position: 10px 12px;
+    }
+
+        .CourseButton .Cart:hover {
+            background: url('http://cdn.597.com/www/images/ke/Cart1_1.png') #d70b17 no-repeat;
+            background-position: 10px 12px;
+        }
+
+    .CourseButton .Book {
+        background: url('http://cdn.597.com/www/images/ke/Book.png') #fff no-repeat;
+        background-position: 12px 11px;
+    }
+
+        .CourseButton .Book:hover {
+            background: url('http://cdn.597.com/www/images/ke/Book_1.png') #d70b17 no-repeat;
+            background-position: 12px 11px;
+        }
+
+    .CourseButton .Star {
+        background: url('http://cdn.597.com/www/images/ke/Star2.png') #fff no-repeat;
+        background-position: 12px 12px;
+    }
+
+        .CourseButton .Star:hover {
+            background: url('http://cdn.597.com/www/images/ke/Star2_1.png') #d70b17 no-repeat;
+            background-position: 12px 12px;
+        }
+
+    .CourseButton .History {
+        background: url('http://cdn.597.com/www/images/ke/History.png') #fff no-repeat;
+        background-position: 12px 12px;
+    }
+
+        .CourseButton .History:hover {
+            background: url('http://cdn.597.com/www/images/ke/History_1.png') #d70b17 no-repeat;
+            background-position: 12px 12px;
+        }
+
+    .CourseButton .Tips {
+        color: #fff;
+        background: #d70b17;
+        position: absolute;
+        left: -70px;
+        width: 60px;
+        height: 24px;
+        line-height: 24px;
+        display: none;
+        top: 13px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .CourseButton .ArrowRight {
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 8px solid #d70b17;
+        font-size: 0;
+        line-height: 0;
+        display: none;
+        position: absolute;
+        left: -10px;
+        top: 20px;
+        z-index: 1;
+    }
+
+    .CourseButton .Cart:hover .Tips, .CourseButton .Book:hover .Tips, .CourseButton .Star:hover .Tips, .CourseButton .History:hover .Tips {
+        display: block;
+    }
+
+    .CourseButton .Cart:hover .ArrowRight, .CourseButton .Book:hover .ArrowRight, .CourseButton .Star:hover .ArrowRight, .CourseButton .History:hover .ArrowRight {
+        display: block;
+    }
+
+    .CourseButton .MiniBoxBg {
+        display: none;
+        position: absolute;
+        width: 275px;
+        left: -275px;
+        height: 380px;
+    }
+
+    .CourseButton .MiniBox {
+        width: 250px;
+        position: relative;
+        border: 1px solid #d0d0d0;
+        background: #fff;
+    }
+
+        .CourseButton .MiniBox iframe {
+            width: 250px;
+            height: 380px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+    .CourseButton .Arrow {
+        width: 0;
+        height: 0;
+        border-top: 17px solid transparent;
+        border-bottom: 17px solid transparent;
+        border-left: 21px solid #d0d0d0;
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        position: absolute;
+        right: -21px;
+        top: 50%;
+        margin-top: -19px;
+    }
+
+    .CourseButton .Arrow1 {
+        width: 0;
+        height: 0;
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-left: 20px solid #fff;
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        margin-top: -18px;
+    }
+
+    .CourseButton .AddSuccess {
+        display: none;
+        width: 340px;
+        padding: 30px 20px 20px;
+        height: 195px;
+        background: #fff;
+        position: absolute;
+        border: 1px solid #d0d0d0;
+        right: 71px;
+        top: -25px;
+    }
+
+        .CourseButton .AddSuccess .Close {
+            cursor: pointer;
+            height: 12px;
+            position: absolute;
+            right: 4px;
+            top: 10px;
+        }
+
+        .CourseButton .AddSuccess .Text {
+            color: #787878;
+            height: 40px;
+            line-height: 40px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        .CourseButton .AddSuccess .Tick {
+            vertical-align: middle;
+            margin: 0 5px 0 0;
+        }
+
+        .CourseButton .AddSuccess .GoToCart {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            background: #d70b17;
+            position: absolute;
+            right: 40px;
+            top: 30px;
+            width: 120px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .CourseButton .AddSuccess ul {
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+            .CourseButton .AddSuccess ul li {
+                width: 103px;
+                float: left;
+                margin: 0 10px 0 0;
+            }
+
+                .CourseButton .AddSuccess ul li a {
+                    text-decoration: none;
+                }
+
+                .CourseButton .AddSuccess ul li img {
+                    width: 103px;
+                    height: 82px;
+                    display: block;
+                }
+
+                .CourseButton .AddSuccess ul li span {
+                    padding: 0 10px;
+                    height: 22px;
+                    line-height: 22px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    display: block;
+                }
+
+        .CourseButton .AddSuccess .Arrow {
+            margin-top: -90px;
+        }
+
+        .CourseButton .AddSuccess .Arrow1 {
+            margin-top: -89px;
+        }
+
+.MiniPanel {
+    height: 340px;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.MiniTitle {
+    background: #eee;
+    color: #888;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+    .MiniTitle .Left {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .MiniTitle .Right {
+        float: right;
+        margin-right: 10px;
+        color: #888;
+        cursor: pointer;
+    }
+
+.MiniCourse {
+    background: #fff;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .MiniCourse .Item {
+        height: 42px;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        padding: 14px 20px 14px 80px;
+    }
+
+        .MiniCourse .Item:hover {
+            background: #f4f4f4;
+        }
+
+        .MiniCourse .Item a {
+            display: block;
+            text-decoration: none;
+        }
+
+    .MiniCourse .Cover {
+        width: 54px;
+        height: 42px;
+        position: absolute;
+        left: 20px;
+        top: 14px;
+    }
+
+    .MiniCourse .CourseName {
+        color: #666;
+        height: 22px;
+        line-height: 22px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .MiniCourse .ExpireDate {
+        color: #999;
+        height: 20px;
+        line-height: 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .MiniCourse .Del {
+        width: 16px;
+        height: 16px;
+        background: #c0c0c0;
+        position: absolute;
+        right: 20px;
+        bottom: 16px;
+        border-radius: 50%;
+        display: none;
+        cursor: pointer;
+    }
+
+        .MiniCourse .Del img {
+            width: 10px;
+            margin: 3px 0 0 3px;
+        }
+
+    .MiniCourse .Item:hover .Del, .MiniCourse .Item1:hover .Del {
+        display: block;
+    }
+
+    .MiniCourse input[type=checkbox] {
+        position: absolute;
+        left: 10px;
+        top: 27px;
+    }
+
+    .MiniCourse .Item1 {
+        height: 42px;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        padding: 14px 10px 14px 87px;
+    }
+
+        .MiniCourse .Item1 .Cover {
+            left: 28px;
+        }
+
+        .MiniCourse .Item1 .Del {
+            right: 10px;
+        }
+
+        .MiniCourse .Item1 .CourseName {
+            height: 42px;
+            line-height: 21px;
+            text-overflow: clip;
+            white-space: normal;
+            width: 100px;
+            float: left;
+            color: #999;
+        }
+
+    .MiniCourse .Price {
+        float: left;
+        text-align: right;
+        width: 52px;
+        line-height: 21px;
+        color: #666;
+    }
+
+.MiniCartBottom {
+    height: 60px;
+    background: #e6e6e6;
+    padding: 0 10px 10px;
+    line-height: 30px;
+    color: #333;
+    position: relative;
+}
+
+    .MiniCartBottom .AllPay {
+        color: #d70b17;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+    .MiniCartBottom .Buy {
+        background: #d70b17;
+        color: #fff;
+        height: 30px;
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+    }
+
+.MinErrorTips {
+    padding: 40px 0 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.BuyCartRedCircle {
+    width: 10px;
+    height: 10px;
+    display: none;
+    background: #f00;
+    z-index: 3;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.BuyCartPic {
+    width: 40px;
+    height: 40px;
+    display: none;
+    z-index: 3;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.InstrCourseLine {
+    height: 6px;
+    display: inline-block;
+    position: relative;
+    background-color: #F5F5F5;
+    display: block;
+    margin-top: 50px;
+}
+
+    .InstrCourseLine .Title {
+        position: absolute;
+        background-color: #ffffff;
+        padding: 0 20px 0 20px;
+        top: -12px;
+        left: 0;
+        font-size: 14px;
+    }
+
+    .InstrCourseLine .More {
+        background: #fff;
+        padding: 0 20px 0 20px;
+        position: absolute;
+        top: -12px;
+        right: 0;
+        text-decoration: none;
+        color: #666;
+    }

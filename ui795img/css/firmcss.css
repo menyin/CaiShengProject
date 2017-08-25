@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#e9e9e9;}
+header,aside{ font-family:Verdana,"宋体"}
+#body_content{font-family:'微软雅黑'}
+.firmHomeBg{width:1000px; background:url(/img/c/new_index/firmicon21.png) right top repeat-y;margin:0 auto; text-align:left;}
+.firmHlt{width:660px;overflow:hidden;float:left;}
+.firmHrt{width:320px;  background:#fff; float:right;}
+.firmHrTop{width:290px; padding:20px 15px 10px 15px;  background:#f5fcff; position:relative;}
+.firmConTopBg{overflow:hidden; padding:20px; background:#fff; margin-bottom:20px;}
+.firmConTop{width:620px; overflow:hidden;}
+.firmConTop dl { overflow:hidden;position:relative;}
+.firmConTop dl dt{width:164px; overflow:hidden; #border-top:2px solid #ebebeb; float:left;_position:relative;}
+.firmConTop dl dt .firmcImg{width:160px; height:160px;border:2px solid #ebebeb;position:relative;display:table-cell;text-align:center;vertical-align:middle;}
+.firmConTop dl dt .firmcImg div{position:static;+position:absolute;top:50%}
+.firmConTop dl dt .firmcImg div img{ max-width:160px; max-height: 160px; position:static;+position:relative;top:-50%;left:-50%;}
+.firmConTop dl dt a{ display:block;width:164px; height:24px; background:#c4c4c4; line-height:24px; font-family:"宋体"; text-align:center; color:#fff; font-size:12px;}
+.firmConTop dl dt p{ color:#999; font-size:12px; font-family:"宋体"; display:block; margin-top:8px;}
+.firmConTop dl dt p span{ display:inline-block;width:68px; height:12px; background:#e6e6e6; vertical-align:middle; overflow:hidden;}
+.firmConTop dl dt p span i{ display:block;width:60%; height:10px; background:#0c3; margin:1px 0 0 1px;}
+.firmConTop dl dd{width:440px; overflow:hidden; float:right; }
+.firmConTop dl dd h2{ line-height:18px; font-size:18px; color:#08618a;padding-bottom:4px;#padding-bottom:6px;}
+.firmConTop dl dd h2 em{ display:inline-block;width:46px; height:18px; line-height:18px; font-size:12px; vertical-align:top; text-align:center; font-family:"宋体"; margin-left:5px; background:#c4c4c4; color:#fff;}
+.firmConTop dl dd h2 em.green{background:#093; color:#fff; }
+.firmConTop dl dd p{ display:block; line-height:25px;#line-height:25px;color:#333;}
+.firmConTop dl dd p span{ color:#bfbfbf;}
+.firmConTop dl dd div{ overflow:hidden; margin-top:22px;}
+.firmConTop dl dd div a{ text-align:center; display:inline-block; vertical-align:middle;width:160px; height:40px; line-height:40px; color:#fff; background:#21a3df; border-radius:4px; margin-right:5px;}
+.firmConTop dl dd div em{display:inline-block; cursor:pointer;}
+.firmConTop dl dd div a img{ display:inline-block; vertical-align:middle; margin-right:8px;}
+.firmConTop dl dd div a:hover{ background:#3b8bb9; color:#fff;}
+.firmConTip{ overflow:hidden; color:#666; padding-top:35px;}
+.firmConTip em,.firmConTip a{ color:#f03;}
+/*=====会员信息======*/
+.firmMessage{width:587px;  padding:18px 3px 18px 15px; margin-top:25px; border:1px solid #b2cce5; overflow:hidden;}
+.firmMagLf{width:81px; height:81px; overflow:hidden; float:left; position:relative;}
+.firmMagLf img{ display:block;}
+.firmMagImg{width:80px; height:80px; overflow:hidden; background:url(/img/c/new_index/firmicon03.png) no-repeat; position:absolute; left:0; top:0;}
+.firmMagCont{width:210px; overflow:hidden; float:left; margin-left:15px; margin-top:3px;*white-space: nowrap;}
+.firmMagContx{width:281px; float:left;margin-top:3px; *width:261px;  }
+.firmMagCont p,.firmMagContx p{ color:#333; line-height:24px;}
+.firmMagCont p span,.firmMagContx p span{ color:#999; display:inline-block;}
+.firmMagCont p .subMag,.firmMagContx p .subMag{ padding-left:18px;}
+.firmMagContx p a{ display:inline-block;width:52px; font-size:12px; height:18px; line-height:18px; text-indent:-9999em; margin-left:2px; background:url(/img/c/new_index/firmicon05.png) 2px center no-repeat;vertical-align:middle; }
+.firmMagContx p a.cut{background:url(/img/c/new_index/firmicon05.png) 2px center no-repeat #117ab3;border-radius:0px 8px 8px 0px;text-indent:20px; color:#fff; }
+.firmRmendTit{ width:620px;overflow:hidden; border-bottom:1px solid #e9e9e9; padding-bottom:4px; }
+.firmRmendTit span{color:#2d5272; float:left;}
+.firmRmendTit a{ display:block; float:right; text-align:right;color:#6699cc; font-size:12px; font-family:"宋体"; padding-top:5px;}
+.firmRmendTit a:hover{ text-decoration:underline;}
+.firmRmendLit{ overflow:hidden;}
+.firmRmendLit li{ margin-top:14px; overflow:hidden;}
+.firmRmendLit li a,.firmRmendLit li span{ height:26px; line-height:26px; display:block; float:left;}
+.firmRmendLit li a.subRmlit01{width:130px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.firmRmendLit li a.subRmlit02,.firmRmendLit li a.subRmlit03{width:80px;background:#e9e9e9; color:#666;font-family:"宋体"; font-size:12px;text-align:center; margin-left:5px; float:right;}
+.firmRmendLit li a.subRmlit03{ color:#fff; background:#66bce4; }
+.firmRmendLit li span{ color:#949494;width:290px; font-family:"微软雅黑"; font-size:12px; margin:0 0px 0 10px;}
+.fRmendConat{width:620px; overflow:hidden; padding-top:18px;}
+.fRmendConat li{width:310px; overflow:hidden; float:left;}
+.fRmendConat li p{ display:block;width:310px; overflow:hidden; padding-bottom:4px;}
+.fRmendConat li p.titWeight span{font-weight: bold;color: #333;font-size: 14px;}
+.fRmendConat li b,.fRmendConat li span,.fRmendConat li a{ color:#666; font-family:"宋体"; font-size:14px; display:inline-block; vertical-align:bottom;}
+.fRmendConat li b{ font-size:16px; color:#333; font-family:"微软雅黑"; padding-right:1px;}
+.fRmendConat li a{ padding-left:10px; vertical-align:middle;}
+.ltyFairBg{width:440px; overflow:hidden; float:left; margin-top:20px;}
+.meCustom{ display:block; width:140px; height:40px; border:1px solid #21a3df; color:#21a3df; line-height:40px; text-align:center; font-size:16px; float:right; margin-top:76px; border-radius:4px;}
+.meCustom:hover{ background:#21a3df;color:#fff;}
+.ltyFairBgc,.ltyFlitBg{width:620px; overflow:hidden;}
+.ltyFlit{width:440px; overflow:hidden; height:69px;}
+.ltyFlit a{ display:block; float:left;width:60px; height:68px;line-height:20px;color:#666; text-align:center; font-size:16px; margin-right:34px;}
+.ltyFlit a span{ display:block; padding:10px 0;width:58px;border:1px solid #dadada; }
+.ltyFlit a.cur span{ background:#66bce4; cursor:pointer; border:1px solid #66bce4; color:#fff;}
+.ltyFlit a.cur i{ display:block;width:14px; height:7px; background:url(/img/c/new_index/firmicon07.png) no-repeat; margin:0 auto;}
+.ltyFlitBg{ margin-top:14px;width:440px;}
+.ltyFlit2{ display:none;width:440px; overflow:hidden;}
+.ltyFlit2 li a{ display:block; color:#3d7eb6;}
+.ltyFlit2 li a:hover{ text-decoration:underline;}
+.firmRefresh{ display:block;width:100%; height:40px; background:#00bab1; font-size:16px; color:#fff;text-align:center; line-height:40px; border-radius:4px;}
+.firmRfGray{ display:block;width:100%; height:40px; background:#DBDBDB; font-size:16px; color:#fff;text-align:center; line-height:40px; border-radius:4px;}
+.firmRefresh:hover{ background:#2297a5; color:#fff; }
+.firmRfGray:hover{ background:#DBDBDB; color:#fff;cursor:default}
+.freshTit{ width:100%; overflow:hidden; border-bottom:1px solid #dbdbdb; padding-top:15px; padding-bottom:4px;}
+.freshTit p{width:100%; overflow:hidden; padding-bottom:6px;}
+.freshTit p span,.freshTit em,.freshTit a{ font-size:12px; font-family:"微软雅黑"; display:block; float:left;}
+.freshTit p span{ color:#666;}
+.freshTit p em{width:26px; height:14px; background:url(/img/c/new_index/firmicon08.png) no-repeat; cursor:pointer; margin:0 8px; margin-top:2px;}
+.freshTit p em.cut{background:url(/img/c/new_index/firmicon08hover.png) no-repeat;}
+.freshTit a{ float:right; }
+.memberTit{ overflow:hidden; padding-top:10px; color:#fe7603; text-align:center; line-height:24px;}
+.freshList{width:290px; padding:0 15px; overflow:hidden;}
+.freshList li{width:100%; overflow:hidden;}
+.freshList li.freshGraybg{ background:#fafafa;}
+.freshList li:hover{ background:#f5f5f5;}
+.freshList{ margin-top:10px;}
+.freshList li a,.freshList li span{ font-family:"宋体"; font-size:12px; color:#666; display:block; float:left; height:30px; overflow:hidden; text-align:center; line-height:30px;}
+.freshList li.freshGray span{ color:#999;}
+.freshList li a:hover{ color:#09c; text-decoration:underline;}
+.freshList li .subFresh01{width:135px;_width:88px; padding-left:10px; text-align:left;text-overflow: ellipsis;white-space: nowrap;}
+.freshList li .subFresh01 img{ display:inline-block; vertical-align:-4px; padding-left:5px;}
+.freshList li .subFresh02{width:46px;}
+.freshList li .subFresh03{width:44px;}
+.freshList li .subFresh03 i,.freshList li .subFresh02 i{ display:inline-block;width:4px; height:4px; background:url(/img/c/new_index/reddian.png) 0 top no-repeat; vertical-align:top; margin:5px 0 0 2px;#margin:0px 0 0 2px;}
+.freshList li .subFresh04{width:52px;}
+/*======页眉提示=====*/
+.firmToptipBg{width:1000px; overflow:hidden; margin:20px auto 10px auto;}
+.firmToptip{width:1000px; height:70px; background:#fff; margin-bottom:10px; overflow:hidden;}
+.firmToptip div{width:70px; height:70px; background:#ff9e05; overflow:hidden; float:left;}
+.firmToptip div img{ display:block; margin:22px 0 0 22px;  }
+.firmToptip p{ line-height:70px; float:left; font-size:16px; color:#999; padding-left:25px;}
+.firmToptip a{ display:block; float:right; line-height:70px; font-size:14px; color:#039be5; background:url(/img/c/new_index/firmicon20.png) right center no-repeat; padding-right:22px; margin-right:15px;}
+/*=======会员特权日=======*/
+.firmMemberBg{ overflow:hidden;width:622px;}
+.firmMember{width:620px; overflow:hidden; border:1px solid #e9e9e9; background:#fcfcfc; margin-top:25px;}
+.firmMember p{ display:block;width:40px; height:160px; background:#fe7603;  float:left;}
+.firmMember p span{color:#fff; font-size:18px;width:20px; display:block; padding:28px 0 0 10px; line-height:26px;}
+.firmMember ul{ overflow:hidden;width:574px; margin-left:4px; float:left;}
+.firmMember ul li{ float:left;width:75px; text-align:center; margin:34px 0 0 32px;_margin:34px 0 0 28px;}
+.firmMember ul li img{ display:block; margin:0 auto 6px auto;}
+.firmMember ul li span{ display:block; line-height:18px; color:#666; font-size:12px; font-family:"宋体";}
+.firmMemberPge{width:620px; overflow:hidden; margin-top:20px;}
+.firmMemberPge a{ float:right; display:block;width:160px; height:40px; line-height:40px; color:#fff; font-size:16px; background:#21a3df url(/img/c/new_index/firmicon16.png) 34px center no-repeat; border-radius:4px; text-indent:4.1em;#text-indent:4.8em;}
+.firmMemberPge img{ float:right; display:block; margin:7px 20px 0 0;}
+.firmMemberPge a:hover{ background:#107cae url(/img/c/new_index/firmicon16.png) 34px center no-repeat;}
+/*=====熟悉的公司=====*/
+.firmRmendLbg{ overflow:hidden; margin:20px 0 0 18px;width:600px;}
+.firmRmendL{width:300px; overflow:hidden; float:left; margin-bottom:10px;}
+.firmRmendL dt{width:44px; height:44px; border:1px solid #e9e9e9; float:left; border-radius:4px;}
+.firmRmendL dd{width:244px; padding-left:10px; float:left; overflow:hidden;}
+.firmRmendL dd p{ display:block; margin-top:8px; margin-bottom:2px; height:17px;}
+.firmRmendL dd a{ display:block; font-size:12px; font-family:"宋体"; color:#333;width:235px; height:18px;text-overflow: ellipsis;white-space: nowrap; overflow:hidden; line-height:18px;}
+.firmRmendL dd a:hover{ text-decoration:underline; color:#09c;}
+/*========右边优秀求职者简历=======*/
+.firmEce{ padding:20px 15px; padding-bottom:0; overflow:hidden;}
+.firmEcetit{ display:block; overflow:hidden;}
+.firmEcetit span,.firmEcetit a{ color:#2d5272; display:block; float:left; line-height:18px;}
+.firmEcetit a{ float:right; color:#6699cc; font-size:12px; font-family:"宋体";}
+.firmEce ul{width:100%; overflow:hidden; padding-top:10px;}
+.firmEce ul li { overflow:hidden;}
+.firmEce ul li a{ display:block;width:270px; overflow:hidden; background:#f7f7f7; margin-bottom:4px; padding:10px;}
+.firmEce ul li a img{ display:block;float:left; border:1px solid #f0f0f0;}
+.firmEce ul li a p{ display:block; float:left; padding-left:8px;}
+.firmEce ul li a p span{ cursor:pointer; display:block;width:220px; height:18px; overflow:hidden; line-height:18px; color:#666; font-size:12px; font-family:"宋体";text-overflow: ellipsis;
+white-space: nowrap;}
+.firmEce ul li a:hover{ background:#ebebeb;}

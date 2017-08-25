@@ -1,0 +1,76 @@
+.content{font-size:12px;}
+.wkplc{margin-bottom:20px;}
+
+.bread{height:40px;line-height:40px;font-family:Arial, Helvetica, sans-serif,'微软雅黑','SimHei';}
+.bread a{margin:0 10px;}
+.bread span{margin:0 10px;}
+
+.wkplc .left{float:left;display:inline;width:680px;}
+.wkplc .right{float:right;display:inline;width:300px;}
+.leftPart{background:#fff;border:1px solid #ddd;}
+.rightPart{background:#fff;border:1px solid #ddd;}
+
+/*职场指南左侧列表*/
+.wkplLst .hd{height:50px;line-height:50px;background:#f9f9f9;border-bottom:1px solid #ddd;}
+.wkplLst .hd h3{float:left;display:inline;height:50px;font-size:20px;font-family:"微软雅黑","SimHei";padding-left:30px;}
+.wkplLst .hd .rBtn{float:right;display:inline;margin:0 20px 0 0;font-size:14px;}
+.wkplLst .bd ul{padding:10px 20px;zoom:1;}
+.wkplLst .bd .page{padding:15px 0 25px;zoom:1;}
+
+.wkplLst .bd ul li{border-bottom:1px solid #eee; position:relative; z-index:1;padding:15px 0;zoom:1;}
+.wkplLst .bd ul li h2{line-height:30px;padding:0 10px;}
+.wkplLst .bd ul li h2 a{font-family:"微软雅黑","SimHei";font-size:18px;font-weight:bold;}
+.wkplLst .bd ul li .share{ position:absolute;right:10px;bottom:10px;display:none;}
+.wkplLst .bd ul li.hov .share{display:block;}
+.wkplLst .bd ul li.hov{}
+.wkplLst .bd ul li dl{overflow:hidden;}
+.wkplLst .bd ul li dl dt{float:left;display:inline;width:210px;height:129px;margin:13px 0 0 10px;}
+.wkplLst .bd ul li dl dt img{width:210px;height:129px;}
+
+.wkplLst .bd ul li dl dd{float:left;display:inline;width:400px;margin:15px 0 0 10px;font-size:14px;}
+.wkplLst .bd ul li dl dd .txt{height:100px;overflow:hidden;}
+.wkplLst .bd ul li dl dd .txt p{color:#777;line-height:24px;}
+.wkplLst .bd ul li dl dd .bot{font-size:12px;margin:7px 0 0;height:24px;}
+.wkplLst .bd ul li dl dd .bot .time{float:left;display:inline;width:165px;height:24px;line-height:24px;color:#999;}
+.wkplLst .bd ul li dl dd .bot .time i.jpFntWes{font-size:14px;margin:0 5px 0 0;}
+.wkplLst .bd ul li dl dd .bot .share{ position:static;}
+.wkplLst .bd ul li dl dd .bot .rTo{float:right;display:inline;font-size:14px;}
+
+.wkplLst .bd ul li.noPic dl dt{display:none;}
+.wkplLst .bd ul li.noPic dl dd{width:98%;}
+.wkplLst .bd ul li.noPic dl dd .txt{height:auto;overflow:inherit;}
+
+/*分类浏览*/
+.classify{}
+.classify .hd{font-size:14px;font-weight:bold;height:45px;line-height:45px;padding-left:20px;margin-bottom:5px;}
+.classify .bd{padding:0 7px;zoom:1;}
+.classify .bd ul li{float:left;display:inline;width:120px;height:40px;margin:0 10px 10px;}
+.classify .bd ul li a{display:block;background:#f9f9f9;border:1px solid #ddd;color:#424242;width:118px;height:38px; text-align:center;line-height:38px;font-size:14px;}
+.classify .bd ul li a:hover{background:#f4f4f4;color:#333;}
+
+/*推荐阅读*/
+.rec{}
+.rec .hd{font-size:14px;font-weight:bold;height:45px;line-height:45px;padding-left:20px;margin-bottom:5px;}
+.rec .bd{padding:0 17px 20px;zoom:1;}
+.rec .bd ul li{height:26px;line-height:26px;font-size:14px;padding-left:15px;background:url(/img/common/dot.jpg) no-repeat left center;width:240px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+
+/*文章详情*/
+.wkplcInfo .bd h1{font-family:"微软雅黑","SimHei";font-size:26px;border-bottom:1px solid #ddd;margin:0 10px;line-height:38px;padding:10px;}
+.wkplcInfo .bd .txt{padding:10px 20px;zoom:1;font-size:14px;line-height:26px;min-height:450px;_height:450px;}
+.wkplcInfo .bd .txt img{max-width:618px;}
+.wkplcInfo .bd .bot{padding:10px 20px;zoom:1;}
+.wkplcInfo .bd .bot .lastUp{float:left;display:inline;font-size:14px;color:#999;}
+.wkplcInfo .bd .bot .share{float:right;display:inline;}
+
+/*搜公司*/
+.tSchJobAut .autTempLst p.autTempTxt{font-size:12px; width:292px; font-weight:normal; margin:3px 2px; border-bottom:1px dashed #eee; padding:0 5px 5px 0;zoom:1; background:#fff;}
+.tSchJobAut .autTempLst p.autTempTxt a{display:block; padding-left:3px; width:292px;height:26px;line-height:26px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.tSchJobAut .autTempLst p.autTempTxt a:hover{background:#f1f1f1;}
+.tSchJobAut .autTempCom .autTempComL .comNm{font-weight:normal;}
+
+.search_box_a button { border: none; outline: none;}
+.topHeader { margin-bottom: 10px; box-shadow: 0 1px 3px #ddd;}
+.search_box_a button { border: none;}
+.topHeader .header_fix { width: 1000px;}
+.search_box_a { width: 355px; margin-left: 20px;}
+.search_box_a .searchInput {width: 212px;}

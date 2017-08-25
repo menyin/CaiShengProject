@@ -1,0 +1,382 @@
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> global settings needed for thickbox <<<-----------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+*{padding: 0; margin: 0;}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox specific link and font settings <<<------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_window {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+#TB_secondLine {
+	font: 10px Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+
+#TB_window a:link {color: #666666;}
+#TB_window a:visited {color: #666666;}
+#TB_window a:hover {color: #000;}
+#TB_window a:active {color: #666666;}
+#TB_window a:focus{color: #666666;}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox settings <<<-----------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_overlay {
+	position: fixed;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+}
+
+.TB_overlayMacFFBGHack {background: url(../images/macFFBgHack.png) repeat;}
+.TB_overlayBG {
+	background-color:#000;
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}
+
+* html #TB_overlay { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#TB_window {
+	position: fixed;
+	background: #ffffff;
+	z-index: 102;
+	color:#000000;
+	display:none;
+	border: 4px solid #525252;
+	text-align:left;
+	top:50%;
+	left:50%;
+}
+
+* html #TB_window { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+#TB_window img#TB_Image {
+	display:block;
+	margin: 15px 0 0 15px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #666;
+	border-left: 1px solid #666;
+}
+
+#TB_caption{
+	height:25px;
+	padding:7px 30px 10px 25px;
+	float:left;
+}
+
+#TB_closeWindow{
+	height:25px;
+	padding:11px 25px 10px 0;
+	float:right;
+}
+
+#TB_closeAjaxWindow{
+	padding:7px 10px 5px 0;
+	margin-bottom:1px;
+	text-align:right;
+	float:right;
+}
+
+#TB_ajaxWindowTitle{
+	float:left;
+	padding:7px 0 5px 10px;
+	margin-bottom:1px;
+}
+
+#TB_title{
+	background-color:#e8e8e8;
+	height:27px;
+}
+
+#TB_ajaxContent{
+	clear:both;
+	padding:2px 15px 15px 15px;
+	overflow:auto;
+	text-align:left;
+	line-height:1.4em;
+}
+
+#TB_ajaxContent.TB_modal{
+	padding:15px;
+}
+
+#TB_ajaxContent p{
+	padding:5px 0px 5px 0px;
+}
+
+#TB_load{
+	position: fixed;
+	display:none;
+	height:13px;
+	width:208px;
+	z-index:103;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -104px; /* -height/2 0 0 -width/2 */
+}
+
+* html #TB_load { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+#TB_HideSelect{
+	z-index:99;
+	position:fixed;
+	top: 0;
+	left: 0;
+	background-color:#fff;
+	border:none;
+	filter:alpha(opacity=0);
+	-moz-opacity: 0;
+	opacity: 0;
+	height:100%;
+	width:100%;
+}
+
+* html #TB_HideSelect { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#TB_iframeContent{
+	clear:both;
+	border:none;
+	margin-bottom:-1px;
+	margin-top:1px;
+	_margin-bottom:1px;
+}
+
+
+/* 51auto */
+
+.sprite{
+    background:url("../images/box_icons.png") no-repeat;
+    border:none;
+    display:inline-block;
+    height:0;
+    overflow:hidden;
+    padding:0;
+    text-decoration:none !important;
+    vertical-align:middle;
+}
+
+/*icons*/
+.i_trash{
+    background-position:0 1px;
+    padding-top:24px;
+    width:20px;
+}
+.i_trash_full{
+    background-position:-64px 0;
+    padding-top:24px;
+    width:20px;
+}
+.i_greenicn{
+    background-position:-26px -6px;
+    padding-top:14px;
+    width:14px;
+}
+.i_littletrash{
+    background-position:-44px -4px;
+    padding-top:16px;
+    width:16px;
+}
+.i_trash_sp{
+    background-position:-133px -7px;
+    padding-top:12px;
+    width:14px;
+}
+.i_close{
+    background-position:-90px -6px;
+    padding-top:14px;
+    width:14px;
+}
+.i_edit{
+    background-position:-112px -4px;
+    padding-top:16px;
+    width:16px;
+}
+.i_cover{
+    background-position:-153px -4px;
+    padding-top:16px;
+    width:16px;
+}
+.i_editinfo{
+    background-position:-175px -8px;
+    padding-top:16px;
+    width:12px;
+    margin-left:2px;
+}
+.i_slideshow{
+    background-position:-192px -6px;
+    padding-top:16px;
+    width:16px;
+}
+.i_restore{
+    background-position:-214px -5px;
+    padding-top:16px;
+    width:16px;
+}
+.i_store_sp{
+    background-position:-237px -8px;
+    width:10px;
+    padding-top:10px;
+}
+.i_delete{
+    background-position:-254px -7px;
+    width:16px;
+    padding-top:16px;
+}
+.i_delete_sp{
+    background-position:-270px -9px;
+    width:10px;
+    padding-top:10px;
+}
+.i_moveto{
+    background-position:-287px -4px;
+    width:16px;
+    padding-top:16px;
+}
+.i_move_sp{
+    background-position:-308px -6px;
+    width:12px;
+    padding-top:12px;
+}
+.i_copyclip{
+    background-position:-325px -4px;
+    width:16px;
+    padding-top:16px;
+}
+
+#jp_float_box{
+    width:100%;
+    background:#fff;
+    position:fixed !important;
+    position:absolute;
+    z-index:1001;
+    text-align:left;
+    overflow:hidden;
+}
+#jp_float_box .box_title {
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    height: 15px;
+    padding: 10px 10px 10px 10px;
+    font-weight:bold;
+    cursor:move;
+}
+#jp_float_box .box_title .titbg{
+    background:#edf3fe;
+}
+#jp_float_box .box_title .closer{
+    float:right;
+    cursor:pointer;
+}
+
+#jp_float_box .box_container {
+	font-size: 12px;
+    background:white;
+    padding:10px 10px 10px 10px;
+}
+#jp_float_box .b_btns{
+    padding:10px 0 10px 100px;
+}
+
+#jp_float_box .box_container.failed{
+    color:red;
+}
+#jp_float_box .box_container.success{
+    color:green;
+}
+
+#jp_float_box .post_form {
+	BORDER-BOTTOM: #e9edf1 1px solid; TEXT-ALIGN: left; CLEAR: both; OVERFLOW: hidden
+}
+
+#jp_float_box .post_form input{
+	font-size: 13px;
+}
+
+#jp_float_box .post_form .row {
+	BORDER-BOTTOM: #e9edf1 1px; BORDER-LEFT: #e9edf1 1px; HEIGHT: 30px; CLEAR: both; BORDER-TOP: #e9edf1 1px solid; BORDER-RIGHT: #e9edf1 1px solid
+}
+#jp_float_box .post_form .row .field {
+	TEXT-ALIGN: right; BORDER-LEFT: #e9edf1 1px solid; LINE-HEIGHT: 29px; MARGIN-TOP: 1px; WIDTH: 100px; BACKGROUND: #f3f7f9; FLOAT: left; BORDER-RIGHT: #e9edf1 1px solid
+}
+#jp_float_box .post_form .row .field SPAN.star {
+	COLOR: #ff0000; MARGIN-RIGHT: 2px
+}
+#jp_float_box .post_form .row .fill {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 5px
+}
+#jp_float_box .post_form .row .fill_txt {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 8px
+}
+
+#jp_float_box .post_form .row SPAN.tip {
+	LINE-HEIGHT: 30px; COLOR: #9b9b9b; MARGIN-LEFT: 6px
+}
+#jp_float_box .post_form .row SPAN.tip B {
+	COLOR: #ff0000
+}
+#jp_float_box .post_form .row .tip {
+	FLOAT: left; HEIGHT: 20px
+}
+/*
+#jp_float_box .post_form .row .tip-ok {
+	MARGIN: 4px 0px 0px 4px; WIDTH: 25px; FLOAT: left; HEIGHT: 20px
+}
+#jp_float_box .post_form .row .tip-wrong {
+	BORDER-BOTTOM: #ff8080 1px solid; POSITION: absolute; BORDER-LEFT: #ff8080 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 24px; PADDING-RIGHT: 12px; DISPLAY: inline; BACKGROUND: url(../images/tip.png) #fff2f2 no-repeat 0px -33px; BORDER-TOP: #ff8080 1px solid; TOP: 3px; BORDER-RIGHT: #ff8080 1px solid; PADDING-TOP: 0px; LEFT: 250px
+}
+*/
+#jp_float_box .post_form .row .cols {
+	WIDTH: 200px
+}
+#jp_float_box .post_form .row A {
+	TEXT-DECORATION: underline
+}
+#jp_float_box .post_form .row .ipt00 {
+	WIDTH: 50px
+}
+#jp_float_box .post_form .row .ipt01 {
+	WIDTH: 80px
+}
+#jp_float_box .post_form .row .ipt02 {
+	WIDTH: 180px
+}
+#jp_float_box .post_form .row .ipt03 {
+	WIDTH: 280px
+}
+#jp_float_box .post_form .row .ipt04 {
+	WIDTH: 380px
+}
+#jp_float_box .post_form .row .ipt05 {
+	WIDTH: 480px
+}
+#jp_float_box .sub-box {
+	TEXT-ALIGN: left; MARGIN: 15px 0px; PADDING-LEFT: 100px
+}
+#jp_float_box .sub-box .btn {
+	BORDER-BOTTOM-STYLE: none; LINE-HEIGHT: 26px; BORDER-RIGHT-STYLE: none; WIDTH: 165px; BORDER-TOP-STYLE: none; BACKGROUND: url(../images/publish.png) no-repeat -1px -1px; HEIGHT: 26px; COLOR: #fff; BORDER-LEFT-STYLE: none; CURSOR: pointer; FONT-WEIGHT: bold
+}
+#jp_float_box .sub-box LI {
+	FLOAT: left
+}
+

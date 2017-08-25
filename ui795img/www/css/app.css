@@ -1,0 +1,162 @@
+@charset utf-8;
+.headL b.appLogo{background:url(../images/app/appLogo.jpg) no-repeat 0 0;width:168px;height:45px;display:inline-block;margin:5px 0 0 10px;}
+
+
+.appTagNav{height:55px;background:url(../images/app/appTagNavBg.gif) repeat-x;}
+.appTagNavCon{width:980px;margin:0 auto; text-align:left;}
+.appTagNav ul li{float:left;display:inline;width:250px;height:55px;}
+.appTagNav ul li a{width:250px;height:55px;display:inline-block;background:url(../images/app/appBg.gif) no-repeat;}
+.appTagNav ul li a.navAndroid{ background-position:0 0;}
+.appTagNav ul li a.navAndroid:hover{ background-position:-250px 0;}
+.appTagNav ul li.cu a.navAndroid:link,.appTagNav ul li.cu a.navAndroid:visited{background-position:-500px 0;}
+.appTagNav ul li a.navIphone{ background-position:0 -55px;}
+.appTagNav ul li a.navIphone:hover{ background-position:-250px -55px;}
+.appTagNav ul li.cu a.navIphone:link,.appTagNav ul li.cu a.navIphone:visited{background-position:-500px -55px;}
+.appTagNav ul li a.nav3G{ background-position:0 -110px;}
+.appTagNav ul li a.nav3G:hover{ background-position:-250px -110px;}
+.appTagNav ul li.cu a.nav3G:link,.appTagNav ul li.cu a.nav3G:visited{background-position:-500px -110px;}
+
+
+.appTagC{}
+.appBanner{background:url(../images/app/appBanner.gif) repeat-x left bottom;zoom:1;border-bottom:1px solid #a3bbd4;}
+.appBannerCon{background:url(../images/app/appBannerCon.jpg) no-repeat left bottom;width:980px;margin:0 auto; text-align:left;min-height:586px;_height:586px;}
+.appBannerCon .appL{float:left;display:inline;width:440px;}
+.appBannerCon .appR{float:right;display:inline;width:510px;}
+.appBannerCon .download{ position:relative;zoom:1; z-index:1;margin-top:15px;}
+.appBannerCon .downloadBg{ position:absolute;top:-5px;left:-5px; z-index:1;filter:alpha(opacity=20);-moz-opacity:0.2;-khtml-opacity:0.2;opacity:0.2;background:#787878;}
+.appBannerCon .downloadCon{background:url(../images/app/downloadCon.jpg) no-repeat bottom #fff;padding:10px 20px; position:relative; z-index:2;overflow:hidden;}
+
+
+/*android*/
+.android .appL{}
+.android .phoneSlide{ position:relative;zoom:1;}
+.android .phone{background:url(../images/app/android.png) no-repeat;_background:url(../images/app/android.gif) no-repeat;width:244px;height:488px; position:relative;zoom:1; z-index:1;margin:57px auto 0;}
+.android .phone a.slideArrow{width:37px;height:37px;background:url(../images/app/appBg.gif) no-repeat;display:block; position:absolute;}
+.android .phone a.slideL{left:-80px;top:204px;background-position:0 -165px;}
+.android .phone a.slideL:hover{background-position:0 -202px;}
+.android .phone a.unSlideL{left:-80px;top:204px;background-position:0 -239px;}
+.android .phone a.unSlideL:hover{background-position:0 -239px;}
+.android .phone a.slideR{right:-80px;top:204px;background-position:-37px -165px;}
+.android .phone a.slideR:hover{background-position:-37px -202px;}
+.android .phone a.unSlideR{right:-80px;top:204px;background-position:-37px -239px;}
+.android .phone a.unSlideR:hover{background-position:-37px -239px;}
+.android .phone .phoneCon{width:211px;height:335px;overflow:hidden;position:absolute;top:61px;left:16px;background:#fff;}
+.android .phone .phoneCon ul{width:1055px; position:absolute;left:0;}
+.android .phone .phoneCon ul li{float:left;display:inline;width:211px;height:335px;}
+.android .phone .phoneCon ul li img{width:211px;height:335px;}
+
+.android .appR .slogan{width:505px;height:95px;background:url(../images/app/appBg.gif) no-repeat -245px -165px;margin:35px 0 0 0;}
+.android .appR .sloganTxt{line-height:24px;font-size:14px;color:#e26400}
+
+.android .downloadBg{width:450px;height:345px;}
+.android .downloadCon{height:315px;width:400px;}
+.android .downloadTxt{margin-bottom:20px;}
+.android .downloadTxt p{font-size:14px;height:24px;line-height:20px;}
+.android .downloadL{float:left;display:inline;width:265px;}
+.android .downloadR{float:right;display:inline;width:135px;}
+.android .downloadR .downCode{}
+.android .downloadR .downCode .pic img{width:130px;border:1px solid #d8d8d8;}
+.android .downloadL .downLocal{margin:24px 0 0 0}
+.android .downloadTxt .downLocal .downLocalBtn{}
+.android .downloadTxt .downLocal a.bdDownload{display:inline-block;width:251px;height:62px;background:url(../images/app/appBg.gif) no-repeat -499px -355px;}
+.android .downloadTxt .downLocal a.bdDownload:hover{ background-position:-499px -418px;}
+.android .downloadTxt .downOth{margin-top:7px;}
+.android .downloadTxt .downOth a{display:inline-block;width:122px;height:62px;background:url(../images/app/appBg.gif) no-repeat;}
+.android .downloadTxt .downOth a.downOthBtn1{background-position:0 -572px;margin-right:7px;}
+.android .downloadTxt .downOth a.downOthBtn2{background-position:-129px -572px;}
+.android .downloadTxt .downOth a.downOthBtn1:hover{background-position:0 -634px;}
+.android .downloadTxt .downOth a.downOthBtn2:hover{background-position:-129px -634px;}
+
+.android .version{}
+.android .version dl dt{height:19px;background:url(../images/app/appBg.gif) no-repeat -542px -488px;padding-left:214px;margin-bottom:10px;}
+.android .version dl dt em{font-size:14px;font-family:Arial, Helvetica, sans-serif;background:#666;color:#fff;padding:0 10px;height:19px;line-height:19px;display:inline-block;-moz-border-radius: 15px;-webkit-border-radius: 15px;border-radius:15px;}
+.android .version dl dd{line-height:22px;}
+.android .version dl dd p{clear:both;}
+.android .version dl dd p.updata b{width:68px;text-align:left;display:inline;float:left;}
+.android .version dl dd p.updata span{width:270px;text-align:left;float:left;}
+
+
+/*iphone*/
+.iphone .phoneSlide{ position:relative;zoom:1;}
+.iphone .phone{background:url(../images/app/iphone.png) no-repeat;_background:url(../images/app/iphone.gif) no-repeat;width:243px;height:477px; position:relative;zoom:1; z-index:1;margin:57px auto 0;}
+.iphone .phone a.slideArrow{width:37px;height:37px;background:url(../images/app/appBg.gif) no-repeat;display:block; position:absolute;}
+.iphone .phone a.slideL{left:-80px;top:204px;background-position:0 -165px;}
+.iphone .phone a.slideL:hover{background-position:0 -202px;}
+.iphone .phone a.unSlideL{left:-80px;top:204px;background-position:0 -239px;}
+.iphone .phone a.unSlideL:hover{background-position:0 -239px;}
+.iphone .phone a.slideR{right:-80px;top:204px;background-position:-37px -165px;}
+.iphone .phone a.slideR:hover{background-position:-37px -202px;}
+.iphone .phone a.unSlideR{right:-80px;top:204px;background-position:-37px -239px;}
+.iphone .phone a.unSlideR:hover{background-position:-37px -239px;}
+.iphone .phone .phoneCon{width:208px;height:343px;overflow:hidden;position:absolute;top:55px;left:19px;background:#fff;}
+.iphone .phone .phoneCon ul{width:1055px; position:absolute;left:0;}
+.iphone .phone .phoneCon ul li{float:left;display:inline;width:211px;height:335px;}
+.iphone .phone .phoneCon ul li img{width:208px;height:343px;}
+
+.iphone .appR .slogan{width:505px;height:95px;background:url(../images/app/appBg.gif) no-repeat -245px -165px;margin:35px 0 0 0;}
+.iphone .appR .sloganTxt{line-height:24px;font-size:14px;color:#e26400}
+
+.iphone .downloadBg{width:450px;height:345px;}
+.iphone .downloadCon{height:315px;width:400px;}
+.iphone .downloadTxt{margin-bottom:20px;}
+.iphone .downloadTxt p{font-size:14px;height:24px;line-height:20px;}
+.iphone .downloadL{float:left;display:inline;width:265px;}
+.iphone .downloadR{float:right;display:inline;width:135px;}
+.iphone .downloadR .downCode{}
+.iphone .downloadR .downCode .pic img{width:130px;border:1px solid #d8d8d8;}
+.iphone .downloadL .downLocal{margin-top:24px;}
+.iphone .downloadTxt .downLocal .downLocalBtn{margin-top:7px;}
+.iphone .downloadTxt .downLocal a.bdDownload{display:inline-block;width:251px;height:62px;background:url(../images/app/appBg.gif) no-repeat -499px -355px;}
+.iphone .downloadTxt .downLocal a.bdDownload:hover{ background-position:-499px -418px;}
+.iphone .downloadTxt .downAppStore{}
+.iphone .downloadTxt .downAppStore a{display:inline-block;width:251px;height:62px;background:url(../images/app/appBg.gif) no-repeat -499px -568px;}
+.iphone .downloadTxt .downAppStore a:hover{background-position:-499px -630px}
+
+.iphone .version{}
+.iphone .version dl dt{height:19px;background:url(../images/app/appBg.gif) no-repeat -542px -511px;padding-left:200px;margin-bottom:10px;}
+.iphone .version dl dt em{font-size:14px;font-family:Arial, Helvetica, sans-serif;background:#666;color:#fff;padding:0 10px;height:19px;line-height:19px;display:inline-block;-moz-border-radius: 15px;-webkit-border-radius: 15px;border-radius:15px;}
+.iphone .version dl dd{line-height:22px;}
+.iphone .version dl dd p{clear:both;}
+.iphone .version dl dd p.updata b{width:68px;text-align:left;display:inline;float:left;}
+.iphone .version dl dd p.updata span{width:270px;text-align:left;float:left;}
+
+/*phone3g*/
+.phone3g .phone{background:url(../images/app/phone3g.png) no-repeat;_background:url(../images/app/phone3g.gif) no-repeat;width:268px;height:545px; position:relative;zoom:1; z-index:1;margin:24px auto 36px;}
+.phone3g .phoneCon{width:229px;height:381px;overflow:hidden; position:absolute;top:66px;left:20px;background:#fff;}
+.phone3g .slogan{width:519px;height:95px;background:url(../images/app/appBg.gif) no-repeat -231px -260px;margin:35px 0 0 0;}
+.phone3g .downloadBg{width:450px;height:345px;}
+.phone3g .downloadCon{height:315px;width:400px;}
+.phone3g .downloadCon p.p1{font-family:"微软雅黑","SimHei";font-size:32px;color:#3d3d3d;margin-bottom:10px;}
+.phone3g .downloadCon p.p2{font-family:"微软雅黑","SimHei";font-size:16px;color:#959595}
+.phone3g .downloadCon p.p3{font-family:"微软雅黑","SimHei";font-size:20px;color:#626161;margin-bottom:20px;}
+.phone3g .downloadCon p.p4{font-family:"微软雅黑","SimHei";font-size:16px;color:#000}
+.phone3g .downloadCon p.p5{font-family:Arial, Helvetica, sans-serif;font-size:50px;color:#f96e00;margin-bottom:10px;}
+.phone3g .downloadCon p.p6{font-family:"微软雅黑","SimHei";font-size:22px;color:#f96e00;margin-bottom:25px;}
+.phone3g .downloadCon .downloadTxt{line-height:22px;}
+.phone3g .downloadCon .downloadTxt a:link,.phone3g .downloadCon .downloadTxt a:visited{margin:0 0 0 20px;font-size:14px;color:#2197D5;}
+.phone3g .downloadCon .downloadTxt a:hover{color:#16a6f2;}
+
+/*otherDown*/
+.otherDown{background:#fff;zoom:1;}
+.otherDownCon{width:980px;margin:0 auto; text-align:left; text-align:left;padding:15px 0;}
+.otherDownCon dl dt{float:left;display:inline;width:155px;font-size:18px;font-family:"微软雅黑","SimHei";height:22px;line-height:22px;}
+.otherDownCon dl dd{float:left;display:inline;width:815px;}
+.otherDownCon dl dd ul li{height:22px;line-height:22px;font-size:14px;float:left;display:inline;width:120px;margin:0 15px 10px 0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+
+/*appFun*/
+.appFun{background:url(../images/app/appFun.jpg) repeat;zoom:1;}
+.appFunBg{background:url(../images/app/appFunBg.jpg) repeat-x;zoom:1;padding:30px 0 10px;zoom:1;}
+.appFunLst{width:980px;margin:0 auto;text-align:left;}
+.appFunLst dl{float:left;display:inline;width:490px;height:90px;margin:0 0 30px 0;}
+.appFunLst dl dt{float:left;display:inline;width:78px;height:80px;background:url(../images/app/appBg.gif) no-repeat;}
+.appFunLst dl dd{float:left;display:inline;width:390px;margin:0 0 0 15px;font-size:14px;font-family:"微软雅黑","SimHei";}
+.appFunLst dl dd p{height:24px;line-height:24px;}
+.appFunLst dl dd p.tit{font-size:18px;height:28px;line-height:26px;margin-bottom:10px;}
+.appFunLst dl.lst1 dt{ background-position:0 -376px;}
+.appFunLst dl.lst2 dt{ background-position:-78px -376px;}
+.appFunLst dl.lst3 dt{ background-position:-156px -376px;}
+.appFunLst dl.lst4 dt{ background-position:-234px -376px;}
+.appFunLst dl.lst5 dt{ background-position:-312px -376px;}
+.appFunLst dl.lst6 dt{ background-position:-390px -376px;}
+.appFunLst dl.lst7 dt{ background-position:0 -456px;}
+.appFunLst dl.lst8 dt{ background-position:-78px -456px;}

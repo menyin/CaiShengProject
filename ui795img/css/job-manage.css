@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+/*批量排序*/
+.batch-sort{max-height: 400px;overflow-y: auto;overflow-x: hidden}
+.batch-sort,.batch-sort table{width:100%}
+.batch-sort th,.batch-sort td{border-top:1px solid #ebebeb;padding:7px 15px;color:#666;font-size:14px}
+.batch-sort th{color:#333;padding:10px 15px}
+.batch-sort .text{border-radius: 5px;width:30px;text-align: center}
+/*联系方式设置*/
+.set-contact{}
+.set-contact .list{width:400px;float:left;position:relative}
+.set-contact .list ul{height: 400px;padding-top:40px;overflow-y: scroll}
+.set-contact .list li,.set-contact .list .all{padding:10px;border-bottom:1px solid #ebebeb;margin:0 5px}
+.set-contact .list li:hover{background-color: #f6f6f6}
+.set-contact .list a{font-size:14px;font-weight:bold;color:#3D84B8}
+.set-contact .list a:hover{color:#}
+.set-contact .list p{margin-left: 25px;color:#999;margin-top: 3px;font-size:12px}
+.set-contact .list .all{margin-left: 5px;position: absolute;top:0px;width:350px;background-color: #fff}
+.set-contact .list input{vertical-align: middle;margin-right: 5px}
+.set-contact .setting{float: right;width:320px;margin-right: 15px;margin-top: 10px}
+.set-contact .setting .tit{font-size:14px;font-family:"Microsoft YaHei","微软雅黑";margin-bottom: 5px}
+.set-contact .setting .select{display: block;margin-top: 5px;color:#999;float:none!important}
+.set-contact .setting .select input{vertical-align:-2px;margin-right:3px}
+.set-contact .twoset{border:1px solid #e5e5e5;border-radius: 5px;margin: 10px;padding:5px 5px 10px 5px;background-color: #f2f2f2;display: none}
+.set-contact .twoset label{margin-top: 5px;display: block}
+.set-contact .twoset p{color:#999;margin-left: 20px;margin-top: 3px}
+.set-contact .twoset li{margin-top: 5px;padding-left: 20px;#padding-left:10px}
+.set-contact .twoset .name,.set-contact .twoset .tel,.set-contact .twoset .email{padding:3px;border-radius: 5px;width:80px;height: 22px}
+.set-contact .twoset .tel{width:150px}
+.set-contact .twoset .email{width:250px}
+
+.set-contact .twoset li p{float:left;position: relative;margin:0px 5px 0 0}
+.set-contact .twoset li p span{position: absolute;left:5px;top:5px}
+/*延长有效期*/
+.length-time{padding:20px}
+.length-time .tit{font-size:14px}
+.length-time .tit span{color:#3F74C2}
+.length-time li{margin-top: 10px;color:#666}
+.length-time li strong{color:#FF6600}
+
+.long-time,.long-time table{width:100%;max-height: 400px;overflow-y: auto}
+.long-time th,.long-time td{text-align: left;padding:10px;border-top:1px solid #eee}
+.long-time th{font-weight:normal}
+.long-time td a{font-size:14px;font-weight:bold}
+.long-time .oper{color:#999;width:280px}
+.long-time .oper select{margin:0 5px}
+.long-time-num{float:left;margin-top: 5px}
+.long-time-num .f090,.long-notime .f090{color:#009900}
+.long-time-num .ff60,.long-notime .ff60{color:#FF6600}
+.long-time-num font{color:#999}
+
+.long-notime{padding:15px}
+.long-notime .tit{display: block;margin: 20px 0 10px 0}
+.long-notime .alt{color:#999;line-height: 20px}
+.long-notime .warning{color:#f60;margin-bottom: 5px;font-weight:bold;font-size:14px}
+.long-notime dt{float:left;width:61px;height: 76px;margin-top: 3px}
+.long-notime dt img{width:100%;height: 100%}
+.long-notime dd{margin-left: 75px;line-height: 22px}
+/*批量更改岗位级别*/
+.batch-level{padding:0 10px}
+.batch-level li{padding:15px 10px;border-bottom:1px solid #ebebeb}
+.batch-level li span{font-size:14px;color:#3F74C2}
+.batch-level li select{float: right}
+.batch-level li:last-child{border-bottom:0px}
+/*设置置顶*/
+.set-top,.jp-spread{padding:30px;border-top:1px solid #e2e2e2}
+.set-top .gray6,.jp-spread .gray6{color:#666;line-height: 22px}
+.set-top .gray6 strong,.jp-spread .gray6 strong{color:#4382ae;margin-top: 20px}
+.set-top .know,.jp-spread .know{font-size:14px;display: block;margin-bottom: 10px;color:#000}
+.set-top li{color:#000}
+.set-top .text{width:120px;margin:0 15px 0 5px;#vertical-align: middle}
+.set-top .drop{margin-left: 5px}
+.set-top li a{color:#4583b6;margin-left: 10px}
+.set-top .mgl5{padding:3px}
+.dialog .set-top-foot{background-color: #f2f2f2;border-top:1px solid #f2f2f2;padding:10px}
+.set-top-num{color:#999;float:left;margin-top: 7px}
+
+.update-top{border:1px solid #e6e6e6;background-color: #f2f2f2;padding:10px;margin: 7px 0}
+.update-top .item{padding:5px 0}
+.update-top a,.add{color:#3d87b6}
+.update-top .name{width:110px;display: inline-block}
+.update-top .extend{float:right}
+.set-top .update-top .text{width:79px}
+
+.extend-box{margin-left: 12px}
+.extend-box .drop{color:#666;margin-top: -5px}
+/*急聘推广*/
+.jp-spread span.clearfix{margin-top: 8px;display:block}
+.jp-spread .gray6{margin-bottom: 15px}
+.jp-spread li{margin-bottom: 5px}
+.jp-spread li font{color:#ec2707}
+.tg-inad{padding:20px}
+.tg-inad .hbFntWes{color:#ee2801;font-size:32px}
+.tg-inad .mgl30{margin-left: 20px;margin-right: 10px}
+.tg-inad .w292{width:320px;position: relative;zoom:1}
+.tg-inad .tit{font-size:18px;color:#e72f00;font-weight:bold;margin-top: 5px;font-family:"Microsoft YaHei","微软雅黑"}
+.tg-inad .sy{color:#515151;line-height: 22px;margin-bottom: 10px;color:#999}
+.tg-inad dt{float:left;width:72px;height: 91px}
+.tg-inad dt img{display: block;width:100%;height: 100%}
+.tg-inad dd{margin-left: 80px;line-height: 22px}
+/*输入框*/
+.formText{float:left;display:inline; position:relative; z-index:1}
+label.txtLabel{color:#999; position:absolute;font-size:14px;left:7px;top:4px;left:6px \9\0;top:5px \9\0;*left:6px;*top:5px; cursor:text}
+input.text{height:28px;line-height:28px;border:1px solid #cfcfcf;border-right:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;padding:0 5px;color:#333;background:#fff;font-size:12px}/*输入框默认状态*/
+input.text::-ms-clear{display:none}
+input.text::-ms-reveal{display:none}
+input.textGray{color:#ccc}/*输入框默认灰色文字状态*/
+input.textDis{background:#f2f2f2;color:#ccc;}
+input.error{height:28px;line-height:28px;border:1px solid #f1aaa9;background:#fff3f3;box-shadow:0 0 3px #f1aaa9}/*输入框判断错误*/
+input.focus{height:28px;line-height:28px;border:1px solid #9fcdd6;background:#f2fcfe;box-shadow:0 0 5px #9fcdd6}
+input.disText{background:#f3f3f3}
+.length-time .formText input{#vertical-align: middle}

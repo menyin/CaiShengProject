@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+UL {
+	PADDING-BOTTOM: 0px; BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 0px
+}
+
+UL {
+	LIST-STYLE-TYPE: none
+}
+img{border:none;}
+
+.popup {
+	BORDER-BOTTOM: #4e8ddc 3px solid; BORDER-LEFT: #4e8ddc 1px solid; BACKGROUND: #fff; BORDER-TOP: #4e8ddc 2px solid; BORDER-RIGHT: #4e8ddc 1px solid
+}
+.popup .popupBtn {
+	BORDER-RIGHT-WIDTH: 0px; WIDTH: 65px; FONT: 12px/22px "新宋体"; BACKGROUND: url(/images/infoBoxBtn.gif) #33ffff no-repeat; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 22px; BORDER-LEFT-WIDTH: 0px; CURSOR: pointer
+}
+.popup .popuphead {
+	BACKGROUND: url(/images/infoBoxT.gif) #0033ff no-repeat center -1px; HEIGHT: 26px
+}
+.popup .popuphead hh1 {
+	MARGIN: 6px 0px 0px 5px; PADDING-LEFT: 10px; FONT: bold 12px "新宋体"; BACKGROUND: url(/images/popdivicon.gif) no-repeat left 50%; FLOAT: left; COLOR: #fff; CURSOR: move
+}
+.popup .popuphead H1 {
+	MARGIN: 6px 0px 0px 5px; PADDING-LEFT: 6px; FONT: bold 12px "新宋体"; FLOAT: left; COLOR: #fff; CURSOR: move
+}
+.popup .popuphead IMG {
+	MARGIN: 4px 5px 0px 0px; FLOAT: right; CURSOR: pointer
+}
+.popup .popupfooter {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #f0f7fd; BORDER-TOP: #d5dfe9 1px solid; PADDING-TOP: 8px
+}
+.popup .popupBody .popupbodyContent {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+.popup .popupBody {
+	CLEAR: both
+}
+.DivShow {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BACKGROUND: #fff; HEIGHT: 1%; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 1px; text-align:left;
+}
+.DivShowT {
+	BACKGROUND: url(/images/DivShowH.jpg) repeat-x; HEIGHT: 16px; COLOR: #fff; PADDING-TOP: 6px;
+}
+.DivShowT H5 {
+	FONT: 12px "新宋体"; FLOAT: left
+}
+.DivShowT H5 IMG {
+	MARGIN: 1px 8px 0px; VERTICAL-ALIGN: top
+}
+.DivShowT SPAN {
+	FLOAT: right; CURSOR: pointer; MARGIN-RIGHT: 6px
+}
+.DivShowB {
+	BACKGROUND: #fff
+}
+.DivShowB li {
+	FONT: 12px/24px "新宋体";
+}
+.DivShowB DIV.ThisBg {
+	BACKGROUND: #fef8f1
+}
+.DivShowB P {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 20px; PADDING-LEFT: 5px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: url(/images/BgAX.gif) repeat-x 50% bottom; FLOAT: left; CLEAR: both; PADDING-TOP: 5px
+}
+.DivShowB SPAN.Anauto {
+	MARGIN-TOP: 12px; WIDTH: 100%; DISPLAY: block; FONT: 12px/24px "新宋体"; FLOAT: left; HEIGHT: 24px; CLEAR: both
+}
+.DivShowB H6 {
+	PADDING-BOTTOM: 0px; MARGIN-TOP: 4px; PADDING-LEFT: 15px; PADDING-RIGHT: 0px; DISPLAY: block; FONT: 12px/24px "新宋体"; BACKGROUND: #fef8f1; COLOR: #df4017; CLEAR: both; PADDING-TOP: 0px
+}
+.DivShowB H6 LI {
+	MARGIN-RIGHT: 6px
+}
+.DivShowB UL {
+	CLEAR: both
+}
+.DivShowB LI {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 0px; DISPLAY: inline; FLOAT: left; HEIGHT: 22px; MARGIN-LEFT: 6px; OVERFLOW: hidden
+}
+.DivShowB LI INPUT {
+	PADDING-BOTTOM: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; WIDTH: 13px; PADDING-RIGHT: 0px; HEIGHT: 13px; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 3px; PADDING-TOP: 0px
+}
+DIV.BgIcon LI {
+	PADDING-LEFT: 12px; BACKGROUND: url(/images/BgIcon1.gif) no-repeat 5px 8px
+}
+UL.BgIcon LI {
+	PADDING-LEFT: 12px; BACKGROUND: url(/images/BgIcon1.gif) no-repeat 5px 8px
+}
+P.BgIcon {
+	PADDING-LEFT: 12px; BACKGROUND: url(/images/BgIcon1.gif) no-repeat 5px 8px
+}
+.showDivsub P.BgIcon {
+	PADDING-LEFT: 12px
+}
+.DivShowLi {
+	WIDTH: 100%; FLOAT: left; CLEAR: both; PADDING-TOP: 8px
+}
+.DivShowB .DivShowLi H6 {
+	FONT: 12px/24px "新宋体"; BACKGROUND: url(/images/BgAX.gif) repeat-x 50% top
+}
+.DivShowLi LI {
+	POSITION: relative
+}
+.LiAbsoDiv {
+	Z-INDEX: 998; BORDER-BOTTOM: #ffecd7 1px solid; POSITION: absolute; FILTER: alpha(opacity=90); BORDER-LEFT: #ffecd7 1px solid; PADDING-LEFT: 6px; BACKGROUND: #fffdfb; HEIGHT: 100px; BORDER-TOP: #ffecd7 1px solid; TOP: 0px; BORDER-RIGHT: #ffecd7 1px solid; LEFT: 0px; opacity: 0.9
+}
+.DivShowBT {
+	FONT: 12px "新宋体"; BACKGROUND: url(/images/BgAX.gif) #fef8f1 repeat-x 50% bottom; HEIGHT: 1%; COLOR: #df4017; CLEAR: both
+}
+.DivShowBT B {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 0px; DISPLAY: block; FLOAT: left; PADDING-TOP: 14px
+}
+.DivShowBT SPAN {
+	MARGIN: 6px 6px 6px 0px; FLOAT: right
+}
+.DivShowBT SPAN A {
+	MARGIN-TOP: 6px; DISPLAY: block; TEXT-DECORATION: underline
+}
+.DivShowBT SPAN A IMG {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 4px
+}
+.DivShowBT SPAN INPUT {
+	TEXT-ALIGN: center; LINE-HEIGHT: 24px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 48px; BACKGROUND: url(/images/BgBt.gif) no-repeat; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 24px; COLOR: #fff; BORDER-LEFT-WIDTH: 0px; CURSOR: pointer
+}
+.ThisLiInput {
+	BACKGROUND-COLOR: #fef8f1; WIDTH: 100%; FONT: 12px "新宋体"; COLOR: #df4017; CLEAR: both; OVERFLOW: visible; PADDING-TOP: 0px !important
+}
+.ThisLiInput LI {
+	LINE-HEIGHT: 24px; DISPLAY: block; WHITE-SPACE: nowrap; FLOAT: left; HEIGHT: 24px; OVERFLOW: visible; MARGIN-RIGHT: 16px
+}
+.DivShowB SPAN UL.ThisLi LI {
+	DISPLAY: inline; FONT: 12px/24px "新宋体"; MARGIN-RIGHT: 8px
+}
+.DivShowB LI INPUT {
+	VERTICAL-ALIGN: middle
+}
+.NDivCl {
+	POSITION: relative; WIDTH: 100%; FLOAT: left; CLEAR: both
+}
+.NDivCl1 {
+	POSITION: relative; WIDTH: 100%; FLOAT: left; CLEAR: both
+}
+.NDivCl1 UL {
+	_padding-top: 3px
+}
+.NDivClSpan {
+	Z-INDEX: 1; POSITION: absolute; MARGIN-TOP: -6px; WIDTH: 150px; FONT: bold 12px "新宋体"; COLOR: #0056c2; TOP: 50%; LEFT: 5px
+}
+.NDivClind {
+	Z-INDEX: 1; POSITION: absolute; MARGIN-TOP: -6px; WIDTH: 120px; FONT: bold 12px "新宋体"; COLOR: #0056c2; TOP: 50%; LEFT: 5px
+}
+.NDivClind30 {
+	Z-INDEX: 1; POSITION: absolute; MARGIN-TOP: -6px; WIDTH: 120px; FONT: bold 12px "新宋体"; COLOR: #0056c2; TOP: 30%; LEFT: 5px
+}
+.NDivCl LI {
+	CURSOR: pointer
+}
+.NDivCl UL.NDivClUL {
+	PADDING-LEFT: 160px; DISPLAY: block; HEIGHT: 1%
+}
+.NDivClUL LI {
+	PADDING-LEFT: 14px; BACKGROUND: url(/images/IconK.jpg) no-repeat 2px 6px; HEIGHT: 22px; OVERFLOW: hidden
+}
+.NDivCl UL.indUL {
+	PADDING-LEFT: 124px; DISPLAY: block; HEIGHT: 1%
+}
+.indUL LI {
+	PADDING-LEFT: 8px; BACKGROUND: url(/images/BgIcon1.gif) no-repeat 2px 6px; HEIGHT: 20px; OVERFLOW: hidden
+}
+.indUL LI.nobg {
+	PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 18px; OVERFLOW: hidden
+}
+.showDivsub {
+	BORDER-BOTTOM: #fdab02 1px solid; POSITION: absolute; BORDER-LEFT: #fdab02 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: none; BACKGROUND: #fefaed; BORDER-TOP: #fdab02 1px solid; CURSOR: pointer; BORDER-RIGHT: #fdab02 1px solid; PADDING-TOP: 0px; text-align:left;
+}
+.showDivsub LI {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 15px; PADDING-LEFT: 6px; PADDING-RIGHT: 0px; FLOAT: left; HEIGHT: 11px; OVERFLOW: hidden; PADDING-TOP: 4px
+}
+.showDivsub LI INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 3px 0px 0px; PADDING-LEFT: 0px; WIDTH: 13px; PADDING-RIGHT: 0px; HEIGHT: 13px; VERTICAL-ALIGN: middle; PADDING-TOP: 0px
+}
+.showDivsub P {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 6px; PADDING-RIGHT: 0px; HEIGHT: 11px; OVERFLOW: hidden; FONT-WEIGHT: bold; PADDING-TOP: 4px
+}
+.showDivsub P INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 3px 0px 0px; PADDING-LEFT: 0px; WIDTH: 13px; PADDING-RIGHT: 0px; HEIGHT: 13px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.Bgc {
+	BACKGROUND: #fff6e5
+}
+.tableborder {
+	BORDER-BOTTOM: #86b9d6 1px solid; BORDER-LEFT: #86b9d6 1px solid; BACKGROUND: white; BORDER-TOP: #86b9d6 1px solid; BORDER-RIGHT: #86b9d6 1px solid
+}
+.tableborder .header {
+	FONT: bold 12px Arial, Tahoma; BACKGROUND: #c2deed; HEIGHT: 25px; COLOR: #154ba0
+}
+.tableborder .header A {
+	COLOR: #154ba0
+}
+.tableborder .header INPUT {
+	BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 16px; VERTICAL-ALIGN: middle
+}
+.tableborder .category {
+	BACKGROUND-COLOR: #ffffd9; FONT: 12px Arial, Tahoma; HEIGHT: 20px; COLOR: #92a05a
+}
+.tableborder .category TD {
+	BORDER-BOTTOM: #dedeb8 1px solid
+}
+.tableborder .expire {
+	COLOR: #999999; CURSOR: not-allowed; TEXT-DECORATION: none
+}
+.expire A:link {
+	COLOR: #999999; CURSOR: not-allowed; TEXT-DECORATION: none
+}
+.expire A:visited {
+	COLOR: #999999; CURSOR: not-allowed; TEXT-DECORATION: none
+}
+.tableborder .default {
+	COLOR: #000000
+}
+.default A:link {
+	COLOR: #000000
+}
+.default A:visited {
+	COLOR: #000000
+}
+.tableborder .checked {
+	COLOR: #ff0000
+}
+.checked A:link {
+	COLOR: #ff0000
+}
+.checked A:visited {
+	COLOR: #ff0000
+}
+.tableborder .today {
+	COLOR: #00bb00
+}
+.today A:link {
+	COLOR: #00bb00
+}
+.today A:visited {
+	COLOR: #00bb00
+}
+
+.SpFormLBut {
+	TEXT-ALIGN: left; LINE-HEIGHT: 22px; BORDER-RIGHT-WIDTH: 0px; PADDING-LEFT: 8px; WIDTH: 383px; MARGIN-BOTTOM: 8px; BACKGROUND: url(/images/searchFormBut.jpg) no-repeat; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 22px; VERTICAL-ALIGN: 1px; BORDER-LEFT-WIDTH: 0px; CURSOR: pointer
+}
+.NDivCl li{font-size:12px; text-align:left;}
+.showDivsub li,.showDivsub p{font-size:12px;}
+#SelectedDiv li{font-size:12px;}
+
+
+span.InputDiv input{width:163px;height:20px;background:url(/images/BgDiv.gif) no-repeat;cursor:pointer;border:0;text-align:left;padding-left:5px;padding-top:0px;}
+#SelectedLi li{text-align:left;}
+
+/*发布职位，工作所在地*/
+body
+        {
+            font-size: 12px;
+        }
+		#cityDiv{
+			border:1px solid #4f8cdd; border-bottom: 3px solid #4f8cdd;text-align: left; background: url(/images/check_05.gif) repeat-x; width: 308px; height: auto; position: relative;
+		}
+		#cityDiv .dacha{
+			background: url(/images/check_08.gif) no-repeat; height: 15px; width: 15px;border: 0px; position: absolute; top: 5px; right: 5px;
+		}
+		#cityDiv .sures{
+			background: url(/images/check_14.gif) no-repeat; height: 21px; width: 44px;border: 0px; text-align: center; line-height: 21px;color: #fff;" class="sures
+		}
+		#cityDiv input{
+		margin:0px;
+		padding:0px;
+		}
+
+        #cityDiv .inputs
+        {
+            height: 15px;
+            width: 15px;
+            vertical-align: text-bottom;
+            _margin-bottom: 1px;
+            margin-right: 2px;
+        }
+        #cityDiv .citychecks
+        {
+            background: url(/images/check_03.gif) no-repeat;
+            overflow: hidden;
+            padding: 6px 0 5px 0;
+        }
+		#cityDiv .sty1{
+			background:#fbdbc1; 
+			padding:7px 5px; 
+			border-bottom: 1px dashed #d9d0c1;
+		}
+		#cityDiv .sty2{
+			background: #faece1; border-bottom: 1px dashed #d9d0c1;padding:7px;
+		}
+		#cityDiv .sty3{
+			background: #fbf1e8; border-bottom: 1px dashed #d9d0c1;padding: 6px 0 6px 7px;
+		}
+		 #cityDiv .sty4{
+			background: #f9f3ee; padding: 6px 0 6px 7px;
+		}
+        #cityDiv span
+        {
+            margin-right: 5px;
+        }
+		#cityDiv .spans{
+			width:65px;
+			float:left;
+		}

@@ -1,0 +1,65 @@
+@charset "utf-8";
+body{background:url(../images/publicrecruit/body.gif) repeat-x 0 34px #fff1e1;}
+.head{background:url(../images/publicrecruit/head.jpg) no-repeat center 0;}
+.head .headCon{height:242px;zoom:1; position:relative;width:980px;margin:0 auto; text-align:left;height: 242px;}
+.headCon a{ position:absolute;top:14px;left:10px;}
+
+.bread{height:37px;line-height:37px;border-bottom:1px solid #d1d1d1;background:#eaeaea;}
+.breadCon{width:980px;margin:0 auto; text-align:left;padding:0 0 0 20px;}
+.breadCon a{margin:0 10px;}
+.breadCon span{margin:0 10px;}
+
+.content{background:url(../images/publicrecruit/contentBg.jpg) repeat-y;padding:10px 0;width:994px;margin:0 auto; text-align:left; }
+.contentCon{padding:0 25px;position:relative;zoom:1; z-index:1}
+.contentBot{background:url(../images/publicrecruit/contentBot.jpg) no-repeat;width:994px;height:12px;font-size:0;line-height:0;margin:0 auto;}
+a.backTop{background:url(../images/publicrecruit/backtop.gif) no-repeat;width:61px;height:56px; position:absolute;right:-51px;bottom:0;display:block;}
+.foot{padding:15px 0; text-align:center;font-size:14px;}
+
+/*公招列表*/
+.lst{}
+.lst h3{background:url(../images/publicrecruit/lstTit.gif) no-repeat;width:89px;height:27px;margin:5px 0 5px 11px;}
+.lstCon ul li{height:40px;border-bottom:1px dashed #bebebe;line-height:40px;}
+.lstCon ul li .L{float:left;display:inline;width:820px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;font-size:14px;font-family:"微软雅黑","SimHei";background:url(../images/publicrecruit/lstDot.gif) no-repeat 10px 20px;padding-left:20px;height:40px;}
+.lstCon ul li em{float:right;display:inline;width:85px; text-align:right;}
+
+.lst .page{padding:10px 0 0 5px; text-align:center;float:none;width:100%;display:block;}
+.lst .page a:link,.lst .page a:visited{height:28px;line-height:28px;border:1px solid #ccc;font-size:14px;display:inline-block;width:31px; text-align:center;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;
+background:-moz-linear-gradient(top,#fff,#f2f2f2 95%,#fff 5%);
+background:-webkit-gradient(linear,0 0,0 100%,from(#fff),color-stop(95%,#f2f2f2),color-stop(5%,#fff));
+font-family:Arial, Helvetica, sans-serif;padding:0;margin:0 5px; vertical-align:inherit
+}
+.lst .page a.thrText:link,.lst .page a.thrText:visited{width:40px;}
+.lst .page a:hover{border:1px solid #8e8e8e;color:#000;
+background:-moz-linear-gradient(top,#f9f9f9,#eaeaea 95%,#fff 5%);
+background:-webkit-gradient(linear,0 0,0 100%,from(#f9f9f9),color-stop(95%,#eaeaea),color-stop(5%,#fff));
+}
+.lst .page a.cu:link,.lst .page a.cu:visited{background:#4d9cdf;border:1px solid #4d9cdf;color:#fff;font-weight:bold;
+background:-moz-linear-gradient(top,#2280cc,#49adff 95%,#72aedb 5%);
+background:-webkit-gradient(linear,180% 0,0 100%,from(#2280cc),color-stop(95%,#49adff),color-stop(5%,#72aedb));
+-moz-box-shadow:0 3px 2px #07589a inset;/* For Firefox3.6+ */
+-webkit-box-shadow:0 3px 2px #07589a inset;/* For Chrome5+, Safari5+ */
+box-shadow:0 3px 2px #07589a inset;/* For Latest Opera */
+}
+.lst .page a.morePage:link,.lst .page a.morePage:visited{font-weight:normal;border:0;padding:0;width:22px;background:none;}
+.lst .page a.morePage:hover{background:none;}
+
+/*公招详情*/
+.info{}
+.info h1{font-size:20px;font-family:"微软雅黑","SimHei"; text-align:center;}
+.tip{background:#f9f4e4;height:38px;line-height:38px;padding:0 10px;margin:10px 0;}
+.tipL{float:left;display:inline;width:650px;}
+.tipL b{font-weight:normal;margin:0 5px;}
+.tipL a:link,.tipL a:visited{margin:0 5px 0 0;color:#004aae;}
+.tipL em{color:#747474;}
+.tipR{float:right;display:inline;width:230px;}
+.tipR .share{_margin:10px 0 0;}
+.infoCon{}
+.infoCon .infoConTxt{padding:0 10px 10px;zoom:1;font-size:14px;font-family:"微软雅黑","SimHei";line-height:24px;border-bottom:1px dashed #bebebe;}
+.infoCon .infoConTxt p.download{margin:10px 0;}
+.infoCon .infoConTxt p.download span{margin:0 0 0 5px;}
+.infoCon .infoConTxt p.download a:link,.infoCon .infoConTxt p.download a:visited{margin:0 0 0 5px;color:#004aae}
+.infoPage{margin:10px 0 0;padding:0 10px;font-weight:bold;}
+.infoPage .infoPageL{float:left;display:inline;width:400px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;height:22px;line-height:22px;}
+.infoPage .infoPageR{float:right;display:inline;width:400px; text-align:right;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;height:22px;line-height:22px;}
+.infoPage a:link,.infoPage a:visited{color:#004aae;font-weight:normal;}
+

@@ -1,0 +1,151 @@
+.part{padding:10px;zoom:1;}
+.plate{ position:relative;zoom:1;}
+.plateL{float:left;display:inline;width:580px;}
+.plateR{float:right;display:inline;position:relative;zoom:1;}
+
+/*简历名称*/
+.basicInfo{background:#faf8f9;height:55px;}
+.basicInfo .verTxt{font-size:14px;margin:20px 0 0 10px;}
+.basicInfo .verText{margin:10px 10px 0;}
+.basicInfo .verText .inputText{width:210px}
+.basicInfo .verJudgeError{margin:15px 0 0 5px;}
+.basicInfo .verJudgePass{margin:17px 0 0 5px;}
+.basicInfo .basicInfoBtn{margin:14px 20px 0 20px;float:right;display:inline;}
+.basicInfo .basicInfoShow{float:left;display:inline;margin:20px 0 0 10px;font-size:14px;}
+
+/*人才类别*/
+.category{padding:15px 10px 25px;font-size:14px;}
+.category input{ vertical-align:middle;margin:0 5px 0 20px;}
+.category label{ vertical-align:middle;}
+
+/*公共部分*/
+.resumeFillT{height:30px;line-height:30px;border-bottom: 1px solid #e9e9e9;}
+.resumeFillT h4{font-size:15px;font-weight:bold;color:#31668e;float:left;display:inline;background:#fff;padding:0 5px 0 10px;}
+.resumeFillT h5{font-size:14px;float:left;display:inline;padding:0 5px 0 10px;}
+.resumeFillT p{float:right;display:inline;background:#fff;padding:0 0 0 5px;}
+.resumeFillT p a:link,.resumeFillT p a:visited{display:inline-block;background:url(../images/p/bg.gif) no-repeat;padding-left:20px;margin:0 0 0 5px;color:#2094D1;}
+.resumeFillT p a:hover{color:#16a6f2;}
+.resumeFillT p a.edit:link,.resumeFillT p a.edit:visited{ background-position:-784px -51px;}
+.resumeFillT p a.open:link,.resumeFillT p a.open:visited{ background-position:-784px -110px;}
+.resumeFillT p a.close:link,.resumeFillT p a.close:visited{ background-position:-784px -160px;}
+.resumeFillT p a.cancel:link,.resumeFillT p a.cancel:visited{ background-position:-784px -206px;}
+.resumeFillC{padding:10px;zoom:1;}
+.resumeFillC .teamLst{margin:5px 0;}
+.resumeFillC .teamLst .team{height:50px}
+.resumeFillC .teamLst .teamL{width:95px;}
+.resumeFillC .teamLst .teamR{width:423px;}
+.resumeFillC .teamLst .teamR b.ico{ vertical-align:middle;}
+.resumeFillC .teamLst .teamR .verText input.inputText{width:198px;}
+.resumeFillC .teamLst .teamR .selBtn a:link b,.resumeFillC .teamLst .teamR .selBtn a:visited b{width:175px;}
+.resumeFillC .teamLst .teamR .verTxt{color:#929292;}
+.resumeFillC .teamLst .teamR .verTxt a:link,.resumeFillC .teamLst .teamR .verTxt a:visited{color:#2094D1; vertical-align:middle;}
+.resumeFillC .teamLst .teamR .verTxt a:hover{color:#16a6f2;}
+.resumeFillC .teamLst .teamR textarea.textarea{width:405px;}
+.resumeFillC .teamLst .teamR .verTextareaTxt{width:416px;}
+.resumeFillC .teamLst .teamR .verTextareaTxt .verJudgeError,.resumeFillC .teamLst .teamR .verTextareaTxt .verJudgePass{margin:3px 0 0 0}
+.resumeFillC .moreLink{height:35px;}
+.resumeFillC .moreLink a:link,.resumeFillC .moreLink a:visited{font-size:14px;padding-left:22px;color:#2094D1; background:url(../images/contrls.gif) no-repeat;}
+.resumeFillC .moreLink a:hover{color:#16a6f2;}
+.resumeFillC .moreLink a.slideShow:link,.resumeFillC .moreLink a.slideShow:visited{ background-position:-469px -913px;_background-position:-469px -915px}
+.resumeFillC .moreLink a.slideNone:link,.resumeFillC .moreLink a.slideNone:visited{ background-position:-469px -964px;_background-position:-469px -966px}
+.resumeFillBtn{margin:5px 0 0 105px}
+.resumeFillBtn a.btn9:link,.resumeFillBtn a.btn9:visited{margin:0 10px 0 20px;}
+
+.resumeFillC .teamLst .team .wantPaySel{float:left;display:inline;}
+.resumeFillC .teamLst .wantPay{height:95px;}
+.resumeFillC .teamLst .wantPay .wantPaySel{width:435px;}
+.resumeFillC .teamLst .wantPay .diyPay{float:left;display:inline;margin:10px 0 0 0;}
+.resumeFillC .teamLst .wantPay .wantPayCheckBox,.resumeFillC .teamLst .wantPay .wantPayTxt{margin-top:20px;}
+.resumeFillC .teamLst .wantPay .verJudgePass{margin-top:18px;}
+.resumeFillC .teamLst .wantPay .verJudgeError{margin-top:16px;}
+
+.unit{border-bottom:1px dashed #ccc;margin:0 0 15px 0;padding:0 0 15px 0;}
+.unitT{height:30px;padding:0 0 0 25px;margin:0 0 5px 0;}
+.unitT h3{font-size:14px;font-weight:bold;}
+
+.addunit{margin:10px 0 0 105px;}
+
+/*简历预览时*/
+.resumeFillC .resumeShow{margin:0 0 20px;}
+.resumeFillC .resumeShow h6{height:30px;font-size:14px;font-weight:bold;margin:0 0 0 35px}
+.resumeFillC .resumeShow ul li{zoom:1;margin-bottom:5px;font-size:14px;line-height:22px}
+.resumeFillC .resumeShow ul li .L{float:left;display:inline;width:100px;text-align:right;font-weight:bold;font-size:12px;}
+.resumeFillC .resumeShow ul li .R{float:left;display:inline;width:430px;margin:0 0 0 5px;}
+.resumeFillC .resumeShow ul li .R i{font-style:normal;margin:0 10px 0 0;}
+.resumeFillC .resumeShow ul li .R a:link,.resumeFillC .resumeShow ul li .R a:visited{color:#2094D1}
+.resumeFillC .resumeShow ul li .R a:hover{color:#16a6f2;}
+/*基本信息*/
+.fill1 .resumeFillC{ position:relative;}
+
+
+
+/*plateR*/
+
+.myResume{background:#f8fcff;padding:10px;border:1px solid #2ca4d9;border-left:0; position:absolute;right:-1px;top:0;width:169px; }
+.myResume h1{font-size:16px;font-family:"微软雅黑","SimHei";color:#2a6b93;line-height:24px;margin:0 0 5px;height:24px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.myResumeTip{font-size:12px;margin:0 0 5px;}
+.myResumeT .starBar{}
+.myResumeT{border-bottom:1px solid #e6eaed;padding:0 0 10px;}
+.myResumeT p{line-height:24px;}
+
+.myResumeC .myResumeLst{border-bottom:1px dashed #ccc;padding:10px 10px 10px;margin:0 0 10px;}
+.myResumeC .myResumeLst ul li{height:28px;line-height:28px;font-size:14px;}
+.myResumeC .myResumeLst ul li i{color:#FF0000;font-style:normal;float:left;display:inline;width:14px;height:24px;}
+.myResumeC .myResumeLst ul li a:link,.myResumeC .myResumeLst ul li a:visited{float:left;display:inline;width:80px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis; }
+.myResumeC .myResumeLst ul li em{float:right;display:inline;width:40px;font-size:12px; _width:50px;}
+
+.myResumeBtn a.btn8:link,.myResumeBtn a.btn8:visited{padding:0 1px;margin:0 13px;}
+
+/*附加信息*/
+.fill8 .addunit{margin:0 0 10px 105px;}
+.fill8 .resumeFillC .resumeShow{margin-bottom:15px;}
+.fill8 .addPart h5{margin:0 0 0 26px;height:26px;font-weight:bold;}
+.fill8 .addPart h5 a:link,.fill8 .addPart h5 a:visited{margin:0 0 0 20px;font-weight:normal;color:#2094D1;}
+.fill8 .addPart h5 a:hover{color:#16a6f2;}
+.fill8 .unit .addPart{margin:0 0 10px 0;}
+.fill8 .works{margin:5px 0 0 105px;}
+.fill8 .works p{height:28px;line-height:28px;}
+.fill8 .works p b.ico,.fill8 .works p span.worksName,.fill8 .works p span.set{float:left;display:inline;}
+.fill8 .works p b.ico{margin:7px 0 0;}
+.fill8 .works p span.worksName{margin:0 0 0 10px;width:200px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.fill8 .works p span.worksName input{width:185px;border:1px solid #ccc;height:20px;line-height:20px; vertical-align:middle;}
+.fill8 .works p span.worksName i{font-style:normal;display:inline-block;}
+.fill8 .works p span.set{}
+.fill8 .works p span.set a:link,.fill8 .works p span.set a:visited{color:#2094D1;margin:0 10px 0 0;}
+.fill8 .works p span.set a:hover{color:#16a6f2;}
+.fill8 .resumeFillBtn{margin:5px 0 10px 105px}
+
+
+.fill8 .resumeFillT{background:none;line-height:normal}
+.fill8 .resumeFillC{padding:0;}
+
+/*附加信息独立*/
+.fjxxT{height:30px;line-height:30px;background:url(../images/p/resumeT.gif) repeat-x 0 15px;}
+.fjxxT h4{font-size:14px;font-weight:bold;color:#31668e;float:left;display:inline;background:#fff;padding:0 5px 0 10px;}
+.fjxxT p{float:right;display:inline;background:#fff;padding:0 0 0 5px;}
+.fjxxT p a:link,.fjxxT p a:visited{display:inline-block;background:url(../images/bg.gif) no-repeat;padding-left:20px;margin:0 0 0 5px;color:#2094D1;}
+.fjxxT p a:hover{color:#16a6f2;}
+.fjxxT p a.edit:link,.fjxxT p a.edit:visited{ background-position:-784px -51px;}
+.fjxxT p a.open:link,.fjxxT p a.open:visited{ background-position:-784px -110px;}
+.fjxxT p a.close:link,.fjxxT p a.close:visited{ background-position:-784px -160px;}
+.fjxxT p a.cancel:link,.fjxxT p a.cancel:visited{ background-position:-784px -206px;}
+.fjxxC{padding:10px;zoom:1;}
+.fjxxC .teamLst{margin:5px 0;}
+.fjxxC .teamLst{margin:5px 0;}
+.fjxxC .teamLst .team{height:50px}
+.fjxxC .teamLst .teamL{width:95px;}
+.fjxxC .teamLst .teamR{width:430px;}
+.fjxxC .teamLst .teamR b.ico{ vertical-align:middle;}
+.fjxxC .teamLst .teamR .verText input.inputText{width:198px;}
+.fjxxC .teamLst .teamR .selBtn a:link b,.fjxxC .teamLst .teamR .selBtn a:visited b{width:150px;}
+.fjxxC .teamLst .teamR .verTxt{color:#929292;}
+.fjxxC .teamLst .teamR .verTxt a:link,.fjxxC .teamLst .teamR .verTxt a:visited{color:#2094D1; vertical-align:middle;}
+.fjxxC .teamLst .teamR .verTxt a:hover{color:#16a6f2;}
+.fjxxC .teamLst .teamR textarea.textarea{width:405px;}
+.fjxxC .teamLst .teamR .verTextareaTxt{width:416px;}
+.fjxxC .teamLst .teamR .verTextareaTxt .verJudgeError,.fjxxC .teamLst .teamR .verTextareaTxt .verJudgePass{margin:3px 0 0 0}
+.fjxxC .moreLink{height:35px;}
+.fjxxC .moreLink a:link,.fjxxC .moreLink a:visited{font-size:14px;padding-left:22px;color:#2094D1; background:url(../images/contrls.gif) no-repeat;}
+.fjxxC .moreLink a:hover{color:#16a6f2;}
+.fjxxC .moreLink a.slideShow:link,.fjxxC .moreLink a.slideShow:visited{ background-position:-469px -913px;_background-position:-469px -915px}
+.fjxxC .moreLink a.slideNone:link,.fjxxC .moreLink a.slideNone:visited{ background-position:-469px -964px;_background-position:-469px -966px}

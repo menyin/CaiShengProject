@@ -1,0 +1,88 @@
+@charset utf-8;
+
+.nav{height:41px;background:url(../images/publicBg.gif) repeat-x 0 -497px;}
+.navCon{width:980px;margin:0 auto; text-align:left;}
+.navCon ul li{float:left;display:inline;height:39px;line-height:39px;}
+.navCon ul li a:link,.navCon ul li a:visited{display:block;*display:inline;zoom:1;font-size:14px;font-weight:bold;padding:0 15px;color:#d24500;}
+.navCon ul li a:hover{background:#ffe2b5}
+.navCon ul li.cu a:link,.navCon ul li.cu a:visited{background:#dc5800;color:#fff;}
+
+
+.content{ text-align:center;background:url(../images/fam/conBg.jpg) repeat;padding:10px 0;zoom:1;width: 100%;margin: auto}
+
+.contentCon{margin:0 auto; text-align:left;width:980px; position:relative;zoom:1;background:url(../images/fam/contentCon.jpg) repeat-y;min-height:620px;_height:620px;}
+
+.dataLeft{float:left;display:inline;width:770px;}
+.menuRight{float:right;display:inline;width:210px;right:0;top:0;}
+
+.dataLeft h5{font-size:20px;font-family:"宋体","SimHei";height:40px;line-height:40px;border-bottom:1px solid #dadada;margin:0 10px 10px;padding:0 0 0 20px;}
+
+.famCon{width:723px;margin:0 auto 10px; text-align:left;border-top:1px dashed #ccc;border-left:1px dashed #ccc}
+.famCon ul li{float:left;display:inline;width:240px;height:240px;border-right:1px dashed #ccc;border-bottom:1px dashed #ccc;}
+.famCon ul li .pic{width:185px;height:70px;margin:22px auto 0;border:1px solid #dadada;overflow:hidden; position:relative;zoom:1; z-index:1;}
+.famCon ul li .pic img{width:185px;height:70px; position:absolute;top:0px;left:0; z-index:3;display:block;}
+.famCon ul li .pic h6{font-size:14px;font-weight:bold;width:175px;height:22px;line-height:22px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;text-align:center;margin:3px 5px;*padding-top:5px;}
+.famCon ul li .pic .adTxt{overflow:hidden;}
+.famCon ul li .pic .adTxt p{height:20px;line-height:20px;margin:0 0 0 5px;width:72px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;float:left;display:inline;padding-left:15px;background:url(../images/publicBg.gif) no-repeat -484px -288px;*background-position:-484px -288px}
+.famCon ul li .pic .adTxt p.adMore{background:none;}
+.famCon ul li .pic .adTxt p.adMore a:link,.famCon ul li .pic .adTxt p.adMore a:visited{color:#DB5800;}
+.famCon ul li .pic .adTxt p.adMore a:hover{color:#fb7b25;}
+
+.famCon ul li .cInfo{border-bottom:1px solid #dadada;margin:5px 25px 10px;padding:0 5px 5px;zoom:1;}
+.famCon ul li .cInfo p{height:24px;line-height:24px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;width:180px;}
+.famCon ul li .botBtn{ text-align:right;margin:0 25px;}
+.famCon ul li .botBtn a:link,.famCon ul li .botBtn a:visited{display:inline-block;padding-left:18px;height:20px;background:url(../images/fam/bg.gif) no-repeat;margin:0 0 0 10px;}
+.famCon ul li .botBtn a.gz:link,.famCon ul li .botBtn a.gz:visited{ background-position:-720px 3px;}
+.famCon ul li .botBtn a.gz:hover{ background-position:-720px -30px;color:#d60808}
+.famCon ul li .botBtn a.pl:link,.famCon ul li .botBtn a.pl:visited{ background-position:-720px -68px;}
+.famCon ul li .botBtn a.pl:hover{ background-position:-720px -106px;color:#41b941}
+
+/*鍙充晶瀵艰埅*/
+.menuRight a:link,.menuRight a:visited{display:block;height:32px;line-height:32px;padding-left:35px;background:url(../images/fam/bg.gif) no-repeat;color:#787878;}
+.menuRight a:hover{background-color:#f0f0f0;color:#333;}
+
+.menuRight a.lst1:link,.menuRight a.lst1:visited{ background-position:8px -7px}
+.menuRight a.lst2:link,.menuRight a.lst2:visited{ background-position:8px -46px}
+.menuRight a.lst3:link,.menuRight a.lst3:visited{ background-position:8px -86px}
+.menuRight a.lst4:link,.menuRight a.lst4:visited{ background-position:10px -126px}
+.menuRight a.lst5:link,.menuRight a.lst5:visited{ background-position:11px -167px}
+.menuRight a.lst6:link,.menuRight a.lst6:visited{ background-position:12px -206px}
+.menuRight a.lst7:link,.menuRight a.lst7:visited{ background-position:12px -249px}
+.menuRight a.lst8:link,.menuRight a.lst8:visited{ background-position:10px -289px}
+.menuRight a.lst9:link,.menuRight a.lst9:visited{ background-position:12px -329px}
+.menuRight a.lst10:link,.menuRight a.lst10:visited{ background-position:10px -368px}
+.menuRight a.lst11:link,.menuRight a.lst11:visited{ background-position:10px -410px}
+.menuRight a.lst12:link,.menuRight a.lst12:visited{ background-position:12px -448px}
+.menuRight a.lst13:link,.menuRight a.lst13:visited{ background-position:10px -487px}
+.menuRight a.lst14:link,.menuRight a.lst14:visited{ background-position:8px -527px}
+
+.menuRight a.lst1:hover{ background-position:-212px -4px}
+.menuRight a.lst2:hover{ background-position:-212px -44px}
+.menuRight a.lst3:hover{ background-position:-212px -85px}
+.menuRight a.lst4:hover{ background-position:-210px -125px}
+.menuRight a.lst5:hover{ background-position:-209px -167px}
+.menuRight a.lst6:hover{ background-position:-208px -204px}
+.menuRight a.lst7:hover{ background-position:-208px -248px}
+.menuRight a.lst8:hover{ background-position:-210px -288px}
+.menuRight a.lst9:hover{ background-position:-208px -327px}
+.menuRight a.lst10:hover{ background-position:-210px -367px}
+.menuRight a.lst11:hover{ background-position:-210px -408px}
+.menuRight a.lst12:hover{ background-position:-208px -446px}
+.menuRight a.lst13:hover{ background-position:-210px -484px}
+.menuRight a.lst14:hover{ background-position:-212px -523px}
+
+.menuRight ul li.cu a:link,.menuRight ul li.cu a:visited{ background-color:#fff;color:#dc5800}
+.menuRight ul li.cu a.lst1:link,.menuRight ul li.cu a.lst1:visited{ background-position:-432px -4px}
+.menuRight ul li.cu a.lst2:link,.menuRight ul li.cu a.lst2:visited{ background-position:-432px -44px}
+.menuRight ul li.cu a.lst3:link,.menuRight ul li.cu a.lst3:visited{ background-position:-432px -85px}
+.menuRight ul li.cu a.lst4:link,.menuRight ul li.cu a.lst4:visited{ background-position:-430px -125px}
+.menuRight ul li.cu a.lst5:link,.menuRight ul li.cu a.lst5:visited{ background-position:-429px -167px}
+.menuRight ul li.cu a.lst6:link,.menuRight ul li.cu a.lst6:visited{ background-position:-428px -204px}
+.menuRight ul li.cu a.lst7:link,.menuRight ul li.cu a.lst7:visited{ background-position:-428px -248px}
+.menuRight ul li.cu a.lst8:link,.menuRight ul li.cu a.lst8:visited{ background-position:-430px -288px}
+.menuRight ul li.cu a.lst9:link,.menuRight ul li.cu a.lst9:visited{ background-position:-428px -327px}
+.menuRight ul li.cu a.lst10:link,.menuRight ul li.cu a.lst10:visited{ background-position:-430px -367px}
+.menuRight ul li.cu a.lst11:link,.menuRight ul li.cu a.lst11:visited{ background-position:-430px -408px}
+.menuRight ul li.cu a.lst12:link,.menuRight ul li.cu a.lst12:visited{ background-position:-428px -446px}
+.menuRight ul li.cu a.lst13:link,.menuRight ul li.cu a.lst13:visited{ background-position:-428px -484px}
+.menuRight ul li.cu a.lst14:link,.menuRight ul li.cu a.lst14:visited{ background-position:-428px -523px}

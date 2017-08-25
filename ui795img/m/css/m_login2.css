@@ -1,0 +1,149 @@
+.login { padding-top: 10px; margin: auto; width: 98%; text-align: center; font-size: 14px; color: #666666; }
+.login hr { margin-top: 20px; margin-bottom: 10px; width: 93%; border: 1px solid #C9C9C9; }
+.login .inputBox { margin-top: 5px; margin-bottom: 5px; border: 1px solid #C9C9C9; border-radius: 5px; box-shadow: 2px 2px 2px #F1F1F1 inset; padding: 9px 0 9px 8px; outline: medium none; line-height: 18px; width: 92%; font-size: 14px; margin: 5px auto;
+display: block;}
+.login .inputBox2 { margin-top: 5px; margin-bottom: 10px; border: 1px solid #1bbc9b; border-radius: 5px; box-shadow: 2px 2px 2px #F1F1F1 inset; padding: 9px 0 9px 8px; outline: medium none; line-height: 18px; width: 92%; font-size: 14px; }
+.login .login_button { right: 0; position: absolute; width: 100px; color: #ffffff; background: -moz-linear-gradient(top, #E8352E, #E8352E); background: -webkit-gradient(linear, left top, left bottom, from(#E8352E), to(#E8352E)); text-align: center; border-radius: 2px; font-weight: bold; cursor: pointer; padding: 5px 0; }
+.login .cv_button { right: 0; position: absolute; width: 100px; color: #ffffff; background: -moz-linear-gradient(top, #7fc58f, #7fc58f); background: -webkit-gradient(linear, left top, left bottom, from(#7fc58f), to(#7fc58f)); text-align: center; border-radius: 2px; font-weight: bold; cursor: pointer; padding: 5px 0; }
+.login .cplogin_button { right: 0; position: absolute; width: 100px; color: #ffffff; background: -moz-linear-gradient(top, #0a56a4, #0a56a4); background: -webkit-gradient(linear, left top, left bottom, from(#0a56a4), to(#0a56a4)); text-align: center; border-radius: 2px; font-weight: bold; cursor: pointer; padding: 5px 0; }
+.login .cpregister_button { right: 0; position: absolute; width: 100px; color: #ffffff; background: -moz-linear-gradient(top, #05a52b, #05a52b); background: -webkit-gradient(linear, left top, left bottom, from(#05a52b), to(#05a52b)); text-align: center; border-radius: 2px; font-weight: bold; cursor: pointer; padding: 5px 0; }
+.login .loginLine { width: 92%; margin: auto; text-align: left; margin-top: 8px; line-height: 27px; height: 40px; margin-bottom: 5px; position: relative; }
+.login .loginLine2 { width: 92%; margin: auto; text-align: left; margin-top: 20px; line-height: 27px; height: 33px; margin-bottom: 30px; position: relative; }
+.login .Line { width: 92%; margin: auto; text-align: left; margin-top: 8px; line-height: 27px; margin-bottom: 5px; position: relative; }
+.login .CpTips { width: 92%; margin: auto; text-align: left; margin-top: 8px; line-height: 26px; height: 83px; margin-bottom: 8px; position: relative; font-size: 15px; }
+.login .CpTips2 { width: 92%; margin: auto; text-align: left; margin-top: 15px; height: 30px; margin-bottom: 2px; position: relative;  background:url(../images/pencil.png) no-repeat; padding-left:20px;}
+.login .tips {  background:url(../images/pencil.png) no-repeat; padding-left:20px;}
+.login .OtherWay { border: 1px solid #c9c9c9; border-radius: 2px; height: 35px; padding-bottom: 5px; text-align: center; }
+.login .OtherWay a { display: none; cursor: pointer; line-height: 35px; }
+.login .loginIcon { height: 24px; width: 24px; cursor: pointer; margin-right: 5px; }
+.login .QQ { height: 25px; width: 25px; cursor: pointer; margin-right: 5px; background: url(../images/loginicon.png) -148px 0px no-repeat; }
+.login .Sina { height: 26px; width: 26px; cursor: pointer; margin-right: 5px; background: url(../images/loginicon.png) -181px 1px no-repeat; border: 0; }
+.login .Renren { height: 25px; width: 42px; cursor: pointer; margin-right: 5px; background: url(../images/loginicon.png) -210px 0px no-repeat; }
+.login .forgetPassword { font-size: small; background-color: #eeeeee; border: 1px solid #dddddd; border-radius: 2px; padding-left: 8px; }
+.login .forgetPassword a { display: block; color: #666666; cursor: pointer; }
+@font-face { font-family: 'iconic'; src: url('iconic.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+.login .register { background-color: #f6b26b; border-radius: 2px; padding: 5px 0; padding-left: 8px; cursor: pointer; }
+.login .register a { display: block; color: #ffffff; }
+.login .pwdTitle { background-color: #eeeeee; border: 1px solid #dddddd; border-radius: 2px; padding: 5px 0 5px 8px; }
+.login .pwdTitle:before { font-family: 'iconic'; content: "G"; font-size: 18px; }
+.login .reset { text-align: center; font-size: 14px; color: #0066CC; width: 80px; border: 0; padding: 5px; background-color: #ffffff; cursor: pointer; }
+.login .register_button { right: 0; position: absolute; width: 100px; color: #ffffff; background: -moz-linear-gradient(top, #05a52b, #05a52b); background: -webkit-gradient(linear, left top, left bottom, from(#05a52b), to(#05a52b)); text-align: center; border-radius: 2px; cursor: pointer; padding: 5px 0; }
+.login .registerLine1 { width: 68%; margin: auto; text-align: left; margin-top: 10px; line-height: 30px; height: 30px; margin-bottom: 10px; position: relative; float: left }
+.login .registerLine2 { width: 27%; margin: auto; text-align: left; margin-top: 10px; line-height: 30px; height: 30px; margin-bottom: 10px; position: relative; float: right }
+.register .register_button { right: 0; position: absolute; width: 100px; color: #ffffff; background: -moz-linear-gradient(top, #05a52b, #05a52b); background: -webkit-gradient(linear, left top, left bottom, from(#05a52b), to(#05a52b)); text-align: center; border-radius: 2px; font-weight: bold; cursor: pointer; padding: 5px 0; }
+.loginLn { display: inline-block; width: 100%; margin: 15px 0; }
+
+/*企业注册*/
+.editInfo {
+display: inline-block;
+width: 94%;
+padding: 0px 3%;
+background-color: #eeeced;
+}
+.jobTitleDiv {
+width: 100%;
+border-bottom: 1px solid #0083d7;
+padding-bottom: 5px;
+}
+.jobTitle {
+display: inline-block;
+font-size: 18px;
+margin-top: 8px;
+vertical-align: top;
+}
+.top_menu .selected a {
+font-size: 16px;
+color: #0083d7;
+}
+.baseedit {
+position: relative;
+color: #333;
+margin: 15px 0% 20px 0%;
+background-color: #FFF;
+font-size: 14px;
+}
+.beRow {
+padding: 15px 0;
+border-radius: 3px;
+border-left: 1px solid #DFDFDF;
+border-right: 1px solid #DFDFDF;
+border-top: 1px solid #DFDFDF;
+}
+.beName {
+display: inline-block;
+width: 28%;
+text-align: right;
+font-size: 14px;
+}
+.beName span {
+color: #F00;
+padding-right: 5px;
+}
+.beCon {
+display: inline-block;
+margin-left: 3%;
+width: 66%;
+font-size: 14px;
+}
+.login {
+padding-top: 10px;
+margin: auto;
+width: 98%;
+text-align: center;
+font-size: 14px;
+color: #666666;
+display: block;
+}
+.login .issue_button {
+right: 0;
+color: #ffffff;
+background: -moz-linear-gradient(top,#0a56a4,#0a56a4);
+background: -webkit-gradient(linear, left top, left bottom, from(#0a56a4), to(#0a56a4));
+text-align: center;
+border-radius: 2px;
+font-weight: bold;
+cursor: pointer;
+padding: 5px 0;
+}
+.login .loginLine {
+width: 92%;
+margin: auto;
+text-align: left;
+margin-top: 8px;
+line-height: 27px;
+height: 40px;
+margin-bottom: 5px;
+position: relative;
+}
+
+.top_menu .selected a {
+font-size: 16px;
+color: #0083d7;
+}
+
+
+#yddContainer { display: block; font-family: Microsoft YaHei; position: relative; width: 100%; height: 100%; top: -4px; left: -4px; font-size: 12px; border: 1px solid }
+#yddTop { display: block; height: 22px }
+#yddTopBorderlr { display: block; position: static; height: 17px; padding: 2px 28px; line-height: 17px; font-size: 12px; color: #5079bb; font-weight: bold; border-style: none solid; border-width: 1px }
+#yddTopBorderlr .ydd-sp { position: absolute; top: 2px; height: 0; overflow: hidden }
+.ydd-icon { left: 5px; width: 17px; padding: 0px 0px 0px 0px; padding-top: 17px; background-position: -16px -44px }
+.ydd-close { right: 5px; width: 16px; padding-top: 16px; background-position: left -44px }
+#yddKeyTitle { float: left; text-decoration: none }
+#yddMiddle { display: block; margin-bottom: 10px }
+.ydd-tabs { display: block; margin: 5px 0; padding: 0 5px; height: 18px; border-bottom: 1px solid }
+.ydd-tab { display: block; float: left; height: 18px; margin: 0 5px -1px 0; padding: 0 4px; line-height: 18px; border: 1px solid; border-bottom: none }
+.ydd-trans-container { display: block; line-height: 160% }
+.ydd-trans-container a { text-decoration: none; }
+#yddBottom { position: absolute; bottom: 0; left: 0; width: 100%; height: 22px; line-height: 22px; overflow: hidden; background-position: left -22px }
+.ydd-padding010 { padding: 0 10px }
+#yddWrapper { color: #252525; z-index: 10001; background: url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png); }
+#yddContainer { background: #fff; border-color: #4b7598 }
+#yddTopBorderlr { border-color: #f0f8fc }
+#yddWrapper .ydd-sp { background-image: url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png) }
+#yddWrapper a, #yddWrapper a:hover, #yddWrapper a:visited { color: #50799b }
+#yddWrapper .ydd-tabs { color: #959595 }
+.ydd-tabs, .ydd-tab { background: #fff; border-color: #d5e7f3 }
+#yddBottom { color: #363636 }
+#yddWrapper { min-width: 250px; max-width: 400px; }
+
+.btnSendCode { width: 138px; height: 40px; border-radius: 3px; border: 1px solid #c6c6c6; background: #efefef; cursor: pointer; font-size: 12px; color: #6c6c6c; }

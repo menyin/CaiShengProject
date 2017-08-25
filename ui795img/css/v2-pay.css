@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+#pay-main{width:1000px;margin:0 auto}
+.pay-container{
+	padding:20px;background:#fff;
+}
+
+/*
+.pay-tab{
+	height:34px;line-height:34px;border-bottom:1px #626262 solid;
+}
+.pay-tab a{
+	display:inline-block;line-height:34px;padding:0 35px;
+	background:#EFEFEF;color:#2A2A2A;margin-right:3px;
+}
+.pay-tab a.cur{
+	background:#666;color:#fff;
+}
+*/
+
+.pay-tab{border-bottom:1px solid #dadada;height:40px;}
+.pay-tab a{
+	height:38px;line-height:38px;font-size:14px;margin:0 10px;font-family:'微软雅黑','SimHei',Verdana;
+	padding:0 10px;display:inline-block;float:left;display:inline;
+	border:1px solid #dadada;border-top:2px solid #dadada;border-bottom:0;color:#666;
+}
+.pay-tab a:hover{background:#f8f8f8;}
+.pay-tab a.cur{font-weight:bold;border-top:2px solid #2b90d8;border-bottom:1px solid #fff;}
+.pay-tab a.cur:hover{background:#fff;}
+
+.pay-form{
+	padding:7px 0;
+}
+.pay-form dl:after,.pay-group-list ul:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+.pay-form dl{
+	zoom:1;padding:2px 0;line-height:32px;
+}
+.pay-form dt{
+	float:left;width:72px;
+}
+.pay-form dd{
+	margin-left:72px;
+}
+.pay-form dd .priceInput{
+	vertical-align:middle;width:80px;margin-right:4px;
+}
+.pay-form .pay-group-list{
+	line-height:40px;padding:6px 0;
+}
+
+.pay-group-list .card-tab{margin-bottom:19px;}
+.card-tab{height:40px;}
+.card-tab a{
+	display:inline-block;height:38px;border:1px #CACACA solid;
+	background:#F2F2F2;color:#5B6161;padding:0 36px 0 37px;position:relative;
+	vertical-align:top;line-height:38px;float:left;margin-right:10px;
+}
+.card-tab a.cur{
+	border:2px #EA9B25 solid;height:36px;background:#FEF6EB;
+	color:#8A4937;padding:0 34px 0 35px;line-height:36px;
+}
+.card-tab a.cur em{
+	display:inline-block;width:17px;height:24px;
+	position:absolute;right:0;bottom:0;_right:-1px;
+	background:url(/img/v2/selected_a.jpg)
+}
+
+.pay-group-list ul{
+	zoom:1;margin-bottom:15px;
+}
+.pay-group-list ul li{padding:5px 0;float:left;width:167px;height:52px;}
+.pay-group-list ul li *{ vertical-align:middle}
+.pay-group-list ul li span{
+	border-radius:7px;display:inline-block;border:1px #E4E5E9 solid;
+	width:128px;height:50px;overflow:hidden;text-align:center;
+}
+.pay-group-list ul .sel span{
+	border:2px #E89B29 solid;width:126px;height:48px;
+}
+.pay-group-list ul .sel span img{margin-top:-1px;margin-left:-1px;}

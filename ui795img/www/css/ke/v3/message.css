@@ -1,0 +1,112 @@
+﻿.alerttip1 {
+    width: 370px;
+    _width: 410px;
+    *width: 410px;
+    padding: 0;
+    position: fixed;
+    _position: absolute;
+    bottom: 0;
+    right: 6px;
+    z-index: 99999;
+    background-color: white;
+    _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)); /*IE6*/
+    display: none;
+}
+
+#chx {
+    margin: 5px 5px 0 0;
+}
+
+.alerttip1 a {
+    text-decoration: none;
+    color: #FE9901;
+}
+
+    .alerttip1 a:hover {
+        text-decoration: underline;
+        color: #FE9901;
+    }
+
+    .alerttip1 a img {
+        width: 120px;
+    }
+
+.alerttip1 .at-head {
+    background-color: #FE9901;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+}
+
+    .alerttip1 .at-head .horse {
+        background: url(/images/v/horse.png);
+        width: 207px;
+        height: 104px;
+        position: absolute;
+        top: -70px;
+        left: 120px;
+        _left: 160px;
+        *left: 160px;
+        _display: none;
+    }
+
+    .alerttip1 .at-head .close {
+        background: url(/images/v/msgclose.gif);
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 10px;
+        left: 340px;
+        _left: 380px;
+        *left: 380px;
+    }
+
+
+
+    .alerttip1 .at-head span {
+        margin-left: 10px;
+    }
+
+.alerttip1 .at-text {
+    color: #005B88;
+    border-left: 2px solid #FE9901;
+    border-bottom: 2px solid #FE9901;
+    border-right: 2px solid #FE9901;
+    font-size: 12px;
+    padding: 10px;
+    padding-bottom: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+    .alerttip1 .at-text td {
+        word-break : break-all;
+    }
+
+td em {
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    width: 4px;
+    height: 4px;
+    overflow: hidden;
+    background-color: #FE9901;
+}
+
+.yangzheng .wx_ico1 {
+    background: url(/Api_Login/Content/33.png) no-repeat -250px -350px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin: 2px 3px 0 12px;
+}
+
+.yangzheng .wx_ico2 {
+    background: url(/Api_Login/Content/33.png) no-repeat -100px 1px;
+    width: 16px;
+    height: 18px;
+    display: block;
+    margin: 2px 5px 0 12px;
+}

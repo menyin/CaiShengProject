@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+.boxy-wrapper{position:absolute;-webkit-box-shadow: 0 0 3px 3px rgba(100, 100, 100, .5);-moz-box-shadow: 0 0 3px 3px rgba(100, 100, 100, .5);box-shadow: 0 0 3px 3px rgba(100, 100, 100, .5);}
+.boxy-wrapper.fixed{position:fixed;}
+/* Modal */ 
+.boxy-modal-blackout{position:absolute; background-color:black; left:0; top:0;} 
+/* Border 
+.boxy-wrapper{empty-cells:show;}
+.boxy-wrapper .top-left,.boxy-wrapper .top-right,.boxy-wrapper .bottom-right,.boxy-wrapper .bottom-left{width:2px; height:2px; padding:0}
+.boxy-wrapper .top-left{background:url(../images/boxy-nw.png);}
+.boxy-wrapper .top-right{background:url(../images/boxy-ne.png);}
+.boxy-wrapper .bottom-right{background:url(../images/boxy-se.png);}
+.boxy-wrapper .bottom-left{background:url(../images/boxy-sw.png);}
+*/
+/* IE6+7 hacks for the border. IE7 should support this natively but fails in conjuction with modal blackout bg. */
+/* NB:these must be absolute paths or URLs to your images
+.boxy-wrapper .top-left{#background:none;}
+.boxy-wrapper .top-right{#background:none; }
+.boxy-wrapper .bottom-right{#background:none; }
+.boxy-wrapper .bottom-left{#background:none;}
+ */
+.boxy-wrapper .top,.boxy-wrapper .bottom{height:1px; padding:0}
+.boxy-wrapper .left,.boxy-wrapper .right{width:1px; padding:0}
+
+/* Title bar */
+.boxy-wrapper .title-bar{background-color:#83B0D9; padding:10px; position:relative;}
+.boxy-wrapper .title-bar.dragging{cursor:move;}
+.boxy-wrapper .title-bar h2{font-size:14px; color:white; line-height:1; margin:0; padding:0; font-weight:normal;}
+.boxy-wrapper .title-bar .close{color:white; position:absolute; top:5px; right:6px; font-size:13px;}
+.boxy-wrapper .title-bar .close:hover{background-color:#454545;}
+/* Content Region */
+.boxy-inner{background-color:white; padding:0}
+.boxy-content{padding:10px 20px}
+/* Question Boxes */
+.boxy-wrapper .question{width:350px; min-height:60px; _height:60px;}
+.boxy-wrapper .answers{text-align:right;}
+/*   */
+.boxy-wrapper .checklis{padding-top:10px}
+.boxy-wrapper .checklis dt{font-weight:bold;float:left;padding-right:0px;text-align:right}
+.boxy-wrapper .checklis dd{display:inline-block;float:left}
+.boxy-wrapper .checklis li{text-align:left;float:left;padding-bottom:10px;margin-right:10px}
+.boxy-wrapper .checklis li input.checkbox1{margin:0 3px 0 0;padding:0;vertical-align:middle}
+
+
+/*   */
+.subpageArea {width : 620px;height : 350px;float:left;}
+.selectArea {background-color:#fef8f1; COLOR: #df4017; CLEAR: both;height : 60px;}
+.selectArea ul {BACKGROUND-COLOR: #fef8f1; width: 100%; COLOR: #df4017; CLEAR: both; OVERFLOW: visible; PADDING-TOP: 0px !important}
+.selectArea li {float:left; width : 33%;height : 20px;line-height: 200%;overflow:hidden;line-height: 200%;}
+
+.areaProvice {width : 100%;float:left;margin : 10px 0 0px 0px;}
+.areaProvice li{PADDING-LEFT: 14px; BACKGROUND: url(../images/IconK.jpg) no-repeat 2px 6px; height: 22px;float:left; width : 17%;line-height: 200%;overflow:hidden;}
+.areaCity {background-color:#fef8f1;width : 100%;float:left;margin : 10px 0 0px 0px;}
+.areaCity li{width : 20%;height : 22px; float:left;line-height: 200%; overflow:hidden;}
+.areaXian {width : 300px;float:left;border : 1px solid #fdab02; position:relative;background-color:#fefaed;left:0px;top:0px;display:none;}
+.areaXian li { float:left; width : 33%;height : 22px;line-height: 200%;overflow:hidden;}
+
+/*   */
+.subpageIndustry {width : 700px;height : 410px;float:left;}
+.selectIndustry {background-color:#fef8f1; COLOR: #df4017; CLEAR: both;height : 60px;background-attachment:fixed;}
+.selectIndustry ul {BACKGROUND-COLOR: #fef8f1; width: 100%;COLOR: #df4017; CLEAR: both; OVERFLOW: visible; PADDING-TOP: 0px !important}
+.selectIndustry li {float:left; width : 33%;height : 20px;line-height: 200%;overflow:hidden;line-height: 200%;}
+.industryLv1 {width : 100%;float:left;margin : 10px 0px 0px 0px;}
+.industryLv1 div{POSITION: relative; width: 100%; FLOAT: left; CLEAR: both}
+.industryLv1 span{Z-INDEX: 1; POSITION: absolute; MARGIN-TOP: -6px; width: 170px; FONT: bold 12px "新宋体"; COLOR: #0056c2; TOP: 50%; LEFT: 5px}
+.industryLv1 ul{PADDING-LEFT: 170px; DISPLAY: block; height: 1%}
+.industryLv1 li{PADDING-LEFT: 8px; width: 120px; height: 20px;float:left;line-height: 200%; OVERFLOW: hidden}
+.industryLv2 {background-color:#fef8f1;width : 100%;float:left;margin : 10px 0 0px 0px;}
+.industryLv2 li{width : 20%;height : 22px; float:left;line-height: 200%; overflow:hidden;}
+
+/*  */
+.subpageJobClass {width : 700px;height : 430px;float:left;}
+.selectJobClass {background-color:#fef8f1; COLOR: #df4017; CLEAR: both;height : 60px;}
+.selectJobClass ul {BACKGROUND-COLOR: #fef8f1; width: 100%;COLOR: #df4017; CLEAR: both; OVERFLOW: visible; PADDING-TOP: 0px !important}
+.selectJobClass li {float:left; width : 33%;height : 20px;line-height: 200%;overflow:hidden;line-height: 200%;}
+
+.jobClassLv1 {width : 100%;float:left;margin : 10px 0px 0px 0px;}
+.jobClassLv1 div{POSITION: relative; width: 100%; FLOAT: left; CLEAR: both}
+.jobClassLv1 .jobth{Z-INDEX: 1; POSITION: absolute; MARGIN-TOP: -6px; width: 170px; FONT: bold 12px "新宋体"; COLOR: #0056c2; TOP: 50%; LEFT: 5px}
+.jobClassLv1 ul{PADDING-LEFT: 170px; DISPLAY: block; height: 1%}
+.jobClassLv1 li{PADDING-LEFT: 8px; width: 120px; height: 20px;float:left;line-height: 200%; overflow: hidden}
+.jobClassLv2 {background-color:#fef8f1;width : 100%;float:left;margin : 10px 0 0px 0px;}
+.jobClassLv2 li{width : 20%;height : 22px; float:left;line-height: 200%; overflow:hidden;}
+.jobClassLv3 {width : 300px;float:left;border : 1px solid #fdab02; position:relative;background-color:#fefaed;left:0px;top:0px;display:none;}
+.jobClassLv3 li { float:left; width : 33%;height : 22px;line-height: 200%;overflow:hidden;}

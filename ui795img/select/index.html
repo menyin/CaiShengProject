@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jpSelect 联动下拉菜单</title>
+<style>
+</style>
+</head>
+<body>
+<div class="wrap">
+
+	<div id="area1">
+		<p>全数据(总数据量超过3M，APP用这种方式还可以，web用这方式加载就蛋疼了)：<br>
+			<select class="province1" data-first-title="选择省">
+				<option value="">请选择</option>
+				<option value="120000" selected></option>
+			</select>
+			<select class="city1" data-first-title="选择市">
+				<option value="">请选择</option>
+				<option value="120100" selected></option>
+			</select>
+			<select class="region1" data-first-title="选择区县">
+				<option value="">请选择</option>
+				<option value="120103" selected></option>
+			</select>
+			<select class="town1" data-first-title="选择乡镇">
+				<option value="">请选择</option>
+			</select>
+		</p>
+	</div>
+
+	<div id="area2">
+		<p>小数据+API(展示5层，没那么多数据调用，所以结构是套用的)：<br>
+			<select class="province2" data-first-title="选择省">
+				<option value="">请选择</option>
+				<option value="350000" selected></option>
+			</select>
+			<select class="city2" data-first-title="选择市">
+				<option value="">请选择</option>
+				<option value="350200" selected></option>
+			</select>
+			<select class="region2" data-first-title="选择区县" data-url="http://xm.597.com/api/web/region.api?id=1" data-json-value="area_id"  data-json-name="area_name">
+				<option value="">请选择</option>
+				<option value="3500" selected></option>
+			</select>
+			<select class="town2" data-first-title="选择乡镇" data-url="http://xm.597.com/api/web/region.api" data-query="id" data-json-value="area_id"  data-json-name="area_name">
+				<option value="">请选择</option>
+				<option value="3502" selected></option>
+			</select>
+			<select class="subtown2" data-first-title="选择乡镇" data-url="http://xm.597.com/api/web/region.api" data-query="id" data-json-value="area_id"  data-json-name="area_name">
+				<option value="">请选择</option>
+				<option value="350203" selected></option>
+			</select>
+		</p>
+	</div>
+
+	<div id="area3">
+		<p>本页数据：<br>
+			<select class="province3" data-first-title="选择省">
+				<option value="">请选择</option>
+				<option value="110000" selected></option>
+			</select>
+			<select class="city3" data-first-title="选择市">
+				<option value="">请选择</option>
+				<option value="110100" selected></option>
+			</select>
+			<select class="region3" data-first-title="选择区县">
+				<option value="">请选择</option>
+				<option value="110103" selected></option>
+			</select>
+			<select class="town3" data-first-title="选择乡镇">
+				<option value="">请选择</option>
+			</select>
+		</p>
+	</div>
+
+</div>
+
+<!--<script src="//cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>-->
+<script src="//cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script> 
+<script src="js/jquery.jpSelect.js"></script>
+<script>
+(function() {
+
+	//选择url或data数据格式的数据，第一个索引值一定要是0哦
+	var ldata ={"0":{"c":"\u5168\u56fd\u7ad9","p":0,"s":[110000,120000]},"110000":{"c":"\u5317\u4eac\u5e02","p":86,"s":[110100]},"110100":{"c":"\u5317\u4eac\u5e02","p":110000},"120000":{"c":"\u5317\u4eac\u5e02","p":86,"s":[120100]},"120100":{"c":"\u5317\u4eac\u5e02","p":120000}};
+
+
+	var jpSelectApi1;
+	$('#area1').jpSelect({
+		selects: ['province1', 'city1', 'region1' ,'town1'],
+		url:'js/area.json',//调用远程
+		//data: ldata,//使用本页数据
+		//required: true,
+		emptyStyle: 'none'
+	}, function(api) {
+		jpSelectApi1 = api;
+	});
+
+	var jpSelectApi2;
+	$('#area2').jpSelect({
+		selects: ['province2', 'city2', 'region2' ,'town2' ,'subtown2'],
+		url:'js/area.min.json',//调用远程
+		//data: ldata,//使用本页数据
+		//required: true,
+		emptyStyle: 'none'
+	}, function(api) {
+		jpSelectApi2 = api;
+	});
+
+	var jpSelectApi3;
+	$('#area3').jpSelect({
+		selects: ['province3', 'city3', 'region3' ,'town3'],
+		//url:'js/area.min.json',//调用远程
+		data: ldata,//使用本页数据
+		//required: true,
+		emptyStyle: 'none'
+	}, function(api) {
+		jpSelectApi3 = api;
+	});
+
+})();
+</script>
+</body>
+</html>

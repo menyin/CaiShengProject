@@ -1,0 +1,89 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+#pay-main { width: 1000px; margin: 0 auto }
+.pay-container { padding: 20px; background: #fff; }
+.pay-tab { border-bottom: 1px solid #dadada; height: 40px; }
+.pay-tab a { height: 38px; line-height: 38px; font-size: 14px; margin: 0 10px; font-family: '微软雅黑', 'SimHei', Verdana; padding: 0 10px; display: inline-block; float: left; display: inline; border: 1px solid #dadada; border-top: 2px solid #dadada; border-bottom: 0; color: #666; }
+.pay-tab a:hover { background: #f8f8f8; }
+.pay-tab a.cur { font-weight: bold; border-top: 2px solid #2b90d8; border-bottom: 1px solid #fff; }
+.pay-tab a.cur:hover { background: #fff; }
+.pay-form { padding: 7px 0; text-align: left; }
+.pay-form dl:after, .pay-group-list ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.pay-form dl { zoom: 1; padding: 2px 0; line-height: 32px; }
+.pay-form dt { float: left; width: 85px; }
+.pay-form dd { margin-left: 72px; }
+.pay-form dd .priceInput { vertical-align: middle; width: 80px; margin-right: 4px; }
+.pay-form .pay-group-list { line-height: 40px; padding: 6px 0; }
+.pay-group-list .card-tab { margin-bottom: 19px; }
+.card-tab { height: 40px; }
+.card-tab a { display: inline-block; height: 38px; border: 1px #CACACA solid; background: #F2F2F2; color: #5B6161; padding: 0 36px 0 37px; position: relative; vertical-align: top; line-height: 38px; float: left; margin-right: 10px; }
+.card-tab a.cur { border: 2px #EA9B25 solid; height: 36px; background: #FEF6EB; color: #8A4937; padding: 0 34px 0 35px; line-height: 36px; }
+.card-tab a.cur em { display: inline-block; width: 17px; height: 24px; position: absolute; right: 0; bottom: 0; _right: -1px; background:url(/img/v2/selected_a.jpg); }
+.pay-group-list ul { zoom: 1; margin-bottom: 15px; }
+.pay-group-list ul li { padding: 5px 0; float: left; width: 167px; height: 52px; }
+.pay-group-list ul li * { vertical-align: middle }
+.pay-group-list ul li span { border-radius: 7px; display: inline-block; border: 1px #E4E5E9 solid; width: 128px; height: 50px; overflow: hidden; text-align: center; }
+.pay-group-list ul .sel span { border: 2px #E89B29 solid; width: 126px; height: 48px; }
+.pay-group-list ul .sel span img { margin-top: -1px; margin-left: -1px; }
+.side_menu .side_menu_list .child_item:after, .mutil_select_group .group:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+/*按钮*/
+.button_a { display: inline-block; padding: 0 10px; height: 25px; line-height: 19px; border: 1px #DBDBDB solid; background: #FFFFFB; _padding: 0 5px }
+.button_a, .button_a:hover { color: #646871; }
+.button_a_red { border-color: #e21212; background: #E21212; height: 25px; line-height: 25px; padding: 0 10px; _padding: 0 5px }
+.button_a_red, .button_a_red:hover { color: #fff; }
+/*最近修改*/
+.button_b { display: inline-block; width: 228px; height: 58px; line-height: 58px; border: 1px #E26E21 solid; background: #FF6600; font-size: 18px; color: #fff; border-radius: 5px; }
+input.button_a, button.button_a, input.button_b, button.button_b { line-height: normal; cursor: pointer; }
+.button_a, .button_b { font-family: '微软雅黑', 'SimHei', Verdana; }
+.followBtn { display: inline-block; height: 21px; line-height: 21px; padding: 0 5px; background: #7FAD6D; }
+.followBtn, .followBtn:hover { color: #fff; }
+.followBtn i { line-height: 18px; font-size: 12px; margin-right: 3px; }
+/*输入框*/
+input.text_a { border: 1px #737373 solid; padding: 0 3px; height: 28px; line-height: 28px; }
+input.text_b { height: 28px; line-height: 28px; border: 1px solid #cfcfcf; border-right: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; padding: 0 5px; color: #333; background: #fff; font-size: 14px; }
+input.error { height: 28px; line-height: 28px; border: 1px solid #f1aaa9; background: #fff3f3; box-shadow: 0 0 3px #f1aaa9; }/*输入框判断错误*/
+input.focus { height: 28px; line-height: 28px; border: 1px solid #9fcdd6; background: #f2fcfe; box-shadow: 0 0 5px #9fcdd6; }
+
+/*充值记录*/
+body{position:relative; z-index:1;background:#e9e9e9;zoom:1;_height:100%}
+.part .hd{border-bottom:1px solid #dadada;height:40px;}
+.part .hd  a{height:38px;line-height:38px;font-size:14px;margin:0 10px;padding:0 10px;display:inline-block;float:left;display:inline;border:1px solid #dadada;border-top:2px solid #dadada;border-bottom:0;color:#666;}
+.part .hd  a:hover{background:#f8f8f8;}
+.part .hd  a.cu{font-weight:bold;border-top:2px solid #2b90d8;border-bottom:1px solid #fff;}
+.part .hd  a.cu:hover{background:#fff;}
+.table{padding:10px; width: 100%;}
+.table tr th,.table tr td{text-align:center;font-size:12px; padding: 20px 0;}
+.table .lst tr td{border-bottom:1px solid #f1f1f1;padding:16px;}
+.table .wid220{width:220px;}
+.table .wid185{width:170px;}
+.table .wid120{width:120px;}
+.table .wid100{width:100px;}
+.table .wid65{width:80px;}
+.table .lst .time{color:#999;}
+
+.fblue {color: #3D84B8;}
+.fgreen {color: #090;}
+
+/*会员套餐*/
+hgroup.subHgp{padding:0px 20px 20px 30px; zoom:1; background: #fff;}
+#server .hd{border-bottom:1px solid #dadada;height:55px; font-family:"微软雅黑";}
+#server .hd h2{ width:120px;font-size:16px;font-weight:bold;display:inline; float:left; display:block; font-family:"微软雅黑";  line-height:54px; text-align: center;margin-right: 25px;}
+#server .hd h2 a {border-bottom:2px solid #0088CC; display: block;}
+#server .con {  margin-top: 20px;}
+#server .con h2 { font: bold 15px 微软雅黑; margin: 0 0 15px 10px;}
+#server .con h2 a { float: right; margin-right: 20px;font-size: 12px; font-weight: normal;}
+#server .selTable { width: 100%;font-size: 12px; text-align: center;}
+#server .selTable input { cursor: pointer; }
+#server .selTable tr:hover { background: #FEFEE2;}
+#server .selTable .tt td{ background: #f4f4f4; border-top: 1px solid #ddd; height: 40px;}
+#server .selTable td { height: 60px; }
+#server #server .bgOra {background: #f90; padding: 2px;color: #fff; margin-left: 5px;}
+#server .conBot { border-top: 1px dashed #ccc; padding-top: 10px;margin-top: 20px; }
+#server .conBot p { margin-top: 10px;}
+#server .ora,.green { font-family: arial; margin: 0 3px; }
+#server .ora { color: #f30; }
+#server .green { color: #090;}
+#server .adv p {margin-top: 40px; font-size: 12px; color: #666;}
+#server .input{width: 100px; height: 26px; padding: 0 8px; line-height: 28px; background: #fff; border: 1px solid #d4d4d4;}
+#server .floatl{float:left;}

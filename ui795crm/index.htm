@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Language" content="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"> 
+		<title></title> 
+		<meta name="keywords" content="云计算">
+		<meta name="description" content=""> 
+		<link rel="shortcut icon" href="" type="image/x-icon"> 
+		<link href="css/main.css" type="text/css" rel="stylesheet"> 
+		<!--[if lte IE 6]> 
+			<meta http-equiv="refresh" content="0;url=https://hbc2.grandcloud.cn/public/ie6.html" />
+		<![endif]--> 
+		<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="js/bootstrap.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" charset="utf-8" src="js/page_context.js"></script>
+		<script> 
+			$(document).ready(function()
+				{
+				$("#detail_info").click(function(){
+						$(".detail_info").show().siblings().hide();
+				  })
+				  $("#events_info").click(function(){
+						$(".events_info").show().siblings().hide();
+				  })
+			});
+		</script>
+</head>
+
+<body screen_capture_injected="true"> 
+<div id="content">
+<!--  nav start  -->
+	<div id="contentNav"> 
+	<div id="nav">
+	<div class="wrapper">
+	<div class="nav-home blockLink"><a href="#"></a></div>
+	<ul class="navs blockLink">
+	<li class="items"><a class="current" href="#">供应商报价系统</a></li>
+	<li class="items"><a href="#">网竞项目跟踪系统</a></li>
+	<li class="items lastItem"></li>
+	</ul>
+	<div class="nav" style="visibility: visible;">
+	<ul style="width: 165px;">
+	<li style="width: 70px;">
+	<div class="item"><div class="m_m"><div class="m_l"></div><div class="m_l m_r"></div><div class="m_c"><table><tbody><tr><td><span class="i"></span><span class="t">用户名</span><span class="a"></span></td></tr></tbody></table></div></div></div><div class="layer"><div class="m_t"><div class="m_l"></div><div class="m_l m_r"></div>
+	<div class="m_c"></div></div><div class="m_m"><div class="m_l"></div><div class="m_l m_r"></div>
+	<div class="m_c noHideBlockTextLink">
+	<div class="menu menu_support"><a href="#" target="_blank">个人信息</a></div>
+	<div class="menu"><a href="#">密码修改</a></div>
+	<div class="menu"><a href="#">退出</a></div>
+	</div></div><div class="m_b"><div class="m_l"></div><div class="m_l m_r"></div><div class="m_c"></div></div></div>
+	</li>
+	<li class="block" style="width: 47px;"><a href="#" target="_blank">帮助</a></li>
+	<li class="block" style="width: 47px;"><a href="#" target="_blank">论坛</a></li>
+	</ul>
+	</div>
+	<div class="button shouhou blockTextLink"><a href="#">售后支持</a></div>
+	<div class="kefu blockLink"><a href="javascript:;">在线客服</a></div></div>
+	</div>
+	</div> 
+<!--  nav end  -->
+
+<div id="contentBody" style="visibility: visible;">
+<!--  小贴士 start  -->
+	<div id="tips" class="hide" style="width: 256px;display:block">
+	<div class="tips" style="">
+		<div class="tips-title" style="">
+			小贴士
+			<div class="btn_close">
+			</div>
+		</div>
+		<div class="list list-3 blockTextLink" data-bind="foreach: help_cats" style="">
+			<div class="title">
+				<div data-bind="text: cat">常见问题</div>
+			</div>
+			<div data-bind="foreach: links">
+				<div class="items">
+					<a target="_blank" data-bind="attr: {href: url}, text: title" href="#">如何限制特定的ip段访问对应的端口？</a>
+				</div>
+			
+				<div class="items">
+					<a target="_blank" data-bind="attr: {href: url}, text: title" href="#">安全策略</a>
+				</div>
+			</div>
+			<div data-bind="&#39;if&#39;: $index() == $parent.help_cats().length -1">
+				<div class="more">
+					<div>
+						更多： 
+						<a href="#" target="_blank">帮助中心</a> &nbsp;
+						<a href="#" target="_blank">售后支持</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="draggle">
+	</div>
+	</div>
+<!--  小贴士 end  -->
+<div class="content" style="">
+	<div id="main" class="security-groups" style="">
+		<div class="title">
+			<div class="m_bg">
+				安全策略
+			</div>
+		</div>
+		<div class="quickbar">
+			<div class="note">
+				小贴士
+			</div>
+			<div class="btns">
+				<div class="btn-line clearfix">
+					<div class="btn icon-1 icon">
+						新建安全策略
+					</div>
+					<div class="btn icon-2 disabled icon">
+						删除
+					</div>
+					<span class="gray">*安全策略是一组端口或服务规则：申请主机时，可指定安全策略 <a target="_blank" href="#">了解更多</a></span>
+					<div class="paginator" data-bind="template: {name: &#39;paginator&#39;}, visible: pages() &gt; 1" style="display: none;">
+                    <a href="javascript:;" data-bind="click: first, css: {disabled: !can_prev()}" class="disabled">«首页</a>
+                    <a href="javascript:;" data-bind="click: prev, css: {disabled: !can_prev()}" class="disabled">‹上一页</a>
+                    第 <input type="text" data-bind="value: page, click: function(_,e){e.target.select()}" style="width:2em; text-align:center"> 页 共 <span data-bind="text: pages">1</span> 页
+                    <a href="javascript:;" data-bind="click: next, css: {diabled: !can_next()}" class="diabled">下一页›</a>
+                    <a href="javascript:;" data-bind="click: last, css: {disabled: !can_next()}" class="disabled">末页»</a>
+                </div>
+				</div>
+			</div>
+		</div>
+		<div class="mainContent" style="">
+			<div class="main_content">
+            	<div class="location">
+                    <div class="location_main item">
+                        <ul>
+                            <li>
+                                    输入安全组名称：<input type="text" id="query_input" class="search input_txt">
+                             </li>
+                             <li>
+                               <!--     <span id="detail_query" class="btn_gray btn_search"><span onclick="submit_query()">查 询</span></span> -->
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+				<div class="cell_tb_list">
+					<table class="has_checkbox">
+						<thead>
+							<tr class="table_header">
+								<th class="td1"></th>
+								<th>安全策略名称</th>
+								<th>安全策略</th>
+								<th>应用主机</th>
+								<th>修改时间</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+
+						<tbody data-bind="visible: editing" style="display: none;">
+							<tr class="bgBlue">
+								<td class="td1"></td>
+								<td class="td1" colspan="5">
+									<div class="add_save_group clearfix" style="display: block;">
+										<input type="text" placeholder="安全策略名称" class="placeholder inputtxt"  value="">
+										<span class="addbtn" ></span>
+										<span class="cancelbtn" ></span> &nbsp; * 将默认打开2个端口：TCP 22(SSH)，TCP 3389(RDP)
+									</div>
+								</td>
+							</tr>
+						</tbody>
+
+						<tbody data-bind="foreach: items">
+							<tr class="">
+								<td class="td1"><input type="checkbox" class="c2_checkbox" ></td>
+								<td >default</td>
+								<td>
+									<i d>开放<i >2</i>个端口</i>
+									<i data-bind="visible: rules().length &gt; 0"> | </i>
+									<i class="gray" >SSH, RDP</i>
+									<i class="gray" style="display: none;">SSH, RDP,  ...</i>
+								</td>
+								<td>
+									<i class="gray">应用<i >0</i>个主机</i>
+									<i style="display: none;"> | </i>
+									<i class="gray" ></i>
+									<i class="gray" style="display: none;">, ,  ...</i>
+								</td>
+								<td >2013-02-05 08:36:05</td>
+								<td><a class="a_btn see_more btn_gray" href="#">编辑策略...</a></td>
+							</tr>
+						</tbody>
+                        
+                        <tbody data-bind="foreach: items">
+							<tr class="">
+								<td class="td1"><input type="checkbox" class="c2_checkbox" ></td>
+								<td >default</td>
+								<td>
+									<i d>开放<i >2</i>个端口</i>
+									<i data-bind="visible: rules().length &gt; 0"> | </i>
+									<i class="gray" >SSH, RDP</i>
+									<i class="gray" style="display: none;">SSH, RDP,  ...</i>
+								</td>
+								<td>
+									<i class="gray">应用<i >0</i>个主机</i>
+									<i style="display: none;"> | </i>
+									<i class="gray" ></i>
+									<i class="gray" style="display: none;">, ,  ...</i>
+								</td>
+								<td >2013-02-05 08:36:05</td>
+								<td><input type="text" class="input_1 input_txt">
+                                	<div class="btns">
+                                        <div class="btn icon-1 icon">
+                                            <div>修改</div>
+                                        </div>
+                                    </div>
+                                    <div class="btns" style="display:none">
+                                        <div class="btn icon-2 disabled  icon">
+                                            <div><span></span>删除</div>
+                                        </div>
+                                    </div>
+                                </td>
+							</tr>
+						</tbody>
+                        
+                        
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <div class="draggle "></div>
+    <!--  detail start  -->
+	<div id="detail" style="height: 286px;" class="">
+        <div class="title">
+            <div class="m_bg">
+                详细信息                            </div>
+            <div class="m_unselect">
+            </div>
+            <div class="btn_hide">
+            </div>
+        </div>
+        <div class="detailNav clearfix">
+            <ul class="navs">
+                <li class="items current" id="detail_info">
+                    <div class="m_bg">
+                        详细信息                                    </div>
+                </li>
+                <li class="items" id="events_info">
+                    <div class="m_bg">
+                        最近日志                                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="detailContent" style="height: 228px;">
+            <div class="detail_content">
+                <div class="info" id="info">
+                <div class="sercurity_none_selected">
+                    <div class="info_title">
+                        <h3>没有选择数据库安全组</h3>
+                    </div>
+                    <div class="info_content" style="padding:20px;">
+                        选择上面的数据库安全组查看详细信息                                    </div>
+                </div>
+                <div class="hide sercurity_selected">
+                    <div class="info_title">
+                         <h3>安全组名称：</h3>
+                    </div>
+                    <div class="info_content">
+                        <div class="detail_info">
+                            <div class="detail">
+                                <div class="cell_tb_list">
+                                     <table id="sercurity_info_table">
+                                      <colgroup>
+                                        <col class="col1">
+                                        <col class="col2">
+                                        <col class="col3">
+                                        <col class="col4">
+                                      </colgroup>
+                                      <tbody><tr class="tbody_header">
+                                        <th class="td1">连接方式</th>
+                                        <th>详细信息</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                      </tr>
+                                    </tbody></table>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="events_info hide">
+                            <div class="detail">
+                                    <!--<div class="events_title">
+                                    <div class="left purple"><strong>最近日志</strong></div>
+                                    <div class="right"><span class="btn_gray_2" onclick="load_securityGroup_events()">刷新日志</span></div>
+                                </div>-->
+                                <div class="cell_tb_list">
+                                    <table id="securityGroup_event">
+                                      <colgroup>
+                                        <col class="col1">
+                                        <col class="col2">
+                                        <col class="col3">
+                                      </colgroup>
+                                      <tbody><tr>
+                                        <th class="td1">操作</th>
+                                        <th>操作结果</th>
+                                        <th>日期</th>
+                                      </tr>      
+                                    </tbody></table>
+                                </div>
+                                <div class="see_more_events"><a href="http://cds.grandcloud.cn/events.html">查看更多日志</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--  detail end  -->
+    
+</div>
+
+<!--  sidebar start  -->
+<div id="sidebar" style=""> 
+<div class="title"> <div class="m_bg"> 供应商报价系统 </div> </div> 
+
+	<div class="datacenter">
+        <div class="m_bg">
+            <div class="div-title">选择节点:&nbsp;&nbsp;</div>
+            <div class="div-select">
+                <select name="mutil-az" class="mutil-az select">
+                    <option value="east-china" selected="selected">B2C</option>
+                    <option value="north-china">B2B</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+   <div class="trees blockTextLink" style=""> 
+    <div class="tree tree-expand">
+        <div class="name">使用概要</div>
+        <ul class="nodes">
+            <li class="node"><a href="#" target="_blank">入门指南</a></li>
+            <li class="node"><a href="#">数据库云概要</a></li>
+        </ul>
+    </div>
+   <div class="tree tree-expand" style="border-bottom-width: 0px;"> 
+   <ul class="nodes"> 
+   <li class="node no"><a href="#" class="">使用提醒</a></li> 
+   </ul> </div> 
+   </div>
+   </div> 
+<!--  sidebar end  -->
+</div> 
+</div> 
+   
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" src="js/frame.js"></script> 
+<script type="text/javascript" src="js/common.js"></script> 
+<link href="css/frame.nav.css" type="text/css" rel="stylesheet">
+<link href="css/frame.css" type="text/css" rel="stylesheet">
+<link href="css/common.css" type="text/css" rel="stylesheet">
+</div>
+   <ul id="notifications"></ul>
+   </body></html>

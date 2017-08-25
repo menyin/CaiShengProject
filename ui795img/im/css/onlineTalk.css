@@ -1,0 +1,262 @@
+@charset "utf-8";
+* {
+    margin:0px;
+    padding:0px;
+}
+body {
+    background:#FFF;
+    font:"宋体", Arial, Verdana, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:20px;
+    color:#333;
+}
+
+em {
+font-style: normal;
+}
+.OnlineTalk {
+position: fixed;
+_position: absolute;
+_top: expression(eval(document.compatMode&&document.compatMode=='CSS1Compat')?documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight)-0: document.body.scrollTop+(document.body.clientHeight-this.clientHeight) -0);
+bottom: 0;
+right: 0;
+z-index: 1000000;
+text-align: left;
+}
+.floatr {
+float: right;
+}
+.talkBox {
+width: 182px;
+position: relative;
+}
+.talkBox .title {
+width: 157px;
+padding: 0 10px 0 15px;
+font: normal 12px/27px SimSun;
+line-height: 30px;
+height: 27px;
+background: url(../images/titleBg.gif) no-repeat;
+overflow: hidden;
+}
+.floatl {
+float: left;
+}
+.iconZaiXian {
+background: url(../images/iconZaiXian.gif) 0 45% no-repeat;
+padding-left: 15px;
+}
+.iconZXH {
+width: 12px;
+height: 20px;
+margin-top: 5px;
+background: url(../images/iconZXH.gif) 0 7px no-repeat;
+display: inline-block;
+}
+.gray6, .gray6 a {
+color: #666;
+text-decoration: none;
+}
+.talkBox .con {
+width: 180px;
+background: url(../images/conBg.gif) repeat-y;
+}
+.talkList {
+width: 180px;
+height: 340px;
+padding: 10px 1px;
+font: normal 12px/25px Arial,SimSun;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+.talkList dt {
+width: 125px;
+padding: 0 6px 0 31px;
+background: url(../images/iconDot.gif) 18px 45% no-repeat;
+float: left;
+}
+.talkList dd {
+width: 125px;
+padding: 0 6px 0 31px;
+float: left;
+cursor: pointer;
+height:25px
+}
+.talkList .borderGray {
+width: 120px;
+background: url(../images/listOnBg.gif) repeat-x;
+border-right: 1px solid #BBB;
+left: -1px;
+z-index: 1;
+position: relative;
+}
+.jiezi {
+width: 90px;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+.talkDetail {
+width: 346px;
+top: 0px;
+right: 182px;
+z-index: 10;
+position: absolute;
+}
+.talkDetail .talkTitle {
+width: 320px;
+padding: 0 10px 0 16px;
+font: normal 12px/27px SimSun;
+line-height: 30px	9;
+height: 27px;
+background: url(../images/titleBigBg.gif) no-repeat;
+overflow: hidden;
+}
+.iconCloseBig {
+width: 12px;
+height: 12px;
+margin-top: 7px;
+background: url(../images/iconCloseBig.gif) no-repeat;
+}
+.talkDetail .talkCon {
+width: 345px;
+height: 356px;
+padding-top: 4px;
+border-left: 1px solid #BBB;
+background: white;
+}
+.clear {
+clear: both;
+height: 0;
+line-height: 0;
+font-size: 0;
+overflow: hidden;
+}
+.talkDetail .dialogueCon {
+width: 100%;
+height: 254px;
+overflow-y: scroll;
+overflow-x: hidden;
+position: relative;
+}
+.talkDetail .dialogue {
+width: 315px;
+padding: 0 15px 0 15px;
+margin: 10px 0;
+overflow: hidden;
+}
+.talkDetail .dialogue dt, .talkDetail .dialogue dd {
+width: 315px;
+font: normal 12px/18px SimSun;
+}
+.talkDetail .dialogue dt {
+height: 20px;
+overflow: hidden;
+}
+.talkDetail .dialogue .me {
+color: green;
+}
+.talkDetail .talkTool {
+width: 322px;
+height: 26px;
+padding: 0 15px 0px 8px;
+font: normal 12px/26px SimSun;
+line-height: 28px;
+background: #E9E9E9;
+position: relative;
+}
+.talkDetail .talkLuRu {
+width: 345px;
+position: relative;
+}
+.talkDetail .talkLuRu .textarea {
+width: 335px;
+height: 66px;
+padding: 5px;
+border: none;
+resize: none;
+font: normal 12px/18px SimSun;
+background: white;
+overflow: hidden;
+z-index: 1;
+}
+
+.talkDetail .talkBottom {
+width: 315px;
+padding: 0px 15px 0 16px;
+height: 35px;
+font: normal 12px/35px SimSun;
+color: #333;
+background: url(../images/bottomBg.gif) no-repeat;
+}
+.talkDetail .talkBottom .btnSend {
+width: 68px;
+height: 22px;
+margin-top: 6px;
+background: url(../images/btnSend.gif) no-repeat;
+border: none;
+cursor: pointer;
+}
+.btnOnlineTalkUp {
+width: 142px;
+height: 35px;
+padding-left: 40px;
+font: normal 12px/35px SimSun;
+color: black;
+background: url(../images/btnTal2.gif) no-repeat;
+cursor: pointer;
+float: right;
+}
+.btnOnlineTalk, .btnOnlineTalkOn {
+width: 142px;
+height: 35px;
+padding-left: 40px;
+font: normal 12px/35px SimSun;
+color: #000;
+background: url(../images/btnTalkOnlinenew.gif) no-repeat;
+cursor: pointer;
+float: right;
+}
+.numPl12 {
+padding: 0 5px 0 12px;
+}
+.red {
+color: #F30;
+}
+.numPr12 {
+padding: 0 12px 0 5px;
+}
+.talkDetail .dialogue .chatother{ color:#05b}
+.btnMessage {
+height: 35px;
+padding-left: 45px;
+margin-right: -1px;
+font: normal 12px/35px SimSun;
+background: url(../images/btnMessage.gif) 0 0 repeat;
+cursor: pointer;
+}
+.btnMessage a {
+padding-right: 20px;
+background: url(../images/btnMessage.gif) right top no-repeat;
+display: inline-block;
+    color: #000;
+    line-height: 36px;
+}
+.bold{ font-weight: bold}
+.num {
+padding: 0 2px;
+font-family: Arial;
+}
+.redred{color:#f30}
+.W_ico16 {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    background-image: url("../images/icon1.png");
+    background-repeat: no-repeat;
+    margin-right: 3px;
+}
+.icon_sw_face {
+    background-position: -275px 0px;
+    margin-left: 6px;
+}

@@ -1,0 +1,41 @@
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+body{font-family:Arial, Helvetica, sans-serif; 
+font-size:16px;background-color:#f2f2f2;
+}
+#container{width:1000px;height:auto;background-color:#f2f2f2;margin:auto;}
+#play{margin-top:5px;}
+#left{width:776px;height:auto;float:left;}
+#right{width:217px;height:auto;float:right;}
+#code{margin-top:20px;}
+#contact{margin-top:5px;}
+#foot{
+float:left;
+margin-top:15px;
+}
+/*.peixunPart{ float:left; margin-left:20px; height:500px; background:#000; background-color:#000; }
+.news_list{ width:780px; height:auto; overflow:hidden;}
+.news_list ul li{width:100%; float:left;height:100px; line-height:26px; border-bottom:#d9d9d9 solid 1px; }
+.news_list ul li .newsday{ width:127px; color:#cfcece; float:left; font-size:15px; background: url(images/new3.jpg) center right no-repeat; margin-top:25px;text-align:center}
+.news_list ul li .newsday img{ width:114px; height:68px; border:1px solid #dedede; margin-top:-10px;}
+.news_list ul li .newsday h3{ font-size:28px; font-weight:100; color:#cfcece; }
+.news_list ul li .newstitle{width:550px; color:#999; float:left;margin-top:20px; margin-left:25px;display:inline; line-height:22px;}
+.news_list ul li .newstitle h3{font-size:16px; color:#2f2f2f;font-weight:100;}
+.news_list ul li span{margin-top:40px; margin-right:40px; display:inline; float:right; width:30px; height:30px;background:url(images/new10.jpg) right center no-repeat;}
+.news_list ul li a:hover{ outline:none; text-decoration:none; display:talbe;cursor:pointer}
+.news_list ul li:hover{ border-bottom:#d9d9d9 solid 1px; background:#0096db ; outline:none; text-decoration:none; cursor:pointer}
+.news_list ul li:hover span{ background:url(images/new2.jpg)}
+.news_list ul li:hover .newsday{background: url(images/new4.jpg) right center no-repeat; }
+.news_list ul li:hover .newsday img{border:1px solid #fff;}
+.news_list ul li:hover .newstitle h3{color:#fff}
+.news_list ul li:hover .newstitle{color:#8dc4ea}*/
+/*分页*/
+/*.page{ display:block; text-align:center; padding-top:30px; width:780px; overflow:hidden;}
+.page a{ border:1px #cecece solid; border-radius:2px; color:#a5a5a5; margin-right:5px; display:inline-block; padding:5px 10px;}
+.page a:hover,.page a.curr{background:#0096DB;color:#FFF;border:1px #0096DB solid;}
+.w950 { color:#666;}
+.w950 h5 {font-size: 20px;color: #ed6c00;font-weight: bold;}
+.tx {border-bottom: 1px solid #999999;border-top: 0;border-left: 0;border-right: 0;}*/

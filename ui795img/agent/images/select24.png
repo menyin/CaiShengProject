@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CNZZ数据专家 - 404错误</title>
+
+
+<style type="text/css">
+	@CHARSET "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li, 
+pre,form, fieldset, legend, button, input, textarea,th, td { margin: 0; padding: 0;}
+body,button, input, select, textarea {font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;}
+h1, h2, h3, h4, h5, h6 { font-size: 100%;}
+address, cite, dfn, em, var { font-style: normal; }
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } 
+small { font-size: 12px; } 
+ul, ol { list-style: none; }
+a { text-decoration: none;cursor:pointer; outline:none;}
+em { font-style:normal}
+sup { vertical-align: text-top; } 
+sub { vertical-align: text-bottom; }
+legend { color: #000; }
+fieldset, img { border: 0; } 
+button, input, select, textarea { font-size: 100%; } 
+table { border-collapse: collapse; border-spacing: 0; }
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {  display: block; margin: 0;padding: 0;}
+mark { background: #ff0; }
+q:before,q:after,blockquote:before,blockquote:after { content:""; }
+html { overflow-y:scroll; font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline:0; }
+textarea { overflow:auto; vertical-align:top; }
+
+.clearfix:after { clear: both; content: "";display: block;height: 0;visibility: hidden;}
+.clearfix {display: inline-block;}
+* + html .clearfix { height: 1%;}
+.clearfix {display: block;}
+
+/*--- clear float ---*/
+.clear { clear:both; height:0px; font-size:0px; overflow:hidden; }
+.hide{display:none;}
+.fleft{float:left}
+.fright{float:right}
+.lh30{line-height:30px;}
+.lh40{line-height:40px;}
+
+.b { font-weight:bold; }
+.black12 { color:#000; font-size:12px; }
+.red12 { color:#ff0000; font-size:12px; }
+.orange12 { color:#fb4e02; font-size:12px; }
+.orange { color:#ff9900; }
+.blue12 { color:#0387cf; font-size:12px; }
+.blue14 { color:#0387cf; font-size:14px; }
+.blue14b { color:#0387cf; font-size:14px; font-weight:bold; }
+.blue16b { color:#0387cf; font-size:16px; font-weight:bold; }
+.grey { color:#666; }
+.grey9 { color:#999; }
+.grey14 { font-size:14px; }
+.green12 { color:#669900; font-size:12px; }
+.green14b { color:#669900; font-size:14px; font-weight:bold; }
+.green16b { color:#669900; font-size:16px; font-weight:bold; }
+a:visited { color:#333; text-decoration:none; }
+a:hover { color:#000; text-decoration:none; }
+.blue12 a:link { color:#0387cf; font-weight:normal; text-decoration:none; }
+.blue12 a:visited { color:#0387cf; font-weight:normal; text-decoration:none; }
+.blue12 a:hover { color:#000; font-weight:normal; text-decoration:underline; }
+.blue14b a:link { color:#0387cf; font-weight:bold; text-decoration:none; }
+.blue14b a:visited { color:#0387cf; font-weight:bold; text-decoration:none; }
+.blue14b a:hover { color:#000; font-weight:bold; text-decoration:underline; }
+.blue14 a:link { color:#0387cf; text-decoration:none; }
+.blue14 a:visited { color:#0387cf; text-decoration:none; }
+.blue14 a:hover { color:#000; text-decoration:underline; }
+.red12 a:link { color:#ff0000; font-weight:normal; text-decoration:none; }
+.red12 a:visited { color:#ff0000; font-weight:normal; text-decoration:none; }
+.red12 a:hover { color:#000; font-weight:normal; text-decoration:underline; }
+
+/* Yahei */
+body {font-family: "Helvetica Neue", '\5fae\8f6f\96c5\9ed1','\5b8b\4f53' ,arial;}
+
+/* Start from here.*/
+body { background:url(../../static/img/main/top_back.gif) repeat-x;color: #333; width:100%; }
+
+/* header */
+.header { width:960px; height:67px; margin:0 auto; }
+.logo { position:absolute; width:189px; height:35px; margin:15px 0 0 10px; }
+.more-nav { height:25px; line-height:25px; font-size:12px; text-align:right; }
+.more-nav a { padding:0 5px; }
+.more-user { height:25px; line-height:25px; font-size:12px; text-align:right; margin-top:13px; }
+.more-user .user { width:200px; overflow:hidden; text-overflow:ellipsis; text-align:right; }
+.more-user a { padding:0 5px; }
+
+/* section */
+.section { width:960px; padding-top:5px; margin:0 auto; }
+
+/* footer */
+.footer { float:left; width:100%; height:50px; margin-top:5px; border-top:1px solid #ccc; line-height:50px; text-align:center; }
+
+
+/* CSS Document */
+
+.infor { width:900px; margin:0 auto; padding-bottom:20px; }
+.infor .main_title { height:43px; line-height:43px; }
+
+.infor .information { float:left; width:840px; height:230px; background:#f7fafd; border:1px solid #ccc; margin:20px 0; display:inline; }
+.infor .information .infor404 { float:left; width:300px; padding-left:80px; font-size:150px; color:#abd4e3; font-family:"Impact"; display:inline; }
+.infor .information  .infortxt { float:left; width:460px; padding-top:70px; display:inline; }
+	
+	
+</style>
+
+
+</head>
+<body>
+	
+<div class="header">
+	<div class="logo"><a href="www.cnzz.com"><img src="../../static/img/main/cnzzlogo.gif" border="0" /></a></div>
+	<a name="top" id="top"></a>
+</div>
+
+<div class="section">
+
+	<div class="infor">		
+		<div class="information">
+			<div class="infor404">404</div>
+			<div class="infortxt">
+			<span class="green16b">找不到这个页面……</span><br />
+			您可以：<br />
+			返回<a class="blue12" href="javascript:history.go(-1);">上一页</a><br />
+			<a class="blue12" href="/" style="color:#0387cf;">返回首页</a><br />
+			或联系我们，<a target="_blank" href="http://service.taobao.com/support/minerva/beta_robot_main.htm?sourceId=1316180605"><img src="/static/img/contacts_03.gif" title="联系客服"></a><br />
+			</div>
+		</div>		
+	</div>		
+</div>
+
+
+
+<div class="footer">
+	&copy; 2002-2013 cnzz.com 版权所有   公司简介   |   产品介绍  |  媒体报道  |  人才招聘  |   联系我们   |   广告服务
+</div>
+
+<div class="misc">
+	<div class="talk"> <a href="#"></a> </div>
+	<div class="back-top"> <a href="#top"></a> </div>
+</div>
+
+</body>

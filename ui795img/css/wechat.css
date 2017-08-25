@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+/*{ font-family:"微软雅黑";}*/
+.weChatBg{width:1000px; overflow:hidden; background:url(/img/c/weChat08.png) right top repeat-y; margin:15px auto; text-align:left;}
+.weChatLf{width:700px; padding:25px; overflow:hidden; background:#fff; float:left;}
+.weChatRt{width:230px; overflow:hidden;float:right; margin:28px 10px 0 0;_margin:28px 5px 0 0;}
+.weTitx{ color:#323232; font-size:20px; font-weight:bold;}
+.weChatDl{ overflow:hidden; margin:40px 0;}
+.weChatDl dl{width:200px; text-align:center; float:left; margin-right:47px;}
+.weChatDl dl dd b{ display:block; font-size:16px; color:#323232; padding:30px 0 10px 0;}
+.weChatDl dl dd span{ display:block; font-size:14px; color:#999; line-height:18px;}
+.weChatD2{ overflow:hidden; margin-top:20px;}
+.weChatD2 p{ padding-left:40px; color:#323232; font-size:16px;}
+.weChatD2 img{ display:block; margin:20px auto 50px auto;}
+.weChatRt h2{ color:#323232; font-size:20px; padding:0 12px;}
+.weChatRt p{ color:#999; line-height:18px; padding:10px 12px 12px 12px;}
+.weChatRt ul{ overflow:hidden;width:230px;}
+.weChatRt ul li{ overflow:hidden;width:230px;}
+.weChatRt ul li.weChatlit{ background:#f2f2f2;}
+.weChatRt ul li span,.weChatRt ul li em,.weChatRt ul li b,.weChatRt ul li a{ display:block; float:left; height:30px; line-height:30px;color:#333; font-size:12px; font-family:"宋体";}
+.weChatRt ul li.weChattit span,.weChatRt ul li.weChattit em,.weChatRt ul li.weChattit b{ font-weight:normal; color:#999;}
+.weChatRt ul li span{width:100px; margin-left:12px; _margin-left:6px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.weChatRt ul li em{width:82px;}
+.weChatRt ul li a{ color:#3d84b8;}
+.weChatRt ul li a:hover{ text-decoration:underline; color:#0093ff;}
+
+
+/*======顶部提示窗======*/
+.weChatip{ overflow:hidden;width:275px; text-align:left; position:absolute; top:32px; left:50%; z-index:2; margin-left:100px;}
+.weChatip img{ display:block; margin-left:210px; position:absolute;}
+.subWtip01{width:255px; padding:2px 9px; border:1px solid #ffe4b5; background:#fefce8; overflow:hidden; margin-top:7px;}
+.subWtip02{ float:left;width:240px; color:#e5a408; font-family: "宋体";font-size: 12px;}
+.subWtip02 a{ color:#3d84b8;font-family: "宋体";font-size: 12px;}
+.subWtip02 a:hover{ text-decoration:underline;}
+.wChatBtn{ display:block; float:right; width:7px; height:7px; background:url(../img/c/firm02.png) no-repeat; margin-top:7px;}
+.hdR ul li.wemChatlistx{}
+.hdR ul li.wemChatlistcut{background:url(/img/c/curNav.gif) center bottom no-repeat;}
+.hdR ul li.wemChatlistcut a:hover,.hdR ul li.wemChatlistx a:hover{ background: url(/img/c/weChat06.png) 0 center no-repeat;}
+
+
