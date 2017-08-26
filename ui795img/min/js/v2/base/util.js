@@ -6,7 +6,7 @@ define('base.util', function(require, exports){
 		var t = typeof val;
 		return val === null || (!jpjs.isObject(t) && !jpjs.isFunction(t));
 	}
-	var hasEnumBug = !({toString: 1}.propertyIsEnumerable('toString')),
+	var hasEnumBug = !({toString: 1}.propertyIsEnumerable('toString')),//propertyIsEnumerable函数是判断该属性是否是存在并且可以用for-in出来的
 		enumProperties = [
 			'constructor',
 			'hasOwnProperty',
@@ -47,6 +47,13 @@ define('base.util', function(require, exports){
 			return o && this.isObject(o) &&
 				!o['noteType'] && !this.isWindow(o);
 		},
+		/**
+		 * 不是空对象或 是Dom对象或 是window对象都返回false
+		 * @param o
+		 * @returns {boolean}
+		 * @remark
+		 *  当传入o={}则得到结果为true
+		 */
 		isEmptyObject: function(o){
 			if (!o || !this.isPlainObject(o) ||
 				o.nodeType || this.isWindow(o) || !o.hasOwnProperty) {
@@ -57,16 +64,33 @@ define('base.util', function(require, exports){
 			}
 			return true;
 		},
+		/**
+		 * 对象为null、空字符串、空数组、空对象（即{}）都反胃true
+		 * @param o 对象
+		 * @returns {boolean|*}
+		 */
 		isEmptyAttrValue: function(o) {
 			return o == null ||
 				(this.isString(o) || this.isArray(o)) && o.length === 0 ||
 				this.isEmptyObject(o);
 		},
+		/**
+		 * 是否是空字符串
+		 * @param s 检测的字符串
+		 * @param rev 不传则为false
+		 * @returns {boolean} 当rev为false代表空字符串时返回true，当rev为true代表空字符串时返回false
+		 */
 		isEmptyString: function(s, rev){
 			var len = exports.string.trim(s).length,
 				rev = rev ? len > 0 : len === 0;
 			return this.isString(s) && rev;
 		},
+		/**
+		 * 判断两个对象是否相等
+		 * @param a 对象1
+		 * @param b 对象2
+		 * @returns {boolean}
+		 */
 		isEqual: function(a, b) {
 			if (a === b) return true;
 			if (this.isEmptyAttrValue(a) && this.isEmptyAttrValue(b)) return true;
@@ -115,7 +139,9 @@ define('base.util', function(require, exports){
 			return false;
 		}
 	};
-	exports.array = jpjs.arrayUtil;
+
+	exports.array = jpjs.arrayUtil;//包含filter、indexOf、unique三个函数
+
 	exports.object = {
 		/**
 		 * 获取传入参数对象的非原型属性的属性名数组

@@ -3,6 +3,12 @@
 define('base.class', 'base.util', function(require, exports){
 	
 	var util = require('base.util');
+
+	/**
+	 * 检查实例是否为Class类或其子类的实例 或者是否是window对象
+	 * @param cls 实例
+	 * @returns {boolean}
+	 */
 	function checkContext(cls){
 		return !(cls instanceof Class) || !util.type.isWindow(cls);
 	}
