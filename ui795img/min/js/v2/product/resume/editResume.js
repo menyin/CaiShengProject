@@ -12,14 +12,15 @@ function(require, exports, module) {
 		labelElement = "[data-for={name}]",
 		nameReg = /\{name\}/;
 		
-	var editResume = shape(function(o){
-			editResume.parent().call(this, util.merge({
-				element: $('#baseinfor'),
-				trigger: '.edit',
-				formName: 'form',
-				normalName: '.res-infor',
-				editName: '.edit-status-box',
-				validators: null,
+	var editResume = shape(function(o){//此处shape()只是shape模块暴露出来的工厂
+
+			editResume.parent().call(this, util.merge({//这些元素初始化属性都在实例的attrs存储//此时editResume.parent()指向父类型Shape
+				element: $('#baseinfor'),//相当于该模块的顶级元素
+				trigger: '.edit', //存储dom对应的选择器字符串
+				formName: 'form', //编辑状态下字段编辑对应的form
+				normalName: '.res-infor',//非编辑状态下对应的字段显示
+				editName: '.edit-status-box', //编辑状态下字段编辑对应的form的容器
+				validators: null,//应该是存储验证规则相关信息
 				classes: {
 					successLabel: 'success-msg',
 					successText: 'success-text',
@@ -29,10 +30,10 @@ function(require, exports, module) {
 					warningText: 'warning-text'
 				},
 				remoteInputClass: false,
-				submitButton: '.saveBtn',
-				cancelButton: '.cancelBtn'
+				submitButton: '.saveBtn',//退出保存按钮dom的选择器
+				cancelButton: '.cancelBtn'//退出保存按钮dom的选择器
 			}, o));
-			this.init();
+			this.init();//初始化
 		});
 	
 	editResume.implement({
@@ -42,13 +43,21 @@ function(require, exports, module) {
 			this._initValidator();
 			this._initEvent();
 		},
+		/**
+		 * 存储相关的$dom
+		 * @private
+		 */
 		_initElements: function(){
-			this._trigger = this.getDom(this.get('trigger'));
+			this._trigger = this.getDom(this.get('trigger'));//get函数是从attribute模块继承，是用于从attrs对象中获取属性值
 			this._normal = this.getDom(this.get('normalName'));
 			this._edit = this.getDom(this.get('editName'));
 			this._submitButton = this.getDom(this.get('submitButton')),
 			this._cancelButton = this.getDom(this.get('cancelButton'));
 		},
+		/**
+		 * 验证相关，暂时不了解
+		 * @private
+		 */
 		_initValidator: function(){
 			var v = this.get('validators');
 			if(v){
@@ -100,12 +109,17 @@ function(require, exports, module) {
 				});
 			}
 		},
+		/**
+		 * 初始化事件
+		 * @private
+		 */
 		_initEvent: function(){
 			var element = this.get('element'),
 				self = this;
 			setTimeout(function(){
 				self.trigger('render');
 			}, 1);
+			//此部分拦截功能待研究
 			this.before('_handler', function(){
 				if(this._isInit){
 					var self = this;
@@ -172,6 +186,11 @@ function(require, exports, module) {
 			e.label.removeClass(this.allClass('label'));
 			e.element.removeClass(this.allClass('text'));
 		},
+		/**
+		 * 编辑按钮按下后的处理句柄
+		 * @param e 事件对象
+		 * @private
+		 */
 		_handler: function(e){
 			if(this._edit.is(':hidden')){
 				e.status = true;
@@ -183,10 +202,20 @@ function(require, exports, module) {
 				},1);
 			}
 		},
+		/**
+		 * 保存按钮按下后的处理句柄
+		 * @param e 事件对象
+		 * @private
+		 */
 		_submit: function(e){
 			debugger;
 			this.trigger('submit', e);
 		},
+		/**
+		 * 取消编辑按钮按下后的处理句柄
+		 * @param e 事件对象
+		 * @private
+		 */
 		_cancel: function(e){
 			var target = $(e.currentTarget);
 			e.index = this._cancelButton.index(target);
@@ -234,12 +263,27 @@ function(require, exports, module) {
 		getLabel: function(name, index){
 			return $(labelElement.replace(nameReg, name), this.get('element'));
 		},
+		/**
+		 *
+		 * @param name
+		 * @param index
+		 * @returns {*|jQuery|HTMLElement}
+		 */
 		getDom: function(name, index){
 			return $(name, this.get('element'));
 		},
+		/**
+		 * 获取指定索引的验证器
+		 * @param index
+		 * @returns {*}
+		 */
 		getValidator: function(index){
 			return this._validator[index || 0];
 		},
+		/**
+		 * 判断是否处于编辑状态
+		 * @returns {boolean}
+		 */
 		isEditor: function(){
 			return this._edit.is(':visible');
 		}
