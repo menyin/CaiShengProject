@@ -1,10 +1,23 @@
 // JavaScript Document
-
+/**
+ * 此模块用于面向切面编程
+ */
 define('base.aspect', function(require, exports){
-	
+	/**
+	 *
+	 * @param methodName
+	 * @param callback
+	 * @returns {*}
+	 */
 	exports.before = function(methodName, callback){
 		return aop.call(this, 'before', methodName, callback);
 	}
+	/**
+	 *
+	 * @param methodName
+	 * @param callback
+	 * @returns {*}
+	 */
 	exports.after = function(methodName, callback){
 		return aop.call(this, 'after', methodName, callback);
 	}

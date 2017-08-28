@@ -3,7 +3,8 @@
 define('base.attribute', 'base.util', function(require, exports){
 	
 	var util = require('base.util'),
-		cached; 
+		cached;
+
 	exports.initAttrs = function(config, instance) {
     	// initAttrs 是在初始化时调用的，默认情况下实例上肯定没有 attrs，不存在覆盖问题
     	var attrs = this.attrs = {},
@@ -20,7 +21,12 @@ define('base.attribute', 'base.util', function(require, exports){
 		//把attr属性绑定到this的属性以及方法
 		copySpecialProps(specialProps, this, attrs, true);
 	};
-	
+	/**
+	 * 根据key获取属性值
+	 * @param key 属性名
+	 * @param once 无用
+	 * @returns {*} 返回属性值数组
+	 */
 	exports.get = function(key, once) {
 		var attr;
 		if(this.attrs[key] !== undefined){
@@ -30,6 +36,13 @@ define('base.attribute', 'base.util', function(require, exports){
 		}
 		return attr;
 	};
+	/**
+	 * 设置对象的属性及属性值
+	 * @param key 属性名或属性名数组
+	 * @param val 属性值或属性值数组
+	 * @param options
+	 * @returns {exports}
+	 */
 	exports.set = function(key, val, options) {
 		var attrs = {};
 		
@@ -76,10 +89,16 @@ define('base.attribute', 'base.util', function(require, exports){
 		}
 		return this;
 	};
-	
+	/***
+	 * 合并已继承的属性
+	 * @param attrs
+	 * @param read
+	 * @param instance
+	 * @param specialProps
+	 */
 	function mergeInheritedAttrs(attrs, read, instance, specialProps) {
-		var inherited = [],
-			readOnlys = [],
+		var inherited = [],//已继承的
+			readOnlys = [],//只读的
 			proto = instance.constructor.prototype;
 			
 		while (proto) {
@@ -141,6 +160,12 @@ define('base.attribute', 'base.util', function(require, exports){
     	}
     	return attrs;
 	}
+
+	/**
+	 * 将数组或对象标准化(即转为key-value对象)
+	 * @param attrs
+	 * @returns {{}}
+	 */
 	function normalize(attrs) {
 		var newAttrs = {};
 		

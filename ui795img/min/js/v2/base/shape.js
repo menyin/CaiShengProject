@@ -12,6 +12,9 @@ define('base.shape', [
 		Class = require('base.class').Class,
 		cidCounter = 0,
 		cachedInstances = [],
+		/**
+		 * 构造出shape类型，
+		 */
 		shape = Class(function(config){
 			this.cid = uniqueCid();
 			this.initAttrs(config);
@@ -21,6 +24,10 @@ define('base.shape', [
 	function uniqueCid() {
     	return 'shape-' + cidCounter++;
   	}
+
+	/**
+	 * 为shope类型实现一些类型的属性和方法
+	 */
 	shape.implement([events, aspect, attribute, {
 		destory: function(f){
 			this.off();
@@ -41,7 +48,10 @@ define('base.shape', [
 		}
 		cachedInstances = null;
 	});
-	
+
+	/**
+	 * 向外界暴露：将目标o类型继承shape类型的工厂
+	 */
 	return function(o){
 		if(!util.type.isFunction(o) && !util.type.isObject(o)){
 			throw new Error('base.shape: 类型不符合');

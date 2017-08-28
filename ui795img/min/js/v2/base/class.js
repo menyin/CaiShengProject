@@ -13,11 +13,22 @@ define('base.class', 'base.util', function(require, exports){
 		return !(cls instanceof Class) || !util.type.isWindow(cls);
 	}
 	function Class(){}
+
+	/**
+	 * 用于当前类型继承其他类型 （Class类型及其子类型的静态方法）
+	 * @param o 目标要继承的父类类型
+	 * @returns {*} 返回 继承o类型后的Class实例
+	 */
 	Class.extend = function(o){
-		if(!checkContext(this))
+		if(!checkContext(this))//检查是否为Class的实例
 			throw new Error('class.extends: 类对象的类型不符合');
 		return util.extend(this, o);
 	}
+	/**
+	 * 为当前类型或其子类型的原型扩展其他类型原型属性，或者称之为实现
+	 * @param items {type | [type]} 目标类型或目标类型数组
+	 * @returns {Class} 返回扩展处理后的当前类型
+	 */
 	Class.implement = function(items){
 		if(!checkContext(this))
 			throw new Error('class.implement: 类对象的类型不符合');
@@ -29,16 +40,27 @@ define('base.class', 'base.util', function(require, exports){
 		}
 		return this;
 	}
+	/**
+	 * 返回Class或子类型的父类型原型
+	 * @param method
+	 * @returns {*}
+	 */
 	Class.parent = function(method){
 		if( !checkContext(this) )
 			throw new Error('class.parent: 类对象的类型不符合');
-		if( !this.superclass )
+		if( !this.superclass ) //superclass是父类型的原型
 			throw new Error('class.parent: 找不到父类');
 		if(!method || !this.superclass[method]){
 			method = 'constructor';
 		}
 		return this.superclass[method];
 	}
+
+	/**
+	 * 向外界暴露：将目标类型扩展出Class类型基本静态函数的工厂
+	 * @param cls 目标类型
+	 * @returns {*} 扩展后的目标类型
+	 */
 	function classify(cls){
 		cls.extend = Class.extend;
 		cls.implement = Class.implement;

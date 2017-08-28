@@ -1,10 +1,13 @@
 // JavaScript Document
-
+/**
+ * 此模块用于事件相关的操作
+ */
 define('base.event','base.util', function(require, exports){
 	
 	var util = require('base.util'),  
 		eventSplitter = /\s+/,
 		eventDispatcher = {
+
 			on: function(type, callback, context){
 				this._listeners = this._listeners || {};
 				if (!callback) return this;
