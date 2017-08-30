@@ -83,7 +83,7 @@ define('widge.validator.form',
 			this._previousValue = {};
 			this._targetCache = {};
 			this._labelCache = {};
-			this._reset();
+			this._reset();//重置一些对象属性
 			this.keepBlur();
 			this.keepKey();
 			this.keepErrorFocus();
@@ -256,6 +256,12 @@ define('widge.validator.form',
 		keepErrorFocus: function(focus){
 			this._keepEvent('keepErrorFocus', focus);
 		},
+		/**
+		 * 设置实例的"_"+type的属性，属性值为attrs里对应的值
+		 * @param type 要设置的属性
+		 * @param value {object} 如果不为undefined则将其添加到实例的attrs内
+		 * @private
+		 */
 		_keepEvent: function(type, value){
 			value != undefined && this.set(type, value);
 			var result = this.get(type);
@@ -471,7 +477,7 @@ define('widge.validator.form',
 			this.formSubmitted = false;
 			this.toHide.removeClass(allClass).html('');
 			this.toShow.removeClass(allClass).html('');
-			var allElements = item.allElements.call(this);
+			var allElements = item.allElements.call(this);//获取到所有要被验证的元素，除了item模块里elementsList规定的元素
 			allElements.removeClass(allClass);
 			f && this.getElement() && this.getElement()[0].reset();
 			this.trigger('clear', {

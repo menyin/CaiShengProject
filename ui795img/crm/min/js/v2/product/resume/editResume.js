@@ -193,6 +193,7 @@ function(require, exports, module) {
 			this.resetForm();
 			this.trigger('cancel', e);
 		},
+
 		resetForm: function(f){
 			if(this._validator){
 				for(var i=0, len=this._validator.length; i<len; i++){

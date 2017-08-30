@@ -8,14 +8,14 @@ define('base.attribute', 'base.util', function(require, exports){
 	exports.initAttrs = function(config, instance) {
     	// initAttrs 是在初始化时调用的，默认情况下实例上肯定没有 attrs，不存在覆盖问题
     	var attrs = this.attrs = {},
-			readOnlyAttrs = this.readOnlyAttrs || {},
-			specialProps = this.propsInAttrs || [],
+			readOnlyAttrs = this.readOnlyAttrs || {},//存储只读属性的数组
+			specialProps = this.propsInAttrs || [],//特殊属性
 			cached = instance;
 		
 		mergeInheritedAttrs(attrs, readOnlyAttrs, this, specialProps);
 		
 		if (config) {
-			mergeAttrs(attrs, normalize(config), readOnlyAttrs);
+			mergeAttrs(attrs, normalize(config), readOnlyAttrs);//将config里的属性复制到实例的attrs属性对象里，并且被复制的config里的属性都是只读的
 		}
 		
 		//把attr属性绑定到this的属性以及方法
@@ -40,7 +40,7 @@ define('base.attribute', 'base.util', function(require, exports){
 	 * 设置对象的属性及属性值
 	 * @param key 属性名或属性名数组
 	 * @param val 属性值或属性值数组
-	 * @param options
+	 * @param options {object} 形如{override:true,readyOnly:true}对象
 	 * @returns {exports}
 	 */
 	exports.set = function(key, val, options) {
@@ -91,17 +91,17 @@ define('base.attribute', 'base.util', function(require, exports){
 	};
 	/***
 	 * 合并已继承的属性
-	 * @param attrs
-	 * @param read
-	 * @param instance
-	 * @param specialProps
+	 * @param attrs 实例的attrs属性
+	 * @param read 实例的readOnlyAttrs属性
+	 * @param instance 实例
+	 * @param specialProps 实例的propsInAttrs属性，应该是特殊属性
 	 */
 	function mergeInheritedAttrs(attrs, read, instance, specialProps) {
 		var inherited = [],//已继承的
 			readOnlys = [],//只读的
-			proto = instance.constructor.prototype;
+			proto = instance.constructor.prototype;//实例构造函数的原型，如editResume类型就是editResume.prototype
 			
-		while (proto) {
+		while (proto) {//此循环是从实例类型及父辈类型的原型里拷贝继承属性和只读属性到对应的数组里
 			if (!proto.hasOwnProperty('attrs')) {
 				proto.attrs = {};
 			}
@@ -112,7 +112,7 @@ define('base.attribute', 'base.util', function(require, exports){
 			copySpecialProps(specialProps, proto.attrs, proto);
 			copySpecialProps(specialProps, proto.readOnlyAttrs, proto);
 			
-			// 为空时不添加
+			// 不是空对象则只需插入
 			if (!util.type.isEmptyObject(proto.attrs)) {
 				inherited.unshift(proto.attrs);
 				readOnlys.unshift(proto.readOnlyAttrs);
@@ -122,7 +122,7 @@ define('base.attribute', 'base.util', function(require, exports){
 			proto = proto.constructor.superclass;
 		}
 		
-		// 合并复制默认值的实例
+		// 将继承属性和只读属性合并到实例的attrs上
 		for (var i = 0, len = inherited.length; i < len; i++) {
 			mergeAttrs(attrs, normalize(inherited[i]));
 			mergeAttrs(read, normalize(readOnlys[i]));
@@ -147,10 +147,10 @@ define('base.attribute', 'base.util', function(require, exports){
 					attrs[key] = {};
 				}
 				if(value != undefined){
-					if(value.jquery){
+					if(value.jquery){//如果是$dom就直接赋值引用
 						attrs[key] = value;
-					} else {
-						attrs[key] = util.clone(value, attrs[key]);
+					} else {//否则拷贝值的副本
+						attrs[key] = util.clone(value, attrs[key]);//value对象拷贝attr[key]对象的属性，同名属性不会被覆盖
 					}
 					if(read && read[key]){
 						read[key] = true;

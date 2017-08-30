@@ -11,16 +11,16 @@ function(require, exports, module) {
 		inputElement = "[name={name}]",
 		labelElement = "[data-for={name}]",
 		nameReg = /\{name\}/;
-		
-	var editResume = shape(function(o){//此处shape()只是shape模块暴露出来的工厂
-
-			editResume.parent().call(this, util.merge({//这些元素初始化属性都在实例的attrs存储//此时editResume.parent()指向父类型Shape
+	//editResume类型是通过继承Shape类型的类型，并且editResume类型可以传递o参数，该参数是一个包含许多自定义的扩展属性的对象
+	var editResume = shape(function(o){//此处shape()只是shape模块暴露出来的工厂，shape()执行后得到一个继承Shape类型的类型
+            //此处调用弗雷构造函数(即Shape的构造函数)，并传递属性参数
+			editResume.parent().call(this, util.merge({//这些元素初始化属性都在实例的attrs存储,并可使用editResume实例的get和set方法//此时editResume.parent()指向父类型Shape
 				element: $('#baseinfor'),//相当于该模块的顶级元素
 				trigger: '.edit', //存储dom对应的选择器字符串
 				formName: 'form', //编辑状态下字段编辑对应的form
-				normalName: '.res-infor',//非编辑状态下对应的字段显示
+				normalName: '.res-infor',//非编辑状态下对应的字段显示的容器
 				editName: '.edit-status-box', //编辑状态下字段编辑对应的form的容器
-				validators: null,//应该是存储验证规则相关信息
+				validators: null,//存储生产验证器的开发者自定义的数据
 				classes: {
 					successLabel: 'success-msg',
 					successText: 'success-text',
@@ -129,9 +129,10 @@ function(require, exports, module) {
 					}, 2);
 				}
 			});
-			element.on('click', this.get('trigger'), util.bind(this._handler, this));
-			element.on('click', this.get('submitButton'), util.bind(this._submit, this));
-			element.on('click', this.get('cancelButton'), util.bind(this._cancel, this));
+			//以下基本事件绑定都是在顶级元素下做代理绑定
+			element.on('click', this.get('trigger'), util.bind(this._handler, this));//编辑按钮事件绑定
+			element.on('click', this.get('submitButton'), util.bind(this._submit, this));//提交按钮事件绑定
+			element.on('click', this.get('cancelButton'), util.bind(this._cancel, this));//撤销按钮事件绑定
 		},
 		_invalid: function(e){
 			var classes = this.get('classes'),
@@ -209,7 +210,7 @@ function(require, exports, module) {
 		 */
 		_submit: function(e){
 			debugger;
-			this.trigger('submit', e);
+			this.trigger('submit', e);//trigger会去event.js模块定义的事件队列里获取submit事件进行触发
 		},
 		/**
 		 * 取消编辑按钮按下后的处理句柄
@@ -223,6 +224,10 @@ function(require, exports, module) {
 			this.resetForm();
 			this.trigger('cancel', e);
 		},
+		/**
+		 * ？当验证不通过时，根据验证器记录的旧值重置表单元素
+		 * @param f {boolean}
+		 */
 		resetForm: function(f){
 			if(this._validator){
 				for(var i=0, len=this._validator.length; i<len; i++){
@@ -257,6 +262,12 @@ function(require, exports, module) {
 				error = classes['error' + ucFirst(name)];
 			return success + ' ' + warning + ' ' + error;
 		},
+		/**
+		 * 在该类型（editResume）实例的顶级元素下寻找指定名称的$dom
+		 * @param name 查找元素的name
+		 * @param index 无用参数
+		 * @returns {*|jQuery|HTMLElement}
+		 */
 		getElement: function(name, index){
 			return $(inputElement.replace(nameReg, name), this.get('element'));
 		},

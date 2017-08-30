@@ -5,6 +5,13 @@ define('base.event','base.util', function(require, exports){
 	var util = require('base.util'),  
 		eventSplitter = /\s+/,
 		eventDispatcher = {
+			/**
+			 * 为该函数调用者绑定事件(实际上是向事件队列_listeners里push事件)
+			 * @param type 事件名，如：'submit'
+			 * @param callback 事件回调
+			 * @param context
+			 * @returns {eventDispatcher}
+			 */
 			on: function(type, callback, context){
 				this._listeners = this._listeners || {};
 				if (!callback) return this;

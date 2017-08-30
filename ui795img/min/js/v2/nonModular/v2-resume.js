@@ -1774,12 +1774,12 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
     /*求职意向 end*/
 
     /*自我评价 begin*/
-    var appraiseRules = {
-            txtAppraise: {
+    var appraiseRules = {//表单元素验证规则规约
+            txtAppraise: {//要求表单元素name属性为txtAppraise
                 max: 300
             }
         },
-        appraiseErrorMsg = {
+        appraiseErrorMsg = {//表单元素验证提示规约
             txtAppraise: '<em></em><i></i>不能超过300个字'
         };
 
@@ -1787,31 +1787,32 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             element: $('#appraiseInfor'),
             normalName: '.resume-item',
             validators: {
-                rules: appraiseRules,
-                errorMessages: appraiseErrorMsg,
-                errorElement: '',
+                rules: appraiseRules,//表单元素验证规则规约
+                errorMessages: appraiseErrorMsg,//要求表单元素name属性为txtAppraise
+                errorElement: '',//指定错误信息显示的元素
                 keepKey: true,
                 isCache: false
             }
         }),
-        appraiseValidator = appraiseEditor.getValidator();
+        appraiseValidator = appraiseEditor.getValidator();//得到的应该是widge.validator.form模块的实例对象
 
     appraiseEditor.clearData = function () {
-        this.resetForm(true);
-        this.getElement('txtAppraise').resetWatermark();
+        this.resetForm(true);//根据验证器记录旧值重置表单
+        this.getElement('txtAppraise').resetWatermark();//重置txtAppraise元素的水印
     }
+    //显示自我评价信息的模板
     var appraiseTemplate = [
             '<p class="infor"><span class="topicContent">{content}</span></p>',
         ].join(''),
-        appraisetit = appraiseEditor.getDom('.resume-tit');
+        appraisetit = appraiseEditor.getDom('.resume-tit');//标题栏
 
     appraiseEditor.updatePreview = function (e) {
-        var appraise = this._normal.children('.other-box'),
-            dataObj = {
+        var appraise = this._normal.children('.other-box'),//信息显示容器$dom
+            dataObj = {//textarea[name="txtAppraise"]的值
                 content: this.getElement('txtAppraise').val()
             };
 
-        appraisetit.attr('data-content', dataObj.content);
+        appraisetit.attr('data-content', dataObj.content);//将数据存储在标题栏dom的data-content属性上
         if (dataObj.content) {
             appraise.show();
             if (appraise.children().length) {
@@ -1824,42 +1825,42 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             if (appraise.children().length) {
                 this.getDom('.appraiseContent').html(dataObj.content);
             } else {
-                appraise.empty();
+                appraise.empty();//删除元素下的html
             }
         }
         updateRightSideList(2, true);
         this.show();
     }
-    appraiseEditor.resetData = function () {
+    appraiseEditor.resetData = function () {//根据标题栏旧值重置textarea[name="txtAppraise"]
         var attr = appraisetit.attr('data-content');
         if (attr) {
             this.getElement('txtAppraise').val(attr);
         }
     }
-    appraiseEditor.on('init', function () {
+    appraiseEditor.on('init', function () {//点击editResume实例编辑按钮按下执行_handle之前触发的事件
         appraiseValidator.addDomCache(true);
         this.resetData();
     });
-    appraiseEditor.on('cancel', function () {
+    appraiseEditor.on('cancel', function () {//点击取消按钮触发的事件
         this.resetData();
     });
-    appraiseEditor.on('submit', function (e) {
+    appraiseEditor.on('submit', function (e) {//点击提交按钮触发的事件
         this.saveSubmit(e);
     });
     appraiseEditor.saveSubmit = function (e) {
 
-        var btn = e ? $(e.currentTarget) : this._submitButton,
+        var btn = e ? $(e.currentTarget) : this._submitButton,//保存按钮
             self = this;
 
-        appraiseValidator.submit({
+        appraiseValidator.submit({//提交验证（对应模块是module.verifie）
             callback: function (valid) {
                 self.resultStatus = valid;
-                btn.submitForm({
+                btn.submitForm({//验证通过后提交表单（对应模块是module.verifie）
                     beforeSubmit: valid,
                     data: {
                         resume_id: resume_id
                     },
-                    success: function (result) {
+                    success: function (result) {//result格式形如：{//{ status: 1, msg: "成功添加评价!", update_time: "2017-08-29 17:01:15" }
                         if (result && result.error) {
                             self.resultStatus = false;
                             confirmBox.alert(result.error, null, {title: '保存失败'});

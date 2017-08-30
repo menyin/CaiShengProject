@@ -17,7 +17,7 @@ define('base.shape', [
 		 */
 		shape = Class(function(config){
 			this.cid = uniqueCid();
-			this.initAttrs(config);
+			this.initAttrs(config);//initAttrs是从base.attribut模块实现过来的
 			cachedInstances.push(this);
 		});
 	
@@ -27,6 +27,7 @@ define('base.shape', [
 
 	/**
 	 * 为shope类型实现一些类型的属性和方法
+	 * 其实是为当前类型或其子类型的原型扩展其他类型原型属性，或者称之为实现
 	 */
 	shape.implement([events, aspect, attribute, {
 		destory: function(f){
@@ -52,7 +53,7 @@ define('base.shape', [
 	/**
 	 * 向外界暴露：将目标o类型继承shape类型的工厂
 	 */
-	return function(o){
+	return function(o){//o为一个类型，可以是匿名类型
 		if(!util.type.isFunction(o) && !util.type.isObject(o)){
 			throw new Error('base.shape: 类型不符合');
 		}

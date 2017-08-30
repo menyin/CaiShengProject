@@ -71,8 +71,8 @@ define('widge.validator.item', 'module.verifier', function(require, exports, mod
 		this.toHide = exports.errorsFor.call(this, element);
 	}
 	exports.prepareForm = function(){
-		this._reset();
-		this.toHide = exports.errors.call(this);
+		this._reset();//form模块里定义的_reset做一些属性初始化
+		this.toHide = exports.errors.call(this);//toHide用于存储错误元素$dom
 	}
 	exports.validElements = function(){
 		return this.currentElements.not(exports.invalidElements.call(this)).not(exports.emptyElements.call(this));
