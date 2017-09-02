@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd1eaee1-e0a6-4941-bdb1-25c2c9d0624e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui795img/min/js/v2/base/attribute.js" afterPath="$PROJECT_DIR$/ui795img/min/js/v2/base/attribute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui795img/crm/min/js/v2/product/resume/editResume.js" afterPath="$PROJECT_DIR$/ui795img/crm/min/js/v2/product/resume/editResume.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui795img/min/js/v2/product/resume/editResume.js" afterPath="$PROJECT_DIR$/ui795img/min/js/v2/product/resume/editResume.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui795img/js/v2/base/event.js" afterPath="$PROJECT_DIR$/ui795img/js/v2/base/event.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/form.js" afterPath="$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/item.js" afterPath="$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui795img/min/js/v2/base/shape.js" afterPath="$PROJECT_DIR$/ui795img/min/js/v2/base/shape.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui795img/min/js/v2/base/util.js" afterPath="$PROJECT_DIR$/ui795img/min/js/v2/base/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui795img/min/js/v2/nonModular/v2-resume.js" afterPath="$PROJECT_DIR$/ui795img/min/js/v2/nonModular/v2-resume.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui795img/min/js/v2/module/verifier.js" afterPath="$PROJECT_DIR$/ui795img/min/js/v2/module/verifier.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CaiShengProject.iws" />
@@ -34,44 +31,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="v2-resume.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="v2-resume.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/nonModular/v2-resume.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.0">
-              <caret line="1776" column="21" selection-start-line="1776" selection-start-column="8" selection-end-line="1776" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.23397075">
+              <caret line="1274" column="0" selection-start-line="1274" selection-start-column="0" selection-end-line="1274" selection-end-column="0" />
               <folding>
                 <element signature="e#1451#2444#0" expanded="false" />
                 <element signature="e#2450#3567#0" expanded="false" />
                 <element signature="e#3720#4164#0" expanded="false" />
-                <element signature="e#4961#5135#0" expanded="false" />
-                <element signature="e#8150#9087#0" expanded="false" />
-                <element signature="e#9114#9307#0" expanded="false" />
-                <element signature="e#9336#9468#0" expanded="false" />
-                <element signature="e#9507#10962#0" expanded="false" />
-                <element signature="e#11027#11249#0" expanded="false" />
-                <element signature="e#53986#55395#0" expanded="false" />
-                <marker date="1504061001873" expanded="true" signature="79014:79032" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="79119:79137" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="79271:79289" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="79434:79450" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="79582:79600" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="134298:134316" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="134521:134539" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="160632:160644" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="161930:161941" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="162484:162496" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="192104:192120" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="192318:192329" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="192421:192447" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="192650:192673" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="207524:207540" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="207739:207768" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="207931:207957" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="208074:208090" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="208219:208230" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="233563:233575" placeholder="..." />
-                <marker date="1504061001873" expanded="true" signature="233770:233782" placeholder="..." />
+                <element signature="e#8150#9133#0" expanded="false" />
+                <element signature="e#8177#8300#0" expanded="false" />
+                <element signature="e#11635#27841#0" expanded="false" />
+                <element signature="e#12676#13192#0" expanded="false" />
+                <element signature="e#13353#14029#0" expanded="false" />
+                <element signature="e#14059#14226#0" expanded="false" />
+                <element signature="e#14264#14501#0" expanded="false" />
+                <element signature="e#27894#32546#0" expanded="false" />
+                <element signature="e#32724#33614#0" expanded="false" />
+                <element signature="e#33649#35382#0" expanded="false" />
+                <element signature="e#40368#47049#0" expanded="false" />
+                <element signature="e#47152#47254#0" expanded="false" />
+                <element signature="e#47314#47470#0" expanded="false" />
+                <element signature="e#47508#47637#0" expanded="false" />
+                <element signature="e#47690#48230#0" expanded="false" />
+                <element signature="e#48268#48599#0" expanded="false" />
+                <element signature="e#48637#48970#0" expanded="false" />
+                <element signature="e#49011#49350#0" expanded="false" />
+                <element signature="e#49392#49737#0" expanded="false" />
+                <element signature="e#54338#54371#0" expanded="false" />
+                <element signature="e#54419#54454#0" expanded="false" />
+                <element signature="e#54502#56043#0" expanded="false" />
+                <element signature="e#54626#56035#0" expanded="false" />
+                <element signature="e#56088#56186#0" expanded="false" />
+                <element signature="e#56232#56329#0" expanded="false" />
+                <element signature="e#56377#56384#0" expanded="false" />
+                <element signature="e#56430#57708#0" expanded="false" />
+                <element signature="e#57757#58035#0" expanded="false" />
+                <element signature="e#57800#57944#0" expanded="false" />
+                <element signature="e#70866#70957#0" expanded="false" />
+                <element signature="e#71106#72011#0" expanded="false" />
+                <element signature="e#72565#72613#0" expanded="false" />
+                <element signature="e#72661#73909#0" expanded="false" />
+                <marker date="1504321500673" expanded="true" signature="80044:80062" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="80149:80167" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="80301:80319" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="80464:80480" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="80612:80630" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="135328:135346" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="135551:135569" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="161662:161674" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="162960:162971" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="163514:163526" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="193134:193150" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="193348:193359" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="193451:193477" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="193680:193703" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="208554:208570" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="208769:208798" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="208961:208987" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="209104:209120" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="209249:209260" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="234593:234605" placeholder="..." />
+                <marker date="1504321500673" expanded="true" signature="234800:234812" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jobForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/jpjob/jobForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1317" column="17" selection-start-line="1317" selection-start-column="17" selection-end-line="1317" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jobDialog.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/jpjob/jobDialog.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1419" column="4" selection-start-line="1419" selection-start-column="4" selection-end-line="1419" selection-end-column="4" />
+              <folding>
+                <marker date="1503967892305" expanded="true" signature="6635:6668" placeholder="..." />
+                <marker date="1503967892305" expanded="true" signature="7067:7093" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jobSkill.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/jpjob/jobSkill.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,21 +135,36 @@
       <file leaf-file-name="editResume.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/product/resume/editResume.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.666667">
-              <caret line="64" column="52" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
               <folding>
-                <element signature="e#3214#3841#0" expanded="false" />
-                <element signature="e#4550#4993#0" expanded="false" />
-                <element signature="e#5017#5652#0" expanded="false" />
-                <element signature="e#5870#5972#0" expanded="false" />
-                <element signature="e#6060#6262#0" expanded="false" />
-                <element signature="e#6349#6440#0" expanded="false" />
-                <element signature="e#6529#6688#0" expanded="false" />
-                <element signature="e#6941#7066#0" expanded="false" />
-                <element signature="e#7086#7204#0" expanded="false" />
-                <element signature="e#7224#7275#0" expanded="false" />
-                <element signature="e#7718#7794#0" expanded="false" />
-                <element signature="e#7829#7905#0" expanded="false" />
+                <element signature="e#467#521#0" expanded="false" />
+                <element signature="e#4203#4903#0" expanded="false" />
+                <element signature="e#5547#6182#0" expanded="false" />
+                <element signature="e#6288#6456#0" expanded="false" />
+                <element signature="e#6566#6668#0" expanded="false" />
+                <element signature="e#6756#6958#0" expanded="false" />
+                <element signature="e#7045#7136#0" expanded="false" />
+                <element signature="e#7225#7384#0" expanded="false" />
+                <element signature="e#7638#7763#0" expanded="false" />
+                <element signature="e#7817#7935#0" expanded="false" />
+                <element signature="e#7988#8039#0" expanded="false" />
+                <element signature="e#8731#8807#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resume.html.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui795www/person/resume.html.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.72131145">
+              <caret line="1657" column="16" selection-start-line="1657" selection-start-column="16" selection-end-line="1657" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#form#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -102,89 +173,38 @@
       <file leaf-file-name="form.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.37931034">
-              <caret line="81" column="12" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="12" />
+            <state vertical-scroll-proportion="-7.0">
+              <caret line="452" column="26" selection-start-line="452" selection-start-column="26" selection-end-line="452" selection-end-column="26" />
               <folding>
                 <element signature="e#1516#1810#0" expanded="false" />
                 <element signature="e#1841#1927#0" expanded="false" />
                 <element signature="e#2161#2231#0" expanded="false" />
-                <element signature="e#2919#6291#0" expanded="false" />
-                <element signature="e#6330#6587#0" expanded="false" />
-                <element signature="e#6617#6986#0" expanded="false" />
-                <element signature="e#7159#7209#0" expanded="false" />
+                <element signature="e#3025#6397#0" expanded="false" />
+                <element signature="e#6436#6693#0" expanded="false" />
+                <element signature="e#7265#7315#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/item.js">
+      <file leaf-file-name="jquery.form.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui795img/www/js/jquery.form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.133333">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1265" column="0" selection-start-line="1265" selection-start-column="0" selection-end-line="1265" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shape.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/shape.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.7931035">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/class.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.9">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="util.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/util.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.2662807">
-              <caret line="230" column="27" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="407" column="31" selection-start-line="407" selection-start-column="31" selection-end-line="407" selection-end-column="31" />
               <folding>
                 <element signature="e#2272#3633#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="attribute.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/attribute.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.133333">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aspect.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/aspect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/event.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -199,7 +219,6 @@
       <list>
         <option value="$PROJECT_DIR$/ui795img/min/js/v2/version.js" />
         <option value="$PROJECT_DIR$/ui795img/crm/min/js/v2/base/util.js" />
-        <option value="$PROJECT_DIR$/ui795img/min/js/v2/base/util.js" />
         <option value="$PROJECT_DIR$/ui795img/min/js/v2/base/aspect.js" />
         <option value="$PROJECT_DIR$/ui795img/min/js/v2/base/event.js" />
         <option value="$PROJECT_DIR$/ui795img/crm/min/js/v2/product/resume/editResume.js" />
@@ -207,10 +226,12 @@
         <option value="$PROJECT_DIR$/ui795img/min/js/v2/base/class.js" />
         <option value="$PROJECT_DIR$/ui795img/min/js/v2/base/shape.js" />
         <option value="$PROJECT_DIR$/ui795img/min/js/v2/base/attribute.js" />
-        <option value="$PROJECT_DIR$/ui795img/min/js/v2/nonModular/v2-resume.js" />
         <option value="$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/item.js" />
+        <option value="$PROJECT_DIR$/ui795img/min/js/v2/base/util.js" />
         <option value="$PROJECT_DIR$/ui795img/min/js/v2/product/resume/editResume.js" />
+        <option value="$PROJECT_DIR$/ui795img/min/js/v2/module/verifier.js" />
         <option value="$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/form.js" />
+        <option value="$PROJECT_DIR$/ui795img/min/js/v2/nonModular/v2-resume.js" />
       </list>
     </option>
   </component>
@@ -222,10 +243,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1438" />
-    <option name="height" value="858" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -267,7 +288,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -283,20 +303,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CaiShengProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaiShengProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaiShengProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui795www" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,100 +436,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaiShengProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaiShengProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui795img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="min" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaiShengProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaiShengProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui795img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="min" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nonModular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaiShengProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaiShengProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui795img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="min" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -554,16 +466,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
+              <option name="myItemId" value="jpjob" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="false" />
@@ -624,10 +537,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1438" height="858" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21097046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -641,7 +554,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21614583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21223958" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -662,7 +575,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/ui795img/min/js/v2/product/resume/editResume.js</url>
-          <line>290</line>
+          <line>337</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/ui795img/min/js/v2/base/shape.js</url>
@@ -676,131 +589,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/ui795img/min/js/v2/nonModular/v2-resume.js</url>
-          <line>261</line>
+          <line>262</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/ui795img/min/js/v2/product/resume/editResume.js</url>
-          <line>62</line>
+          <line>63</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/ui795img/min/js/v2/nonModular/v2-resume.js</url>
-          <line>1808</line>
+          <line>1818</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/ui795img/min/js/v2/product/resume/editResume.js</url>
+          <line>14</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding>
-            <element signature="e#2272#3633#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/jpjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui795img/crm/min/js/v2/base/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="418" selection-end-column="3" />
-          <folding>
-            <element signature="e#3288#3594#0" expanded="false" />
-            <element signature="e#4737#5299#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui795img/crm/min/js/v2/jpjob/areaSimple.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="394" column="44" selection-start-line="394" selection-start-column="44" selection-end-line="394" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui795www/person/resume/index.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/nonModular/v2-resume.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1451#2444#0" expanded="false" />
-            <element signature="e#2450#3567#0" expanded="false" />
-            <element signature="e#3720#4164#0" expanded="false" />
-            <element signature="e#4961#5135#0" expanded="false" />
-            <element signature="e#8150#9087#0" expanded="false" />
-            <element signature="e#9114#9307#0" expanded="false" />
-            <element signature="e#9336#9468#0" expanded="false" />
-            <element signature="e#9507#10962#0" expanded="false" />
-            <element signature="e#11027#11249#0" expanded="false" />
-            <element signature="e#53986#55395#0" expanded="false" />
-            <marker date="1504061001873" expanded="true" signature="79014:79032" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79119:79137" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79271:79289" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79434:79450" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79582:79600" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="134298:134316" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="134521:134539" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="160632:160644" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="161930:161941" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="162484:162496" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192104:192120" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192318:192329" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192421:192447" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192650:192673" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="207524:207540" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="207739:207768" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="207931:207957" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="208074:208090" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="208219:208230" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="233563:233575" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="233770:233782" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/product/resume/editResume.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding>
-            <element signature="e#3214#3841#0" expanded="false" />
-            <element signature="e#4550#4993#0" expanded="false" />
-            <element signature="e#5017#5652#0" expanded="false" />
-            <element signature="e#5870#5972#0" expanded="false" />
-            <element signature="e#6060#6262#0" expanded="false" />
-            <element signature="e#6349#6440#0" expanded="false" />
-            <element signature="e#6529#6688#0" expanded="false" />
-            <element signature="e#6941#7066#0" expanded="false" />
-            <element signature="e#7086#7204#0" expanded="false" />
-            <element signature="e#7224#7275#0" expanded="false" />
-            <element signature="e#7718#7794#0" expanded="false" />
-            <element signature="e#7829#7905#0" expanded="false" />
+            <element signature="e#467#521#0" expanded="false" />
+            <element signature="e#4203#4903#0" expanded="false" />
+            <element signature="e#5547#6182#0" expanded="false" />
+            <element signature="e#6288#6456#0" expanded="false" />
+            <element signature="e#6566#6668#0" expanded="false" />
+            <element signature="e#6756#6958#0" expanded="false" />
+            <element signature="e#7045#7136#0" expanded="false" />
+            <element signature="e#7225#7384#0" expanded="false" />
+            <element signature="e#7638#7763#0" expanded="false" />
+            <element signature="e#7817#7935#0" expanded="false" />
+            <element signature="e#7988#8039#0" expanded="false" />
+            <element signature="e#8731#8807#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -841,34 +670,60 @@
             <element signature="e#1451#2444#0" expanded="false" />
             <element signature="e#2450#3567#0" expanded="false" />
             <element signature="e#3720#4164#0" expanded="false" />
-            <element signature="e#4961#5135#0" expanded="false" />
-            <element signature="e#8150#9087#0" expanded="false" />
-            <element signature="e#9114#9307#0" expanded="false" />
-            <element signature="e#9336#9468#0" expanded="false" />
-            <element signature="e#9507#10962#0" expanded="false" />
-            <element signature="e#11027#11249#0" expanded="false" />
-            <element signature="e#53986#55395#0" expanded="false" />
-            <marker date="1504061001873" expanded="true" signature="79014:79032" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79119:79137" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79271:79289" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79434:79450" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79582:79600" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="134298:134316" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="134521:134539" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="160632:160644" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="161930:161941" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="162484:162496" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192104:192120" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192318:192329" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192421:192447" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192650:192673" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="207524:207540" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="207739:207768" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="207931:207957" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="208074:208090" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="208219:208230" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="233563:233575" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="233770:233782" placeholder="..." />
+            <element signature="e#8150#9133#0" expanded="false" />
+            <element signature="e#8177#8300#0" expanded="false" />
+            <element signature="e#11635#27841#0" expanded="false" />
+            <element signature="e#12676#13192#0" expanded="false" />
+            <element signature="e#13353#14029#0" expanded="false" />
+            <element signature="e#14059#14226#0" expanded="false" />
+            <element signature="e#14264#14501#0" expanded="false" />
+            <element signature="e#27894#32546#0" expanded="false" />
+            <element signature="e#32724#33614#0" expanded="false" />
+            <element signature="e#33649#35382#0" expanded="false" />
+            <element signature="e#40368#47049#0" expanded="false" />
+            <element signature="e#47152#47254#0" expanded="false" />
+            <element signature="e#47314#47470#0" expanded="false" />
+            <element signature="e#47508#47637#0" expanded="false" />
+            <element signature="e#47690#48230#0" expanded="false" />
+            <element signature="e#48268#48599#0" expanded="false" />
+            <element signature="e#48637#48970#0" expanded="false" />
+            <element signature="e#49011#49350#0" expanded="false" />
+            <element signature="e#49392#49737#0" expanded="false" />
+            <element signature="e#54338#54371#0" expanded="false" />
+            <element signature="e#54419#54454#0" expanded="false" />
+            <element signature="e#54502#56043#0" expanded="false" />
+            <element signature="e#54626#56035#0" expanded="false" />
+            <element signature="e#56088#56186#0" expanded="false" />
+            <element signature="e#56232#56329#0" expanded="false" />
+            <element signature="e#56377#56384#0" expanded="false" />
+            <element signature="e#56430#57708#0" expanded="false" />
+            <element signature="e#57757#58035#0" expanded="false" />
+            <element signature="e#57800#57944#0" expanded="false" />
+            <element signature="e#70866#70957#0" expanded="false" />
+            <element signature="e#71106#72011#0" expanded="false" />
+            <element signature="e#72565#72613#0" expanded="false" />
+            <element signature="e#72661#73909#0" expanded="false" />
+            <marker date="1504321500673" expanded="true" signature="80044:80062" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="80149:80167" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="80301:80319" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="80464:80480" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="80612:80630" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="135328:135346" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="135551:135569" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="161662:161674" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="162960:162971" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="163514:163526" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="193134:193150" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="193348:193359" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="193451:193477" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="193680:193703" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="208554:208570" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="208769:208798" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="208961:208987" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="209104:209120" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="209249:209260" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="234593:234605" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="234800:234812" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -878,18 +733,18 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding>
-            <element signature="e#3214#3841#0" expanded="false" />
-            <element signature="e#4550#4993#0" expanded="false" />
-            <element signature="e#5017#5652#0" expanded="false" />
-            <element signature="e#5870#5972#0" expanded="false" />
-            <element signature="e#6060#6262#0" expanded="false" />
-            <element signature="e#6349#6440#0" expanded="false" />
-            <element signature="e#6529#6688#0" expanded="false" />
-            <element signature="e#6941#7066#0" expanded="false" />
-            <element signature="e#7086#7204#0" expanded="false" />
-            <element signature="e#7224#7275#0" expanded="false" />
-            <element signature="e#7718#7794#0" expanded="false" />
-            <element signature="e#7829#7905#0" expanded="false" />
+            <element signature="e#467#521#0" expanded="false" />
+            <element signature="e#4203#4903#0" expanded="false" />
+            <element signature="e#5547#6182#0" expanded="false" />
+            <element signature="e#6288#6456#0" expanded="false" />
+            <element signature="e#6566#6668#0" expanded="false" />
+            <element signature="e#6756#6958#0" expanded="false" />
+            <element signature="e#7045#7136#0" expanded="false" />
+            <element signature="e#7225#7384#0" expanded="false" />
+            <element signature="e#7638#7763#0" expanded="false" />
+            <element signature="e#7817#7935#0" expanded="false" />
+            <element signature="e#7988#8039#0" expanded="false" />
+            <element signature="e#8731#8807#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1056,7 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,14 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/rule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.1259046">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1079,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.887446">
           <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1094,7 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,125 +946,228 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="415" column="20" selection-start-line="415" selection-start-column="20" selection-end-line="415" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.133333">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/attribute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.133333">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.9">
+        <state vertical-scroll-proportion="0.0">
           <caret line="27" column="38" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/shape.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7931035">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/nonModular/v2-resume.js">
+    <entry file="file://$PROJECT_DIR$/ui795img/crm/min/js/v2/widge/validator/rule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
-          <caret line="1776" column="21" selection-start-line="1776" selection-start-column="8" selection-end-line="1776" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.36265224">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/rule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="407" column="31" selection-start-line="407" selection-start-column="31" selection-end-line="407" selection-end-column="31" />
           <folding>
-            <element signature="e#1451#2444#0" expanded="false" />
-            <element signature="e#2450#3567#0" expanded="false" />
-            <element signature="e#3720#4164#0" expanded="false" />
-            <element signature="e#4961#5135#0" expanded="false" />
-            <element signature="e#8150#9087#0" expanded="false" />
-            <element signature="e#9114#9307#0" expanded="false" />
-            <element signature="e#9336#9468#0" expanded="false" />
-            <element signature="e#9507#10962#0" expanded="false" />
-            <element signature="e#11027#11249#0" expanded="false" />
-            <element signature="e#53986#55395#0" expanded="false" />
-            <marker date="1504061001873" expanded="true" signature="79014:79032" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79119:79137" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79271:79289" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79434:79450" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="79582:79600" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="134298:134316" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="134521:134539" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="160632:160644" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="161930:161941" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="162484:162496" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192104:192120" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192318:192329" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192421:192447" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="192650:192673" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="207524:207540" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="207739:207768" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="207931:207957" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="208074:208090" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="208219:208230" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="233563:233575" placeholder="..." />
-            <marker date="1504061001873" expanded="true" signature="233770:233782" placeholder="..." />
+            <element signature="e#2272#3633#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui795img/www/js/jquery.form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1265" column="0" selection-start-line="1265" selection-start-column="0" selection-end-line="1265" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/jpjob/jobSkill.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/jpjob/jobDialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1419" column="4" selection-start-line="1419" selection-start-column="4" selection-end-line="1419" selection-end-column="4" />
+          <folding>
+            <marker date="1503967892305" expanded="true" signature="6635:6668" placeholder="..." />
+            <marker date="1503967892305" expanded="true" signature="7067:7093" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/jpjob/jobForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1317" column="17" selection-start-line="1317" selection-start-column="17" selection-end-line="1317" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/module/verifier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38231632">
+          <caret line="1047" column="32" selection-start-line="1047" selection-start-column="32" selection-end-line="1047" selection-end-column="32" />
+          <folding>
+            <element signature="e#7782#12439#0" expanded="false" />
+            <element signature="e#12551#22893#0" expanded="false" />
+            <element signature="e#23030#25277#0" expanded="false" />
+            <element signature="e#26060#26527#0" expanded="false" />
+            <element signature="e#40247#47490#0" expanded="false" />
+            <element signature="e#48186#48520#0" expanded="false" />
+            <element signature="e#48547#49196#0" expanded="false" />
+            <element signature="e#49221#49982#0" expanded="false" />
+            <element signature="e#52028#61820#0" expanded="false" />
+            <element signature="e#61948#67820#0" expanded="false" />
+            <element signature="e#200210#200546#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/product/resume/editResume.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.666667">
-          <caret line="64" column="52" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
           <folding>
-            <element signature="e#3214#3841#0" expanded="false" />
-            <element signature="e#4550#4993#0" expanded="false" />
-            <element signature="e#5017#5652#0" expanded="false" />
-            <element signature="e#5870#5972#0" expanded="false" />
-            <element signature="e#6060#6262#0" expanded="false" />
-            <element signature="e#6349#6440#0" expanded="false" />
-            <element signature="e#6529#6688#0" expanded="false" />
-            <element signature="e#6941#7066#0" expanded="false" />
-            <element signature="e#7086#7204#0" expanded="false" />
-            <element signature="e#7224#7275#0" expanded="false" />
-            <element signature="e#7718#7794#0" expanded="false" />
-            <element signature="e#7829#7905#0" expanded="false" />
+            <element signature="e#467#521#0" expanded="false" />
+            <element signature="e#4203#4903#0" expanded="false" />
+            <element signature="e#5547#6182#0" expanded="false" />
+            <element signature="e#6288#6456#0" expanded="false" />
+            <element signature="e#6566#6668#0" expanded="false" />
+            <element signature="e#6756#6958#0" expanded="false" />
+            <element signature="e#7045#7136#0" expanded="false" />
+            <element signature="e#7225#7384#0" expanded="false" />
+            <element signature="e#7638#7763#0" expanded="false" />
+            <element signature="e#7817#7935#0" expanded="false" />
+            <element signature="e#7988#8039#0" expanded="false" />
+            <element signature="e#8731#8807#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/widge/validator/form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.37931034">
-          <caret line="81" column="12" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="12" />
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="452" column="26" selection-start-line="452" selection-start-column="26" selection-end-line="452" selection-end-column="26" />
           <folding>
             <element signature="e#1516#1810#0" expanded="false" />
             <element signature="e#1841#1927#0" expanded="false" />
             <element signature="e#2161#2231#0" expanded="false" />
-            <element signature="e#2919#6291#0" expanded="false" />
-            <element signature="e#6330#6587#0" expanded="false" />
-            <element signature="e#6617#6986#0" expanded="false" />
-            <element signature="e#7159#7209#0" expanded="false" />
+            <element signature="e#3025#6397#0" expanded="false" />
+            <element signature="e#6436#6693#0" expanded="false" />
+            <element signature="e#7265#7315#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/base/util.js">
+    <entry file="file://$PROJECT_DIR$/ui795www/person/resume.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2662807">
-          <caret line="230" column="27" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
+        <state vertical-scroll-proportion="-0.72131145">
+          <caret line="1657" column="16" selection-start-line="1657" selection-start-column="16" selection-end-line="1657" selection-end-column="16" />
           <folding>
-            <element signature="e#2272#3633#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#form#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui795img/min/js/v2/nonModular/v2-resume.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23397075">
+          <caret line="1274" column="0" selection-start-line="1274" selection-start-column="0" selection-end-line="1274" selection-end-column="0" />
+          <folding>
+            <element signature="e#1451#2444#0" expanded="false" />
+            <element signature="e#2450#3567#0" expanded="false" />
+            <element signature="e#3720#4164#0" expanded="false" />
+            <element signature="e#8150#9133#0" expanded="false" />
+            <element signature="e#8177#8300#0" expanded="false" />
+            <element signature="e#11635#27841#0" expanded="false" />
+            <element signature="e#12676#13192#0" expanded="false" />
+            <element signature="e#13353#14029#0" expanded="false" />
+            <element signature="e#14059#14226#0" expanded="false" />
+            <element signature="e#14264#14501#0" expanded="false" />
+            <element signature="e#27894#32546#0" expanded="false" />
+            <element signature="e#32724#33614#0" expanded="false" />
+            <element signature="e#33649#35382#0" expanded="false" />
+            <element signature="e#40368#47049#0" expanded="false" />
+            <element signature="e#47152#47254#0" expanded="false" />
+            <element signature="e#47314#47470#0" expanded="false" />
+            <element signature="e#47508#47637#0" expanded="false" />
+            <element signature="e#47690#48230#0" expanded="false" />
+            <element signature="e#48268#48599#0" expanded="false" />
+            <element signature="e#48637#48970#0" expanded="false" />
+            <element signature="e#49011#49350#0" expanded="false" />
+            <element signature="e#49392#49737#0" expanded="false" />
+            <element signature="e#54338#54371#0" expanded="false" />
+            <element signature="e#54419#54454#0" expanded="false" />
+            <element signature="e#54502#56043#0" expanded="false" />
+            <element signature="e#54626#56035#0" expanded="false" />
+            <element signature="e#56088#56186#0" expanded="false" />
+            <element signature="e#56232#56329#0" expanded="false" />
+            <element signature="e#56377#56384#0" expanded="false" />
+            <element signature="e#56430#57708#0" expanded="false" />
+            <element signature="e#57757#58035#0" expanded="false" />
+            <element signature="e#57800#57944#0" expanded="false" />
+            <element signature="e#70866#70957#0" expanded="false" />
+            <element signature="e#71106#72011#0" expanded="false" />
+            <element signature="e#72565#72613#0" expanded="false" />
+            <element signature="e#72661#73909#0" expanded="false" />
+            <marker date="1504321500673" expanded="true" signature="80044:80062" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="80149:80167" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="80301:80319" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="80464:80480" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="80612:80630" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="135328:135346" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="135551:135569" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="161662:161674" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="162960:162971" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="163514:163526" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="193134:193150" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="193348:193359" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="193451:193477" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="193680:193703" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="208554:208570" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="208769:208798" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="208961:208987" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="209104:209120" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="209249:209260" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="234593:234605" placeholder="..." />
+            <marker date="1504321500673" expanded="true" signature="234800:234812" placeholder="..." />
           </folding>
         </state>
       </provider>

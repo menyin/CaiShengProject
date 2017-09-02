@@ -257,6 +257,7 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             radWorkState: 'required',
             hidApplyStatus: 'required',
             hidAccessionTime: 'required',
+            hidMarriage: 'required',//cny_add
             txtStature: {
                 number: true,
                 rangeNum: [1, 280]
@@ -315,10 +316,10 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             txtQQ: '<em></em><i></i>请填写正确的QQ'
         };
 
-    var baseInfoEditor = new editResume({
+    var baseInfoEditor = new editResume({//在此没有写过多的初始化配置，因为在editResume类型里有默认定义了
         validators: {
             rules: baseInfoRules,
-            groups: baseInfoGroups,
+            groups: baseInfoGroups,//以组的形式
             errorMessages: baseInfoErrorMsg,
             keepBlur: baseInfoKeepBlur,
             keepKey: true,
@@ -329,6 +330,7 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
         dropMarriage, dropPolitical, dropFertility, dropApplyStatus, dropAccessionTime,
         baseInfoValidator = baseInfoEditor.getValidator(),
         phoneValidatorStatus = parseInt('1'),
+        /*手机号码*/
         phoneCoder = (function () {
             var disabledClass = 'isDisabled',
                 txtMobilePhone = baseInfoEditor.getDom('#txtMobilePhone'),
@@ -408,10 +410,10 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                     },
                     clearCode: function (f) {
                         if (!f) {
-                            txtValidateCode.removeClass(baseInfoEditor.allClass('text')).val('');
-                            baseInfoValidator.clearRemoteCache(txtValidateCode);
+                            txtValidateCode.removeClass(baseInfoEditor.allClass('text')).val('');//验证码input清除所有验证样式并置空值
+                            baseInfoValidator.clearRemoteCache(txtValidateCode);//baseInfoEditor实例的验证器清空远程缓存
                         }
-                        txtValidateLabel.removeClass(baseInfoEditor.allClass('label')).html('');
+                        txtValidateLabel.removeClass(baseInfoEditor.allClass('label')).html('');//验证码提示层label清除所有验证样式并置空值
                     },
                     remoteCode: function (f) {
                         if (!f) {
@@ -644,22 +646,25 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                 }
                 delete phoneCoder.isSubmit;
             });
+            //修改手机号按钮
             btnMobile.on('click', function () {
-                if ($(this).hasClass(disabledClass)) {
+                if ($(this).hasClass(disabledClass)) {//【更换号码】触发
                     phoneCoder.clearCode();
                     phoneCoder.enabled();
-                } else {
+                } else {//【咱不修改】触发
                     phoneCoder.clearCode();
                     phoneCoder.disabled();
                 }
                 delete phoneCoder.isSubmit;
             });
+            //发送验证码按钮
             btnSendValidate.on('click', function () {
                 phoneCoder.send();
             });
 
             return phoneCoder;
         })(),
+        /*邮箱*/
         mailCoder = (function () {
             var disabledClass = 'isDisabled',
                 txtEmail = baseInfoEditor.getDom('#txtEmail'),
@@ -774,7 +779,7 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             return mailCoder;
         })();
 
-    var labelWorkState = baseInfoEditor.getDom('#labelWorkState'),
+    var labelWorkState = baseInfoEditor.getDom('#labelWorkState'),//工作经验
         txtStatureData = '',
         txtAvoirdupoisData = '';
 
@@ -1167,23 +1172,25 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             element: this.getDom('.icon-chck'),
             className: 'icon-chck-checked'
         });
+        /*单选/复选框*/
         sexNameBoxer = new checkBoxer({
-            element: this.getDom('.icon-sex'),
-            className: 'icon-sex-checked',
-            multiple: false
+            element: this.getDom('.icon-sex'),//正常状态下的样式
+            className: 'icon-sex-checked',//选中时添加的样式
+            multiple: false//是否要多选
         });
         workBoxer = new checkBoxer({
             element: this.getDom('.icon-rad'),
             className: 'icon-rad-checked',
             multiple: false
         });
-        dropMarriage = new select({
-            trigger: this.getDom('#dropMarriage'),
-            className: 'dropv2_select',
-            align: {baseXY: [0, '100%-1']},
-            selectName: 'hidMarriage',
-            dataSource: marriageItems,
-            selectIndex: 0,
+        /*下拉框*/
+        dropMarriage = new select({//婚姻状况
+            trigger: this.getDom('#dropMarriage'),//触发的下拉框的元素，相当于按钮
+            className: 'dropv2_select',//？？在实际模板并没有此样式的元素，但渲染出来有而且只是"hb_ui_dropv2_select"
+            align: {baseXY: [0, '100%-1']},//位置
+            selectName: 'hidMarriage',//选择后的值存储的表单元素，用于提交后台
+            dataSource: marriageItems,//下拉框数据源数组，形如：var marriageItems = [{value:'',label:'请选择'},{value:'1',label:'未婚'},{value:'2',label:'已婚'}];
+            selectIndex: 0,//默认选择项索引
             selectCallback: {
                 isDefault: true
             }
@@ -1234,8 +1241,8 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             }
         });
 
-        var accessiondl = dropAccessionTime.get("trigger").closest("dl");
-        if (dropApplyStatus.get("selectedValue") == notconsider) {
+        var accessiondl = dropAccessionTime.get("trigger").closest("dl");//包裹【到岗时间】的dl元素
+        if (dropApplyStatus.get("selectedValue") == notconsider) {//如果在职状态为不考虑换工作,则移除到岗时间及器验证规则，到岗时间选择0项
             baseInfoValidator.removeRules('hidAccessionTime');
             accessiondl.hide();
             dropAccessionTime.setSelectedIndex(0);
@@ -1254,7 +1261,7 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                 accessiondl.hide();
                 dropAccessionTime.setSelectedIndex(0);
             } else {
-                if (accessiondl.is(":hidden") && !dropApplyStatus.get("trigger").closest("dl").is(":hidden")) {
+                if (accessiondl.is(":hidden") && !dropApplyStatus.get("trigger").closest("dl").is(":hidden")) {//如果【到岗时间】隐藏并且【在职状态】显示
                     baseInfoValidator.resetElement(baseInfoEditor.getElement('hidAccessionTime')[0]);
                     baseInfoValidator.addRules(hidAccessionTimeRules);
                     baseInfoValidator.addErrorMessages(hidAccessionTimeMsg);
@@ -1267,6 +1274,7 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
         });
 
         dropMarriage.on('change', function (e) {
+            //生育状况显隐处理
             var trigger = dropFertility.get('trigger');
             if (e.index == 2) {
                 if (trigger.has(':hidden')) {
@@ -1774,12 +1782,14 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
     /*求职意向 end*/
 
     /*自我评价 begin*/
-    var appraiseRules = {//表单元素验证规则规约
+    var appraiseRules = {//表单元素验证规则规约，如果这个editResume实例内包含多个表单，则appraiseRules应该是一个数组（包含多组验证规则）
             txtAppraise: {//要求表单元素name属性为txtAppraise
                 max: 300
             }
         },
         appraiseErrorMsg = {//表单元素验证提示规约
+            //提示文字将会在验证器相关事件的事件参数e.label访问的到
+            //e.target为目标验证的表单元素dom
             txtAppraise: '<em></em><i></i>不能超过300个字'
         };
 
@@ -1804,14 +1814,13 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
     var appraiseTemplate = [
             '<p class="infor"><span class="topicContent">{content}</span></p>',
         ].join(''),
-        appraisetit = appraiseEditor.getDom('.resume-tit');//标题栏
+        appraisetit = appraiseEditor.getDom('.resume-tit');//标题栏//getDom是在顶级元素下根据选择器查找元素
 
     appraiseEditor.updatePreview = function (e) {
         var appraise = this._normal.children('.other-box'),//信息显示容器$dom
             dataObj = {//textarea[name="txtAppraise"]的值
                 content: this.getElement('txtAppraise').val()
             };
-
         appraisetit.attr('data-content', dataObj.content);//将数据存储在标题栏dom的data-content属性上
         if (dataObj.content) {
             appraise.show();
@@ -1834,7 +1843,7 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
     appraiseEditor.resetData = function () {//根据标题栏旧值重置textarea[name="txtAppraise"]
         var attr = appraisetit.attr('data-content');
         if (attr) {
-            this.getElement('txtAppraise').val(attr);
+            this.getElement('txtAppraise').val(attr);//getElement是在顶级元素下根据名称查找元素
         }
     }
     appraiseEditor.on('init', function () {//点击editResume实例编辑按钮按下执行_handle之前触发的事件
@@ -1853,12 +1862,12 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             self = this;
 
         appraiseValidator.submit({//提交验证（对应模块是module.verifie）
-            callback: function (valid) {
+            callback: function (valid) {//只有成功回调，如果验证不通过则不执行此成功回调
                 self.resultStatus = valid;
-                btn.submitForm({//验证通过后提交表单（对应模块是module.verifie）
-                    beforeSubmit: valid,
-                    data: {
-                        resume_id: resume_id
+                btn.submitForm({//验证通过后提交表单（submitForm是在jpjob.jobForm模块对$dom的扩展）
+                    beforeSubmit: valid,//beforeSubmit为函数则按照jQuery form插件使用方式；如为valid则无作用（作者原意应该是根据验证结果去处理是否中断操作）
+                    data: {//除了表单以外的自定义数据
+                        resume_id: resume_id//resume_id是简历编辑页面定义的全局变量，简历标识
                     },
                     success: function (result) {//result格式形如：{//{ status: 1, msg: "成功添加评价!", update_time: "2017-08-29 17:01:15" }
                         if (result && result.error) {
@@ -1866,9 +1875,10 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                             confirmBox.alert(result.error, null, {title: '保存失败'});
                             return;
                         }
-                        updateResumeTime(result.update_time);
+                        updateResumeTime(result.update_time);//更新界面简历时间
                         appraiseEditor.updatePreview(result);
-                    }, clearForm: false
+                    },
+                    clearForm: false//提交成功后是否清除表单的值
                 });
             }
         });

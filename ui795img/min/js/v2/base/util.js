@@ -405,9 +405,9 @@ define('base.util', function(require, exports){
 	 * })
 	 */
 	exports.bind = function(){
-		var args = slice.call(arguments) || [],
-			fun = args.shift(),
-			obj = args.shift();
+		var args = slice.call(arguments) || [],//拷贝一份参数
+			fun = args.shift(),//第一参数，回调函数
+			obj = args.shift();//第二参数,回调函数的事件参数的部分信息
 		return function(e){
 			var ar = slice.call(arguments) || null;
 			return exports.type.isFunction(fun) &&

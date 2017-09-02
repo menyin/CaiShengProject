@@ -104,8 +104,8 @@ define('widge.validator.form',
 			});
 		},
 		_initRules: function(){
-			this._rule = new rules(this);
-			this.addRules(this.get('rules'));
+			this._rule = new rules(this);//this._rule为一个验证规则的处理器
+			this.addRules(this.get('rules'));//总体就是为this._rules添加验证规则对象，如this._rules={txtResumeName:{ required: true, max: 12 }}
 			this.keepGroupEvent();
 			this.addGroup(this.get('groups'));
 			this._initMethod();
@@ -449,6 +449,11 @@ define('widge.validator.form',
 			item.showErrors.call(this);
 			return result;
 		},
+		/**
+		 * 重置元素的相关验证样式和值？？
+		 * @param element 被重置的元素
+		 * @param f
+		 */
 		resetElement: function(element, f){
 			var allClass = this.get('errorClass') + ' ' + this.get('validClass');
 			element = element.nodeName ? element : element[0];
