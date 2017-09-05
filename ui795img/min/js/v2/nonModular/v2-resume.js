@@ -806,6 +806,10 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
         }
     }
 
+    /**
+     * 计算工作时间（年）
+     * @param value 工作开始时间
+     */
     function calcWorkYear(value) {
         var year, month;
 
@@ -859,7 +863,11 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
         baseInfoEditor.getDom('#startYMD').text(workYearDesc);
     }
 
+    /**
+     * 根据非编辑状态下的信息初始化编辑状态下表单元素的值
+     */
     baseInfoEditor.resetData = function () {
+        //是否隐藏照片 初始化 begin
         var dl = this.getDom('.res-infor');
         attr = parseInt(dl.attr('data-chkPhotoOpen'));
         if (attr === 0) {
@@ -867,26 +875,39 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
         } else {
             chkBase.setStatus(0, false);
         }
+        //是否隐藏照片 初始化 begin
 
+        //是否隐藏姓名 初始化 begin
         attr = parseInt(dl.attr('data-chkNameOpen'));
         if (attr === 0) {
             chkBase.setStatus(1, true);
         } else {
             chkBase.setStatus(1, false);
         }
+        chkBase.setStatus(1, false);
+        //是否隐藏姓名 初始化 end
 
+        //身份证号 初始化 begin
         attr = dl.attr('data-idcard');
         if (attr) {
             this.getElement('txtIDCardNumber').val(attr);
         }
+        //身份证号 初始化 end
 
-        this.getElement('txtUserName').val(this.getDom("#spnBasicName").text()).resetWatermark();
-        var attrName = this.getDom('#spnBasicSex');
+        //用户名 初始化
+        this.getElement('txtUserName').val(this.getDom("#spnBasicName").text())
+            .resetWatermark();//恢复水印效果
+
+        //性别 初始化 begin
+        var attrName = this.getDom('#spnBasicSex');//男为1 女为2
         if ((attr = attrName.attr('v')) != '') {
-            sexNameBoxer.setStatus(attr - 1, true);
+            sexNameBoxer.setStatus(attr - 1, true);//设置第index项为选择状态
         } else {
             sexNameBoxer.all(false);
         }
+        //性别 初始化 end
+
+        //出生日期 初始化begin
         if (attr = this.getDom('#spnBasicAge').attr('v')) {
             var birthday = new Date(attr);
             this.getElement('inpBirthYear').val(birthday.getFullYear());
@@ -897,6 +918,9 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             this.getElement('inpBirthMonth').val('月');
             this.getElement('inpBirthDate').val('日');
         }
+        //出生日期 初始化end
+
+        //工作时间 初始化 begin
         if (attr = this.getDom('#spnWorkYear').text()) {
             this.getDom('#startYMD').html(attr);
         } else {
@@ -912,12 +936,21 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             this.getElement('inpStartMonth').val('月');
             calcWorkYear('年/月');
         }
+        //工作时间 初始化 end
+
+        //在职状态 初始化 begin
         if (attr = this.getDom("#spnApplyStatus").attr("v")) {
             dropApplyStatus.setSelectedIndex(attr);
         }
+        //在职状态 初始化 end
+
+        //到岗时间 初始化 begin
         if (attr = this.getDom("#spnAccessionTime").attr("v")) {
             dropAccessionTime.setSelectedIndex(attr);
         }
+        //到岗时间 初始化 end
+
+        //婚姻状况 初始化 begin
         if (attr = this.getDom('#spnBasicMarriage').attr('v')) {
             var mars = attr.split(',');
             if (mars && mars[0]) {
@@ -932,12 +965,20 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                 dropFertility.setSelectedIndex(0);
             }
         }
+        //婚姻状况 初始化 end
+
+        //现居住地 初始化 begin
         if (attr = this.getDom('#spnBasicCurArea').attr('v')) {
             this.getDom('#curArea').setArea(attr);
         }
+        //现居住地 初始化 end
+
+        //户口所在地 初始化 begin
         if (attr = this.getDom('#spnBasicNativeArea').attr('v')) {
             this.getDom('#nativePlace').setArea(attr);
         }
+        //户口所在地 初始化 end
+
         if (attr = this.getDom('#spnBasicStature').attr('v')) {
             var stat = attr.split('/');
             txtStatureData = stat[0] || '';
@@ -992,9 +1033,14 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
         }
         jobDater.update("Birth");
         jobDater.update("Start");
-    }
+    };
+
+    /**
+     * 根据编辑状态下的表单元素值更新费编辑状态下对应信息值
+     * @param e
+     */
     baseInfoEditor.updatePreview = function (e) {
-        var chkBaseValue = chkBase.getValue(true),
+        var chkBaseValue = chkBase.getValue(true),//获取的应该是一个对象，该对象包含所有基础单选框的键值集合
             nameopen = chkBaseValue['chkNameOpen'] != undefined ? chkBaseValue['chkNameOpen'][0] : '',
             photoopen = chkBaseValue['chkPhotoOpen'] != undefined ? chkBaseValue['chkPhotoOpen'][0] : '',
             sex = sexNameBoxer.getValue(true)['radSex'] != undefined ? sexNameBoxer.getValue(true)['radSex'][0] : '';
@@ -1166,8 +1212,13 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
         updateRightSideList(0, true);
         this.show();
     }
+
+    /**
+     * 初始化界面相关组件控件效果
+     */
     baseInfoEditor.on('init', function () {
         var self = this;
+        //基本单选框
         chkBase = new checkBoxer({
             element: this.getDom('.icon-chck'),
             className: 'icon-chck-checked'
@@ -1191,6 +1242,7 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             selectName: 'hidMarriage',//选择后的值存储的表单元素，用于提交后台
             dataSource: marriageItems,//下拉框数据源数组，形如：var marriageItems = [{value:'',label:'请选择'},{value:'1',label:'未婚'},{value:'2',label:'已婚'}];
             selectIndex: 0,//默认选择项索引
+            // isHidDefault: true,//设置隐藏默认选项，即首项“请选择”
             selectCallback: {
                 isDefault: true
             }
@@ -1217,7 +1269,6 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                 isDefault: true
             }
         });
-
         dropApplyStatus = new select({
             trigger: this.getDom('#dropApplyStatus'),
             className: 'dropv2_select',
@@ -1248,10 +1299,10 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             dropAccessionTime.setSelectedIndex(0);
         } else {
             if (accessiondl.is(":hidden")) {
-                baseInfoValidator.resetElement(baseInfoEditor.getElement('hidAccessionTime')[0]);
-                baseInfoValidator.addRules(hidAccessionTimeRules);
-                baseInfoValidator.addErrorMessages(hidAccessionTimeMsg);
-                accessiondl.show();
+                baseInfoValidator.resetElement(baseInfoEditor.getElement('hidAccessionTime')[0]);//重置到岗时间的表单元素
+                baseInfoValidator.addRules(hidAccessionTimeRules);//给editResume实例添加到岗时间的验证规则
+                baseInfoValidator.addErrorMessages(hidAccessionTimeMsg);//
+                accessiondl.show();//显示到岗时间
             }
         }
 
@@ -1270,12 +1321,12 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             }
         });
         dropAccessionTime.on("change", function (e) {
-            baseInfoValidator.checkElement(baseInfoEditor.getElement('hidAccessionTime')[0]);
+            baseInfoValidator.checkElement(baseInfoEditor.getElement('hidAccessionTime')[0]);//用editResume实例的校验器校验到岗时间表单元素
         });
 
-        dropMarriage.on('change', function (e) {
+        dropMarriage.on('change', function (e) {//婚姻状况下拉框选项改变
             //生育状况显隐处理
-            var trigger = dropFertility.get('trigger');
+            var trigger = dropFertility.get('trigger');//生育状况的触发按钮
             if (e.index == 2) {
                 if (trigger.has(':hidden')) {
                     trigger.show();
@@ -1285,10 +1336,11 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                 dropFertility.setSelectedIndex(0);
             }
         });
-
+        /*性别单选框*/
         sexNameBoxer.on('select', function (e) {
             baseInfoValidator.checkElement(e.target[0]);
         });
+        /*工作经验单选框（已工作、毕业生）*/
         workBoxer.on('select', function (e) {
             baseInfoValidator.checkElement(e.target[0]);
             var applystatusdl = dropApplyStatus.get("trigger").closest("dl");
@@ -1299,11 +1351,14 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                 labelWorkState.text('参加工作时间');
             }
         });
+        /*出生日期时间组件*/
         jobDater.bind({
-            id: "Birth", dateEntry: [0, 1, 2], size: 20,
-            min: -61, max: -16,
-            onSelect: function (e) {
-                self.checkElement($(e.target)[0]);
+            id: "Birth",//html模板里表单元素的id和name就是用这个id字符串匹配年月日，如年input的name="inpBirthYear" id="inpBirthYear"
+            dateEntry: [0, 1, 2],//设置时间控件显示年、月、日，如只显示年月则设置为[0,1]   注意：html模板要添加相应的标签
+            size: 20,//设置显示的项目数，如年部分，设置显示20个年份
+            min: -61, max: -16,//设置项目的起止范围，如年部分，设置只能查看从1949年到2001年的年份
+            onSelect: function (e) {//e为{ name: ".dateDrop", target: Object, next: Object }//target为目标触发的表单元素，如年，此时next则代表月对应的表单元素
+                self.checkElement($(e.target)[0]);//此处有bug 应该是baseInfoValidator.checkElement
                 if (e.next && e.next.length) {
                     baseInfoValidator.checkElement($(e.next)[0]);
                 } else {
@@ -1333,11 +1388,14 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                 baseInfoValidator.checkElement($(e.target)[0]);
             }
         });
-        calcWorkYear();
-        this.getDom('#curArea').singleArea({
-            hddName: 'hidCurArea',
-            showLevel: 3,
-            controlClass: 'zIndex',
+        calcWorkYear();//计算工作时间（年）
+
+        /*现居住地*/
+        /*地点选择组件*/
+        this.getDom('#curArea').singleArea({//singleArea是jq扩展方法，#curArea是组件容器
+            hddName: 'hidCurArea',//存储地点的值的代号
+            showLevel: 3,//地点显示的层次，如2就代表只显示省份和市
+            controlClass: 'zIndex',//设置组件的样式，应该算是可以自定义样式
             onSelect: function () {
                 baseInfoValidator.checkElement(self.getElement('hidCurArea')[0]);
             },
@@ -1345,13 +1403,16 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                 baseInfoValidator.checkElement(self.getElement('hidCurArea')[0]);
             }
         });
+        /*户口所在地*/
         this.getDom('#nativePlace').singleArea({
             hddName: 'hidNativePlace', showLevel: 3, controlClass: 'zIndex'
         });
         this.getDom('#moreInforBtn').on('click', function () {
             toggleBaseMoreInfor();
         });
+        //初始化信息数据 begin
         this.resetData();
+        //初始化信息数据 begin
     });
     baseInfoEditor.on('cancel', function (e) {
         this.resetData();
@@ -1691,7 +1752,7 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
             selectName: 'hidJoblevel',
             dataSource: joblevelItems,
             selectedIndex: 0,
-            isHidDefault: true,
+            //isHidDefault: true,
             selectCallback: {
                 isDefault: true
             }

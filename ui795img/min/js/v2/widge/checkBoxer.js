@@ -87,6 +87,12 @@ define('widge.checkBoxer', function(require, exports, module){
 				b ? item.addClass(hoverClass) : item.removeClass(hoverClass);
 			}
 		},
+		/**
+		 * 设置指定选项的状态
+		 * @param index {number} 选项的索引，从0开始
+		 * @param isStatus {boolean} 状态
+		 * @param isEvent 是否触发select事件
+		 */
 		setStatus: function(index, isStatus, isEvent){
 			var e = {},
 				items = this.get('element'),
@@ -161,6 +167,14 @@ define('widge.checkBoxer', function(require, exports, module){
 				this.setDisabled(index, status, fn);
 			});
 		},
+		/**
+		 * 设置所有选项状态
+		 * @param status {boolean} 是否选中
+		 * @param fn 回调
+		 * @remark
+		 *  如果fn存在，回调参数包含当前选项，和索引参数，此时不执行设置选中操作，意味着status无用，要自己根据回调参数在回调里做自己的处理
+		 *  此函数会触发selectAll事件
+		 */
 		all: function(status, fn){
 			if(status === undefined){
 				status = true;
