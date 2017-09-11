@@ -1948,21 +1948,21 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
 
     /*工作经历 begin*/
     var workInfoRules = {
-            txtWorkName: {required: true, range: [4, 30]},
-            hidCallingExpect: 'required',
+            txtWorkName: {required: true, range: [4, 30]},//公司名称
+            hidCallingExpect: 'required',//所属行业？需研究
+            //hidJobSortExpect: 'required',//
+            hidWorkComSize: 'required',//公司规模，人数
+            hidWorkComProperty: 'required',//公司属性
+            txtWorkOffice: {required: true, range: [2, 12]},//职位名称
             //hidJobSortExpect: 'required',
-            hidWorkComSize: 'required',
-            hidWorkComProperty: 'required',
-            txtWorkOffice: {required: true, range: [2, 12]},
-            //hidJobSortExpect: 'required',
-            inpWorkTimeStartYear: 'number',
-            inpWorkTimeStartMonth: 'number',
-            hidWorkJobLevel: 'required',
-            txtWorkManageDempartment: {max: 60},
-            txtWorkSubordinate: {number: true, maxNum: 100000},
-            txtWorkReportMan: {range: [1, 10]},
-            txtWorkSalary: {required: true, number: true, range: [1, 9999999]},
-            txtContent: {max: 2000}
+            inpWorkTimeStartYear: 'number',//在职时间（年）？？结束时间居然没约束
+            inpWorkTimeStartMonth: 'number',//在职时间（年）
+            hidWorkJobLevel: 'required',//岗位级别
+            txtWorkManageDempartment: {max: 60},//管辖范围，在岗位级别在【高级/资深（非管理岗）】以上级别才显示管辖范围
+            txtWorkSubordinate: {number: true, maxNum: 100000},//下属人数，在岗位级别在【高级/资深（非管理岗）】以上级别才显示下属人数
+            txtWorkReportMan: {range: [1, 10]},//汇报对象,在岗位级别在【高级/资深（非管理岗）】以上级别才显示汇报对象
+            txtWorkSalary: {required: true, number: true, range: [1, 9999999]},//税前薪资
+            txtContent: {max: 2000}//工作内容
         },
         workInfoErrorMsg = {
             txtWorkName: {
@@ -3264,7 +3264,7 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
                         }
                         updateResumeTime(result.update_time);
                         self.updatePreview(result);
-                        if (e.otherEvent) {
+                        if (e.otherEvent) {//在editMutilResume里定义，当点击【保存并添加】时触发
                             self._normal.eq(0).before(self._edit.show());
                             delete self._oldIndex;
                             self._isAdd = true;

@@ -14,10 +14,10 @@ function(require, exports, module) {
 	//editResume类型是通过继承Shape类型的类型，并且editResume类型可以传递o参数，该参数是一个包含许多自定义的扩展属性的对象
 	var editResume = shape(function(o){//此处shape()只是shape模块暴露出来的工厂，shape()执行后得到一个继承Shape类型的类型
             //此处调用弗雷构造函数(即Shape的构造函数)，并传递属性参数
-			editResume.parent().call(this, util.merge({//这些元素初始化属性都在实例的attrs存储,并可使用editResume实例的get和set方法//此时editResume.parent()指向父类型Shape
+			editResume.parent().call(this, util.merge({//这些元素初始化属性都在实例的attrs存储,并可使用editResume实例的get和set方法//此时editResume.parent()指向父类型Shape的构造函数
 				/*以下相当于为当前实例设置默认值*/
 				element: $('#baseinfor'),//相当于该模块的顶级元素
-				trigger: '.edit', //存储dom对应的选择器字符串
+				trigger: '.edit', //存储编辑按钮dom对应的选择器字符串
 				formName: 'form', //编辑状态下字段编辑对应的form
 				normalName: '.res-infor',//非编辑状态下对应的字段显示的容器
 				editName: '.edit-status-box', //编辑状态下字段编辑对应的form的容器
@@ -40,7 +40,7 @@ function(require, exports, module) {
 	editResume.implement({
 		init: function(){
 			this._initElements();
-			this._isInit = true;
+			this._isInit = true;//是否触发init事件
 			this._initValidator();
 			this._initEvent();
 		},
@@ -121,12 +121,12 @@ function(require, exports, module) {
 		 * @private
 		 */
 		_initEvent: function(){
-			var element = this.get('element'),
+			trigger('init')//实例化对象时初始化事件也会触发init事件
 				self = this;
 			setTimeout(function(){
 				self.trigger('render');
 			}, 1);
-			//此部分拦截功能待研究
+			//当editResume实例第一次触发编辑按钮时候触发初始化init事件
 			this.before('_handler', function(){
 				if(this._isInit){
 					var self = this;

@@ -1,11 +1,11 @@
 // JavaScript Document
 jpjs.config({
-	basepath: window.CONFIG.HOST + window.CONFIG.COMBOPATH,
-	comboHost: window.CONFIG.HOST + '',
-	comboPath: window.CONFIG.COMBOPATH,
-	normailzeNames: window.VERSION,
+	basepath: window.CONFIG.HOST + window.CONFIG.COMBOPATH,//组件模块主路径（备用）
+	comboHost: window.CONFIG.HOST + '',//组件模块主路径（首选）
+	comboPath: window.CONFIG.COMBOPATH,//组件模块副路径，最后模块js文件的绝对路径=(comboHost||basepath)+comboPath
+	normailzeNames: window.VERSION,//各个简单模块的js版本
 	charset: window.CONFIG.CHARSET,
-	combos: {
+	combos: {//此配置是用于正式环境时进行js文件合并
 		'@changeClass':'widge.changeClass',
 		'@checkBoxer':'widge.checkBoxer',
 		'@fixed': 'tools.fixed',

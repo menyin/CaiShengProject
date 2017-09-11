@@ -275,6 +275,14 @@ define('jpjob.areaSimple', function(require, exports, module){
 				}
 			});	
 	    },
+		/**
+		 * 选择地区
+		 * @param area_id 地区编号
+		 * @param area_name 地区名称
+		 * @remark
+		 *  1、这里的地区可以是省/直辖市、二级区域、三级区域
+		 *  2、this.level代表地区的级别，省/直辖市为1
+		 */
 		selectArea:function(area_id, area_name) {
 			var url = this.options.subAreaUrl+area_id;
 			var _self = this;
@@ -402,7 +410,7 @@ define('jpjob.areaSimple', function(require, exports, module){
 			var c =new Array();
 			$.each(data,function(i,n){	
 			     // +n.area_id+			 
-				 if(self.options.municipality.contains(n.area_id)) {
+				 if(self.options.municipality.contains(n.area_id)) {//municipality存储直辖市的编号
 					  municipality.push('<li><a href="#" v="'+n.area_id+','+n.area_name+'">'+n.area_name+'</a></li>');
 				 }else {
 					 c.push('<li><a href="#" v="'+n.area_id+','+n.area_name+'">'+n.area_name+'</a></li>');

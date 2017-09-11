@@ -25,9 +25,13 @@ define('base.class', 'base.util', function(require, exports){
 		return util.extend(this, o);
 	}
 	/**
-	 * 为当前类型或其子类型的原型扩展其他类型原型属性，或者称之为实现
+	 * 为当前类型或其子类型的原型扩展其他类型原型属性或其它实例的屬性，或者称之为实现
 	 * @param items {type | [type]} 目标类型或目标类型数组
 	 * @returns {Class} 返回扩展处理后的当前类型
+	 * @remark
+	 * items里可包含类型或者实例
+	 * 当items里的项为类型则拷贝类型的原型属性
+	 * 当items里的项为实例时则拷贝实例的属性（此时实例的prototype为undefined）
 	 */
 	Class.implement = function(items){
 		if(!checkContext(this))
@@ -41,9 +45,11 @@ define('base.class', 'base.util', function(require, exports){
 		return this;
 	}
 	/**
-	 * 返回Class或子类型的父类型原型
-	 * @param method
+	 * 返回Class或子类型的父类型的函数(包括构造函数)
+	 * @param method 函数名字符串
 	 * @returns {*}
+	 * @remark
+	 *  当!method || !this.superclass[method]时，返回父类型构造函数
 	 */
 	Class.parent = function(method){
 		if( !checkContext(this) )

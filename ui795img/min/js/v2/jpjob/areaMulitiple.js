@@ -4,7 +4,7 @@
  */
 
 define('jpjob.areaMulitiple', function(require, exports, module){
- 
+
 	var $ = module['jquery'];
 	var Helper = function(){
 		 this.arr = [];	 

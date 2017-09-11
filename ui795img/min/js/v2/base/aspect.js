@@ -33,7 +33,7 @@ define('base.aspect', function(require, exports){
 			if(!method){
 				throw new Error('base.aspect: 无效方法[' + methodName + ']');
 			}
-			if(!method._isAop){
+			if(!method._isAop){//是否支持Aop，支持则进行Aop包裹
 				wrap.call(this, name);
 			}
 			this.on(status + ":" + name, callback);
