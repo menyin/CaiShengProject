@@ -16,33 +16,33 @@
 		charset = 'utf-8',
 		isDebug = false,
 		regReady = /(loaded|complete)/i,
-		preloadMods = [],
-		globalMods = [],
-		preComboMods = {},
-		comboMods = {},
+		preloadMods = [],//预加载模块列表
+		globalMods = [],//全局模块列表
+		preComboMods = {},//预加载组件模块列表,要求在页面必须引入预加载的模块js(cdn合并或单独引入)
+		comboMods = {},//组件模块打包配置列表
 		comboExports = {},
 		comboModsVer = {},
-		comboVersion = {},
-		normailzeNames = {},
-		comboHost = '',
-		comboPath = '',
-		basepath = '',
-		maps = {},
-		nodeCache = {},
-		timeout = 50,
-		waitCount = 3000,
-		moduleType = {
+		comboVersion = {},//模块或组件模块版本列表
+		normailzeNames = {},//和comboVersion 一样
+		comboHost = '',//组件模块的主地址
+		comboPath = '',//组件模块的副地址
+		basepath = '',//comboHost+comboPath
+		maps = {},//模块js特殊映射路径
+		nodeCache = {},//script节点缓存
+		timeout = 50,//
+		waitCount = 3000,//模块重复加载的最大次数
+		moduleType = {//缓存时，各种类型对象缓存的key组成盐点
 			loaded: '@loaded:',
 			module: '@module:',
 			define: '@define:',
 			defineId: '@defineId:',
 			factory: '@factory:',
 			exports: '@exports:',
-			init: '@init:',
+			init: '@init:',//存储此次模块或模块组加载所依赖的所有简单模块字符串，如cache['@init:@search']=['widge.select','widge.poup',...],再如如cache['@init:@search|kk|@select']=['widge.select','widge.poup',...]
 			initId: '@initId:',
 			initArgs: '@initArgs:',
 			initList: '@initList:',
-			count: '@count:',
+			count: '@count:',//记录某一模块被加载的次数，如cache['@count:@search']=99
 			combo: '@combo:'
 		},
 		indexOf = Array.prototype.indexOf,
@@ -53,6 +53,13 @@
 		isFunction = jpjs.isFunction = isType("Function"),
 		isBoolean = jpjs.isBoolean = isType("Boolean"),
 		array = jpjs.arrayUtil = {
+			/**
+			 * 数组项过滤
+			 * @param arr {array} 数组对象
+			 * @returns {function} 比较函数 function(value,i,arr){}
+			 * @returns {obj} 比较函数内this对象
+			 * @returns {array} 过滤后的数组
+			 */
 			filter : filter ? function(arr, fn, scope){
 				return filter.call(arr, fn, scope);
 			} : function (arr, fn, scope) {
@@ -74,6 +81,11 @@
 				}
 				return -1;
 			},
+			/**
+			 * 数组选项去重
+			 * @param arr 数组
+			 * @returns {array} 没有重复项的数组
+			 */
 			unique:function(arr){
 				if(arr.length == 0 || !arr)
 					return;
@@ -100,7 +112,7 @@
 	}
 
 	/**
-	 * 设置js的script的dom节点加载成功和错误回调
+	 * 绑定js的script的dom节点加载成功和错误回调
 	 * @param node script节点dom对象
 	 * @param callback 回调
 	 * @param module js对应的路径的数组，其实只有一个元素
@@ -165,6 +177,51 @@
 			callback && callback(module[1] || modulePath);
 		}
 	}
+	/**
+	 * cny额外扩展重载
+	 * 加载指定的js，并传递参数
+	 * @param path js路径
+	 * @param callback 加载成功回调
+	 * @param isAsync 是否异步，默认为true
+	 * @param dataObj 传递的数据参数，默认为null
+	 */
+	//cny_add
+	function loadJS4Data(path, callback, isAsync,dataObj){
+		var module = ('' + path ).split('::'),//说明还可以用::来做分割js
+			modulePath = module[0],
+			none;
+		if(isBoolean(callback)){
+			isAsync = callback;
+			callback = null;
+		}else if(!isFunction(callback)&&isObject(callback)) {
+			dataObj = callback;
+			isAsync=undefined;
+			callback = null;
+		}
+		if (isObject(isAsync)) {//cny_add
+			dataObj = isAsync;
+			isAsync = undefined;
+		}
+		window._dataObj = dataObj;//cny_add
+		if(!nodeCache[moduleType.loaded + modulePath]){//
+			node = nodeCache[moduleType.module + modulePath] || doc.createElement('script');//创建或者在dom节点缓存里取js的script标签缓存
+			onLoadJS(node, callback, module, debug);//设置节点加载成功和错误回调
+			if(!nodeCache[moduleType.module + modulePath]){//如果没有节点缓存则执行
+				nodeCache[moduleType.module + modulePath] = node;//将js的script节点缓存，以js路径处理的字符串作为key
+				node.src   = modulePath;
+				node.type  = "text/javascript";
+				node.charset = charset;
+				node.async = isAsync != undefined ? isAsync : true;//async是h5的新特性，默认为true
+				if(baseElement){//如果有base标签则插入到base标签之前，否则插入到head内部最后
+					head.insertBefore(node, baseElement)
+				} else {
+					head.appendChild(node);
+				}
+			}
+		} else {//如果js已经加载过则执行执行回调
+			callback && callback(module[1] || modulePath,dataObj||null);
+		}
+	}
 
 	/**
 	 * 检查模块被加载的次数有没有超标
@@ -183,6 +240,13 @@
 		}
 		return true;
 	}
+
+	/**
+	 * 重置模块相关的缓存设置
+	 * @param moduleName 模块名
+	 * @param initId
+	 * @param time
+	 */
 	function resetCheck(moduleName, initId, time){
 		setTimeout(function(){
 			if(!checkModule(moduleName)){//检查模块加载次数是否超标
@@ -195,6 +259,7 @@
 			}
 		}, time != null ? time : timeout);//timeout=50
 	}
+
 	function takeGlobalModule(moduleName, isArray){
 		var mods = isArray ? [] : {},
 			type = isArray ? moduleType.init : moduleType.module,
@@ -203,7 +268,11 @@
 			status = true;
 
 		saveModule(array.unique(deplist.concat(globalMods)));
+		/*缓存模块*/
 		function saveModule(name){
+			if (!name) {//cny_add  修复bug：在没有配置任何预加载项是会出错
+				return false;
+			}
 			for(var factory, i = 0, len = name.length; i < len; i++){
 				factory = cache[ moduleType.factory + name[i] ];
 
@@ -239,6 +308,7 @@
 		delete cache[ moduleType.initArgs + moduleName ];
 		delete cache[ moduleType.combo + moduleName ];
 	}
+
 	function checkDefinedLoaded(moduleName){
 		var cache = package['#module:cache'],
 			status = cache[ moduleType.loaded + moduleName ] || checkDefinedList(moduleName),
@@ -267,6 +337,7 @@
 			resetCheck(moduleName);
 		}
 	}
+
 	function checkDefinedList(moduleName){
 		var cache = package['#module:cache'],
 			module = cache[ moduleType.module + moduleName ],
@@ -281,6 +352,13 @@
 		}
 		return true;
 	}
+
+	/**
+	 * 在加载器加载define模块时，define模块对应的实现函数
+	 * @param moduleName
+	 * @param id
+	 * @returns {*}
+	 */
 	function getUseFactorys(moduleName, id){
 		var cache = package['#module:cache'],
 			factorys = cache[moduleType.initList + moduleName];
@@ -295,13 +373,21 @@
 
 		return cache[moduleType.initList + moduleName];
 	}
+
+	/**
+	 * 检查此次加载大模块是否是组件模块
+	 * @param moduleName 大模块名
+	 * @param i
+	 * @returns {*|isCombo|boolean}
+	 */
 	function isCombo(moduleName, i){
 		return package['#module:cache'][moduleType.init + moduleName + i] && package['#module:cache'][moduleType.init + moduleName + i].isCombo;
 	}
+
 	function checkLoaded(moduleName, id){
 		var cache = package['#module:cache'],
 			status = cache[moduleType.loaded + moduleName],
-			factorys = getUseFactorys(moduleName, id);
+			factorys = getUseFactorys(moduleName, id);//factorys应该是define模块时的实现函数的集合
 
 		if(!factorys){return;}
 		if(!status ){
@@ -409,7 +495,7 @@
 				return basepath + path.replace(/\./g,'/') + '.js::' + path;
 			},
 			/**
-			 *获取指定模块列表涉及js文件的路径组成的path字符串
+			 *获取指定模块或模块组涉及简单模块的js文件的路径组成的path字符串
 			 * @remark
 			 * 得到的path路径是所有js文件路径字符串用逗号隔开的字符串
 			 * 得到的path路径带有版本号，可保证js变更强制浏览器刷新
@@ -453,14 +539,14 @@
 					moduleName = module['module'],//如"@search"
 					initId = module.initId;//如 cache["@initId:" + "@search"]值为0
 
-				if(initId != undefined) {
+				if(initId != undefined) {//jpjs.use时
 					cache[moduleType.init + moduleName + initId]  = module;//如 cache["@init:@search0"]
 					var combo = getComboMods(module.depend);//获取启动列表模块的所有依赖简单模块，如['tools.iframe', 'tools.position'...]//module.depend就是jpjs.use的第一参数，即启动模块列表。
 					if(combo){
 						var comboPath = "";
 						module.depend = combo;
 						comboPath += this['#module:getCombosPath'](module);
-						cache[moduleType.init + moduleName + initId].isCombo = true;
+						cache[moduleType.init + moduleName + initId].isCombo = true;//标记此次加载的模块或模块组是否是组件模块
 						if(comboPath){
 							loadJS((comboHost || basepath) + comboPath, function(){//根据路径加载所有简单模块js
 								var i = 0, depend;
@@ -470,7 +556,7 @@
 									i++;
 								}
 								cache[moduleType.init + moduleName] = combo;//如cache["@init:@search"]=[ "tools.iframe", "tools.position", "widge.popup",...]
-								resetCheck(moduleName, initId, 0);
+								resetCheck(moduleName, initId, 0);//加载完毕后清除此次模块或模块组加载过程中所做的各种缓存
 							});
 						} else {
 							resetCheck(moduleName, initId, 0);
@@ -479,18 +565,18 @@
 					}
 					cache[moduleType.init + moduleName] = moduleName.split('|kk|');
 
-				} else {
-					cache[moduleType.exports + moduleName] = cache[moduleType.exports + moduleName] || {};
-					cache[moduleType.module + moduleName] = module;
+				} else {//jpjs.define时
+					cache[moduleType.exports + moduleName] = cache[moduleType.exports + moduleName] || {};//记录导出模块
+					cache[moduleType.module + moduleName] = module;//记录导出模块涉及的{module,depend,factory}对象
 				}
 				resetCheck(moduleName, initId, 0);
 
 				for(var i = 0, len = module.depend.length; i < len; ){
 					var depend = module.depend[i++];
-					if(preComboMods[depend]){
+					if(preComboMods[depend]){//如果已经在预加载列表则应该有做缓存记录
 						cache[moduleType.exports + depend] = cache[moduleType.exports + depend] || {};
 					} else {
-						var path = this['#module:getPath'](depend);
+						var path = this['#module:getPath'](depend);//直接将.替换为/,如'widge.select'对应'widge/select.js::widge/select'这里的基准路径是jpjs.config.basepath
 						preComboMods[depend] = true;
 						loadJS(path, function(name){
 							!initId && (cache[moduleType.exports + name] = cache[moduleType.exports + name] || {});
@@ -498,6 +584,12 @@
 					}
 				}
 			},
+			/**
+			 * 定义模块
+			 * @param module 模块名
+			 * @param deplist {string | array} 依赖项
+			 * @param factory {function} 实现函数
+			 */
 			define: function(module, deplist, factory){
 				var cache = package['#module:cache'];
 				if(((!isString(module) || !module) && !deplist) || cache[moduleType.defineId + module]){
@@ -509,13 +601,18 @@
 				} else if( isString(deplist) ){
 					deplist = trim(deplist).split(',');
 				}
-				cache[moduleType.defineId + module] = true;
+				cache[moduleType.defineId + module] = true;//记录该定义模块，如cache["@defineId:base.shape"]=true
 				package.require({
 					module : module,
 					depend : deplist,
 					factory : factory
 				});
 			},
+			/**
+			 * 调用模块
+			 * @param deplist {string | array}调用模块列表
+			 * @param factory {function} 实现函数
+			 */
 			use: function(deplist, factory){
 				if(!deplist || isFunction(deplist) ) return;
 				if( isString(deplist) ){
@@ -523,7 +620,7 @@
 				}
 				var moduleName = deplist.join('|kk|'),
 					cache = this['#module:cache'];//this代表package
-				cache[moduleType.initId + moduleName] = cache[moduleType.initId + moduleName] + 1 || 0;
+				cache[moduleType.initId + moduleName] = cache[moduleType.initId + moduleName] + 1 || 0;//该缓存代表某个模块或模块组被use的次数
 				this.require({//this代表package
 					module : moduleName, //如'@search|kk|widge.dropSelect'
 					depend : deplist,
@@ -619,7 +716,7 @@
 				case "comboPath":
 					comboPath = configData[key];
 					break;
-				case "preCombo"://将预加载组件存储到preComboMods数组里
+				case "preCombo"://将预加载组件存储到preComboMods数组里,要求在页面必须引入预加载的模块js(cdn合并或单独引入)
 					var data = configData[key],
 						mods;
 					if(isString(data)){
@@ -684,9 +781,9 @@
 	}
 
 	jpjs.config({
-		//isDebug: true,
-		preload: 'jquery, base.util, base.class, base.shape',
-		preCombo: 'jquery, base.util, base.class, base.shape, base.event, base.attribute, base.aspect, tools.cookie',
+		//isDebug: true,//配置调试模式，当加载模块后，script标签不会被移除
+		preload: 'jquery, base.util, base.class, base.shape',//预加载模块，可预加载组件模块，要求在jspjs.config.combos里做组件配置
+		preCombo: 'jquery, base.util, base.class, base.shape, base.event, base.attribute, base.aspect, tools.cookie',//预加载组件模块列表,要求在页面必须引入预加载的模块js(cdn合并或单独引入)
 		map: {
 			jquery: 'jquery.min',
 			uploadify: 'jpjob/uploadify/uploadify'
@@ -694,5 +791,7 @@
 	});
 	global.define = package.define;
 	jpjs.loadJS = loadJS;
+	jpjs.loadJS4Data = loadJS4Data;
+
 
 })(window, document);
