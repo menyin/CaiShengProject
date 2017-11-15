@@ -85,12 +85,12 @@ define('base.util', function(require, exports){
 				rev = rev ? len > 0 : len === 0;
 			return this.isString(s) && rev;
 		},
-		/**
-		 * 判断两个对象是否相等
-		 * @param a 对象1
-		 * @param b 对象2
-		 * @returns {boolean}
-		 */
+				/**
+				 * 判断两个对象是否相等
+				 * @param a 对象1
+				 * @param b 对象2
+				 * @returns {boolean}
+				 */
 		isEqual: function(a, b) {
 			if (a === b) return true;
 			if (this.isEmptyAttrValue(a) && this.isEmptyAttrValue(b)) return true;
