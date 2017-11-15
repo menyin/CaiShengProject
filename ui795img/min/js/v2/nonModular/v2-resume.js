@@ -1841,7 +1841,7 @@ jpjs.use('@editResume, @multipleSelect, @jpCommon, @jobDater, @areaSimple, @jobs
         });
     }
     /*求职意向 end*/
-
+  
     /*自我评价 begin*/
     var appraiseRules = {//表单元素验证规则规约，如果这个editResume实例内包含多个表单，则appraiseRules应该是一个数组（包含多组验证规则）
             txtAppraise: {//要求表单元素name属性为txtAppraise
