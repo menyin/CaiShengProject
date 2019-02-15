@@ -1,13 +1,21 @@
-define('widge.popup', ['tools.position', 'tools.iframe'], function (require, exports, module) {
-    var shape = module['base.shape'], $ = module['jquery'], util = require('base.util'), position = require('tools.position'), shim = require('tools.iframe').shim, template = '<div></div>', defaultName = 'hb_ui', doc = document, win = window;
+﻿define('widge.popup', ['tools.position', 'tools.iframe'], function (require, exports, module) {
+    var shape = module['base.shape'],
+        $ = module['jquery'],
+        util = require('base.util'),
+        position = require('tools.position'),
+        shim = require('tools.iframe').shim,
+        template = '<div></div>',
+        defaultName = 'hb_ui',
+        doc = document, win = window;
     var popup = shape(function (o) {
         popup.parent().call(this, util.merge({
-            idName: null,
-            className: 'popup',
+            element:null,//指定弹出框渲染的元素，可以是$dom字符串或$dom
+            idName: null,//猜测用于标识当前弹出框的字符串，会添加到根元素的class里
+            className: 'popup',//弹出框根元素的class
             width: 200,
             height: 100,
             zIndex: 99,
-            visible: false,
+            visible: false,//设置弹出窗的初始显示状态
             align: {
                 selfXY: [0, 0],
                 baseElement: position.viewport,
@@ -95,14 +103,14 @@ define('widge.popup', ['tools.position', 'tools.iframe'], function (require, exp
                 idName && this.set('idName', null);
             }
             return this;
-        }, setLevel: function (zIndex) {
+        }, setLevel: function (zIndex) {//设置z-index
             zIndex != undefined && this.set('zIndex', zIndex);
             this.get('element').css('z-index', this.get('zIndex') || 0);
-        }, resetSize: function (width, height) {
+        }, resetSize: function (width, height) {//重置为默认with和height，它们无值时则auto
             var element = this.get('element');
             element.css({width: width || this.get('width') || 'auto', height: height || this.get('height') || 'auto'});
             return this;
-        }, setPosition: function (align, callback) {
+        }, setPosition: function (align, callback) {//设置弹出框的位置，采用固定的json参数align={selfXY: ['50%', '50%'], baseXY: ['50%', '50%']}
             var element = this.get('element');
             if (!isInDocument(element[0]))return;
             align || (align = this.get('align'));

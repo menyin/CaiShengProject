@@ -2,7 +2,9 @@
 define('jpjob.actions', function(require, exports, module){
 	
 	var $ = module['jquery'];
-	
+	//placeholder组件 html如下
+	//<label for="id" class="txtLabel">用户名/手机号/邮箱</label>
+	//<input type="text" class="text " id="id" name="username" />
 	$.focusblur = function(focusid){
 		var focusblurId = $(focusid);
 		var defval = focusblurId.val();
@@ -26,6 +28,7 @@ define('jpjob.actions', function(require, exports, module){
 			$(this).removeClass('focus');
 		});
 	};
+
 	$.focusColor = function(focusid, focusFn, blurFn){
 		var focusElemId = $(focusid);
 		focusElemId.focus(function(){
@@ -42,6 +45,22 @@ define('jpjob.actions', function(require, exports, module){
 			$(this).css('z-index',zIndex--);
 		});
 	};
+	//tab组件  html如下
+	/*
+	 	<ul id="tabT">
+			<li class="cu">首页</li>
+			<li >列表页</li>
+			<li >详情页</li>
+		</ul>
+		<div id="tabC">
+			<div class="tabCon" style="display: block;">首页内容</div>
+			<div class="tabCon">列表页内容</div>
+			<div class="tabCon">详情页内容</div>
+		</div>
+		 <script>
+			 $.tab('#tabT','#tabC');
+		 </script>
+	*/
 	$.tab = function(tId,cId){
 		$(tId).find('li').click(function(){
 			if($(this).hasClass('cu')){
@@ -53,8 +72,9 @@ define('jpjob.actions', function(require, exports, module){
 			}
 		});
 	}
-	//调用$.tab('#tabT','#tabC');
-	//给文本框加水印
+
+	//placeholder插件，给文本框加水印
+	//调用 $('#txtKeyWord').watermark('输入姓名');
 	$.fn.watermark = function(txt)
 	{
 		if(typeof this.attr('watermark') != 'undefined'){
@@ -165,9 +185,18 @@ define('jpjob.actions', function(require, exports, module){
 			}
 		});
 	};
+
 	 /*
 	 * 计算文本长度
 	 */
+	/*使用 $('input.selector').setListen({
+		 max: 4000, //input输入的最多字数
+		 objTotal: $(el).closest('div').next().find('.content'), //显示已输入字数的$dom
+		 objLeft: $(el).next('.textareaTxt').find('i'), //显示剩余可输入字数的$dom
+		 duration: 200, //监控时间间隔
+		 objTotalStyle: 'green',  //统计字数的文本的样式
+		 flag:false //无用参数
+	 });*/
 	(function($){
 		var Listener = function(el, opt)
 		{

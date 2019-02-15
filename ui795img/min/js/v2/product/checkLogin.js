@@ -35,9 +35,7 @@ define('product.checkLogin', ['widge.overlay.jpDialog', 'tools.cookie'], functio
 		return logined;
 		*/
 		var subject = (isCompany==1) ? '企业登录' : '个人登录';
-
-		var url = '/person/ajaxlogin.html?com='+isCompany;
-
+		var url = '/person/ajaxlogin.html?com='+isCompany;//登录页的链接
 		if(util.type.isString(callback)){
 			url = url+'&key='+callback;
 		}

@@ -98,7 +98,13 @@ function(require, exports, module) {
 			this['_' + btnName].on('click', fn);
 		}
 	});
-	
+	/**
+	 * 普通弹出框
+	 * @param message 提示文本
+	 * @param callback 关闭回调
+	 * @param options 配置参数，参考$.dialog()参数，一般不传
+	 * @returns {*} confirmBox对象
+	 */
 	confirmBox.alert = function(message, callback, options){
 		var defaults = {
 			message: message,
@@ -116,6 +122,15 @@ function(require, exports, module) {
 		});
 		return d;
 	}
+	/**
+	 * 确认弹出框
+	 * @param message 提示文本
+	 * @param title 标题
+	 * @param onConfirm 确认回调
+	 * @param onCancel 取消回调
+	 * @param options 配置参数，参考$.dialog()参数，一般不传
+	 * @returns {*} confirmBox对象
+	 */
 	confirmBox.confirm = function(message, title, onConfirm, onCancel, options){
 		if (typeof onCancel === 'object' && !options) {
             options = onCancel;
@@ -139,6 +154,14 @@ function(require, exports, module) {
         });
 		return d;
 	}
+	/**
+	 * 定时提示弹出框
+	 * @param message 提示文本
+	 * @param options 配置参数
+	 * 当string=success|fail|warning|question|info时为图标类型
+	 * 当object={icons:'fail',timeout:1000,name:'tiemBomb'}时为配置参数
+	 * @param isTrigger  为true时则鼠标点击弹框以外的范围则弹框隐藏
+	 */
 	confirmBox.timeBomb = function(message, options, isTrigger){
 		var timeout = 3000,
 			firstName = "hb_ui_prt_",

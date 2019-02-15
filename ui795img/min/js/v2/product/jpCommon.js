@@ -1,9 +1,15 @@
+/*公共的一些jQuery扩展*/
 define('product.jpCommon', function(require, exports, module) {
-	
+
 	var $ = module['jquery'],
 		doc = document,
 		win = win;
 	$.fn.extend({
+		/**
+		 * 用于做模态窗口的背景，如弹出窗口需要使用到
+		 * @param s
+		 * @returns {bgiframe}
+		 */
 		bgiframe:function(s){
 			//因发现ie7也出现这个问题，所以不管什么浏览器都加上
 			//if ($.browser.msie && /6.0/.test(navigator.userAgent))
@@ -28,6 +34,11 @@ define('product.jpCommon', function(require, exports, module) {
 			} catch (e) { }
 			return this;
 		},
+		/**
+		 * input[type=text]的水印效果，即placeholder效果
+		 * @param dclass  默认文本的标签，如<span class="def-text">  默认职位def-text
+		 * @param iclass 要设置水印效果的dom的选择器字符串，默认是input[type='text']
+		 */
 		textDefault: function(dclass,iclass){
 			this.each(function(){
 				var _this = $(this),
@@ -44,6 +55,10 @@ define('product.jpCommon', function(require, exports, module) {
 				});
 			});
 		},
+		/**
+		 * 初始化回到顶部的按钮
+		 * 其中固定用a.backTop标签
+		 */
 		backTop:function(){			
 			var target = $(this);
 			$(win).scroll(function(){
@@ -57,6 +72,10 @@ define('product.jpCommon', function(require, exports, module) {
 				  $('html,body').animate({ scrollTop: 0 });
 			 });
 		},
+		/**
+		 * 水印效果
+		 * @returns {*|jQuery}
+		 */
 		watermark: function(){
 			var getVal = function(el){
 				if (el.length == 0) return '';

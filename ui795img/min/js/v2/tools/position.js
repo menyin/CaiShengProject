@@ -17,7 +17,7 @@ define('tools.position', function(require, exports, module){
 			topObject = null;
 		}
 		
-		pinObject = normalize(pinObject);
+		pinObject = normalize(pinObject);//标准化对象
         baseObject = normalize(baseObject);
 		topObject = topObject && normalize(topObject);
 		

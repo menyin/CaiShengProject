@@ -1,11 +1,11 @@
-// JavaScript Document
+ï»¿// JavaScript Document
 jpjs.config({
-	basepath: window.CONFIG.HOST + window.CONFIG.COMBOPATH,//×é¼şÄ£¿éÖ÷Â·¾¶£¨±¸ÓÃ£©
-	comboHost: window.CONFIG.HOST + '',//×é¼şÄ£¿éÖ÷Â·¾¶£¨Ê×Ñ¡£©
-	comboPath: window.CONFIG.COMBOPATH,//×é¼şÄ£¿é¸±Â·¾¶£¬×îºóÄ£¿éjsÎÄ¼şµÄ¾ø¶ÔÂ·¾¶=(comboHost||basepath)+comboPath
-	normailzeNames: window.VERSION,//¸÷¸ö¼òµ¥Ä£¿éµÄjs°æ±¾
+	basepath: window.CONFIG.HOST + window.CONFIG.COMBOPATH,//ç»„ä»¶æ¨¡å—ä¸»è·¯å¾„ï¼ˆå¤‡ç”¨ï¼‰
+	comboHost: window.CONFIG.HOST + '',//ç»„ä»¶æ¨¡å—ä¸»è·¯å¾„ï¼ˆé¦–é€‰ï¼‰
+	comboPath: window.CONFIG.COMBOPATH,//ç»„ä»¶æ¨¡å—å‰¯è·¯å¾„ï¼Œæœ€åæ¨¡å—jsæ–‡ä»¶çš„ç»å¯¹è·¯å¾„=(comboHost||basepath)+comboPath
+	normailzeNames: window.VERSION,//å„ä¸ªç®€å•æ¨¡å—çš„jsç‰ˆæœ¬
 	charset: window.CONFIG.CHARSET,
-	combos: {//´ËÅäÖÃÊÇÓÃÓÚÕıÊ½»·¾³Ê±½øĞĞjsÎÄ¼şºÏ²¢
+	combos: {//æ­¤é…ç½®æ˜¯ç”¨äºæ­£å¼ç¯å¢ƒæ—¶è¿›è¡Œjsæ–‡ä»¶åˆå¹¶
 		'@changeClass':'widge.changeClass',
 		'@checkBoxer':'widge.checkBoxer',
 		'@fixed': 'tools.fixed',

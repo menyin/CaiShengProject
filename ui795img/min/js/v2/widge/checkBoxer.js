@@ -1,5 +1,7 @@
-// JavaScript Document
-
+﻿// JavaScript Document
+/**
+ * 选框组件 支持单选和多选
+ */
 define('widge.checkBoxer', function(require, exports, module){
 
 	var shape = module['base.shape'],
@@ -15,15 +17,24 @@ define('widge.checkBoxer', function(require, exports, module){
 		doc = document;
 	
 	var checkBoxer = shape(function(o){
+		/*html初始化*/
+		/*<label class="pos" data-status="false" data-disabled="false" data-value="08253d2901699" data-name="pos"><input style="display: none;" name="pos" value="08253d2901699" type="checkbox"></label>*/
+		//data-status="false"  初始化选中与否，当data-disabled或data-disabled
+		//data-disabled="true" 初始化选框不能操作并且处于非选中状态
+		//data-value="false" 初始化选框对应的值
+		//data-name="false"初始化选框对应的表单name
+		/*可初始化事件*/
+		//select、selectAll、maxLimit
+
 		checkBoxer.parent().call(this, util.merge({
-			element: $('.pos'),
-			multiple: true,
-			maxLength: 999,
-			className: 'pos_yes',
-			hoverClassName: null,
-			disabledClassName: null,
-			disabledSelClassName: null,
-			isDocClick: true
+			element: $('.pos'),  //要渲染为选框的doms  如：<label class="pos check-default ptCheck" data-value="{$l[_jid]}" data-name="pos"></label>
+			multiple: true, //整个组选框是否支持多选
+			maxLength: 999, //能添加选框的最大个数，如在渲染1000个选框时会触发maxLimit事件
+			className: 'pos_yes', //选中选框时的样式
+			hoverClassName: null, //选框hover时的样式
+			disabledClassName: null,//选框data-disabled=true并且data-status="false"时的样式，即使当不能选框不能用并且未选中时的样式
+			disabledSelClassName: null,//选框data-disabled=true并且data-status="true"时的样式，即使当不能选框不能用并且选中时的样式
+			isDocClick: true//作用未知，似乎无用
 		}, o));
 		this.init();
 	});
@@ -88,10 +99,10 @@ define('widge.checkBoxer', function(require, exports, module){
 			}
 		},
 		/**
-		 * ����ָ��ѡ���״̬
-		 * @param index {number} ѡ�����������0��ʼ
-		 * @param isStatus {boolean} ״̬
-		 * @param isEvent �Ƿ񴥷�select�¼�
+		 * 设置指定选项的状态
+		 * @param index {number} 选项的索引，从0开始
+		 * @param isStatus {boolean} 状态
+		 * @param isEvent 是否触发select事件
 		 */
 		setStatus: function(index, isStatus, isEvent){
 			var e = {},
@@ -137,6 +148,12 @@ define('widge.checkBoxer', function(require, exports, module){
 				}, this);
 			return ret.length >= status.length;
 		},
+		/**
+		 *当指定选框设置status为true则不能再进行选择
+		 * @param index
+		 * @param status
+		 * @param fn 自定义setDisabled的相关操作 函数参数分别是组件this，当前选框index，当前选框，相关的样式数组
+		 */
 		setDisabled: function(index, status, fn){
 			this._disabled[index] = status;
 			var items = this.get('element'),
@@ -168,12 +185,12 @@ define('widge.checkBoxer', function(require, exports, module){
 			});
 		},
 		/**
-		 * ��������ѡ��״̬
-		 * @param status {boolean} �Ƿ�ѡ��
-		 * @param fn �ص�
+		 * 设置所有选项状态
+		 * @param status {boolean} 是否选中
+		 * @param fn 回调
 		 * @remark
-		 *  ���fn���ڣ��ص�����������ǰѡ���������������ʱ��ִ������ѡ�в�������ζ��status���ã�Ҫ�Լ����ݻص������ڻص������Լ��Ĵ���
-		 *  �˺����ᴥ��selectAll�¼�
+		 *  如果fn存在，回调参数包含当前选项，和索引参数，此时不执行设置选中操作，意味着status无用，要自己根据回调参数在回调里做自己的处理
+		 *  此函数会触发selectAll事件
 		 */
 		all: function(status, fn){
 			if(status === undefined){

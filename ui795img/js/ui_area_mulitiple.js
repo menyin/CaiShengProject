@@ -72,7 +72,7 @@
 			return arr;
 		}
 		
-		// 获取地区信息
+		// 获取地区信息 //查找制定id的地区是否在4个直辖市中，有则返回地区对象。
 		this.getArea = function(id)
 		{
 			/*
@@ -119,7 +119,7 @@
 			return null;
 		}
 		
-		// 获取地区名称
+		// 获取地区名称（该地区是直辖市里的）
 		this.getAreaName = function(id)
 		{
 			var area = self.getArea(id);
@@ -157,12 +157,12 @@
 						'    <div class="clear"></div>'+
 						' </div> '+
 						' </div></span>';										
-			 self.dh =$(html).appendTo(self.$element).find('.dropLst').hide();
-			 self.dh.find('.dropLstHead em').html(self.options.max);
-			 self.tipElement = self.dh.find('.dropLstHead');
-			 self.hd =self.$element.find('.dropSet').show(); 
+			 self.dh =$(html).appendTo(self.$element).find('.dropLst').hide();//整个下拉地区容器
+			 self.dh.find('.dropLstHead em').html(self.options.max);//可选择区域数填充，此处max为5
+			 self.tipElement = self.dh.find('.dropLstHead');//整个下拉地区容器的头部
+			 self.hd =self.$element.find('.dropSet').show();// $element为该组件顶级容器，.dropSet为输入框修饰后的容器
 			 self.hc = self.$element.find('.dropLstCon');
-			 self.hddElement = $('<input type="hidden" name="'+self.options.hddName+'"/>').appendTo(self.$element);
+			 self.hddElement = $('<input type="hidden" name="'+self.options.hddName+'"/>').appendTo(self.$element);//最终保存地区选项的表单隐藏域
 			 
 			 // 是否限制
 			 if(self.options.isLimit){
@@ -170,9 +170,9 @@
 			 }
 			 // 加载一级类别
 			 var url = self.options.url;
-			 self.loadData(url, function(data){
+			 self.loadData(url, function(data){//加载一级类别数据
 				 self.selectItem(data);
-				 self.dh.find('.lst1 ul').find('li[d="0300,重庆"]').find('label').click();  
+				 self.dh.find('.lst1 ul').find('li[d="0300,重庆"]').find('label').click();//汇博是重庆的，所以它默认选择重庆
 			 });
 			 if(self.options.selectItems.length>0) {
 				  var ids = self.checkSpecialNumber(self.options.selectItems);
@@ -188,7 +188,8 @@
 		};
 		
 		/*
-		 * 检测特殊编号
+		 * 检测特殊编号的的地区，这里指四个直辖市
+		 * 返回ids中包含的特殊地区
 		 */
 		this.checkSpecialNumber = function(ids) {
 			 var arr = ids;
@@ -387,7 +388,7 @@
 		};
 		 // 选择事件
 		this.loadData = function(url,callback,isAll,isSelf) {
-			var data = self.getArea(self.lastSelectItem[0]);
+			var data = self.getArea(self.lastSelectItem[0]);//说明该地区选项是直辖市地区
 			if(data!= null) {
 				if(typeof callback == 'function') {
 					if(isAll&&typeof data.subAreas !='undefined'){
@@ -483,11 +484,13 @@
 		this.isSingle = function(id) {
 			return self.options.type=='single';
 		};
+		/*根据地区数组数据创建地区li*/
+		/*注意此处省市区分别实例化了一个area对象，所以这里self可能是省、市、区*/
 		this.selectItem= function(data) {
 			  var arr = new Array(),
 			  	  pid = self.lastSelectItem[0],
 				  pname = self.lastSelectItem[1],
-				  isSingle = self.isSingle(),
+				  isSingle = self.isSingle(),//获取初始化参数-是否单选，就是是否是地区选项单选。
 				  createItem = function(isSigle,pid,id,name,isdisabled,isChecked,isParent,addClass,hasControl) {
 					  var s = new StringBuilder();
 					  s.Append('<li d="'+id+','+name+'"');

@@ -13,6 +13,18 @@ define('tools.cookie', function(require, exports){
 			throw new Error('base.cookie: 必须指定cookie名称');
 		}
 	}
+
+	/**
+	 * 获取指定名称cookie
+	 * @param name 名称
+	 * @param options 配置 默认不传
+	 * 如{
+	 *    isDecode: true, //是否需要解码
+	 *    isJSON: true //是否是json
+	 *    callback:function(cookieVal){alert(cookieVal);} //如果有配置回调则可接收cookie值的参数
+	 *    }
+	 * @returns {*}
+	 */
 	exports.get = function(name, options){
 		checkCookieName(name);
 		if(util.type.isFunction(options)){
@@ -23,6 +35,19 @@ define('tools.cookie', function(require, exports){
 		var cookies = parseCookie(doc.cookie, util.mix(options, {isJSON: true}, true));
 		return options.callback && options.callback(cookies[name]) || cookies[name];
 	}
+	/**
+	 * 设置cookie值
+	 * @param name 名称
+	 * @param value 值
+	 * @param options 配置 默认不传
+	 * 如{
+	 * isEncode:true, //是否编码
+	 * expires:30,  //有效期，按天算
+	 * domain:true,   //域
+	 * path:true,     //访问目录，默认主域根目录
+	 * }
+	 * @returns {string} 返回cookie字符串
+	 */
 	exports.set = function(name, value, options){
 		checkCookieName(name);
 		options = util.mix({isEncode: true}, options, true);
@@ -53,6 +78,14 @@ define('tools.cookie', function(require, exports){
 		doc.cookie = text;
 		return text;
 	}
+	/**
+	 * 移除cookie
+	 * @param name 名称
+	 * @param options 默认不传
+	 * @returns {string|exports}  cookie字符串
+	 * @remark
+	 * 实际上是设置cookie的失效时间为-1
+	 */
 	exports.remove = function(name, options){
 		options = options || {};
 		options['expires'] = -1;
